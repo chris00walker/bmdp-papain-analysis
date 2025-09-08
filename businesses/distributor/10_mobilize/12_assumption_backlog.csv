@@ -1,0 +1,26 @@
+Assumption ID,Category,Assumption Statement,Impact Score (1-5),Confidence Score (1-5),Evidence Score (1-5),ICE Score,Priority,Validation Method,Timeline,Owner,Status
+ASS-001,Market,Regional companies prefer local distributor over direct imports (>60% preference),5,2,1,8,High,Customer interviews with 20+ companies,Week 2-4,Market Research,Not Started
+ASS-002,Market,Customers willing to pay 15-25% markup for local service and inventory,5,2,1,8,High,Price sensitivity analysis and willingness-to-pay study,Week 3-5,Market Research,Not Started
+ASS-003,Market,$2-4M addressable market across target segments and geographies,4,3,2,9,High,Market sizing analysis and trade data validation,Week 1-3,Market Research,Not Started
+ASS-004,Market,40%+ of customers willing to switch from current suppliers,4,2,1,7,High,Customer switching propensity interviews,Week 2-4,Market Research,Not Started
+ASS-005,Competitive,Miami/Panama distributors won't aggressively defend Caribbean market,4,2,1,7,High,Competitive intelligence and scenario analysis,Week 2-6,Market Research,Not Started
+ASS-006,Competitive,Local presence provides sustainable competitive advantage,4,3,2,9,High,Customer value driver analysis and competitive comparison,Week 3-5,Market Research,Not Started
+ASS-007,Competitive,Can achieve 15-25% regional market share within 3 years,3,2,1,6,Medium,Market share analysis and growth modeling,Week 4-6,Financial Analyst,Not Started
+ASS-008,Competitive,Service differentiation justifies premium pricing,4,2,1,7,High,Value proposition testing and price benchmarking,Week 3-5,Market Research,Not Started
+ASS-009,Operational,Can secure favorable supplier terms with 3+ global producers,4,3,2,9,High,Supplier partnership discussions and term negotiations,Week 1-4,Operations,Not Started
+ASS-010,Operational,Barbados location provides cost-effective regional distribution,3,3,2,8,Medium,Logistics cost analysis and delivery time comparison,Week 2-4,Operations,Not Started
+ASS-011,Operational,Third-party QA model provides credibility at reasonable cost,3,2,2,7,Medium,QA partner assessment and cost validation,Week 3-5,Operations,Not Started
+ASS-012,Operational,Lean operating model achieves 15-20% EBITDA margins,4,2,1,7,High,Financial modeling and cost structure analysis,Week 4-6,Financial Analyst,Not Started
+ASS-013,Financial,22-27% blended gross margins sustainable long-term,5,2,1,8,High,Pricing analysis and margin sustainability assessment,Week 3-6,Financial Analyst,Not Started
+ASS-014,Financial,$300-500K inventory investment generates adequate returns (25%+ turns),4,2,1,7,High,Inventory optimization and turnover analysis,Week 4-6,Financial Analyst,Not Started
+ASS-015,Financial,Break-even within 18-24 months of operations,4,2,1,7,High,Financial modeling and scenario analysis,Week 5-6,Financial Analyst,Not Started
+ASS-016,Financial,20%+ return on invested capital achievable,4,2,1,7,High,ROIC modeling and sensitivity analysis,Week 5-6,Financial Analyst,Not Started
+ASS-017,Market,Food & beverage segment represents 60% of revenue opportunity,3,2,2,7,Medium,Segment sizing and customer interview validation,Week 2-4,Market Research,Not Started
+ASS-018,Market,Cosmetics segment willing to pay premium for quality assurance,3,2,1,6,Medium,Segment-specific value proposition testing,Week 3-5,Market Research,Not Started
+ASS-019,Market,Pharmaceutical segment requires GMP compliance for market entry,4,3,2,9,High,Regulatory requirement analysis and compliance assessment,Week 2-4,Operations,Not Started
+ASS-020,Operational,Regional logistics partners provide cost-effective distribution,3,3,2,8,Medium,Logistics partner assessment and cost comparison,Week 2-4,Operations,Not Started
+ASS-021,Operational,Quality testing capabilities available at competitive cost,3,2,2,7,Medium,Laboratory partner assessment and cost validation,Week 3-4,Operations,Not Started
+ASS-022,Financial,Working capital efficiency generates 20%+ ROIC,4,2,1,7,High,Working capital modeling and efficiency analysis,Week 4-6,Financial Analyst,Not Started
+ASS-023,Market,Average order size of $5-15K across all segments,3,2,1,6,Medium,Customer purchase behavior analysis,Week 3-4,Market Research,Not Started
+ASS-024,Market,Customer lifetime value of $50-200K over 3-5 years,3,2,1,6,Medium,Customer retention and LTV modeling,Week 4-5,Market Research,Not Started
+ASS-025,Competitive,Established competitors have limited Caribbean focus,3,2,1,6,Medium,Competitive strategy analysis and market focus assessment,Week 2-4,Market Research,Not Started

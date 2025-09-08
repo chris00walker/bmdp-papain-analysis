@@ -1,0 +1,28 @@
+{
+  "microtests": [
+    {
+      "assumption": "International buyers will pay premium for Caribbean-sourced papain",
+      "test": "Collect 3 letters of intent at $15-18/kg pricing",
+      "metric": "≥3 LOIs with pricing confirmation",
+      "owner": "Market Analyst",
+      "timeline": "6 weeks",
+      "success_criteria": "LOIs from different geographic regions"
+    },
+    {
+      "assumption": "10+ hectares of suitable land available in Barbados",
+      "test": "Land survey and acquisition feasibility study",
+      "metric": "≥2 viable land options identified",
+      "owner": "Agricultural Specialist", 
+      "timeline": "4 weeks",
+      "success_criteria": "Soil quality, water access, zoning confirmed"
+    },
+    {
+      "assumption": "Food-grade certification achievable within budget",
+      "test": "Regulatory consultation and cost estimation",
+      "metric": "Certification pathway <$50k total cost",
+      "owner": "Quality Manager",
+      "timeline": "3 weeks", 
+      "success_criteria": "Clear regulatory roadmap with timeline"
+    }
+  ]
+}

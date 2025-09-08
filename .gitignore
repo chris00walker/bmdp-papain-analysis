@@ -1,0 +1,73 @@
+# BMDP Project .gitignore
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Sensitive information (if any API keys or credentials are added later)
+.env
+.env.local
+secrets/
+credentials/
+
+# Build artifacts (if any automation is added)
+build/
+dist/
+*.zip
+*.tar.gz
+
+# Cache directories
+.cache/
+__pycache__/
+*.pyc
+
+# Analysis working files (temporary calculations, drafts)
+*_draft.*
+*_temp.*
+scratch/
+working/
+
+# Large data files (if any datasets are added)
+*.csv.large
+data/raw/
+*.xlsx.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Keep important project files
+!README.md
+!*.md
+!*.csv
+!workflows/

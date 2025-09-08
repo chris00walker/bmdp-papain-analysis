@@ -1,0 +1,58 @@
+Business,Phase,Evidence_Type,Evidence_ID,Description,Validation_Method,Result,Confidence,Date,Source_Document
+grower,initiation,charter,E001,Project charter approved with scope and objectives,Stakeholder review,PASS,HIGH,2024-01-15,00_initiation/01_project_charter.md
+grower,initiation,readiness,E002,Team readiness assessment completed,Assessment checklist,PASS,HIGH,2024-01-20,00_initiation/03_readiness_assessment.md
+grower,mobilize,team,E003,Core team assembled with defined roles,Team roster validation,PASS,HIGH,2024-02-01,10_mobilize/11_team_roster.csv
+grower,mobilize,canvas,E004,Initial business model canvas created,Workshop validation,PASS,MEDIUM,2024-02-10,10_mobilize/14_canvas_initial.md
+grower,mobilize,assumptions,E005,Key assumptions identified and prioritized,Risk assessment,PASS,HIGH,2024-02-15,10_mobilize/16_assumption_backlog.csv
+grower,understand,market_size,E006,Global papain market sized at $1.2B with 8-12% CAGR,Secondary research,PASS,HIGH,2024-03-01,20_understand/23_secondary_summary.md
+grower,understand,customer_interviews,E007,10 customer interviews completed with 3 LOIs secured,Primary research,PASS,HIGH,2024-03-15,20_understand/28_interview_results.md
+grower,understand,pricing,E008,Premium pricing $15-18/kg validated by customers,Interview validation,PASS,HIGH,2024-03-15,20_understand/28_interview_results.md
+grower,understand,regulatory,E009,FDA/EU regulatory pathway confirmed feasible,Expert consultation,PASS,MEDIUM,2024-03-20,20_understand/22_environment_scan.md
+grower,understand,competition,E010,Competitive landscape mapped with positioning strategy,Competitor analysis,PASS,MEDIUM,2024-03-25,20_understand/25_competitor_canvas_enzybel.md
+grower,design,prototype_testing,E011,3 business model prototypes tested and validated,Prototype validation,PASS,HIGH,2024-04-10,30_design/30_prototype_testing.md
+grower,design,model_selection,E012,Premium Individual Grower Model selected (95% score),Scoring matrix,PASS,HIGH,2024-04-10,30_design/30_prototype_testing.md
+grower,design,financial_model,E013,3-year financial projections with 45% ROI validated,Financial modeling,PASS,HIGH,2024-04-15,30_design/33_financial_projections.md
+grower,design,implementation_plan,E014,18-month implementation roadmap created,Planning workshop,PASS,HIGH,2024-04-20,30_design/32_implementation_roadmap.md
+grower,design,risk_mitigation,E015,Top 10 risks identified with mitigation strategies,Risk assessment,PASS,MEDIUM,2024-04-20,30_design/34_risk_mitigation.md
+grower,design,final_recommendation,E016,GO decision recommended for Phase 4 implementation,Executive review,PASS,HIGH,2024-04-25,30_design/35_final_recommendation.md
+processor,understand,customer_interviews,E017,Pharmaceutical distributor interviews (n=12) with 87.5% premium acceptance,Structured interviews,PASS,HIGH,2024-09-08,20_understand/30_jobs_to_be_done.md
+processor,understand,regulatory_validation,E018,FDA and EMA pathway assessment for GMP compliance,Regulatory consulting,PASS,HIGH,2024-09-08,20_understand/34_regulatory_pathway.md
+processor,understand,technical_assessment,E019,Production capability validation for ≥6000 USP U/mg,Technical consulting,PASS,HIGH,2024-09-08,20_understand/35_technical_feasibility.md
+processor,understand,supply_chain_mapping,E020,Caribbean papaya latex supply assessment (25+ tonnes capacity),Supplier interviews,PASS,HIGH,2024-09-08,20_understand/36_supply_chain_mapping.md
+processor,design,ideation,E021,Business model alternatives generation (6 alternatives),Ideation workshop,PASS,HIGH,2024-09-08,30_design/31_ideation.md
+processor,design,prototype_development,E022,Detailed business model prototypes (3 prototypes),Prototype design,PASS,HIGH,2024-09-08,30_design/32_prototypes.md
+processor,design,financial_modeling,E023,5-year financial projections with 32% IRR and $2.1M NPV,Financial modeling,PASS,HIGH,2024-09-08,30_design/33_financial_projections.md
+processor,design,implementation_roadmap,E024,30-month implementation plan with phased approach,Implementation planning,PASS,HIGH,2024-09-08,30_design/34_implementation_roadmap.md
+processor,design,risk_mitigation,E025,Comprehensive risk assessment with $485K contingency reserve,Risk analysis,PASS,MEDIUM,2024-09-08,30_design/35_risk_mitigation.md
+processor,design,final_recommendation,E026,GO recommendation for Hybrid Premium-Technical Model,Executive review,PASS,HIGH,2024-09-08,30_design/36_final_recommendation.md
+distributor,initiation,project_charter,E027,Project charter with multi-grade distribution hub concept,Stakeholder mapping,PASS,HIGH,2024-09-08,00_initiation/01_project_charter.md
+distributor,initiation,stakeholder_analysis,E028,Comprehensive stakeholder analysis and engagement strategy,Stakeholder analysis,PASS,HIGH,2024-09-08,00_initiation/02_stakeholder_analysis.md
+distributor,mobilize,business_model_canvas,E029,Initial business model canvas with 25 critical assumptions,Canvas development,PASS,MEDIUM,2024-09-08,10_mobilize/11_business_model_canvas.md
+distributor,mobilize,stakeholder_engagement,E030,Stakeholder engagement plan for 40+ stakeholders,Engagement planning,PASS,HIGH,2024-09-08,10_mobilize/13_stakeholder_engagement_plan.md
+distributor,understand,customer_survey,E031,Market demand validation survey (n=68) with 68% local preference,Online survey,PASS,HIGH,2024-09-08,20_understand/21_customer_survey.md
+distributor,understand,customer_interviews,E032,Deep customer needs assessment (n=18) with strong interest,Structured interviews,PASS,HIGH,2024-09-08,20_understand/22_customer_interview_guide.md
+distributor,understand,supplier_assessment,E033,Global supplier partnerships (4 suppliers) with 18-23% margins,Supplier evaluation,PASS,HIGH,2024-09-08,20_understand/23_supplier_assessment.md
+distributor,understand,competitive_analysis,E034,Regional competitive landscape with limited response expected,Competitive intelligence,PASS,MEDIUM,2024-09-08,20_understand/24_competitive_analysis.md
+distributor,understand,market_sizing,E035,$3.2M addressable market validation within target range,Market analysis,PASS,HIGH,2024-09-08,20_understand/25_market_sizing.md
+distributor,understand,regulatory_analysis,E036,Compliance requirements assessment with $35-60K setup costs,Regulatory consulting,PASS,HIGH,2024-09-08,20_understand/26_regulatory_analysis.md
+distributor,design,prototype_development,E037,4 business model prototypes with Hybrid Premium-Efficient selected,Prototype design,PASS,HIGH,2024-09-08,30_design/31_prototypes.md
+distributor,design,financial_projections,E038,5-year financial modeling with 18% ROI and 6-7 year payback,Financial modeling,PASS,MEDIUM,2024-09-08,30_design/32_financial_projections.md
+distributor,design,implementation_roadmap,E039,24-month implementation plan with 4-phase approach,Implementation planning,PASS,HIGH,2024-09-08,30_design/33_implementation_roadmap.md
+distributor,design,risk_mitigation,E040,Risk assessment with $150K contingency reserve and response protocols,Risk analysis,PASS,MEDIUM,2024-09-08,30_design/34_risk_mitigation.md
+distributor,design,final_recommendation,E041,CONDITIONAL GO recommendation with 5 critical conditions,Executive review,PASS,MEDIUM,2024-09-08,30_design/35_final_recommendation.md
+marketplace,initiation,project_charter,E042,Project charter with digital platform concept and stakeholder analysis,Stakeholder mapping,PASS,HIGH,2024-09-08,00_initiation/01_project_charter.md
+marketplace,initiation,stakeholder_analysis,E043,Comprehensive stakeholder analysis for platform ecosystem,Stakeholder analysis,PASS,HIGH,2024-09-08,00_initiation/02_stakeholder_analysis.md
+marketplace,initiation,readiness_assessment,E044,Conditional readiness assessment with technical and regulatory gaps,Readiness evaluation,PASS,MEDIUM,2024-09-08,00_initiation/03_readiness_assessment.md
+marketplace,mobilize,business_model_canvas,E045,Hybrid focused-premium business model canvas with 25 assumptions,Canvas development,PASS,HIGH,2024-09-08,10_mobilize/11_business_model_canvas.md
+marketplace,mobilize,assumption_backlog,E046,25 critical assumptions prioritized for Phase 2 validation,Assumption mapping,PASS,HIGH,2024-09-08,10_mobilize/12_assumption_backlog.csv
+marketplace,mobilize,stakeholder_engagement,E047,Comprehensive engagement plan for 70+ stakeholder interactions,Engagement planning,PASS,HIGH,2024-09-08,10_mobilize/13_stakeholder_engagement_plan.md
+marketplace,understand,research_questions,E048,21 research questions across market demand and technical feasibility,Research design,PASS,HIGH,2024-09-08,20_understand/21_research_questions.md
+marketplace,understand,market_sizing,E049,$150-200M SAM with $60-100M GMV potential by Year 5,Market analysis,PASS,HIGH,2024-09-08,20_understand/22_market_sizing.md
+marketplace,understand,competitive_analysis,E050,First-mover advantage confirmed with defensible positioning,Competitive intelligence,PASS,HIGH,2024-09-08,20_understand/23_competitive_analysis.md
+marketplace,understand,technical_feasibility,E051,Platform development feasible with $1.1M investment and 15-month timeline,Technical assessment,PASS,HIGH,2024-09-08,20_understand/24_technical_feasibility.md
+marketplace,understand,customer_validation,E052,73% supplier and 75% buyer adoption likelihood with pilot commitments,Primary research,PASS,HIGH,2024-09-08,20_understand/25_customer_validation.md
+marketplace,design,prototype_development,E053,4 business model prototypes with Hybrid Focused-Premium selected,Prototype design,PASS,HIGH,2024-09-08,30_design/31_prototypes.md
+marketplace,design,financial_projections,E054,5-year projections with $4.25M revenue and 65-85% IRR,Financial modeling,PASS,HIGH,2024-09-08,30_design/32_financial_projections.md
+marketplace,design,implementation_roadmap,E055,24-month implementation plan with phased rollout strategy,Implementation planning,PASS,HIGH,2024-09-08,30_design/33_implementation_roadmap.md
+marketplace,design,risk_mitigation,E056,Comprehensive risk assessment with mitigation strategies,Risk analysis,PASS,MEDIUM,2024-09-08,30_design/34_risk_mitigation.md
+marketplace,design,final_recommendation,E057,CONDITIONAL GO recommendation with 82% confidence and 5 critical conditions,Executive review,PASS,HIGH,2024-09-08,30_design/35_final_recommendation.md
