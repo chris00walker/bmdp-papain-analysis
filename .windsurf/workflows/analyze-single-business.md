@@ -4,64 +4,57 @@ description: Analyze single business with financial automation and validation
 
 # Analyze Single Business
 
-Runs complete validation and financial analysis for one business. Replace `{business_slug}` with target business (grower, processor, distributor, marketplace).
+Runs complete validation, financial computation, and manifest update for a specific business. Use this workflow after completing Phase 0-3 for a business.
+
+**IMPORTANT**: Replace `{business_slug}` with actual business name (grower, processor, distributor, or marketplace) before running commands.
 
 ## Prerequisites
 
-- Business brief file exists with YAML frontmatter
-- Business directory structure created
-- Python tools available in `tools/` directory
+- Business slug (grower, processor, distributor, marketplace)
+- Phase 3 completed with `financials_cashflow.csv` created
+- Business manifest exists
 
 ## Steps
 
 ### 1. Validate business structure and data
 
 ```bash
+# Replace {business_slug} with: grower, processor, distributor, or marketplace
 python tools/validate.py --business {business_slug}
 ```
 
-**Expected output**: ✅ VALIDATION PASSED
+**Expected output**: VALIDATION PASSED
 
 ### 2. Compute financial metrics
 
 ```bash
+# Replace {business_slug} with: grower, processor, distributor, or marketplace
 python tools/compute_financials.py --business {business_slug} --capital-min 300000 --capital-max 1000000 --discount-rate 0.15
 ```
 
-**Expected output**: 
+**Expected output**:
+
 - IRR, NPV, ROI calculations
 - Results saved to `businesses/{business_slug}/30_design/financials_summary.csv`
 
 ### 3. Update business manifest
 
 ```bash
-python -c "
-import json
-from pathlib import Path
-from datetime import datetime
-
-manifest_path = Path('businesses/{business_slug}/manifest.json')
-if manifest_path.exists():
-    with open(manifest_path, 'r') as f:
-        manifest = json.load(f)
-    manifest['last_updated'] = datetime.now().isoformat() + 'Z'
-    manifest['validation_status'] = 'passed'
-    with open(manifest_path, 'w') as f:
-        json.dump(manifest, f, indent=2)
-    print(f'✅ Manifest updated for {business_slug}')
-"
+# Replace {business_slug} with: grower, processor, distributor, or marketplace
+python tools/update_manifest.py --business {business_slug} --validation-status passed
 ```
 
 ### 4. Generate business summary report
 
 ```bash
-echo '# Business Analysis Summary for {business_slug}' > businesses/{business_slug}/analysis_summary.md
-echo '' >> businesses/{business_slug}/analysis_summary.md
-echo '## Financial Metrics' >> businesses/{business_slug}/analysis_summary.md
+# Replace {business_slug} with: grower, processor, distributor, or marketplace
+echo "# Business Analysis Summary for {business_slug}" > businesses/{business_slug}/analysis_summary.md
+echo "" >> businesses/{business_slug}/analysis_summary.md
+echo "## Financial Metrics" >> businesses/{business_slug}/analysis_summary.md
 cat businesses/{business_slug}/30_design/financials_summary.csv >> businesses/{business_slug}/analysis_summary.md
-echo '' >> businesses/{business_slug}/analysis_summary.md
-echo '## Validation Status' >> businesses/{business_slug}/analysis_summary.md
-echo 'All validation checks passed ✅' >> businesses/{business_slug}/analysis_summary.md
+echo "" >> businesses/{business_slug}/analysis_summary.md
+echo "## Validation Status" >> businesses/{business_slug}/analysis_summary.md
+echo "All validation checks passed " >> businesses/{business_slug}/analysis_summary.md
 ```
 
 ## Success Criteria
