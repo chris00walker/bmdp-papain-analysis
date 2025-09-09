@@ -7,17 +7,14 @@ Computes IRR, NPV, ROI from cashflow data
 import argparse
 import csv
 import json
-import numpy as np
+# numpy removed for IRR - using custom implementation
 from pathlib import Path
 import sys
 
 def compute_irr(cashflows):
-    """Compute Internal Rate of Return using numpy"""
-    try:
-        return np.irr(cashflows) if hasattr(np, 'irr') else np.irr_fallback(cashflows)
-    except:
-        # Fallback IRR calculation
-        return irr_newton_raphson(cashflows)
+    """Compute Internal Rate of Return using Newton-Raphson method"""
+    # numpy.irr was deprecated and removed, use our fallback implementation
+    return irr_newton_raphson(cashflows)
 
 def irr_newton_raphson(cashflows, guess=0.1, precision=1e-6, max_iterations=100):
     """Newton-Raphson method for IRR calculation"""
