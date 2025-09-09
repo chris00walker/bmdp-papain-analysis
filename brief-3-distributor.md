@@ -1,4 +1,17 @@
-# **Brief 3: Distributor (Papain Import/Export & Multi-Grade Supply, Barbados)**
+---
+business_slug: distributor
+capital_bounds_bbd:
+  min: 300000
+  max: 1000000
+financial_method:
+  horizon_years: 5
+  discount_rate_pct: 15
+  metrics: [IRR, NPV, ROI]
+assumptions_version: 1.0
+updated_at: 2025-09-09
+---
+
+# **Brief 3: Distributor (Import/Export & Regional Distribution, Barbados)**
 
 **Value Proposition**
 
