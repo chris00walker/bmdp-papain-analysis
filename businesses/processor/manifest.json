@@ -1,0 +1,49 @@
+{
+  "business_slug": "processor",
+  "business_name": "Pharma-Grade Papain Refining",
+  "phases_completed": [
+    {
+      "phase": 0,
+      "name": "initiation",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 4
+    },
+    {
+      "phase": 1,
+      "name": "mobilize",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 8
+    },
+    {
+      "phase": 2,
+      "name": "understand",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 15
+    },
+    {
+      "phase": 3,
+      "name": "design",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 12
+    }
+  ],
+  "capital_bounds_bbd": {
+    "min": 300000,
+    "max": 1000000
+  },
+  "financial_metrics": {
+    "irr_pct": 0.32,
+    "npv_bbd": 580000,
+    "roi_pct": 0.55,
+    "capex_y0_bbd": 2100000
+  },
+  "recommendation": "GO",
+  "confidence_score": 0.85,
+  "last_updated": "2025-09-09T13:50:00Z",
+  "validation_status": "passed",
+  "evidence_entries": 22
+}
