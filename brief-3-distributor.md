@@ -1,12 +1,34 @@
 ---
 business_slug: distributor
 capital_bounds_bbd:
-  min: 300000
-  max: 1000000
+  min: 200000
+  max: 800000
 financial_method:
-  horizon_years: 5
+  horizon_years: 3
   discount_rate_pct: 15
+  roi_target_pct: 20
   metrics: [IRR, NPV, ROI]
+project_execution:
+  team_size: 4
+  timeline_weeks: 52
+  phase_ratios:
+    discovery_pct: 50  # 3 parts of 6 total (3:2:1)
+    validation_pct: 33  # 2 parts of 6 total
+    scaling_pct: 17     # 1 part of 6 total
+  budget_ratios:
+    discovery_pct: 35             # Discovery phase budget
+    validation_pct: 35            # Validation phase budget
+    scaling_pct: 30               # Implementation and growth
+    bmdp_budget_pct: 15           # % of current unlocked capital for BMDP process
+  milestone_budget_unlocks:
+    initial: 200000               # Starting budget (min capital)
+    post_discovery: 400000        # Unlocked after desirability proven
+    post_validation: 600000       # Unlocked after feasibility proven  
+    post_scaling: 800000          # Unlocked after viability proven (max capital)
+  milestone_criteria:
+    discovery_complete: "Customer desirability validated through interviews and market research"
+    validation_complete: "Business feasibility proven through prototype testing and early sales"
+    scaling_complete: "Business viability demonstrated through sustainable operations and growth"
 assumptions_version: 1.0
 updated_at: 2025-09-09
 ---
