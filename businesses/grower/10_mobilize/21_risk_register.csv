@@ -1,0 +1,11 @@
+risk,likelihood,impact,trigger,mitigation,owner
+Overestimating market demand,high,high,Lack of customer validation,Extensive customer interviews and LOIs,Market Analyst
+Price competition from low-cost producers,high,high,Market pricing analysis,Premium positioning and differentiation,Team Lead
+Hurricane/weather damage to crops,medium,high,Weather forecasting,Insurance and diversification,Business Expert
+Crop disease outbreak,medium,medium,Agricultural monitoring,Disease prevention and backup plans,Business Expert
+Regulatory export barriers,low,high,Policy changes,Early compliance and relationships,Business Expert
+Equipment failure or delays,medium,medium,Supplier issues,Multiple suppliers and maintenance,Business Expert
+Labor shortage for tapping,medium,medium,Seasonal availability,Training programs and retention,Business Expert
+Quality control failures,low,high,Testing failures,Rigorous QC and third-party validation,Business Expert
+Customer concentration risk,medium,high,Over-reliance on few customers,Diversified customer base,Market Analyst
+Currency exchange fluctuations,medium,medium,USD/BBD volatility,Hedging strategies and pricing,Financial Analyst

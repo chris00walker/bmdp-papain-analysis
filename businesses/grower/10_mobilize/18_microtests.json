@@ -1,0 +1,39 @@
+{
+  "microtests": [
+    {
+      "assumption": "International processors will pay premium for quality",
+      "test": "Collect 3+ pricing confirmations from target customers",
+      "metric": "≥$15/kg pricing confirmed",
+      "owner": "Market Analyst",
+      "timeline": "Week 4"
+    },
+    {
+      "assumption": "Customers will sign multi-year supply agreements",
+      "test": "Secure 5+ letters of intent for annual contracts",
+      "metric": "≥5 LOIs with 12+ month terms",
+      "owner": "Business Expert",
+      "timeline": "Week 8"
+    },
+    {
+      "assumption": "10ha can produce commercially viable volumes",
+      "test": "Validate yield projections with agricultural experts",
+      "metric": "≥500kg annual production confirmed",
+      "owner": "Business Expert",
+      "timeline": "Week 6"
+    },
+    {
+      "assumption": "Quality specifications can be consistently met",
+      "test": "Pilot batch testing with target potency levels",
+      "metric": "≥6000 USP units/mg achieved",
+      "owner": "Business Expert",
+      "timeline": "Week 12"
+    },
+    {
+      "assumption": "Regional customers prefer local sourcing",
+      "test": "Survey 10+ regional processors on sourcing preferences",
+      "metric": "≥70% prefer regional suppliers",
+      "owner": "Market Analyst",
+      "timeline": "Week 6"
+    }
+  ]
+}

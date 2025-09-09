@@ -1,5 +1,6 @@
 ---
 description: BMDP Phase 3 - Generate, prototype, and test multiple business model options with selection scorecard
+auto_execution_mode: 3
 ---
 
 # Phase 3: Design
@@ -157,15 +158,34 @@ Create `businesses/{business_slug}/30_design/40_integration_decision.md`:
 - Resource sharing opportunities
 - Organizational implications
 
-### 12. Final recommendation
+### 12. Create financial cash flow data
+
+Create `businesses/{business_slug}/30_design/financials_cashflow.csv`:
+
+```csv
+year,revenues_bbd,capex_bbd,opex_bbd,working_cap_change_bbd,notes
+0,0,750000,50000,100000,Initial investment phase
+1,705000,0,634500,25000,Market entry phase
+2,1680000,75000,924000,50000,Scale operations
+3,2450000,50000,1314000,75000,Mature operations
+4,2600000,25000,1397000,25000,Optimized operations
+5,2805000,0,1545000,-25000,Stable operations
+```
+
+**Required for**: Financial analysis and validation workflow
+
+### 13. Final recommendation
 
 Create `businesses/{business_slug}/30_design/41_final_recommendation.md`:
 
-- Selected business model with rationale
-- Key success factors
-- Investment requirements
-- Expected returns
-- Next steps for implementation
+- Executive summary with selected prototype
+- Selection rationale and scoring results
+- Implementation timeline and resource requirements
+- Financial projections and ROI analysis
+- Risk assessment and mitigation strategies
+- Next steps and validation requirements
+
+**Deliverable**: Comprehensive business model recommendation ready for validation phase.
 
 Update evidence ledger:
 

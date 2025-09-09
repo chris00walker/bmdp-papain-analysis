@@ -169,26 +169,34 @@ def main():
         
         if budget_ratios:
             bmdp_budget_pct = budget_ratios.get('bmdp_budget_pct', 15)
-            discovery_validation_pct = budget_ratios.get('discovery_validation_pct', 70)
+            discovery_pct = budget_ratios.get('discovery_pct', 35)
+            validation_pct = budget_ratios.get('validation_pct', 35)
             scaling_pct = budget_ratios.get('scaling_pct', 30)
             
             # Use milestone-based capital if available, otherwise use min_capital
             if milestone_unlocks:
-                current_capital = milestone_unlocks.get('initial', min_capital)
+                initial_capital = milestone_unlocks.get('initial', min_capital)
                 post_discovery_capital = milestone_unlocks.get('post_discovery', min_capital)
                 post_validation_capital = milestone_unlocks.get('post_validation', min_capital)
                 max_capital = milestone_unlocks.get('post_scaling', min_capital)
             else:
-                current_capital = min_capital
+                initial_capital = min_capital
                 post_discovery_capital = min_capital
                 post_validation_capital = min_capital
                 max_capital = min_capital
             
-            total_budget = int(current_capital * bmdp_budget_pct / 100)
-            discovery_budget = int(total_budget * 35 / 100)  # 35% for discovery
-            validation_budget = int(total_budget * 35 / 100)  # 35% for validation
+            # Calculate phase budgets based on available capital at each milestone
+            discovery_budget = int(initial_capital * bmdp_budget_pct / 100 * discovery_pct / 100)
+            validation_budget = int(post_discovery_capital * bmdp_budget_pct / 100 * validation_pct / 100)
+            scaling_budget = int(post_validation_capital * bmdp_budget_pct / 100 * scaling_pct / 100)
+            
+            # Calculate totals
             phase1_2_budget = discovery_budget + validation_budget  # Combined for backward compatibility
-            phase3_budget = int(total_budget * scaling_pct / 100)
+            phase3_budget = scaling_budget
+            total_budget = discovery_budget + validation_budget + scaling_budget
+            
+            # Set capital progression variables
+            current_capital = initial_capital
         else:
             # Fallback to fixed values for backward compatibility
             budget_allocation = project_exec.get('budget_allocation', {})

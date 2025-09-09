@@ -48,14 +48,10 @@ python tools/update_manifest.py --business {business_slug} --validation-status p
 
 ```bash
 # Replace {business_slug} with: grower, processor, distributor, or marketplace
-echo "# Business Analysis Summary for {business_slug}" > businesses/{business_slug}/analysis_summary.md
-echo "" >> businesses/{business_slug}/analysis_summary.md
-echo "## Financial Metrics" >> businesses/{business_slug}/analysis_summary.md
-cat businesses/{business_slug}/30_design/financials_summary.csv >> businesses/{business_slug}/analysis_summary.md
-echo "" >> businesses/{business_slug}/analysis_summary.md
-echo "## Validation Status" >> businesses/{business_slug}/analysis_summary.md
-echo "All validation checks passed " >> businesses/{business_slug}/analysis_summary.md
+python tools/generate_summary_report.py --business {business_slug}
 ```
+
+**Expected output**: Formatted analysis summary with financial metrics, validation status, and key insights
 
 ## Success Criteria
 

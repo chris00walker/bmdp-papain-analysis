@@ -83,10 +83,11 @@ class BMDPValidator:
         try:
             with open(csv_path, 'r') as f:
                 reader = csv.DictReader(f)
+                actual_headers = reader.fieldnames  # Access headers while file is open
+                rows = list(reader)  # Read data while file is open
                 
             required_headers = ['evidence_type', 'evidence_description', 'evidence_datum', 
                               'confidence', 'source_link', 'decision_impact', 'owner', 'date']
-            actual_headers = reader.fieldnames
             
             for header in required_headers:
                 if header not in actual_headers:

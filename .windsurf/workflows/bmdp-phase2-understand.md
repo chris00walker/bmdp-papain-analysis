@@ -1,5 +1,6 @@
 ---
 description: BMDP Phase 2 - Understand market, customers, and environment for business model design
+auto_execution_mode: 3
 ---
 
 # Phase 2: Understand

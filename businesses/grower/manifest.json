@@ -1,0 +1,36 @@
+{
+  "business_slug": "grower",
+  "business_name": "Premium Papain Producer",
+  "description": "Single-origin papain production with pharmaceutical-grade traceability",
+  "industry": "Agricultural Processing",
+  "location": "Barbados",
+  "phases_completed": [
+    "phase_0_initiation",
+    "phase_1_mobilize",
+    "phase_2_understand",
+    "phase_3_design"
+  ],
+  "validation_status": "passed",
+  "capital_bounds_bbd": {
+    "min": 300000,
+    "max": 1000000
+  },
+  "financial_summary": {
+    "investment_required": 750000,
+    "currency": "BBD",
+    "break_even_months": 18,
+    "year_5_revenue": 2805000,
+    "year_5_net_income": 593000,
+    "irr": null,
+    "npv": null,
+    "roi": null
+  },
+  "key_metrics": {
+    "target_customers": "Pharmaceutical companies, premium food processors",
+    "value_proposition": "Single-origin papain with pharmaceutical-grade traceability",
+    "competitive_advantage": "Geographic location, organic certification, quality consistency",
+    "revenue_model": "Premium product sales with long-term contracts"
+  },
+  "last_updated": "2025-09-09T18:10:10.707004Z",
+  "team_lead": "Business Expert"
+}

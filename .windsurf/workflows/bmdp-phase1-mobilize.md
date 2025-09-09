@@ -1,6 +1,6 @@
 ---
 description: BMDP Phase 1 - Mobilize business model design process for a specific business
-auto_execution_mode: 1
+auto_execution_mode: 3
 ---
 
 # Phase 1: Mobilize
