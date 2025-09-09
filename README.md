@@ -21,32 +21,37 @@ This repository contains a comprehensive Business Model Design Process (BMDP) an
 ## BMDP Methodology
 
 ### Phase 0: Initiation
+
 - Project charter and scope definition
 - Stakeholder analysis and readiness assessment
 
 ### Phase 1: Mobilize  
+
 - Business model canvas development
 - Assumption identification and prioritization
 - Team assembly and engagement planning
 
 ### Phase 2: Understand
+
 - Market research and customer validation
 - Competitive analysis and regulatory assessment
 - Technical feasibility and supply chain mapping
 
 ### Phase 3: Design
+
 - Business model prototyping and testing
 - Financial projections and risk assessment
 - Final recommendations and implementation planning
 
 ### Portfolio Phase: Comparison
+
 - Cross-business scoring and ranking
 - Portfolio scenario analysis
 - Strategic investment recommendation
 
 ## Project Structure
 
-```
+```text
 bmdp/
 ├── 00_portfolio_initiation/     # Portfolio-level charter and planning
 ├── 90_portfolio_comparison/     # Cross-business analysis and recommendations
@@ -66,6 +71,7 @@ bmdp/
 ## Key Results
 
 ### Individual Business Scores (Weighted)
+
 - **Marketplace**: 8.3/10 (65-85% IRR, $3.5M investment)
 - **Grower**: 7.9/10 (45% ROI, $150K investment)
 - **Processor**: 7.7/10 (32% IRR, $2.1M investment)  
@@ -73,6 +79,7 @@ bmdp/
 
 ### Recommended Strategy
 **Phased Sequential Entry** - $6.285M total investment over 60 months
+
 1. Phase 1: Grower business launch ($150K, Months 1-18)
 2. Phase 2: Marketplace platform ($3.5M, Months 19-42)
 3. Phase 3: Processor capability ($2.1M, Months 43-72)
@@ -87,6 +94,7 @@ bmdp/
 ## Usage
 
 This repository serves as:
+
 - Strategic investment decision support
 - Business model development reference
 - BMDP methodology demonstration

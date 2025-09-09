@@ -20,7 +20,7 @@ The initiation phase validates project readiness and establishes the foundation 
 
 // turbo
 
-1. **Review sponsor prompt** from brief-4-b2b-marketplace.md
+1. **Review sponsor prompt** from brief-${business_number}-${business_slug}.md
 2. **Confirm sponsor commitment** and decision authority
 3. **Document initial scope** and constraints
 
@@ -50,11 +50,11 @@ The initiation phase validates project readiness and establishes the foundation 
 
 ## Deliverables
 
-- `00_initiation/00_sponsor_brief.md` - Sponsor context and commitment
-- `00_initiation/01_project_charter.md` - Objectives, scope, success criteria
-- `00_initiation/02_resource_plan.md` - Team, budget, timeline
-- `00_initiation/03_readiness_assessment.md` - Risks, stakeholders, go/no-go
-- Evidence logged in `common/evidence_ledger.csv`
+- `businesses/${business_slug}/00_initiation/00_sponsor_brief.md` - Sponsor context and commitment
+- `businesses/${business_slug}/00_initiation/01_project_charter.md` - Objectives, scope, success criteria
+- `businesses/${business_slug}/00_initiation/02_resource_plan.md` - Team, budget, timeline
+- `businesses/${business_slug}/00_initiation/03_readiness_assessment.md` - Risks, stakeholders, go/no-go
+- Evidence logged in `businesses/${business_slug}/evidence_ledger.csv`
 
 ## Acceptance Criteria
 
