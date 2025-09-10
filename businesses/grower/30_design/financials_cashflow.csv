@@ -1,0 +1,7 @@
+year,revenues_bbd,capex_bbd,opex_bbd,working_cap_change_bbd,notes
+0,0,750000,50000,100000,Initial investment phase with facility and farm setup
+1,705000,0,634500,25000,Market entry with first customers and production ramp-up
+2,1680000,75000,924000,50000,Scale operations with capacity expansion
+3,2450000,50000,1314000,75000,Mature operations with full customer base
+4,2600000,25000,1397000,25000,Optimized operations with efficiency improvements
+5,2805000,0,1545000,-25000,Stable mature operations with working capital optimization

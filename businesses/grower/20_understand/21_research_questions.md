@@ -1,88 +1,88 @@
-# Research Questions & Hypotheses
+# Research Questions and Hypotheses - Grower Business
 
-## Questions
+## Primary Research Questions
 
-### Market Size & Demand
+### Market Demand & Pricing
+1. **Will international processors pay premium for quality papain?**
+   - Current market pricing for papain by quality grade
+   - Price sensitivity analysis for premium vs standard papain
+   - Procurement decision factors for international processors
 
-- What is the total addressable market for crude papain globally?
-- How much papain do target customers purchase annually?
-- What are current supply chain challenges and pain points?
-- How important is geographic diversification to buyers?
+2. **What is the willingness to pay for locally-sourced papain?**
+   - Premium percentage for local vs imported papain
+   - Quality specifications that justify premium pricing
+   - Volume requirements for premium contracts
 
-### Willingness to Pay & Pricing
+### Customer Commitment & Contracts
+3. **Can customers be secured with multi-year supply agreements?**
+   - Typical contract lengths in papain industry
+   - Risk factors that drive long-term commitments
+   - Minimum volume guarantees required
 
-- What premium will customers pay for Caribbean-sourced papain?
-- How do quality specifications affect pricing?
-- What are typical contract terms and payment structures?
-- How sensitive are buyers to price fluctuations?
+4. **What are the key barriers to adoption for new suppliers?**
+   - Certification and quality assurance requirements
+   - Supplier onboarding processes and timelines
+   - Relationship factors vs price factors in procurement
 
-### Adoption Barriers & Requirements
+### Production Feasibility
+5. **Is 10ha commercially viable for papain production?**
+   - Yield per hectare benchmarks in similar climates
+   - Break-even analysis for different farm sizes
+   - Economies of scale considerations
 
-- What certifications and quality standards are required?
-- How long are typical supplier qualification processes?
-- What minimum volumes and consistency are expected?
-- What are the switching costs from current suppliers?
+6. **Can quality specifications be consistently met?**
+   - Critical quality parameters for papain
+   - Seasonal variation impacts on quality
+   - Processing and storage requirements
 
-### Channel Economics & Relationships
+## Research Hypotheses
 
-- Do buyers prefer direct relationships or distributors?
-- How important are long-term contracts vs. spot purchases?
-- What technical support and documentation is required?
-- How do buyers evaluate and select new suppliers?
+### H1: Premium Pricing Hypothesis
+**Hypothesis**: International processors will pay 15-25% premium for certified high-quality papain from local growers
+- **Pass Threshold**: ≥3 processors confirm willingness to pay 15%+ premium
+- **Fail Threshold**: <2 processors interested in premium pricing
+- **Evidence Type**: Customer interviews, pricing surveys
 
-## Hypotheses
+### H2: Contract Commitment Hypothesis  
+**Hypothesis**: Processors will sign 2-3 year supply agreements with minimum volume guarantees
+- **Pass Threshold**: ≥2 processors express interest in multi-year contracts
+- **Fail Threshold**: Only spot market interest expressed
+- **Evidence Type**: Customer interviews, contract template analysis
 
-### H1: Premium Pricing Acceptance
+### H3: Production Viability Hypothesis
+**Hypothesis**: 10ha papain farm can generate positive ROI within 3 years
+- **Pass Threshold**: Financial model shows >20% IRR with conservative assumptions
+- **Fail Threshold**: <15% IRR under optimistic scenarios
+- **Evidence Type**: Yield data, cost analysis, expert interviews
 
-**Hypothesis:** International enzyme processors will pay 20-30% premium ($15-18/kg vs $10-12/kg) for Caribbean-sourced papain with full traceability and consistent quality.
-**Pass/Fail Threshold:** ≥3 buyers confirm willingness to pay $15+/kg in LOIs
+### H4: Quality Consistency Hypothesis
+**Hypothesis**: Local growing conditions can consistently meet international quality standards
+- **Pass Threshold**: Expert confirmation + pilot data showing consistent quality metrics
+- **Fail Threshold**: Significant quality variation or inability to meet standards
+- **Evidence Type**: Agricultural expert interviews, pilot testing, lab analysis
 
-### H2: Supply Chain Diversification Priority
+## Evidence Collection Framework
 
-**Hypothesis:** Post-COVID supply chain concerns create strong demand for non-Asian papain sources among Western buyers.
-**Pass/Fail Threshold:** ≥70% of interviewed buyers cite supply diversification as high priority
+### Secondary Research Evidence
+- Industry reports on papain market size and growth
+- Pricing data from commodity exchanges and trade publications
+- Regulatory requirements for papain quality and certification
+- Competitor analysis of existing papain suppliers
 
-### H3: Quality Differentiation Opportunity
+### Expert Interview Evidence
+- Agricultural extension officers familiar with papaya cultivation
+- Food processing industry consultants
+- Quality assurance specialists in enzyme production
+- Supply chain experts in agricultural commodities
 
-**Hypothesis:** Current papain suppliers have inconsistent quality and documentation, creating opportunity for premium positioning.
-**Pass/Fail Threshold:** ≥60% of buyers report quality/consistency issues with current suppliers
+### Customer Interview Evidence
+- International papain processors and buyers
+- Local food processing companies
+- Pharmaceutical companies using papain
+- Enzyme trading companies and distributors
 
-### H4: Regulatory Compliance Achievable
-
-**Hypothesis:** Food-grade certification for Barbados papain export is achievable within 6 months and $50k budget.
-**Pass/Fail Threshold:** Regulatory pathway confirmed with timeline ≤6 months and cost ≤$50k
-
-### H5: Land Acquisition Feasible
-
-**Hypothesis:** 10-25 hectares of suitable land available in Barbados at reasonable cost (≤$500k total).
-**Pass/Fail Threshold:** ≥2 viable land options identified with confirmed availability
-
-## Evidence Types
-
-### Secondary Research
-
-- Industry reports and market data
-- Trade association publications
-- Regulatory guidance documents
-- Academic research on papain production
-
-### Expert Interviews
-
-- Agricultural extension specialists
-- Regulatory consultants
-- Industry veterans and advisors
-- Equipment suppliers and service providers
-
-### Customer Validation
-
-- Direct interviews with enzyme processors
-- Trade show conversations and feedback
-- Pilot program discussions
-- Reference checks with existing suppliers
-
-### Pilot Signals
-
-- Letters of intent from potential buyers
-- Regulatory pre-approval discussions
-- Land option agreements
-- Equipment supplier quotations
+### Pilot Signal Evidence
+- Small-scale papaya cultivation trials
+- Papain extraction and quality testing
+- Storage and transportation feasibility tests
+- Customer sample evaluation and feedback

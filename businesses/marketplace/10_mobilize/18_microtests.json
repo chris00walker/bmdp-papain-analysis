@@ -1,0 +1,84 @@
+{
+  "microtests": [
+    {
+      "assumption": "Papain buyers will use digital marketplace",
+      "test": "Interview 10 buyers about platform interest",
+      "metric": "≥70% express interest in using platform",
+      "owner": "Market Analyst",
+      "timeline": "Week 2-4",
+      "priority": "high"
+    },
+    {
+      "assumption": "Suppliers will pay listing fees",
+      "test": "Survey 15 suppliers on fee willingness",
+      "metric": "≥60% willing to pay $100-500/month",
+      "owner": "Business Developer",
+      "timeline": "Week 3-5",
+      "priority": "high"
+    },
+    {
+      "assumption": "5-10% transaction fee is acceptable",
+      "test": "Price sensitivity analysis with buyers",
+      "metric": "≥50% accept 5-7% transaction fee",
+      "owner": "Market Analyst",
+      "timeline": "Week 4-6",
+      "priority": "high"
+    },
+    {
+      "assumption": "Trust verification reduces friction",
+      "test": "A/B test verified vs unverified suppliers",
+      "metric": "2x higher inquiry rate for verified",
+      "owner": "Platform Architect",
+      "timeline": "Week 6-8",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Caribbean suppliers need export help",
+      "test": "Interview 10 suppliers about export challenges",
+      "metric": "≥80% cite export process difficulties",
+      "owner": "Business Developer",
+      "timeline": "Week 2-3",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Buyers prefer integrated logistics",
+      "test": "Survey buyers on logistics preferences",
+      "metric": "≥60% prefer integrated shipping options",
+      "owner": "Market Analyst",
+      "timeline": "Week 5-7",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Quality certification adds value",
+      "test": "Willingness to pay for certified products",
+      "metric": "≥15% price premium for certified papain",
+      "owner": "Market Analyst",
+      "timeline": "Week 4-6",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Mobile access is important for suppliers",
+      "test": "Survey suppliers on mobile usage patterns",
+      "metric": "≥70% prefer mobile-first interface",
+      "owner": "Platform Architect",
+      "timeline": "Week 3-4",
+      "priority": "low"
+    },
+    {
+      "assumption": "Network effects will drive adoption",
+      "test": "Model supplier/buyer acquisition scenarios",
+      "metric": "Break-even at 25 suppliers, 100 buyers",
+      "owner": "Project Leader",
+      "timeline": "Week 6-8",
+      "priority": "low"
+    },
+    {
+      "assumption": "Escrow services reduce payment risk",
+      "test": "Survey on payment security concerns",
+      "metric": "≥80% cite payment risk as barrier",
+      "owner": "Business Developer",
+      "timeline": "Week 5-6",
+      "priority": "low"
+    }
+  ]
+}

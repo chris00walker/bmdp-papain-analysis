@@ -1,169 +1,56 @@
-# Competitor Canvases (Mini) - Processor Business Model
+# Competitor Mini-Canvases - Processor Business
 
-## Enzyme Development Corporation (US) - Premium Western Competitor
+## Enzybel International (Belgium)
 
-### Customer Segments
-- **Primary**: US pharmaceutical manufacturers and distributors
-- **Secondary**: Wound care companies (Smith & Nephew, ConvaTec)
-- **Tertiary**: Research institutions and biotech companies
+**Customer Segments**: European pharmaceutical manufacturers, biotech companies, research institutions
+**Value Proposition**: GMP-certified pharmaceutical enzymes, European regulatory compliance, technical support
+**Channels**: Direct sales, pharmaceutical distributors, online catalog
+**Revenue Streams**: Enzyme sales, custom formulations, technical services
+**Key Resources**: GMP manufacturing facility, regulatory certifications, R&D capabilities
+**Key Activities**: Enzyme production, quality control, regulatory compliance, customer support
+**Key Partners**: Raw material suppliers, regulatory consultants, pharmaceutical distributors
+**Cost Structure**: Manufacturing costs, regulatory compliance, R&D investment, quality control
 
-### Value Propositions
-- **Core**: FDA-approved pharmaceutical-grade papain with full regulatory compliance
-- **Quality**: Consistent ≥6,000 USP U/mg activity with comprehensive CoA
-- **Service**: Technical support and regulatory guidance for customer applications
-- **Reliability**: Established track record with major pharmaceutical companies
+## Sisco Research Laboratories (India)
 
-### Channels
-- **Direct Sales**: Dedicated pharmaceutical sales team
-- **Distributors**: Partnership with major ingredient distributors
-- **Digital**: Technical documentation portal and online ordering
+**Customer Segments**: Global pharmaceutical companies, generic drug manufacturers, research organizations
+**Value Proposition**: Cost-effective pharmaceutical ingredients, FDA-registered facility, broad product portfolio
+**Channels**: International distributors, direct export, trade shows, online presence
+**Revenue Streams**: Bulk pharmaceutical ingredients, custom synthesis, analytical services
+**Key Resources**: FDA-registered manufacturing facility, cost-effective operations, technical expertise
+**Key Activities**: Chemical synthesis, quality testing, regulatory documentation, supply chain management
+**Key Partners**: International distributors, shipping companies, regulatory consultants
+**Cost Structure**: Low manufacturing costs, regulatory compliance, logistics, quality assurance
 
-### Revenue Streams
-- **Primary**: Premium papain sales at $55-70/kg
-- **Secondary**: Custom processing and technical consulting services
-- **Tertiary**: Regulatory support and documentation services
+## Guangxi Nanning Javely Biological (China)
 
-### Cost Structure
-- **High Fixed**: FDA-compliant facility operations and maintenance
-- **Regulatory**: Ongoing compliance, audits, and quality systems
-- **Labor**: Skilled technical and quality assurance staff
-- **Raw Materials**: Premium papaya latex sourcing
+**Customer Segments**: Food industry, pharmaceutical companies, cosmetics manufacturers
+**Value Proposition**: Large-scale papain production, competitive pricing, established supply chains
+**Channels**: Trading companies, international distributors, direct export
+**Revenue Streams**: Bulk papain sales, food-grade and pharmaceutical-grade products
+**Key Resources**: Large-scale production facilities, papaya supply chain, cost advantages
+**Key Activities**: Papain extraction, purification, packaging, export logistics
+**Key Partners**: Papaya farmers, trading companies, logistics providers
+**Cost Structure**: Raw material costs, processing, labor, export logistics
 
-### Key Partners
-- **Suppliers**: Established papaya latex suppliers (likely Asian)
-- **Distributors**: Pharmaceutical ingredient distribution networks
-- **Regulatory**: FDA compliance consultants and legal advisors
+## Merck KGaA (Sigma-Aldrich) - Distribution
 
-### Key Activities
-- **Manufacturing**: GMP-compliant purification and processing
-- **Quality Assurance**: Comprehensive testing and batch certification
-- **Regulatory Affairs**: FDA compliance and submission management
-- **Customer Support**: Technical service and application guidance
+**Customer Segments**: Research institutions, pharmaceutical companies, biotech firms, universities
+**Value Proposition**: Comprehensive product catalog, reliable supply, technical support, global reach
+**Channels**: Online catalog, direct sales, local distributors, field sales teams
+**Revenue Streams**: Product sales, premium pricing for specialty items, services
+**Key Resources**: Global distribution network, supplier relationships, brand reputation, inventory
+**Key Activities**: Sourcing, inventory management, logistics, customer service, quality assurance
+**Key Partners**: Enzyme manufacturers, logistics providers, local distributors
+**Cost Structure**: Procurement costs, inventory carrying, logistics, sales operations
 
-### Key Resources
-- **Physical**: FDA-approved GMP facility in California
-- **Human**: Experienced regulatory and technical team
-- **Regulatory**: FDA approvals and established compliance systems
-- **Relationships**: Long-term pharmaceutical customer base
+## Novozymes A/S (Denmark) - Biotechnology Leader
 
-## Shandong Sukahan Bio-Technology (China) - Cost Leader
-
-### Customer Segments
-- **Primary**: Price-sensitive industrial enzyme users
-- **Secondary**: Food and beverage manufacturers
-- **Tertiary**: Lower-tier pharmaceutical companies
-
-### Value Propositions
-- **Core**: Low-cost papain enzyme production at scale
-- **Price**: Significant cost advantage over Western suppliers
-- **Volume**: Large-scale production capacity and availability
-- **Flexibility**: Custom formulations and packaging options
-
-### Channels
-- **Export Agents**: International trading companies and brokers
-- **Direct Export**: Large volume customers and distributors
-- **Online Platforms**: B2B marketplaces and e-commerce
-
-### Revenue Streams
-- **Primary**: High-volume, low-margin papain sales at $25-35/kg
-- **Secondary**: Contract manufacturing for private label customers
-- **Tertiary**: Related enzyme products and formulations
-
-### Cost Structure
-- **Low Labor**: Competitive Chinese manufacturing wages
-- **Scale Economics**: Large production volumes reduce unit costs
-- **Raw Materials**: Direct access to Chinese papaya cultivation
-- **Minimal Regulatory**: Limited compliance costs for non-pharmaceutical markets
-
-### Key Partners
-- **Suppliers**: Chinese papaya farmers and latex collectors
-- **Logistics**: International freight and shipping companies
-- **Distributors**: Global enzyme trading companies
-
-### Key Activities
-- **Mass Production**: Large-scale enzyme extraction and processing
-- **Cost Optimization**: Continuous process improvement for cost reduction
-- **Export Operations**: International shipping and logistics management
-- **Quality Control**: Basic quality testing and standardization
-
-### Key Resources
-- **Physical**: Large-scale production facilities in Shandong province
-- **Supply Chain**: Integrated papaya cultivation and processing
-- **Cost Structure**: Low-cost manufacturing base
-- **Production Capacity**: High-volume processing capabilities
-
-## Enzybel International (Belgium) - Technical Specialist
-
-### Customer Segments
-- **Primary**: European pharmaceutical and biotech companies
-- **Secondary**: Specialty chemical manufacturers
-- **Tertiary**: Research institutions and universities
-
-### Value Propositions
-- **Core**: High-purity, custom-processed pharmaceutical enzymes
-- **Technical Excellence**: Advanced purification and modification capabilities
-- **Customization**: Tailored enzyme formulations for specific applications
-- **European Compliance**: EU GMP standards and regulatory expertise
-
-### Channels
-- **Direct Technical Sales**: Specialized technical sales team
-- **Industry Partnerships**: Collaborations with pharmaceutical companies
-- **Scientific Networks**: Academic and research institution relationships
-
-### Revenue Streams
-- **Primary**: Premium custom enzyme processing at $80-120/kg
-- **Secondary**: Technical consulting and process development services
-- **Tertiary**: Licensing of proprietary purification technologies
-
-### Cost Structure
-- **High R&D**: Continuous investment in process development
-- **Specialized Labor**: Highly skilled biochemists and engineers
-- **EU Compliance**: European regulatory and quality standards
-- **Custom Operations**: Flexible, small-batch processing capabilities
-
-### Key Partners
-- **Research Institutions**: University collaborations and joint research
-- **Technology Providers**: Advanced purification equipment suppliers
-- **Regulatory Consultants**: EU compliance and regulatory specialists
-
-### Key Activities
-- **Custom Processing**: Tailored enzyme purification and modification
-- **R&D**: Process development and optimization
-- **Technical Support**: Application engineering and customer collaboration
-- **Regulatory Compliance**: EU GMP maintenance and documentation
-
-### Key Resources
-- **Technical Expertise**: Advanced biochemical processing knowledge
-- **Facilities**: Flexible, GMP-compliant processing capabilities
-- **IP Portfolio**: Proprietary purification and modification technologies
-- **Customer Relationships**: Long-term technical partnerships
-
-## Competitive Positioning Analysis
-
-### Market Segmentation
-- **Cost Leaders**: Asian suppliers (Sukahan, Pangbo) targeting price-sensitive markets
-- **Quality Leaders**: Western suppliers (EDC, Biocatalysts) focusing on pharmaceutical compliance
-- **Technical Specialists**: European companies (Enzybel) offering custom solutions
-- **Market Gap**: Caribbean-based supplier combining Western compliance with geographic proximity
-
-### Competitive Advantages by Segment
-**Cost Leaders**:
-- 40-50% cost advantage through low labor and regulatory costs
-- Large-scale production capabilities
-- Established supply chains and distribution networks
-
-**Quality Leaders**:
-- Regulatory compliance and FDA/EMA approvals
-- Established customer relationships and trust
-- Technical expertise and application support
-
-**Technical Specialists**:
-- Advanced processing capabilities and customization
-- Strong R&D and innovation focus
-- Premium pricing for specialized applications
-
-### Strategic Opportunities
-1. **Geographic Positioning**: Caribbean location offers unique proximity advantage to US/EU markets
-2. **Regulatory Arbitrage**: Western compliance standards with lower operational costs
-3. **Supply Chain Integration**: Potential vertical integration with papaya cultivation
-4. **Market Timing**: Growing demand for supply chain diversification creates opportunity window
+**Customer Segments**: Industrial manufacturers, pharmaceutical companies, food processors, biofuel producers
+**Value Proposition**: Innovative enzyme solutions, sustainability focus, technical expertise, global support
+**Channels**: Direct sales, technical partnerships, licensing agreements, distributors
+**Revenue Streams**: Enzyme sales, licensing fees, technical services, custom development
+**Key Resources**: R&D capabilities, biotechnology platforms, global manufacturing, IP portfolio
+**Key Activities**: Enzyme development, fermentation production, application development, customer support
+**Key Partners**: Technology partners, research institutions, industrial customers
+**Cost Structure**: R&D investment, manufacturing, regulatory compliance, global operations

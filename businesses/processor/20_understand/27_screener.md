@@ -1,141 +1,103 @@
-# Interview Screener - Processor Business Model
+# Interview Screener - Processor Business
 
-## Screening Objectives
-- Identify qualified pharmaceutical industry professionals with papain sourcing experience
-- Ensure interview participants have decision-making authority or influence
-- Filter for companies with pharmaceutical-grade enzyme requirements
-- Prioritize high-value prospects with significant volume potential
+## Target Participant Criteria
 
-## Inclusion Criteria
+### Inclusion Criteria
 
-### Primary Qualifications (Must Have)
-1. **Industry Role**: Procurement, sourcing, supply chain, or quality assurance in pharmaceutical/biotech industry
-2. **Product Experience**: Direct involvement with enzyme sourcing, particularly papain or similar proteases
-3. **Decision Authority**: Manager level or above with supplier evaluation/selection responsibility
-4. **Company Size**: Annual revenue >$100M or established pharmaceutical ingredient operations
-5. **Geographic Relevance**: Operations in North America, Europe, or global reach
+#### Primary Targets (Pharmaceutical Distributors)
+- **Role**: Procurement Manager, Supply Chain Director, or Sourcing Specialist
+- **Company Type**: Pharmaceutical ingredient distributors or large pharma companies
+- **Experience**: Minimum 3 years in pharmaceutical ingredient sourcing
+- **Decision Authority**: Involved in supplier selection or evaluation processes
+- **Geographic Scope**: North America, Europe, or global operations
 
-### Secondary Qualifications (Preferred)
-1. **Volume Significance**: Company uses >100 kg annually of pharmaceutical-grade enzymes
-2. **Quality Focus**: Involved with GMP, FDA, or EMA compliance requirements
-3. **Supply Chain Strategy**: Active in supplier diversification or risk management initiatives
-4. **Technical Involvement**: Participates in supplier technical evaluations or audits
-5. **Budget Authority**: Involved in supplier contract negotiations or pricing decisions
+#### Secondary Targets (Wound Care/Cosmetics)
+- **Role**: Procurement, R&D, or Quality Assurance roles
+- **Company Type**: Wound care manufacturers, cosmetics companies, nutraceutical firms
+- **Product Involvement**: Direct experience with enzyme ingredients or papain
+- **Volume**: Companies purchasing >50kg annually of enzyme ingredients
 
-## Exclusion Criteria
-
-### Disqualifying Factors
-1. **Industry Mismatch**: Food, industrial, or non-pharmaceutical enzyme applications only
-2. **Limited Authority**: No involvement in supplier selection or evaluation processes
-3. **Small Scale**: Companies with minimal enzyme usage (<10 kg annually)
-4. **Geographic Mismatch**: Exclusively local/regional operations with no Western market exposure
-5. **Competitive Conflict**: Direct competitors in papain processing or enzyme manufacturing
-
-### Red Flags
-1. **Commodity Focus**: Only interested in lowest-cost suppliers regardless of quality
-2. **Established Relationships**: Completely satisfied with current suppliers with no interest in alternatives
-3. **Limited Time**: Unable to commit to 45-60 minute interview
-4. **Confidentiality Concerns**: Unwilling to discuss sourcing strategies or supplier relationships
+### Exclusion Criteria
+- **No Decision Influence**: Administrative or junior roles without procurement input
+- **Irrelevant Industries**: Companies not using enzymes in their products
+- **Competitors**: Direct competitors in enzyme manufacturing or processing
+- **Small Scale**: Research-only or very small volume users (<10kg annually)
 
 ## Screening Questions
 
-### Initial Contact (Email/LinkedIn)
-**Subject**: "Research on Pharmaceutical Enzyme Sourcing - 15 minutes of your expertise?"
+### Opening Qualification
+1. "What is your role in ingredient sourcing and procurement at [Company]?"
+2. "Are you involved in decisions about enzyme or pharmaceutical ingredient suppliers?"
+3. "Does your company currently use papain or similar enzymes in your products?"
 
-**Message**:
-"I'm conducting research on pharmaceutical-grade enzyme sourcing to understand industry trends and supplier evaluation criteria. Would you be willing to share your insights in a brief 45-minute conversation? Your expertise would be invaluable for understanding market needs and challenges."
+### Experience and Authority
+4. "How long have you been involved in pharmaceutical/ingredient procurement?"
+5. "What's your typical annual volume for enzyme ingredients like papain?"
+6. "Who else is involved in supplier selection decisions at your company?"
 
-### Phone/Video Screening (5-10 minutes)
+### Relevance Check
+7. "What types of enzyme suppliers do you currently work with?"
+8. "Have you evaluated new enzyme suppliers in the past 2 years?"
+9. "What geographic regions do your current suppliers operate from?"
 
-**Q1**: "Can you tell me about your role and involvement with ingredient sourcing at [Company]?"
-- **Looking for**: Direct involvement in procurement, supplier management, or quality assurance
-- **Red flag**: Administrative role with no decision-making involvement
+### Availability and Interest
+10. "Would you be interested in a 45-60 minute conversation about enzyme sourcing trends?"
+11. "Are you available for a call in the next 2 weeks?"
+12. "Would you be open to discussing challenges and opportunities in your supply chain?"
 
-**Q2**: "Does your company currently source pharmaceutical-grade enzymes, particularly papain or proteases?"
-- **Looking for**: Active enzyme sourcing with quality requirements
-- **Red flag**: No enzyme experience or only food/industrial applications
+## Sample Screening Script
 
-**Q3**: "What's your typical involvement in supplier evaluation and selection processes?"
-- **Looking for**: Decision-making authority or significant influence
-- **Red flag**: No involvement in supplier decisions
+### Email Outreach Template
+**Subject**: Research on Pharmaceutical Enzyme Sourcing Trends
 
-**Q4**: "Are you currently satisfied with your enzyme suppliers, or are there areas for improvement?"
-- **Looking for**: Openness to discussing pain points and alternatives
-- **Red flag**: Complete satisfaction with no interest in market alternatives
+Dear [Name],
 
-**Q5**: "Would you be interested in learning about a potential new GMP-certified supplier from the Caribbean region?"
-- **Looking for**: Curiosity and willingness to evaluate new options
-- **Red flag**: Closed to new suppliers or geographic preferences
+I'm conducting research on pharmaceutical enzyme sourcing trends and supply chain diversification. Your expertise in [specific area] at [Company] would provide valuable insights for our study.
 
-## Target Prospect Profile
+We're particularly interested in understanding:
+- Current challenges in enzyme supply chains
+- Evaluation criteria for new suppliers
+- Interest in supply chain diversification opportunities
 
-### Ideal Interview Candidate
-- **Title**: Procurement Director, Sourcing Manager, Supply Chain Director, Quality Manager
-- **Company**: Pharmaceutical distributor, wound care manufacturer, or biotech company
-- **Experience**: 5+ years in pharmaceutical ingredient sourcing
-- **Authority**: Budget responsibility >$1M annually for ingredients
-- **Pain Points**: Experiencing quality, compliance, or supply chain challenges
-- **Openness**: Actively seeking supplier diversification or improvements
+Would you be available for a 45-60 minute conversation in the next two weeks? The discussion would be confidential, and we'd be happy to share relevant findings with you.
 
-### High-Priority Targets
-1. **Merck KGaA** - Life Science Division procurement team
-2. **Sigma-Aldrich** - Pharmaceutical ingredient sourcing managers
-3. **Smith & Nephew** - Wound care ingredient procurement
-4. **ConvaTec** - Advanced wound care supply chain team
-5. **Mitsubishi Chemical** - Specialty chemical sourcing directors
+Best regards,
+[Researcher Name]
 
-### Secondary Targets
-1. **Regional Distributors** - Caribbean/Latin America pharmaceutical distributors
-2. **Biotech Companies** - Enzyme-based therapeutic developers
-3. **Contract Manufacturers** - Pharmaceutical manufacturing services
-4. **Research Institutions** - Academic medical centers with enzyme research
+### Phone Screening Script
+"Hi [Name], this is [Researcher] calling about the enzyme sourcing research study. Do you have 2-3 minutes for me to explain the study and see if you'd be a good fit to participate?"
 
-## Recruitment Strategy
+**If yes, continue with screening questions above**
 
-### Direct Outreach
-- **LinkedIn**: Targeted messaging to procurement professionals
-- **Email**: Direct contact through company websites and industry directories
-- **Referrals**: Introductions from existing industry contacts
-- **Cold Calling**: Phone outreach to procurement departments
+**If qualified**: "Great! It sounds like your experience would be very valuable for our research. Would you be available for a 45-60 minute interview sometime in the next two weeks?"
 
-### Industry Events
-- **CPhI Worldwide**: Major pharmaceutical ingredient trade show
-- **Interphex**: Pharmaceutical manufacturing conference
-- **BIO International**: Biotechnology industry convention
-- **Regional Events**: Local pharmaceutical association meetings
+## Target Sample Composition
+
+### Primary Segment (8-10 interviews)
+- 4-5 Large pharmaceutical distributors
+- 2-3 Direct pharmaceutical manufacturers
+- 1-2 Wound care specialists
+
+### Secondary Segment (4-6 interviews)
+- 2-3 Cosmetics ingredient suppliers
+- 1-2 Nutraceutical manufacturers
+- 1 Research institution (if time permits)
+
+### Geographic Distribution
+- 60% North America
+- 30% Europe
+- 10% Other regions (Australia, Japan)
+
+## Recruitment Channels
 
 ### Professional Networks
-- **ISPE**: International Society for Pharmaceutical Engineering
-- **PDA**: Parenteral Drug Association
-- **AAPS**: American Association of Pharmaceutical Scientists
-- **LinkedIn Groups**: Pharmaceutical procurement and supply chain groups
+- LinkedIn outreach to procurement professionals
+- Industry association member directories
+- Trade show contact lists
+- Professional referrals
 
-## Interview Scheduling
-
-### Logistics
-- **Duration**: 45-60 minutes
-- **Format**: Video call preferred, phone acceptable
-- **Timing**: Business hours in participant's time zone
-- **Recording**: Request permission for audio recording
-- **Materials**: Send company overview and product specs in advance
-
-### Confirmation Process
-1. **Initial Agreement**: Confirm interest and availability
-2. **Calendar Invite**: Send meeting invitation with agenda
-3. **Pre-Interview Materials**: Share relevant background information
-4. **Reminder**: Send reminder 24 hours before interview
-5. **Follow-up**: Thank you note and summary within 48 hours
-
-## Success Metrics
-
-### Recruitment Targets
-- **Total Interviews**: 8-12 completed interviews
-- **Response Rate**: 25%+ positive response to initial outreach
-- **Completion Rate**: 80%+ of scheduled interviews completed
-- **Quality Score**: 70%+ of interviews provide actionable insights
-
-### Participant Quality
-- **Decision Authority**: 60%+ have direct supplier selection involvement
-- **Volume Relevance**: 50%+ represent companies with >500 kg annual enzyme usage
-- **Geographic Coverage**: Interviews across US, EU, and global companies
-- **Segment Diversity**: Mix of distributors, manufacturers, and end users
+### Industry Sources
+- Pharmaceutical trade publications
+- Ingredient supplier directories
+- Conference attendee lists
+- Industry consultant networks

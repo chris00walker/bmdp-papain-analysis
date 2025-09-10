@@ -1,258 +1,223 @@
 ---
-description: Generates, prototypes, and tests multiple bold business model options, co-created across the organization. Produces narratives, risk/reward profiles, test cards, and a selection scorecard to choose the best model(s).
-auto_execution_mode: 1
+description: BMDP Phase 3 - Generate, prototype, and test multiple business model options with selection scorecard
+auto_execution_mode: 3
 ---
 
-# BMDP Phase 3: Design
+# Phase 3: Design
 
-## Workflow Configuration
+Generates, prototypes, and tests multiple business model options with selection scorecard. Emphasizes creative ideation, rapid prototyping, stakeholder feedback, and evidence-based selection.
 
-name: bmdp_phase3_design
-version: "1.0"
+## Prerequisites
 
-parameters:
-  repo_root:
-    type: string
-    default: "./bmdp"
-  min_alternatives:
-    type: integer
-    default: 3
-  min_tests:
-    type: integer
-    default: 3
-  selection_threshold:
-    type: number
-    default: 0.7   # min weighted score required to advance
+- Phase 2 completed with insights and assumptions
+- Business slug and design timebox defined
+- Team assembled with design capabilities
 
-artifacts:
+## Steps
 
-## Inputs from prior phases
+### 1. Create design directory
 
-  insights_md:      "${repo_root}/20_understand/31_insights.md"
-  assumptions_csv:  "${repo_root}/20_understand/32_assumption_backlog.csv"
-  concepts_md:      "${repo_root}/20_understand/33_concept_cards.md"
-  testcards_json:   "${repo_root}/20_understand/34_test_cards.json"
-  evidence_csv:     "${repo_root}/common/evidence_ledger.csv"
+```bash
+mkdir -p businesses/{business_slug}/30_design
+```
 
-## Phase 3 outputs
+### 2. Design brief and timebox
 
-  ideation_md:      "${repo_root}/30_design/30_ideation.md"
-  prototypes_dir:   "${repo_root}/30_design/prototypes"
-  prototypes_md:    "${repo_root}/30_design/31_prototypes_summary.md"
-  narratives_md:    "${repo_root}/30_design/32_narratives.md"
-  riskreward_csv:   "${repo_root}/30_design/33_risk_reward_profiles.csv"
-  feedback_csv:     "${repo_root}/30_design/34_feedback_log.csv"
-  scorecard_md:     "${repo_root}/30_design/35_scorecard.md"
-  selected_md:      "${repo_root}/30_design/36_selected_model.md"
-  integration_md:   "${repo_root}/30_design/37_integration_choice.md"
-  designreview_md:  "${repo_root}/30_design/38_design_review.md"
+Create `businesses/{business_slug}/30_design/30_design_brief.md`:
 
-workflow:
-  setup:
-    - create_directories:
-        paths:
-          - "${repo_root}/30_design"
-          - "${artifacts.prototypes_dir}"
+- Timebox: 15 days (default)
+- Objectives: Generate ≥3 viable alternatives; select best option
+- Deliverables: ideation, prototypes, feedback, selection scorecard
+- Progress demos: mid-sprint & end-of-sprint
 
-  phases:
-    - id: phase3_design
-      name: "Phase 3 — Design"
-      tasks:
+### 3. Ideation session
 
-        # ---- Step 3.1: Ideation Session ----
-        - id: step_31_ideation
-          description: Generate multiple bold alternatives beyond status quo.
-          inputs:
-            insights: "${artifacts.insights_md}"
-          run:
-            write_markdown:
-              path: "${artifacts.ideation_md}"
-              title: "Ideation Session"
-              sections:
-                - "Alternatives brainstormed: ≥${parameters.min_alternatives}"
-                - "Source inspirations: insights, competitor patterns, blue ocean moves"
-          gate:
-            must_contain:
-              path: "${artifacts.ideation_md}"
-              substrings: ["Alternatives"]
+Create `businesses/{business_slug}/30_design/31_ideation.md`:
 
-        # ---- Step 3.2: Prototypes (Canvas Drafts) ----
-        - id: step_32_prototypes
-          depends_on: [step_31_ideation]
-          description: Create prototype canvases for each alternative.
-          run:
-            write_markdown:
-              path: "${artifacts.prototypes_md}"
-              title: "Prototypes Summary"
-              sections:
-                - "Prototype A: Canvas + hypothesis"
-                - "Prototype B: Canvas + hypothesis"
-            write_markdown:
-              path: "${artifacts.prototypes_dir}/prototype_A.md"
-              title: "Prototype A Canvas"
-              sections: ["Customer Segments: TBD","Value Proposition: TBD","Channels: TBD","Revenue: TBD"]
-            write_markdown:
-              path: "${artifacts.prototypes_dir}/prototype_B.md"
-              title: "Prototype B Canvas"
-              sections: ["Customer Segments: TBD","Value Proposition: TBD","Channels: TBD","Revenue: TBD"]
-          gate:
-            must_exist:
-              - "${artifacts.prototypes_md}"
+- Alternatives brainstormed: ≥3 bold options beyond status quo
+- Source inspirations: insights, competitor patterns, blue ocean moves
+- Constraint challenges: what if budget was 10x? 1/10x?
 
-        # ---- Step 3.3: Narratives for Each Prototype ----
-        - id: step_33_narratives
-          depends_on: [step_32_prototypes]
-          description: Write stories for each prototype.
-          run:
-            write_markdown:
-              path: "${artifacts.narratives_md}"
-              title: "Prototype Narratives"
-              sections:
-                - "Prototype A Story: problem → solution → why now"
-                - "Prototype B Story: problem → solution → why now"
-          gate:
-            must_exist:
-              - "${artifacts.narratives_md}"
+### 4. Create prototype canvases
 
-        # ---- Step 3.4: Risk/Reward Profiles ----
-        - id: step_34_riskreward
-          depends_on: [step_33_narratives]
-          description: Create risk/reward matrix for each prototype.
-          run:
-            write_csv:
-              path: "${artifacts.riskreward_csv}"
-              header: ["prototype","profit_potential","loss_risk","brand_impact","conflicts","customer_reaction","uncertainties"]
-              rows:
-                - ["A","high","medium","positive","low","favorable","pricing"]
-                - ["B","medium","high","neutral","medium","uncertain","channel adoption"]
-          gate:
-            must_exist:
-              - "${artifacts.riskreward_csv}"
+Create `businesses/{business_slug}/30_design/32_prototypes/`:
 
-        # ---- Step 3.5: Test Cards & Evidence Logging ----
-        - id: step_35_testcards
-          depends_on: [step_34_riskreward]
-          description: Assign test cards to riskiest assumptions of each prototype.
-          run:
-            append_json:
-              path: "${artifacts.testcards_json}"
-              content:
-                tests:
-                  - prototype: "A"
-                    assumption: "Customers pay $X"
-                    test: "price interviews (n=5)"
-                    metric: "≥3 accept"
-                  - prototype: "B"
-                    assumption: "Partners sign LOIs"
-                    test: "2 partner LOIs"
-                    metric: "≥1 signed"
-            append_csv:
-              path: "${artifacts.evidence_csv}"
-              rows:
-                - ["design","prototype A assumption","pending test","low","","design test","PM","today"]
-          gate:
-            json_schema:
-              path: "${artifacts.testcards_json}"
-              schema:
-                type: object
-                required: ["tests"]
+For each alternative, create a business model canvas:
+- `prototype_A_canvas.md`
+- `prototype_B_canvas.md` 
+- `prototype_C_canvas.md`
 
-        # ---- Step 3.6: Feedback Sessions ----
-        - id: step_36_feedback
-          depends_on: [step_35_testcards]
-          description: Capture expert and customer feedback on prototypes.
-          run:
-            write_csv:
-              path: "${artifacts.feedback_csv}"
-              header: ["prototype","source","feedback","sentiment","implication"]
-              rows:
-                - ["A","customer","Too complex","negative","simplify"]
-                - ["B","expert","Channel interest is strong","positive","pursue pilot"]
-            append_csv:
-              path: "${artifacts.evidence_csv}"
-              rows:
-                - ["feedback","prototype feedback","notes","medium","","inform scorecard","Analyst","today"]
-          gate:
-            must_exist:
-              - "${artifacts.feedback_csv}"
+Each canvas includes:
+- Customer Segments
+- Value Propositions
+- Channels
+- Customer Relationships
+- Revenue Streams
+- Key Resources
+- Key Activities
+- Key Partnerships
+- Cost Structure
 
-        # ---- Step 3.7: Selection Scorecard ----
-        - id: step_37_scorecard
-          depends_on: [step_36_feedback]
-          description: Score prototypes on desirability, feasibility, viability, and risk.
-          run:
-            write_markdown:
-              path: "${artifacts.scorecard_md}"
-              title: "Selection Scorecard"
-              sections:
-                - "| Prototype | Desirability | Feasibility | Viability | Risk | Weighted Score |"
-                - "|-----------|-------------:|------------:|----------:|-----:|---------------:|"
-                - "| A         | 7            | 6           | 8         | 5    | 0.72           |"
-                - "| B         | 6            | 7           | 6         | 4    | 0.65           |"
-          gate:
-            must_contain:
-              path: "${artifacts.scorecard_md}"
-              substrings: ["Weighted Score"]
+### 5. Stakeholder feedback collection
 
-        # ---- Step 3.8: Select Model(s) ----
-        - id: step_38_select
-          depends_on: [step_37_scorecard]
-          description: Select one or two prototypes that exceed threshold.
-          run:
-            write_markdown:
-              path: "${artifacts.selected_md}"
-              title: "Selected Prototype(s)"
-              sections:
-                - "Prototype A selected — score 0.72 (≥${parameters.selection_threshold})"
-                - "Rationale: higher viability and customer validation"
-          gate:
-            must_exist:
-              - "${artifacts.selected_md}"
+Create `businesses/{business_slug}/30_design/33_feedback_log.csv`:
 
-        # ---- Step 3.9: Integration vs Separation Decision ----
-        - id: step_39_integration
-          depends_on: [step_38_select]
-          description: Decide whether to integrate or separate from old business model.
-          run:
-            write_markdown:
-              path: "${artifacts.integration_md}"
-              title: "Integration vs Separation"
-              sections:
-                - "Decision: Separate entity"
-                - "Rationale: reduces conflicts, allows speed"
-          gate:
-            must_exist:
-              - "${artifacts.integration_md}"
+```csv
+date,stakeholder,role,prototype,feedback,concerns,preferences
+TBD,TBD,customer,A,positive on feature X,worried about price,prefers option A
+```
 
-        # ---- Step 3.10: Design Review ----
-        - id: step_310_review
-          depends_on: [step_39_integration]
-          description: Summarize design phase and readiness for implementation.
-          run:
-            write_markdown:
-              path: "${artifacts.designreview_md}"
-              title: "Design Review"
-              sections:
-                - "What we tried: # of prototypes"
-                - "What we learned: key insights & feedback"
-                - "What we selected: chosen model(s)"
-                - "Next steps: prep for implementation pilot"
-          gate:
-            must_exist:
-              - "${artifacts.designreview_md}"
+Collect feedback from:
+- ≥5 potential customers
+- ≥2 industry experts
+- ≥2 internal stakeholders
 
-  acceptance:
-    all_of:
-      - exists: "${artifacts.ideation_md}"
-      - exists: "${artifacts.prototypes_md}"
-      - exists: "${artifacts.narratives_md}"
-      - exists: "${artifacts.riskreward_csv}"
-      - exists: "${artifacts.testcards_json}"
-      - exists: "${artifacts.feedback_csv}"
-      - exists: "${artifacts.scorecard_md}"
-      - exists: "${artifacts.selected_md}"
-      - exists: "${artifacts.integration_md}"
-      - exists: "${artifacts.designreview_md}"
-      - csv_min_rows:
-          path: "${artifacts.evidence_csv}"
-          min_rows: "${parameters.min_tests}"
+### 6. Selection criteria and scorecard
+
+Create `businesses/{business_slug}/30_design/34_selection_criteria.md`:
+
+Define weighted criteria:
+- Market attractiveness (25%)
+- Competitive advantage (20%)
+- Financial viability (20%)
+- Implementation feasibility (15%)
+- Strategic fit (10%)
+- Risk level (10%)
+
+Create `businesses/{business_slug}/30_design/35_selection_scorecard.csv`:
+
+```csv
+criteria,weight,prototype_A,prototype_B,prototype_C
+market_attractiveness,0.25,7,8,6
+competitive_advantage,0.20,6,7,9
+financial_viability,0.20,8,6,7
+implementation_feasibility,0.15,9,5,6
+strategic_fit,0.10,7,8,8
+risk_level,0.10,6,7,5
+weighted_score,,7.1,6.8,7.0
+```
+
+### 7. Financial projections
+
+Create `businesses/{business_slug}/30_design/36_financial_projections.md`:
+
+For selected prototype:
+- 5-year revenue projections
+- Cost structure breakdown
+- Investment requirements
+- Break-even analysis
+- ROI/IRR calculations
+
+### 8. Implementation roadmap
+
+Create `businesses/{business_slug}/30_design/37_implementation_roadmap.md`:
+
+- Phase 1: MVP development (months 1-6)
+- Phase 2: Market validation (months 7-12)
+- Phase 3: Scale preparation (months 13-18)
+- Key milestones and decision points
+
+### 9. Risk assessment and mitigation
+
+Create `businesses/{business_slug}/30_design/38_risk_mitigation.md`:
+
+- Top 5 risks identified
+- Probability and impact assessment
+- Mitigation strategies
+- Contingency plans
+
+### 10. Test cards for validation
+
+Create `businesses/{business_slug}/30_design/39_test_cards.json`:
+
+```json
+{
+  "tests": [
+    {
+      "assumption": "Customers will pay $X",
+      "test": "pricing survey (n=20)",
+      "metric": "≥70% accept price",
+      "timeline": "2 weeks"
+    },
+    {
+      "assumption": "Channel partners interested",
+      "test": "partner interviews (n=3)",
+      "metric": "≥2 express interest",
+      "timeline": "1 week"
+    }
+  ]
+}
+```
+
+### 11. Integration/separation decision
+
+Create `businesses/{business_slug}/30_design/40_integration_decision.md`:
+
+- Standalone business vs integration with existing operations
+- Synergies and conflicts analysis
+- Resource sharing opportunities
+- Organizational implications
+
+### 12. Create financial cash flow data
+
+Create `businesses/{business_slug}/30_design/financials_cashflow.csv`:
+
+```csv
+year,revenues_bbd,capex_bbd,opex_bbd,working_cap_change_bbd,notes
+0,0,750000,50000,100000,Initial investment phase
+1,705000,0,634500,25000,Market entry phase
+2,1680000,75000,924000,50000,Scale operations
+3,2450000,50000,1314000,75000,Mature operations
+4,2600000,25000,1397000,25000,Optimized operations
+5,2805000,0,1545000,-25000,Stable operations
+```
+
+**Required for**: Financial analysis and validation workflow
+
+### 13. Final recommendation
+
+Create `businesses/{business_slug}/30_design/41_final_recommendation.md`:
+
+- Executive summary with selected prototype
+- Selection rationale and scoring results
+- Implementation timeline and resource requirements
+- Financial projections and ROI analysis
+- Risk assessment and mitigation strategies
+- Next steps and validation requirements
+
+**Deliverable**: Comprehensive business model recommendation ready for validation phase.
+
+Update evidence ledger:
+
+```csv
+evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
+design,prototype selection,selected model A,high,,final recommendation,PM,today
+design,stakeholder feedback,positive reception,medium,,validates approach,Design,today
+design,financial projections,ROI 25%,medium,,investment decision,Finance,today
+```
+
+## Deliverables
+
+- [ ] Design brief with timebox
+- [ ] Ideation session with ≥3 alternatives
+- [ ] ≥3 prototype business model canvases
+- [ ] Stakeholder feedback from ≥9 sources
+- [ ] Selection criteria and scorecard
+- [ ] Financial projections for selected model
+- [ ] Implementation roadmap
+- [ ] Risk assessment and mitigation plan
+- [ ] Test cards for key assumptions
+- [ ] Integration/separation decision
+- [ ] Final recommendation with rationale
+- [ ] ≥5 evidence ledger entries
+
+## Gate Criteria
+
+Proceed to Phase 4 (Implementation) only if:
+
+- ≥3 prototypes created and evaluated
+- At least 1 prototype scores ≥0.7 on selection criteria
+- Stakeholder feedback collected from ≥9 sources
+- Integration/separation decision made
+- Test cards defined for implementation risks
+- Evidence ledger updated with design insights

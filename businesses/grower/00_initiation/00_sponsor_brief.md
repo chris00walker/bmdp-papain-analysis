@@ -1,46 +1,34 @@
-# Sponsor Brief
+# Sponsor Brief - grower Business
 
-## Sponsor Context
+## Sponsor Information
+- **Business**: grower (Brief 1: Grower (Papaya Cultivation & Crude Papain Production, Barbados))
+- **Brief Source**: brief-1-grower.md
+- **Sponsor Commitment**: Business model design for grower venture
+- **Decision Authority**: Primary sponsor for venture development
 
-**Source:** Brief 4 - B2B Marketplace (Online Platform, Global)
+## Business Context
+**Value Proposition**: Supply reliable, traceable crude papain (dried latex) from Barbados.. Meet food-grade or feed-grade specifications at competitive cost.. Differentiate on transparency, local quality, and consistent potency.
 
-## Value Proposition
+**Target Market**: International enzyme processors (India, US, EU).. Regional food processors seeking local papain.
 
-Neutral digital marketplace connecting papain growers, processors, distributors with buyers worldwide. Reduce search, verification, and transaction costs. Provide escrow, certification badges, and integrated logistics.
+## Initial Scope
+- **Core Activities**: Orchard establishment (10–25 ha).. Latex tapping, drying, packaging.. Quality control (potency, microbial).
+- **Key Resources**: Arable land (≥10 ha).. Skilled labor for tapping/drying.. Drying equipment & basic QA lab.
+- **Revenue Model**: Crude papain sales: \~US $10–20/kg.. By-products (papaya fruit, seeds).
+- **Capital Requirements**: $300000 - $1000000 BBD
+- **Timeline**: 3-year financial horizon
 
-## Customer Segments
+## Critical Constraints
+- **Market Risks**: Crop disease, hurricane/weather risk.. Price pressure from low-cost producers (India/Africa).. Seasonal yield decline.
+- **Financial**: Discount rate 15%, capital bounds $300000-$1000000 BBD
 
-- **Primary:** Papain buyers (food, pharma, cosmetics, feed industries)
-- **Secondary:** Papain suppliers (growers, processors, distributors)
-- **Tertiary:** Logistics/QA providers seeking exposure
+## Success Criteria
+- [ ] Viable business model within capital bounds
+- [ ] Competitive market positioning established
+- [ ] Risk mitigation strategies defined
+- [ ] Sustainable revenue streams validated
 
-## Business Model Innovation Opportunity
-
-The papain supply chain currently suffers from:
-
-- High search and verification costs
-- Trust and quality disputes
-- Fragmented supplier-buyer connections
-- Limited transparency in pricing and quality
-
-## Sponsor Commitment
-
-**Decision Authority:** Platform sponsor with full authority to proceed
-**Investment Readiness:** US $200-400k platform build budget allocated
-**Timeline:** 6-month development window with go-live target
-**Success Metrics:**
-
-- 50+ verified suppliers onboarded
-- 100+ buyer registrations
-- $1M+ transaction volume in first year
-
-## Strategic Context
-
-This marketplace addresses the "chicken-and-egg" problem by creating a neutral platform that benefits all stakeholders in the papain value chain, from Barbados growers to global pharmaceutical companies.
-
-## Constraints
-
-- Competition from established platforms (Alibaba, ChemNet)
-- Need for rapid network effects
-- Quality verification and trust mechanisms critical
-- Regulatory compliance across multiple jurisdictions
+## Next Steps
+- [ ] Confirm sponsor commitment to venture
+- [ ] Validate decision authority for investment
+- [ ] Document regulatory and operational constraints

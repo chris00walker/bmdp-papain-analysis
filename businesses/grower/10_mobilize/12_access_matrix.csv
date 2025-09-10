@@ -1,9 +1,9 @@
 data_source,owner,permission_status,ETA
-Land registry records,Ministry of Agriculture,pending approval,Week 2
-Weather & climate data,Barbados Met Office,approved,Week 1
-Papain market prices,Industry associations,pending access,Week 3
-Export regulations,Barbados Investment & Development Corp,approved,Week 1
-Agricultural extension services,Ministry of Agriculture,approved,Week 1
-Quality standards (FDA/EU),Regulatory consultants,pending contract,Week 2
-Competitor intelligence,Market research firms,pending budget,Week 3
-Customer contact database,Trade associations,pending membership,Week 4
+Customer interviews,Market Analyst,pending,Week 2
+Papain market research,Market Analyst,pending,Week 1
+Land availability data,Business Expert,pending,Week 1
+Regulatory requirements,Business Expert,pending,Week 2
+Competitor pricing data,Market Analyst,pending,Week 3
+Equipment supplier quotes,Business Expert,pending,Week 3
+Labor cost analysis,Financial Analyst,pending,Week 2
+Weather/climate data,Business Expert,approved,Available

@@ -1,0 +1,7 @@
+year,revenues_bbd,opex_bbd,capex_bbd,working_cap_change_bbd,notes
+0,0,50000,750000,0,Initial setup and equipment purchase
+1,2500000,2120000,40000,400000,First year operations with market entry
+2,6200000,2120000,40000,100000,Growth phase with increased production
+3,10800000,2120000,40000,50000,Scaling operations and market expansion
+4,13500000,2120000,40000,25000,Mature operations with optimized processes
+5,16200000,2120000,40000,25000,Full market penetration and efficiency

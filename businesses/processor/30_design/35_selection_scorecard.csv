@@ -1,0 +1,8 @@
+criteria,weight,prototype_A,prototype_B,prototype_C,prototype_D
+market_attractiveness,0.25,7,8,6,7
+competitive_advantage,0.20,9,6,8,7
+financial_viability,0.20,8,7,9,6
+implementation_feasibility,0.15,6,8,5,4
+strategic_fit,0.10,8,7,6,5
+risk_level,0.10,7,8,5,6
+weighted_score,,7.6,7.4,7.0,6.2

@@ -1,0 +1,18 @@
+{
+  "analysis_type": "portfolio_comparison",
+  "businesses_analyzed": [
+    "grower",
+    "processor",
+    "distributor",
+    "marketplace"
+  ],
+  "total_businesses": 4,
+  "analysis_date": "2025-09-09T23:35:20.330213Z",
+  "validation_status": "all_passed",
+  "financial_computation": "completed",
+  "portfolio_rollup": "completed",
+  "output_files": [
+    "90_portfolio_comparison/financials_portfolio.csv",
+    "90_portfolio_comparison/portfolio_analysis.md"
+  ]
+}

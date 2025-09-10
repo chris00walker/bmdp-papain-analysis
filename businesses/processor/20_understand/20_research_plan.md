@@ -1,102 +1,47 @@
-# Research Plan - Processor Business Model
+# Research Plan - Processor Business
 
-## Timebox
+## Research Timebox
 
-**Duration**: 10 days
-**Start Date**: September 8, 2024
-**End Date**: September 18, 2024
+- **Duration**: 10 days
+- **Start Date**: Week 5 of Discovery Phase
+- **End Date**: Week 6 of Discovery Phase
 
-## Objectives
+## Research Objectives
 
-**Primary**: Reduce uncertainty on top assumptions to enable informed business model design decisions
-**Secondary**: Avoid over-research by focusing on highest-impact validation activities
-**Tertiary**: Build evidence base for regulatory pathway and customer acceptance
+1. **Reduce uncertainty** on top assumptions from Phase 1 mobilization
+2. **Validate market demand** for Caribbean-sourced, GMP-certified papain
+3. **Understand competitive landscape** and positioning opportunities
+4. **Identify customer segments** and their specific needs/pain points
+5. **Avoid over-research** - focus on actionable insights for business model design
 
-## Key Research Priorities
+## Key Research Questions
 
-### 1. Market Validation (Days 1-4)
-
-- **Customer willingness to pay**: $60-90/kg premium pricing acceptance
-- **Market size quantification**: Pharma-grade papain segment sizing
-- **Customer pain points**: Quality, compliance, supply chain issues with current suppliers
-- **Purchase decision criteria**: Quality vs cost trade-offs in pharmaceutical procurement
-
-### 2. Regulatory Pathway Analysis (Days 2-6)
-
-- **FDA/EMA requirements**: GMP facility certification timeline and costs
-- **Regulatory approval process**: Documentation, inspections, approval probability
-- **Compliance standards**: Quality requirements for pharmaceutical-grade papain
-- **Regulatory risk assessment**: Potential delays, rejections, or additional requirements
-
-### 3. Technical Feasibility (Days 3-7)
-
-- **GMP facility requirements**: Design specifications, equipment needs, costs
-- **Process technology validation**: Purification methods, quality control systems
-- **Quality standards achievement**: ≥6,000 USP U/mg activity level feasibility
-- **Operational complexity**: Staffing, expertise, maintenance requirements
-
-### 4. Supply Chain Security (Days 5-8)
-
-- **Papaya latex availability**: 25+ ha equivalent supply identification
-- **Supplier qualification**: Quality standards, reliability, pricing
-- **Supply chain risks**: Weather, disease, quality variability
-- **Backup supplier development**: Diversification strategies
-
-### 5. Competitive Intelligence (Days 6-9)
-
-- **Asian supplier analysis**: Pricing, quality, regulatory status
-- **Competitive response scenarios**: Price competition, quality improvements
-- **Market positioning opportunities**: Differentiation strategies
-- **Competitive moats**: Defensibility analysis
+- What is the current papain supply chain pain points for pharmaceutical companies?
+- How important is geographic diversification vs. cost optimization?
+- What are the specific GMP and regulatory requirements for papain suppliers?
+- What pricing premiums are customers willing to pay for Western-regulated sources?
+- Who are the key decision makers in papain procurement processes?
 
 ## Deliverables
 
-### Primary Research Outputs
-
-- **Environment Scan**: PESTLE analysis, value chain mapping, regulatory landscape
-- **Customer Segments**: Primary/secondary segment identification and prioritization
-- **Interview Results**: 8+ customer interviews with pharmaceutical distributors
-- **Empathy Maps & JTBD**: Customer pain points, jobs-to-be-done analysis
-- **Competitor Analysis**: 5+ competitor business model canvases
-
-### Secondary Research Outputs
-
-- **Market Sizing**: TAM/SAM/SOM for pharma-grade papain market
-- **Pricing Intelligence**: Current market pricing and premium acceptance
-- **Regulatory Analysis**: FDA/EMA pathway requirements and timeline
-- **Technical Specifications**: GMP facility design and equipment requirements
-- **Supply Chain Mapping**: Supplier identification and qualification criteria
-
-### Synthesis Outputs
-
-- **Insights Summary**: Top themes, contradictions, design implications
-- **Assumption Backlog**: Prioritized assumptions with evidence gaps
-- **Concept Cards**: Early business model prototypes
-- **Test Cards**: Validation experiments for top assumptions
+- [ ] Environment scan (PESTLE + Value Chain)
+- [ ] Secondary research summary with market data
+- [ ] Competitor mapping and mini-canvases
+- [ ] Customer segmentation hypotheses
+- [ ] Interview toolkit and screener
+- [ ] Interview logs and insights
+- [ ] Empathy maps and Jobs-to-be-Done analysis
+- [ ] Synthesized insights and implications
+- [ ] Updated assumption backlog with evidence
 
 ## Progress Demos
 
-**Mid-Sprint Demo** (Day 5): Customer interview insights, regulatory pathway clarity
-**End-of-Sprint Demo** (Day 10): Complete research synthesis and design implications
+- **Mid-sprint demo** (Day 5): Environment scan, secondary research, competitor analysis
+- **End-of-sprint demo** (Day 10): Customer insights, empathy maps, updated assumptions
 
-## Success Metrics
+## Success Criteria
 
-- **Customer Validation**: 3+ positive responses to premium pricing from target customers
-- **Regulatory Clarity**: 90%+ confidence in FDA/EMA approval timeline and requirements
-- **Technical Feasibility**: Confirmed GMP facility design with cost estimates ±20%
-- **Supply Security**: Identified suppliers covering 100% of required latex capacity
-- **Evidence Quality**: 15+ high-confidence evidence entries in ledger
-
-## Research Team Allocation
-
-- **Market Research Lead**: Customer interviews, competitive analysis (40% allocation)
-- **Regulatory Consultant**: FDA/EMA pathway analysis, compliance requirements (30% allocation)
-- **Technical Advisor**: GMP facility feasibility, process technology (25% allocation)
-- **Supply Chain Manager**: Supplier identification, quality assessment (20% allocation)
-
-## Risk Mitigation
-
-- **Interview Recruitment**: Pre-identified pharmaceutical industry contacts
-- **Regulatory Access**: Engaged experienced FDA/EMA consultant
-- **Technical Validation**: Partnered with GMP facility design experts
-- **Time Management**: Daily progress tracking with pivot triggers
+- Complete 8-12 customer interviews across target segments
+- Identify 3-5 key competitors with detailed analysis
+- Validate or invalidate top 5 assumptions from Phase 1
+- Generate actionable insights for business model refinement

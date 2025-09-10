@@ -1,0 +1,209 @@
+{
+  "test_cards": [
+    {
+      "test_id": "TC001",
+      "assumption": "Caribbean papain suppliers will adopt digital marketplace platform",
+      "test_method": "Supplier onboarding pilot",
+      "success_criteria": "≥8 suppliers complete full onboarding process within 30 days",
+      "timeline": "Month 1-2",
+      "owner": "Business Development Manager",
+      "priority": "critical",
+      "resources_required": "$5,000 BBD (travel, incentives)",
+      "validation_approach": "Direct supplier engagement and platform testing",
+      "metrics": [
+        "Number of suppliers completing onboarding",
+        "Time to complete onboarding process",
+        "Supplier satisfaction with platform (>7/10)",
+        "Active usage rate after onboarding (>60%)"
+      ],
+      "risks": "Supplier technology readiness, cultural resistance",
+      "contingency": "Provide additional training and support services"
+    },
+    {
+      "test_id": "TC002",
+      "assumption": "International buyers will trust Caribbean suppliers through digital platform",
+      "test_method": "Buyer trust and transaction pilot",
+      "success_criteria": "≥15 buyers complete transactions with platform escrow",
+      "timeline": "Month 2-3",
+      "owner": "Customer Success Manager",
+      "priority": "critical",
+      "resources_required": "$3,000 BBD (buyer incentives, marketing)",
+      "validation_approach": "Facilitated transactions with trust mechanisms",
+      "metrics": [
+        "Number of completed transactions",
+        "Transaction value and frequency",
+        "Buyer satisfaction scores (>8/10)",
+        "Repeat transaction rate (>40%)"
+      ],
+      "risks": "Quality concerns, payment security fears",
+      "contingency": "Enhanced quality verification and insurance coverage"
+    },
+    {
+      "test_id": "TC003",
+      "assumption": "6.5% transaction fee is acceptable to market participants",
+      "test_method": "Pricing sensitivity analysis",
+      "success_criteria": "≥70% of users accept fee structure without negotiation",
+      "timeline": "Month 2-4",
+      "owner": "Product Manager",
+      "priority": "high",
+      "resources_required": "$2,000 BBD (survey tools, analysis)",
+      "validation_approach": "A/B testing different fee structures",
+      "metrics": [
+        "Fee acceptance rate by user segment",
+        "Price sensitivity elasticity",
+        "Competitive fee comparison",
+        "Revenue per transaction"
+      ],
+      "risks": "Price competition, customer price sensitivity",
+      "contingency": "Flexible pricing tiers and value-added services"
+    },
+    {
+      "test_id": "TC004",
+      "assumption": "Quality verification system creates competitive advantage",
+      "test_method": "Quality differentiation test",
+      "success_criteria": "≥80% of buyers prefer verified suppliers over unverified",
+      "timeline": "Month 3-4",
+      "owner": "Quality Manager",
+      "priority": "high",
+      "resources_required": "$8,000 BBD (testing equipment, certification)",
+      "validation_approach": "Blind comparison of verified vs unverified suppliers",
+      "metrics": [
+        "Buyer preference for verified suppliers",
+        "Price premium for verified products",
+        "Quality complaint rates",
+        "Certification completion rates"
+      ],
+      "risks": "Verification costs, supplier compliance",
+      "contingency": "Simplified verification process or third-party partnerships"
+    },
+    {
+      "test_id": "TC005",
+      "assumption": "Mobile-first approach suits Caribbean supplier needs",
+      "test_method": "Mobile usage and engagement analysis",
+      "success_criteria": "≥60% of supplier interactions occur via mobile app",
+      "timeline": "Month 1-3",
+      "owner": "CTO",
+      "priority": "medium",
+      "resources_required": "$4,000 BBD (mobile development, testing)",
+      "validation_approach": "Usage analytics and user behavior tracking",
+      "metrics": [
+        "Mobile vs web usage ratios",
+        "Mobile app engagement rates",
+        "Feature usage on mobile vs web",
+        "User satisfaction with mobile experience"
+      ],
+      "risks": "Technology adoption barriers, connectivity issues",
+      "contingency": "Enhanced web platform or offline capabilities"
+    },
+    {
+      "test_id": "TC006",
+      "assumption": "Export documentation services add significant value",
+      "test_method": "Service utilization pilot",
+      "success_criteria": "≥50% of suppliers use export documentation services",
+      "timeline": "Month 4-5",
+      "owner": "Operations Manager",
+      "priority": "medium",
+      "resources_required": "$6,000 BBD (documentation tools, training)",
+      "validation_approach": "Service offering and adoption tracking",
+      "metrics": [
+        "Service adoption rate by suppliers",
+        "Revenue from documentation services",
+        "Time savings for suppliers",
+        "Error reduction in export documentation"
+      ],
+      "risks": "Service complexity, regulatory changes",
+      "contingency": "Simplified service offering or third-party partnerships"
+    },
+    {
+      "test_id": "TC007",
+      "assumption": "Network effects will drive organic growth",
+      "test_method": "Referral and growth tracking",
+      "success_criteria": "≥30% of new users come from existing user referrals",
+      "timeline": "Month 3-6",
+      "owner": "Marketing Manager",
+      "priority": "medium",
+      "resources_required": "$3,000 BBD (referral incentives, tracking)",
+      "validation_approach": "Referral program and viral coefficient measurement",
+      "metrics": [
+        "Referral rate and conversion",
+        "Viral coefficient calculation",
+        "Organic growth vs paid acquisition",
+        "User engagement correlation with network size"
+      ],
+      "risks": "Slow network growth, low referral rates",
+      "contingency": "Enhanced referral incentives or partnership strategy"
+    },
+    {
+      "test_id": "TC008",
+      "assumption": "Premium services generate 25% of revenue",
+      "test_method": "Premium service monetization test",
+      "success_criteria": "Premium services achieve $20K monthly revenue by Month 6",
+      "timeline": "Month 4-6",
+      "owner": "Product Manager",
+      "priority": "medium",
+      "resources_required": "$5,000 BBD (service development, marketing)",
+      "validation_approach": "Premium service launch and revenue tracking",
+      "metrics": [
+        "Premium service adoption rate",
+        "Revenue per premium customer",
+        "Premium service retention rate",
+        "Upsell conversion from basic to premium"
+      ],
+      "risks": "Low premium adoption, service complexity",
+      "contingency": "Simplified premium offerings or bundled services"
+    },
+    {
+      "test_id": "TC009",
+      "assumption": "Customer acquisition cost remains under $1,000 per customer",
+      "test_method": "Marketing channel efficiency analysis",
+      "success_criteria": "Blended CAC <$800 across all channels by Month 4",
+      "timeline": "Month 2-4",
+      "owner": "Marketing Manager",
+      "priority": "high",
+      "resources_required": "$10,000 BBD (marketing campaigns, analytics)",
+      "validation_approach": "Multi-channel marketing with ROI tracking",
+      "metrics": [
+        "Customer acquisition cost by channel",
+        "Customer lifetime value calculation",
+        "LTV/CAC ratio achievement",
+        "Payback period by customer segment"
+      ],
+      "risks": "High acquisition costs, low conversion rates",
+      "contingency": "Channel optimization or organic growth focus"
+    },
+    {
+      "test_id": "TC010",
+      "assumption": "Platform can achieve 95% transaction success rate",
+      "test_method": "Transaction reliability testing",
+      "success_criteria": "≥95% of transactions complete successfully without issues",
+      "timeline": "Month 2-5",
+      "owner": "CTO",
+      "priority": "critical",
+      "resources_required": "$7,000 BBD (testing tools, monitoring systems)",
+      "validation_approach": "Comprehensive transaction testing and monitoring",
+      "metrics": [
+        "Transaction completion rate",
+        "Payment processing success rate",
+        "Platform uptime and performance",
+        "Customer support ticket volume"
+      ],
+      "risks": "Technical failures, payment processing issues",
+      "contingency": "Enhanced technical infrastructure or backup systems"
+    }
+  ],
+  "test_summary": {
+    "total_tests": 10,
+    "critical_tests": 3,
+    "high_priority_tests": 3,
+    "medium_priority_tests": 4,
+    "total_budget": "$53,000 BBD",
+    "timeline": "6 months",
+    "success_threshold": "≥70% of tests meet success criteria for Phase 4 progression"
+  },
+  "validation_framework": {
+    "measurement_approach": "Quantitative metrics with qualitative feedback",
+    "reporting_frequency": "Weekly progress updates, monthly comprehensive reviews",
+    "decision_criteria": "Evidence-based go/no-go decisions at each milestone",
+    "pivot_triggers": "≤50% success rate on critical tests requires business model adjustment"
+  }
+}

@@ -1,0 +1,13 @@
+reason,polarity,theme,severity,evidence_link
+Customers may not pay premium for local distribution,kill,market,high,customer_interviews_needed
+Supplier quality inconsistency could damage reputation,kill,supply,high,supplier_audit_required
+Established distributors have locked-in relationships,kill,competition,medium,competitive_analysis_needed
+Working capital requirements higher than projected,kill,financial,medium,financial_model_validation
+Regulatory changes could block market access,kill,regulatory,medium,regulatory_scan_required
+Caribbean market too small for viable scale,kill,market,low,market_sizing_research
+First-mover advantage in regional papain distribution,thrill,market,high,market_research_validation
+CARICOM trade benefits reduce import duties,thrill,regulatory,medium,trade_agreement_analysis
+Growing cosmetics industry creates new demand,thrill,market,medium,industry_growth_data
+Quality differentiation commands premium pricing,thrill,competitive,high,customer_willingness_to_pay
+Digital platform enables efficient operations,thrill,operational,medium,technology_implementation
+Regional expertise barrier to entry for competitors,thrill,competitive,high,local_knowledge_advantage

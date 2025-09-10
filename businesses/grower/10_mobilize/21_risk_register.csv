@@ -1,11 +1,11 @@
 risk,likelihood,impact,trigger,mitigation,owner
-Hurricane/weather damage to crops,high,high,weather forecasts,crop insurance & diversified planting,Agricultural Specialist
-Price competition from Asian producers,high,medium,market price drops,premium positioning & long-term contracts,Market Analyst
-Inability to secure suitable land,medium,high,land availability constraints,multiple site options & early negotiations,Agricultural Specialist
-Regulatory approval delays,medium,medium,certification timeline slips,early engagement & regulatory consultant,Quality Manager
-Labor shortage for tapping operations,medium,high,seasonal labor unavailability,training programs & competitive wages,Agricultural Specialist
-Quality control failures,low,high,contamination or potency issues,robust QC systems & backup testing,Quality Manager
-Customer concentration risk,medium,medium,loss of major buyer,diversified customer base strategy,Market Analyst
-Equipment failure/maintenance issues,medium,medium,drying system breakdown,maintenance contracts & backup equipment,Agricultural Specialist
-Currency fluctuation impact,low,medium,USD/BBD exchange rate changes,USD pricing contracts & hedging,Financial Controller
-Pest/disease outbreak in orchard,medium,high,crop health monitoring alerts,integrated pest management & resistant varieties,Agricultural Specialist
+Overestimating market demand,high,high,Lack of customer validation,Extensive customer interviews and LOIs,Market Analyst
+Price competition from low-cost producers,high,high,Market pricing analysis,Premium positioning and differentiation,Team Lead
+Hurricane/weather damage to crops,medium,high,Weather forecasting,Insurance and diversification,Business Expert
+Crop disease outbreak,medium,medium,Agricultural monitoring,Disease prevention and backup plans,Business Expert
+Regulatory export barriers,low,high,Policy changes,Early compliance and relationships,Business Expert
+Equipment failure or delays,medium,medium,Supplier issues,Multiple suppliers and maintenance,Business Expert
+Labor shortage for tapping,medium,medium,Seasonal availability,Training programs and retention,Business Expert
+Quality control failures,low,high,Testing failures,Rigorous QC and third-party validation,Business Expert
+Customer concentration risk,medium,high,Over-reliance on few customers,Diversified customer base,Market Analyst
+Currency exchange fluctuations,medium,medium,USD/BBD volatility,Hedging strategies and pricing,Financial Analyst

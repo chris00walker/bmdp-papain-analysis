@@ -1,0 +1,9 @@
+evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
+secondary,Global papain market size and growth,Market valued at $180M+ with 4.2% CAGR,high,Grand View Research,sizes TAM/SAM/SOM,Market Analyst,2025-09-09
+secondary,Premium pricing corridor for quality papain,15-30% premium for certified quality,medium,industry reports,sets WTP baseline,Market Analyst,2025-09-09
+secondary,Papaya yield benchmarks tropical regions,40-60 tons/hectare/year achievable,high,FAO/CARDI technical guides,production feasibility,Market Analyst,2025-09-09
+secondary,Papain processing recovery rates,60-80% latex to dried papain recovery,medium,technical literature,cost structure input,Market Analyst,2025-09-09
+assumption,International processors will pay premium for quality,customer interviews needed,medium,research framework,go/no-go decision,Market Analyst,2025-09-09
+assumption,Customers will sign multi-year supply agreements,contract analysis completed,medium,competitor research,revenue model validation,Business Expert,2025-09-09
+assumption,10ha can produce commercially viable volumes,yield calculations updated,medium,secondary research,feasibility confirmation,Business Expert,2025-09-09
+assumption,Quality specifications can be consistently met,technical requirements defined,low,expert interviews needed,operational validation,Business Expert,2025-09-09

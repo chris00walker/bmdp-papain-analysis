@@ -1,0 +1,22 @@
+evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
+microtest,pharmaceutical distributors sign LOIs,assumption test,pending,,decision impact: go/no-go for market validation,Business Development Lead,2025-09-09
+microtest,GMP certification achievable within budget,regulatory assessment,pending,,decision impact: feasibility confirmation,Regulatory Specialist,2025-09-09
+microtest,local papaya supply meets quality requirements,lab testing of grower samples,pending,,decision impact: supply chain viability,Process Engineer,2025-09-09
+microtest,target pricing acceptable to customers,price sensitivity interviews,pending,,decision impact: pricing strategy validation,Business Development Lead,2025-09-09
+microtest,processing technology achieves target specifications,lab-scale trials,pending,,decision impact: technical feasibility confirmation,Process Engineer,2025-09-09
+stakeholder_feedback,regulatory compliance requirements,initial assessment,pending,,decision impact: project scope and timeline,Regulatory Specialist,2025-09-09
+market_research,customer demand validation,interview program,pending,,decision impact: market size and opportunity,Business Development Lead,2025-09-09
+technical_validation,facility requirements and costs,engineering assessment,pending,,decision impact: capital requirements,Process Engineer,2025-09-09
+secondary,global papain market size,$58.4M market with 4.2% CAGR,high,Research and Markets 2023,sizes TAM/SAM/SOM,Research Analyst,2025-09-09
+secondary,premium pricing for Western suppliers,15-25% premium acceptable,medium,Grand View Research,validates pricing strategy,Business Development Lead,2025-09-09
+secondary,supply chain diversification priority,73% of companies prioritize post-COVID,high,Pharmaceutical trade analysis,confirms market opportunity,Research Analyst,2025-09-09
+secondary,GMP compliance requirements,mandatory for pharmaceutical applications,high,FDA guidance documents,defines regulatory pathway,Regulatory Specialist,2025-09-09
+competitive,Asian supplier quality issues,23% report inconsistencies,medium,Chemical Week intelligence,validates differentiation opportunity,Research Analyst,2025-09-09
+competitive,market concentration,top 5 suppliers control 70%,high,industry analysis,identifies competitive landscape,Research Analyst,2025-09-09
+customer,supply chain diversification demand,validated through segment analysis,medium,customer segmentation research,refines value proposition,Business Development Lead,2025-09-09
+customer,sterile processing premium opportunity,wound care segment identified,high,market research,identifies niche opportunity,Research Analyst,2025-09-09
+design,prototype A selected as optimal model,premium pharmaceutical specialist,high,selection scorecard analysis,defines final business model,Design Team,2025-09-09
+design,sterile processing competitive advantage validated,unique Caribbean sterile capability,high,competitive analysis,confirms differentiation strategy,Design Team,2025-09-09
+financial,42.3% IRR projected for selected model,premium positioning financial viability,high,financial projections,validates investment case,Financial Analyst,2025-09-09
+design,standalone entity structure recommended,independent pharmaceutical focus,medium,integration analysis,defines organizational approach,Design Team,2025-09-09
+validation,8 critical assumptions identified for testing,test cards for market validation,medium,assumption analysis,guides validation priorities,Design Team,2025-09-09

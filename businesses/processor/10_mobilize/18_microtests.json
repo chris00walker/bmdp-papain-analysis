@@ -1,20 +1,34 @@
 {
   "microtests": [
     {
-      "assumption": "Pharmaceutical distributors will pay $60-90/kg premium for GMP-compliant papain",
-      "test": "Conduct pricing interviews with 5 pharmaceutical distributors",
-      "metric": "≥3 positive responses to premium pricing",
-      "owner": "Market Research Lead",
-      "timeline": "Week 4-6",
-      "success_criteria": "60%+ acceptance rate for premium pricing"
+      "assumption": "Pharmaceutical distributors will sign LOIs for Caribbean-sourced papain",
+      "test": "Collect 5 LOIs from major distributors",
+      "metric": "≥5 LOIs with volume commitments",
+      "owner": "Business Development Lead"
     },
     {
-      "assumption": "FDA/EMA regulatory pathway is feasible within 12-18 months",
-      "test": "Regulatory consultant assessment and pre-submission meeting",
-      "metric": "90%+ confidence in regulatory timeline",
-      "owner": "Regulatory Consultant",
-      "timeline": "Week 2-4",
-      "success_criteria": "Clear regulatory pathway with defined milestones"
+      "assumption": "GMP certification is achievable within budget and timeline",
+      "test": "Regulatory consultant assessment and quote",
+      "metric": "Certification path ≤$200K and ≤18 months",
+      "owner": "Regulatory Specialist"
+    },
+    {
+      "assumption": "Local papaya supply can meet quality and volume requirements",
+      "test": "Test latex quality from 3 local grower samples",
+      "metric": "≥2 samples meet pharmaceutical grade potential",
+      "owner": "Process Engineer"
+    },
+    {
+      "assumption": "Target pricing ($60-90/kg) is acceptable to customers",
+      "test": "Price sensitivity interviews with 10 potential customers",
+      "metric": "≥70% accept pricing range for quality premium",
+      "owner": "Business Development Lead"
+    },
+    {
+      "assumption": "Processing technology can achieve ≥6,000 USP U/mg consistently",
+      "test": "Lab-scale processing trials with local papaya latex",
+      "metric": "≥3 successful trials meeting specification",
+      "owner": "Process Engineer"
     }
   ]
 }

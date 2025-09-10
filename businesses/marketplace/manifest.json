@@ -1,0 +1,49 @@
+{
+  "business_slug": "marketplace",
+  "business_name": "B2B Digital Platform for Papain Trade",
+  "phases_completed": [
+    {
+      "phase": 0,
+      "name": "initiation",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 4
+    },
+    {
+      "phase": 1,
+      "name": "mobilize",
+      "status": "completed",
+      "completion_date": "2025-09-09",
+      "artifacts_count": 14
+    },
+    {
+      "phase": 2,
+      "name": "understand",
+      "status": "completed",
+      "completion_date": "2025-01-30",
+      "artifacts_count": 12
+    },
+    {
+      "phase": 3,
+      "name": "design",
+      "status": "completed",
+      "completion_date": "2025-02-10",
+      "artifacts_count": 11
+    }
+  ],
+  "capital_bounds_bbd": {
+    "min": 250000,
+    "max": 1000000
+  },
+  "financial_metrics": {
+    "irr_pct": 35.2,
+    "npv_bbd": 287500,
+    "roi_pct": 111,
+    "capex_y0_bbd": 420000
+  },
+  "recommendation": "PROCEED_TO_VALIDATE",
+  "confidence_score": 90,
+  "last_updated": "2025-09-09T23:29:58.183844Z",
+  "validation_status": "passed",
+  "evidence_entries": 39
+}

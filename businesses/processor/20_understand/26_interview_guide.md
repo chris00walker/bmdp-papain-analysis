@@ -1,168 +1,101 @@
-# Interview Guide - Processor Business Model
+# Interview Guide - Processor Business
 
-## Interview Objectives
-- Validate pharmaceutical distributor willingness to pay premium pricing ($60-90/kg)
-- Understand current supplier pain points and switching criteria
-- Assess regulatory compliance requirements and value perception
-- Identify decision-making process and key stakeholders
-
-## Pre-Interview Setup
-**Duration**: 45-60 minutes
-**Format**: Video call with screen sharing for technical materials
-**Materials**: Company overview, product specifications, regulatory compliance summary
-**Recording**: Request permission for recording and note-taking
-
-## Interview Structure
+## Interview Framework (JTBD + Past Behavior)
 
 ### Opening (5 minutes)
-**Introduction**:
-"Thank you for your time. I'm researching the pharmaceutical-grade papain market to understand supplier selection criteria and pain points. Your insights will help us evaluate a potential Caribbean-based processing facility that would offer GMP-compliant papain with Western regulatory standards."
+- Introduction and purpose
+- Permission to record/take notes
+- Confidentiality assurance
+- Role and company background
 
-**Agenda Overview**:
-- Current papain sourcing and supplier relationships (15 min)
-- Quality and regulatory requirements (15 min)
-- Supplier evaluation criteria and pain points (15 min)
-- Market trends and future needs (10 min)
+### Current State Assessment (15 minutes)
 
-### Section 1: Current Sourcing Patterns (15 minutes)
+#### Supply Chain Context
+- "Walk me through your current papain sourcing process"
+- "Who are your current suppliers and how did you select them?"
+- "What volumes do you typically purchase annually?"
+- "How do you evaluate and qualify new suppliers?"
 
-**Q1**: "Can you walk me through your current papain sourcing strategy?"
-- **Probe**: Volume requirements, supplier relationships, contract terms
-- **JTBD**: Understanding current procurement approach
+#### Pain Points Discovery
+- "Tell me about a time when you had supply chain issues with papain"
+- "What keeps you up at night regarding your enzyme supply chain?"
+- "How has COVID-19 or other disruptions affected your sourcing?"
+- "What would need to happen for you to switch suppliers?"
 
-**Q2**: "Who are your primary papain suppliers and what regions do they operate from?"
-- **Probe**: Geographic distribution, supplier concentration, backup suppliers
-- **JTBD**: Mapping supply chain dependencies
+### Jobs-to-be-Done Exploration (20 minutes)
 
-**Q3**: "What's your typical annual volume for pharmaceutical-grade papain?"
-- **Probe**: Volume trends, seasonal patterns, growth projections
-- **JTBD**: Sizing market opportunity
+#### Functional Jobs
+- "What are you trying to accomplish when you source papain?"
+- "What quality specifications are non-negotiable?"
+- "How do you ensure regulatory compliance in your supply chain?"
+- "What documentation and certifications do you require?"
 
-**Q4**: "How do you currently manage papain inventory and supply planning?"
-- **Probe**: Lead times, safety stock, supply chain risks
-- **JTBD**: Understanding operational pain points
+#### Emotional Jobs
+- "How important is supply chain security to your peace of mind?"
+- "What gives you confidence in a supplier relationship?"
+- "How do you feel about geographic concentration of suppliers?"
 
-### Section 2: Quality & Regulatory Requirements (15 minutes)
+#### Social Jobs
+- "How does supplier selection reflect on your professional reputation?"
+- "What do your stakeholders expect from your sourcing decisions?"
+- "How do you communicate supply chain risks to leadership?"
 
-**Q5**: "What are your specific quality requirements for pharmaceutical-grade papain?"
-- **Probe**: Activity levels (USP U/mg), purity standards, testing protocols
-- **JTBD**: Confirming technical specifications
+### Pricing and Value (10 minutes)
 
-**Q6**: "What regulatory documentation do you require from papain suppliers?"
-- **Probe**: GMP certificates, CoA requirements, audit processes
-- **JTBD**: Understanding compliance expectations
+#### Willingness to Pay
+- "How do you typically structure pricing with enzyme suppliers?"
+- "What premium would you pay for supply chain diversification?"
+- "How do you evaluate cost vs. quality vs. compliance trade-offs?"
+- "What contract terms are most important to you?"
 
-**Q7**: "Have you experienced quality issues with current suppliers?"
-- **Probe**: Batch rejections, consistency problems, impact on operations
-- **JTBD**: Quantifying quality pain points
+#### Value Drivers
+- "What would make a new supplier worth considering?"
+- "How do you measure supplier performance?"
+- "What additional services do you value from suppliers?"
 
-**Q8**: "How do regulatory compliance issues with suppliers affect your business?"
-- **Probe**: Customer audits, regulatory inspections, compliance costs
-- **JTBD**: Understanding regulatory value drivers
+### Caribbean Sourcing Concept (15 minutes)
 
-### Section 3: Supplier Evaluation & Pain Points (15 minutes)
+#### Concept Introduction
+"I'd like to get your thoughts on a concept: A GMP-certified papain processing facility in Barbados that produces pharmaceutical-grade papain with Western regulatory compliance, offering an alternative to Asian suppliers."
 
-**Q9**: "What criteria do you use to evaluate and select papain suppliers?"
-- **Probe**: Quality, price, compliance, service, reliability priorities
-- **JTBD**: Understanding decision framework
+#### Reaction and Feedback
+- "What's your initial reaction to this concept?"
+- "What would be the main benefits you'd see?"
+- "What concerns or challenges would you have?"
+- "What would need to be true for you to consider this supplier?"
 
-**Q10**: "What are your biggest challenges with current papain suppliers?"
-- **Probe**: Quality consistency, lead times, regulatory compliance, communication
-- **JTBD**: Identifying switching motivators
+### Decision Process (10 minutes)
 
-**Q11**: "How important is supplier geographic location in your sourcing decisions?"
-- **Probe**: Shipping costs, lead times, regulatory environment, supply risk
-- **JTBD**: Assessing geographic value proposition
+#### Procurement Process
+- "Who else is involved in supplier selection decisions?"
+- "What's your typical timeline for qualifying new suppliers?"
+- "What documentation and trials would be required?"
+- "How do you handle supplier transitions?"
 
-**Q12**: "What would motivate you to switch to a new papain supplier?"
-- **Probe**: Quality improvements, cost savings, risk reduction, service enhancement
-- **JTBD**: Understanding switching criteria
+### Closing (5 minutes)
+- "What questions do you have for me?"
+- "Who else should I be talking to about this?"
+- "Would you be interested in staying updated on our progress?"
+- Thank you and next steps
 
-### Section 4: Pricing & Value Perception (10 minutes)
+## Key Probing Questions
 
-**Q13**: "How do you typically structure papain purchasing agreements?"
-- **Probe**: Contract terms, volume commitments, pricing mechanisms
-- **JTBD**: Understanding commercial framework
+### For Supply Chain Risk
+- "Can you quantify the impact of supply disruptions?"
+- "How do you currently mitigate supplier concentration risk?"
+- "What backup plans do you have if primary suppliers fail?"
 
-**Q14**: "What's your current cost range for pharmaceutical-grade papain?"
-- **Probe**: Price per kg, total annual spend, cost trends
-- **JTBD**: Establishing pricing baseline
+### For Quality Requirements
+- "Walk me through your incoming quality control process"
+- "What quality issues have you experienced with current suppliers?"
+- "How do you handle quality deviations or recalls?"
 
-**Q15**: "Would you consider paying a premium for guaranteed GMP compliance and faster delivery?"
-- **Probe**: Premium tolerance, value justification, budget approval process
-- **JTBD**: Testing pricing hypothesis
+### For Regulatory Compliance
+- "What regulatory audits do your suppliers undergo?"
+- "How do you ensure GMP compliance throughout your supply chain?"
+- "What documentation do you require for regulatory filings?"
 
-**Q16**: "How would you value a Caribbean-based supplier offering 1-2 week delivery vs 4-6 weeks from Asia?"
-- **Probe**: Inventory savings, supply risk reduction, operational benefits
-- **JTBD**: Quantifying geographic value
-
-### Section 5: Market Trends & Future Needs (5 minutes)
-
-**Q17**: "How do you see the pharmaceutical enzyme market evolving over the next 3-5 years?"
-- **Probe**: Growth drivers, regulatory changes, technology trends
-- **JTBD**: Understanding market dynamics
-
-**Q18**: "Are you actively seeking to diversify your supplier base away from Asia?"
-- **Probe**: Supply chain risk management, diversification strategies
-- **JTBD**: Assessing market timing
-
-### Closing & Next Steps (5 minutes)
-
-**Q19**: "Would you be interested in evaluating samples from a new GMP-certified Caribbean supplier?"
-- **Probe**: Evaluation process, timeline, decision criteria
-- **JTBD**: Gauging commercial interest
-
-**Q20**: "Who else in your organization would be involved in evaluating a new papain supplier?"
-- **Probe**: Decision makers, influencers, approval process
-- **JTBD**: Mapping buying center
-
-**Follow-up**:
-- Request referrals to other potential customers
-- Offer to share research findings and market insights
-- Schedule follow-up based on mutual interest
-
-## Key Validation Targets
-
-### Pricing Hypothesis
-**Target**: 60%+ acceptance of $60-90/kg pricing for GMP-compliant papain
-**Success Criteria**: 3+ of 5 interviews express willingness to pay premium
-**Validation Questions**: Q15, Q16
-
-### Pain Point Validation
-**Target**: Confirm quality and regulatory compliance pain points with Asian suppliers
-**Success Criteria**: 80%+ report quality or compliance issues
-**Validation Questions**: Q7, Q8, Q10
-
-### Market Opportunity
-**Target**: Validate $200M+ pharmaceutical papain market size
-**Success Criteria**: Volume data supports market sizing assumptions
-**Validation Questions**: Q3, Q17
-
-### Geographic Value
-**Target**: Confirm value of Caribbean proximity vs Asian suppliers
-**Success Criteria**: 70%+ value faster delivery and supply risk reduction
-**Validation Questions**: Q11, Q16, Q18
-
-## Interview Logistics
-
-### Target Interview List
-1. **Merck KGaA** - Procurement Director, Life Science Division
-2. **Sigma-Aldrich** - Sourcing Manager, Pharmaceutical Ingredients
-3. **Mitsubishi Chemical** - Supply Chain Director, Specialty Chemicals
-4. **VWR International** - Category Manager, Biochemicals
-5. **Smith & Nephew** - Procurement Manager, Wound Care Division
-6. **ConvaTec** - Sourcing Director, Advanced Wound Care
-7. **Coloplast** - Supply Chain Manager, Chronic Care
-8. **Regional Distributor** - Caribbean/Latin America pharmaceutical distributor
-
-### Recruitment Strategy
-- **Industry Contacts**: Leverage existing pharmaceutical industry relationships
-- **LinkedIn Outreach**: Direct messaging to target procurement professionals
-- **Trade Shows**: CPhI, Interphex, and other pharmaceutical ingredient conferences
-- **Referrals**: Request introductions from initial interview participants
-
-### Interview Documentation
-- **Recording**: Audio/video recording with permission
-- **Notes**: Real-time note-taking with key quotes and insights
-- **Follow-up**: Summary email with key points and next steps
-- **Analysis**: Structured analysis template for cross-interview comparison
+### For Pricing Sensitivity
+- "How do you benchmark supplier pricing?"
+- "What cost increases would trigger a supplier review?"
+- "How do you balance cost savings vs. supply security?"

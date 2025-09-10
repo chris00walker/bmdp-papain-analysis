@@ -1,21 +1,38 @@
-# Mobilize Brief - Processor Business Model
+# Project Brief - Processor Business
 
 ## Sponsor Prompt
-Evaluate the feasibility of establishing a pharma-grade papain processing facility in Barbados to capture premium pricing ($60-90/kg) by serving pharmaceutical distributors with GMP-compliant, high-purity papain enzyme (≥6,000 USP U/mg) as an alternative to Asian suppliers.
 
-## Scope
-- **In Scope**: GMP facility design, regulatory pathway analysis, customer validation with pharmaceutical distributors, supply chain development for 25+ ha latex equivalent, financial modeling for $1.5-2M investment
-- **Out of Scope**: Raw papaya cultivation, consumer-grade products, non-pharmaceutical applications, international facilities outside Barbados
+From brief-2-processor.md:
+
+**Value Proposition**
+
+* Produce ≥6,000 USP U/mg papain powder, sterile and GMP-certified.  
+* Offer Caribbean-based, Western-regulated quality alternative to Asian suppliers.  
+* Enable pharma & cosmetic buyers to source closer to Western markets.
+
+**Customer Segments**
+
+* Pharmaceutical ingredient distributors (Merck, Mitsubishi, Sigma).  
+* Wound care, nutraceutical, cosmetics companies.
+
+## Project Scope and Constraints
+
+**Scope:**
+
+* Design and validate business model for pharma-grade papain processing facility in Barbados
+* Target pharmaceutical and cosmetics markets with GMP-certified products
+* Establish supply chain from local growers to international distributors
+
+**Constraints:**
+
+* Capital bounds: $250,000 - $1,000,000 BBD
+* Timeline: 52 weeks total project execution
+* Regulatory compliance requirements (GMP, HACCP, FDA, EMA)
+* Minimum scale requirement: ≥16 ha papaya orchards for viable operations
 
 ## Decision Cadence
-- **Weekly**: Team standups and progress reviews
-- **Biweekly**: Stakeholder updates and milestone assessments
-- **Monthly**: Executive sponsor briefings
-- **Phase Gates**: Go/No-Go decisions at end of each phase
 
-## Constraints
-- **Capital**: $1.5-2M facility investment requirement
-- **Timeline**: 24-30 months to market entry including regulatory approvals
-- **Regulatory**: FDA/EMA compliance mandatory for market access
-- **Supply**: Minimum 16 ha latex supply needed for economic viability
-- **Technical**: GMP certification and ≥6,000 USP U/mg quality standards required
+* Weekly team standups
+* Biweekly stakeholder reviews
+* Monthly steering committee updates
+* Quarterly milestone assessments

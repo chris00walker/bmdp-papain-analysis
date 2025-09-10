@@ -1,58 +1,78 @@
-# Mobilize Charter
+# Mobilize Charter - Grower Business Model Design
 
-## Objectives
+## SMART Objectives
 
-### Primary Objective
+### 1. Market Validation
+**Objective**: Validate customer demand for Barbados-sourced crude papain
+**Measurable**: Secure 5+ letters of intent from target customers
+**Achievable**: Leverage existing trade connections and industry networks
+**Relevant**: Critical for revenue model validation
+**Time-bound**: Complete by end of Phase 2 (Week 43)
 
-Validate the business model for a Barbados-based papaya cultivation and crude papain production operation targeting international enzyme processors and regional food manufacturers.
+### 2. Competitive Positioning
+**Objective**: Establish differentiated value proposition vs. low-cost producers
+**Measurable**: Document 3+ unique value drivers (quality, traceability, reliability)
+**Achievable**: Build on Barbados quality reputation and proximity to US/EU
+**Relevant**: Essential for sustainable pricing power
+**Time-bound**: Complete by end of Phase 2 (Week 43)
 
-### SMART Objectives
+### 3. Operational Feasibility
+**Objective**: Validate technical and operational viability of papain production
+**Measurable**: Complete feasibility study with cost/yield projections
+**Achievable**: Partner with agricultural experts and equipment suppliers
+**Relevant**: Required for financial model accuracy
+**Time-bound**: Complete by end of Phase 2 (Week 43)
 
-1. **Market Validation:** Secure 3+ letters of intent from potential buyers within 6 weeks
-2. **Production Feasibility:** Validate 10+ hectare land acquisition and cultivation timeline by week 8
-3. **Quality Standards:** Confirm food-grade/feed-grade certification requirements and costs by week 4
-4. **Financial Viability:** Develop unit economics model showing positive margins at $10-20/kg pricing by week 6
-5. **Risk Assessment:** Identify and plan mitigation for top 5 operational risks by week 5
+### 4. Financial Viability
+**Objective**: Develop robust financial model meeting ROI targets
+**Measurable**: IRR ≥ 15%, NPV > 0, ROI ≥ 20%
+**Achievable**: Based on validated market pricing and cost structure
+**Relevant**: Core success criteria for investment decision
+**Time-bound**: Complete by end of Phase 3 (Week 51)
 
-## KPIs (Measurable Targets for Phases 1-3)
+### 5. Risk Mitigation
+**Objective**: Develop comprehensive risk management framework
+**Measurable**: Mitigation strategies for all high-impact risks identified
+**Achievable**: Leverage insurance, diversification, and operational controls
+**Relevant**: Critical for long-term sustainability
+**Time-bound**: Complete by end of Phase 3 (Week 51)
 
-### Phase 1 (Mobilize) - Weeks 1-2
+## Key Performance Indicators (KPIs)
 
-- Team assembled and roles defined
-- Canvas v0 completed with all 9 building blocks
-- Kill/thrill session identifies top 5 risks and opportunities
-- Stakeholder map covers key supply chain actors
+### Phase 1 KPIs (Discovery)
+- Customer interviews completed: Target 15+
+- Market size validation: TAM/SAM/SOM analysis
+- Competitive analysis: 5+ key competitors profiled
+- Value proposition clarity: Validated with 3+ customer segments
 
-### Phase 2 (Understand) - Weeks 3-8
+### Phase 2 KPIs (Validation)
+- Letters of intent secured: Target 5+
+- Prototype/pilot results: Quality specifications met
+- Cost structure validation: ±10% accuracy on key cost drivers
+- Channel partnership discussions: 3+ potential partners engaged
 
-- 10+ customer interviews with potential buyers
-- Competitive analysis of 5+ papain producers
-- Land acquisition feasibility confirmed
-- Regulatory requirements documented
+### Phase 3 KPIs (Scaling)
+- Business model finalization: Canvas v3.0 completed
+- Financial projections: 3-year model with sensitivity analysis
+- Implementation roadmap: Detailed 18-month launch plan
+- Investment readiness: Complete business case for $300K+ investment
 
-### Phase 3 (Design) - Weeks 9-12
-
-- 3+ business model alternatives developed and tested
-- Financial model with sensitivity analysis
-- Implementation roadmap with milestones
-- Go/no-go recommendation with supporting evidence
-
-## Constraints
+## Resource Constraints
 
 ### Budget Constraints
-
-- Phase 1-3 research budget: $25,000
-- Land acquisition budget: $500,000 (pending validation)
-- Equipment and setup: $200,000 (estimated)
+- **Total BMDP Budget**: $75,750 BBD (progressive)
+- **Discovery Phase**: $15,750 BBD (15% of $300K × 35%)
+- **Validation Phase**: $26,250 BBD (15% of $500K × 35%)
+- **Scaling Phase**: $33,750 BBD (15% of $750K × 30%)
 
 ### Time Constraints
+- **Total Timeline**: 51 weeks
+- **Discovery Duration**: 26 weeks (50%)
+- **Validation Duration**: 17 weeks (33%)
+- **Scaling Duration**: 8 weeks (17%)
 
-- 12-week timeline for business model validation
-- Planting season considerations (optimal timing: March-May)
-- Hurricane season risk (June-November)
-
-### Resource Constraints
-
-- Limited agricultural expertise in papain cultivation
-- Regulatory compliance requirements for export
-- Competition from established low-cost producers
+### Team Constraints
+- **Team Size**: 4 members maximum
+- **Allocation**: Part-time engagement (30-50% allocation)
+- **Expertise**: Mix of strategy, domain, market, and financial skills
+- **Decision Authority**: Sponsor approval required for major pivots
