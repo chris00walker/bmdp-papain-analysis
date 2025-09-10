@@ -1,0 +1,52 @@
+{
+  "microtests": [
+    {
+      "assumption": "Caribbean companies will pay 15-25% premium for local distribution",
+      "test": "Customer interviews with pricing scenarios",
+      "metric": "≥70% willing to pay premium",
+      "owner": "BD Lead",
+      "timeline": "Week 3",
+      "priority": "high"
+    },
+    {
+      "assumption": "Can secure reliable suppliers with consistent quality",
+      "test": "Supplier audits and sample testing",
+      "metric": "≥3 suppliers meet quality standards",
+      "owner": "Ops Manager",
+      "timeline": "Week 4",
+      "priority": "high"
+    },
+    {
+      "assumption": "Market size supports $7.5M revenue by Year 3",
+      "test": "Market sizing research and demand analysis",
+      "metric": "Total addressable market ≥$30M",
+      "owner": "Business Analyst",
+      "timeline": "Week 2",
+      "priority": "high"
+    },
+    {
+      "assumption": "Working capital requirements within capital bounds",
+      "test": "Financial model validation with real supplier terms",
+      "metric": "Peak working capital ≤$750K",
+      "owner": "Finance Lead",
+      "timeline": "Week 3",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Regulatory compliance achievable across target markets",
+      "test": "Regulatory requirements mapping",
+      "metric": "Compliance pathway identified for ≥5 markets",
+      "owner": "Legal Counsel",
+      "timeline": "Week 4",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Quality differentiation creates competitive advantage",
+      "test": "Competitive analysis and customer value assessment",
+      "metric": "≥60% customers value local quality assurance",
+      "owner": "BD Lead",
+      "timeline": "Week 3",
+      "priority": "medium"
+    }
+  ]
+}

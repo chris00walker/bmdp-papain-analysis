@@ -1,0 +1,13 @@
+reason,polarity,theme,severity,evidence_link
+Customers may not pay premium for Caribbean sourcing,kill,market,high,
+Regulatory approval process too complex and costly,kill,regulatory,high,
+Scale mismatch - insufficient papaya supply for viable operations,kill,supply,critical,
+High fixed costs vs fluctuating demand cycles,kill,financial,high,
+Asian suppliers may lower prices to compete,kill,competitive,medium,
+Quality specifications may be technically unachievable,kill,technical,medium,
+Pharmaceutical market values supply chain diversification,thrill,market,high,
+Western regulatory compliance provides competitive advantage,thrill,regulatory,high,
+Caribbean location offers trade benefits and proximity,thrill,geographic,medium,
+GMP certification creates high barriers to entry,thrill,competitive,medium,
+Premium pricing potential for pharmaceutical grade quality,thrill,financial,high,
+Growing demand for supply chain resilience post-COVID,thrill,market,medium,

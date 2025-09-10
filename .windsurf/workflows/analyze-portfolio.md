@@ -1,5 +1,6 @@
 ---
 description: Analyze all businesses and generate portfolio comparison with automated rollup
+auto_execution_mode: 3
 ---
 
 # Analyze Portfolio

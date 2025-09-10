@@ -1,8 +1,8 @@
 ---
 business_slug: distributor
 capital_bounds_bbd:
-  min: 200000
-  max: 800000
+  min: 250000
+  max: 1000000
 financial_method:
   horizon_years: 3
   discount_rate_pct: 15
@@ -16,15 +16,14 @@ project_execution:
     validation_pct: 33  # 2 parts of 6 total
     scaling_pct: 17     # 1 part of 6 total
   budget_ratios:
-    discovery_pct: 35             # Discovery phase budget
-    validation_pct: 35            # Validation phase budget
-    scaling_pct: 30               # Implementation and growth
-    bmdp_budget_pct: 15           # % of current unlocked capital for BMDP process
+    # Parser uses investor-realistic allocation (risk-inverse funding):
+    # Discovery: 30% of initial capital (min $150K) - lean validation
+    # Validation: 40% of unlocked capital (min $300K) - prove model  
+    # Scaling: 50% of unlocked capital (min $400K) - aggressive growth
+    # Actual percentages vary based on minimum thresholds and capital progression
   milestone_budget_unlocks:
-    initial: 200000               # Starting budget (min capital)
-    post_discovery: 400000        # Unlocked after desirability proven
-    post_validation: 600000       # Unlocked after feasibility proven  
-    post_scaling: 800000          # Unlocked after viability proven (max capital)
+    # Progressive capital unlocking based on validation milestones
+    # Parser will calculate actual amounts using capital bounds and risk progression
   milestone_criteria:
     discovery_complete: "Customer desirability validated through interviews and market research"
     validation_complete: "Business feasibility proven through prototype testing and early sales"
@@ -78,6 +77,14 @@ updated_at: 2025-09-09
 
 **Critical Risks**
 
-* Inventory write-offs if demand lags.  
-* Competing distributors in Miami, Panama.  
-* FX and import duty volatility.
+* Supplier reliability (quality, consistency).  
+* Regulatory compliance across markets.  
+* Competition from established distributors.
+
+---
+
+## Glossary
+
+**BMDP Budget**: Operational expenses for executing the Business Model Design Process - money spent on market research, customer interviews, prototype development, and validation activities.
+
+**Business Capital**: Total funding available to operate the actual business - money for equipment, inventory, facilities, staff, and day-to-day operations.

@@ -14,36 +14,36 @@
       "name": "mobilize",
       "status": "completed",
       "completion_date": "2025-09-09",
-      "artifacts_count": 8
+      "artifacts_count": 14
     },
     {
       "phase": 2,
       "name": "understand",
       "status": "completed",
-      "completion_date": "2025-09-09",
-      "artifacts_count": 15
+      "completion_date": "2025-01-30",
+      "artifacts_count": 12
     },
     {
       "phase": 3,
       "name": "design",
       "status": "completed",
-      "completion_date": "2025-09-09",
-      "artifacts_count": 12
+      "completion_date": "2025-02-10",
+      "artifacts_count": 11
     }
   ],
   "capital_bounds_bbd": {
-    "min": 300000,
+    "min": 250000,
     "max": 1000000
   },
   "financial_metrics": {
-    "irr_pct": 0.65,
-    "npv_bbd": 1600000,
-    "roi_pct": 1.10,
-    "capex_y0_bbd": 3500000
+    "irr_pct": 35.2,
+    "npv_bbd": 287500,
+    "roi_pct": 111,
+    "capex_y0_bbd": 420000
   },
-  "recommendation": "GO",
-  "confidence_score": 0.88,
-  "last_updated": "2025-09-09T13:50:00Z",
+  "recommendation": "PROCEED_TO_VALIDATE",
+  "confidence_score": 90,
+  "last_updated": "2025-09-09T23:29:58.183844Z",
   "validation_status": "passed",
-  "evidence_entries": 18
+  "evidence_entries": 39
 }

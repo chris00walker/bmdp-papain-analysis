@@ -1,0 +1,68 @@
+{
+  "tests": [
+    {
+      "assumption": "Customers will pay $108-130/kg premium for sterile processing",
+      "test": "Pricing survey with 8 wound care manufacturers",
+      "metric": "≥70% accept pricing range for sterile capabilities",
+      "timeline": "2 weeks",
+      "owner": "Business Development Lead",
+      "priority": "high"
+    },
+    {
+      "assumption": "Sterile processing certification achievable within 18 months",
+      "test": "Regulatory consultant assessment and FDA pre-submission",
+      "metric": "Regulatory pathway confirmed with timeline ≤18 months",
+      "timeline": "4 weeks",
+      "owner": "Regulatory Specialist",
+      "priority": "critical"
+    },
+    {
+      "assumption": "Target customers require minimum 2,000-5,000kg annual volumes",
+      "test": "Volume requirement interviews with 6 pharmaceutical distributors",
+      "metric": "≥80% confirm volume requirements within production capacity",
+      "timeline": "3 weeks",
+      "owner": "Business Development Lead",
+      "priority": "high"
+    },
+    {
+      "assumption": "Local papaya supply can achieve pharmaceutical-grade specifications",
+      "test": "Lab analysis of papaya latex from 5 local growers",
+      "metric": "≥3 samples demonstrate potential for ≥8,000 USP U/mg",
+      "timeline": "6 weeks",
+      "owner": "Process Engineer",
+      "priority": "critical"
+    },
+    {
+      "assumption": "Sterile processing provides sustainable competitive advantage",
+      "test": "Competitive analysis of sterile enzyme suppliers globally",
+      "metric": "≤3 competitors with validated sterile papain capabilities",
+      "timeline": "2 weeks",
+      "owner": "Research Analyst",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Technical support services valued at $200-300/hour premium",
+      "test": "Service pricing interviews with 5 current enzyme customers",
+      "metric": "≥60% willing to pay for technical consulting services",
+      "timeline": "2 weeks",
+      "owner": "Business Development Lead",
+      "priority": "medium"
+    },
+    {
+      "assumption": "Customer qualification process completable within 12 months",
+      "test": "Qualification requirement analysis with 4 target customers",
+      "metric": "Average qualification timeline ≤12 months confirmed",
+      "timeline": "3 weeks",
+      "owner": "Quality Director",
+      "priority": "high"
+    },
+    {
+      "assumption": "Facility CAPEX achievable within $2.5M budget",
+      "test": "Engineering quotes for sterile processing facility",
+      "metric": "Facility cost estimates within $2.5M ±15%",
+      "timeline": "4 weeks",
+      "owner": "Process Engineer",
+      "priority": "critical"
+    }
+  ]
+}

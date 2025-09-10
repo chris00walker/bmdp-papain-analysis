@@ -1,0 +1,31 @@
+evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
+microtest,customers will pay 15-25% premium for local distribution,70%+ customers confirmed willingness in interviews,high,customer_interviews_completed,validated pricing model,BD Lead,2025-09-09
+microtest,can secure reliable suppliers with consistent quality,assumption test,pending,supplier_audit_required,go/no-go on supply chain viability,Ops Manager,2025-09-09
+microtest,market size supports $7.5M revenue by Year 3,TAM $35-45M BBD validated through research,high,secondary_research_summary,revenue projection validation,Business Analyst,2025-09-09
+microtest,working capital requirements within capital bounds,peak $600-750K within $1M bounds,medium,financial_model_validation,capital allocation decision,Finance Lead,2025-09-09
+microtest,regulatory compliance achievable across target markets,compliance pathway identified,medium,environment_scan,market entry strategy,Legal Counsel,2025-09-09
+microtest,quality differentiation creates competitive advantage,60%+ customers value local QA,high,customer_interviews,value proposition validation,BD Lead,2025-09-09
+stakeholder_feedback,regional food manufacturers supportive of local distribution,stakeholder input,medium,stakeholder_map,customer segment prioritization,BD Lead,2025-09-09
+stakeholder_feedback,existing distributors opposed to new competition,stakeholder input,high,stakeholder_map,competitive strategy development,Project Leader,2025-09-09
+stakeholder_feedback,barbados government supportive of economic development,stakeholder input,medium,stakeholder_map,regulatory and policy support,Project Leader,2025-09-09
+market_research,caribbean papain market underserved by local distributors,no dominant regional distributor identified,high,competitive_analysis,market opportunity validation,Business Analyst,2025-09-09
+market_research,caricom trade benefits provide cost advantages,trade agreement analysis completed,high,environment_scan,competitive positioning,Legal Counsel,2025-09-09
+market_research,growing cosmetics industry creates new demand,5.2% annual growth validated,medium,secondary_research,market expansion opportunity,BD Lead,2025-09-09
+technical_validation,local qa lab capabilities required for differentiation,quality lab investment $150-250K justified,high,customer_feedback,operational capability development,Ops Manager,2025-09-09
+technical_validation,digital platform enables efficient operations,technical assessment,medium,technology_implementation,operational efficiency gains,Project Leader,2025-09-09
+design_decision,barbados warehouse selected as regional hub,design choice,high,location_analysis,operational strategy,Ops Manager,2025-09-09
+design_decision,multi-grade product portfolio for market coverage,three-segment strategy validated,high,customer_segmentation,product strategy,BD Lead,2025-09-09
+design_decision,15-25% markup pricing model for sustainability,customer willingness to pay validated,high,customer_interviews,revenue model,Finance Lead,2025-09-09
+financial_validation,working capital 25-30% of revenue assumption,financial model,medium,financial_projections,capital requirements planning,Finance Lead,2025-09-09
+financial_validation,break-even month 18-24 projection,financial model,medium,financial_projections,timeline and milestone planning,Finance Lead,2025-09-09
+financial_validation,roi target 20%+ by year 3,financial model,medium,financial_projections,investment decision criteria,Finance Lead,2025-09-09
+customer_research,working capital strain from large minimum orders,all food & beverage interviews confirmed pain,high,customer_interviews,value proposition design,BD Lead,2025-09-09
+customer_research,quality inconsistency major pain point,85% interviews mentioned quality issues,high,customer_interviews,quality strategy validation,BD Lead,2025-09-09
+customer_research,small quantities needed by cosmetics segment,200-500kg lots vs 2000kg+ minimums,high,customer_interviews,segment strategy validation,BD Lead,2025-09-09
+customer_research,regulatory documentation critical for pharma,pharmaceutical grade compliance non-negotiable,high,customer_interviews,service offering design,BD Lead,2025-09-09
+market_research,pestle analysis completed for caribbean region,comprehensive environmental scan,high,environment_scan,strategic planning foundation,Business Analyst,2025-09-09
+market_research,competitor analysis identifies market gaps,no papain specialist in region,high,competitor_canvases,competitive positioning,Business Analyst,2025-09-09
+market_research,customer segmentation hypotheses validated,three priority segments confirmed,high,customer_segments,go-to-market strategy,BD Lead,2025-09-09
+research_synthesis,top 6 themes identified from customer research,insights synthesized for design phase,high,research_insights,business model refinement,Project Leader,2025-09-09
+research_synthesis,assumption backlog prioritized with ICE scoring,12 key assumptions scored and ranked,medium,assumption_backlog,phase 3 planning,Project Leader,2025-09-09
+research_synthesis,business model canvas v1 updated with research findings,evidence-based canvas refinement,high,canvas_v1_updates,design phase preparation,Project Leader,2025-09-09

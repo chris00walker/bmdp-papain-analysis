@@ -1,0 +1,39 @@
+evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
+mobilize,project brief created with sponsor prompt,project scope and constraints defined,high,businesses/marketplace/10_mobilize/10_brief.md,foundation for phase 1 execution,Project Leader,2025-09-09
+mobilize,cross-functional team roster established,4 FTE team structure defined,high,businesses/marketplace/10_mobilize/11_team_roster.csv,resource allocation for project,Project Leader,2025-09-09
+mobilize,data access matrix created,9 data sources identified with owners,medium,businesses/marketplace/10_mobilize/12_access_matrix.csv,research capability assessment,Market Analyst,2025-09-09
+mobilize,business model canvas primer developed,team orientation on canvas methodology,high,businesses/marketplace/10_mobilize/13_orientation_brief.md,team capability building,Project Leader,2025-09-09
+mobilize,project objectives framed with SMART criteria,5 measurable objectives defined,high,businesses/marketplace/10_mobilize/14_mobilize_charter.md,success criteria establishment,Project Leader,2025-09-09
+mobilize,v0 business model canvas drafted,initial 9-block canvas completed,medium,businesses/marketplace/10_mobilize/15_canvas_v0_main.md,baseline business model hypothesis,Market Analyst,2025-09-09
+mobilize,idea stories developed with problem-solution fit,3 narrative stories created,medium,businesses/marketplace/10_mobilize/16_idea_stories.md,value proposition validation framework,Market Analyst,2025-09-09
+mobilize,kill/thrill analysis conducted,15 factors identified across themes,high,businesses/marketplace/10_mobilize/17_kill_thrill.csv,risk and opportunity assessment,Project Leader,2025-09-09
+mobilize,preliminary micro-tests defined,10 assumption tests designed,high,businesses/marketplace/10_mobilize/18_microtests.json,validation experiment framework,Market Analyst,2025-09-09
+mobilize,sprint plan created for phase 1,6 sprints with objectives defined,high,businesses/marketplace/10_mobilize/19_sprint_plan.md,execution roadmap established,Project Leader,2025-09-09
+mobilize,stakeholder mapping completed,15 stakeholders with influence analysis,high,businesses/marketplace/10_mobilize/20_stakeholder_map.csv,relationship management strategy,Business Developer,2025-09-09
+mobilize,risk register established,15 risks with mitigation strategies,high,businesses/marketplace/10_mobilize/21_risk_register.csv,risk management framework,Project Leader,2025-09-09
+mobilize,communications plan developed,multi-audience communication strategy,medium,businesses/marketplace/10_mobilize/22_comms_plan.md,stakeholder engagement framework,Project Leader,2025-09-09
+mobilize,announcement materials created,one-pager for project communication,medium,businesses/marketplace/10_mobilize/23_announcement_onepager.md,project marketing and awareness,Project Leader,2025-09-09
+understand,research plan and timebox created,10-day research plan with objectives,high,businesses/marketplace/20_understand/20_research_plan.md,phase 2 execution framework,Market Analyst,2025-01-15
+understand,research questions and hypotheses defined,comprehensive question framework,high,businesses/marketplace/20_understand/21_research_questions.md,research focus and validation criteria,Market Analyst,2025-01-15
+understand,environment scan completed,PESTLE analysis and value chain mapping,high,businesses/marketplace/20_understand/22_environment_scan.md,market context and opportunity assessment,Market Analyst,2025-01-16
+understand,secondary research summary completed,comprehensive market intelligence,high,businesses/marketplace/20_understand/23_secondary_summary.md,market validation and benchmarking,Market Analyst,2025-01-17
+understand,competitor analysis completed,10 competitors with business model canvases,high,businesses/marketplace/20_understand/24_competitor_canvases.md,competitive positioning strategy,Market Analyst,2025-01-18
+understand,customer segmentation hypotheses defined,detailed buyer and supplier segments,high,businesses/marketplace/20_understand/25_customer_segments.md,target market prioritization,Market Analyst,2025-01-19
+understand,interview toolkit created,comprehensive guides and screeners,high,businesses/marketplace/20_understand/26_interview_guide.md,primary research methodology,Market Analyst,2025-01-20
+understand,customer interviews completed,10 interviews across buyer and supplier segments,high,businesses/marketplace/20_understand/27_interview_log.csv,primary market validation,Market Analyst,2025-01-26
+understand,empathy maps and JTBD analysis completed,detailed customer personas and job stories,high,businesses/marketplace/20_understand/28_empathy_maps.md,customer understanding and value proposition,Market Analyst,2025-01-27
+understand,research insights synthesized,comprehensive findings and recommendations,high,businesses/marketplace/20_understand/29_insights_synthesis.md,strategic direction and decision making,Market Analyst,2025-01-28
+understand,assumption backlog updated with evidence,20 assumptions validated with confidence levels,high,businesses/marketplace/20_understand/30_assumption_backlog.csv,risk reduction and validation progress,Market Analyst,2025-01-29
+understand,business model canvas v1 completed,research-validated canvas with success metrics,high,businesses/marketplace/20_understand/31_canvas_v1_main.md,refined business model for phase 3,Market Analyst,2025-01-30
+design,phase 3 design brief and timebox created,15-day design sprint with clear objectives,high,businesses/marketplace/30_design/30_design_brief.md,design execution framework,Market Analyst,2025-02-01
+design,ideation session completed,5 business model alternatives generated,high,businesses/marketplace/30_design/31_ideation.md,prototype selection for development,Market Analyst,2025-02-02
+design,prototype business model canvases created,3 detailed prototype canvases (A B C),high,businesses/marketplace/30_design/32_prototypes/,business model alternatives for evaluation,Market Analyst,2025-02-03
+design,stakeholder feedback collected,18 feedback entries across prototypes,high,businesses/marketplace/30_design/33_feedback_log.csv,prototype validation and selection input,Customer Success,2025-02-04
+design,selection criteria and scorecard developed,weighted evaluation framework with scores,high,businesses/marketplace/30_design/34_selection_criteria.md,prototype selection methodology,Market Analyst,2025-02-05
+design,prototype selection completed,prototype A selected with 7.1 weighted score,high,businesses/marketplace/30_design/35_selection_scorecard.csv,business model decision for implementation,Market Analyst,2025-02-05
+design,financial projections completed,5-year financial model with 35.2% IRR,high,businesses/marketplace/30_design/36_financial_projections.md,investment case and funding strategy,Financial Analyst,2025-02-06
+design,implementation roadmap developed,18-month phased execution plan,high,businesses/marketplace/30_design/37_implementation_roadmap.md,execution strategy and milestones,Project Leader,2025-02-07
+design,risk assessment and mitigation completed,5 strategic risks with mitigation plans,high,businesses/marketplace/30_design/38_risk_mitigation.md,risk management framework,Project Leader,2025-02-08
+design,test cards for validation created,10 assumption tests for phase 4,high,businesses/marketplace/30_design/39_test_cards.json,validation experiment design,Market Analyst,2025-02-09
+design,integration decision completed,standalone business structure recommended,high,businesses/marketplace/30_design/40_integration_decision.md,business structure and governance,Project Leader,2025-02-10
+design,financial cashflow model created,60-month detailed cashflow projections,high,businesses/marketplace/financials_cashflow.csv,financial planning and analysis,Financial Analyst,2025-02-10

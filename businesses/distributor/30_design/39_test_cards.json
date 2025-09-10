@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "assumption": "Customers will pay 15-20% premium for flexible ordering",
+      "test": "pricing survey with 20 target customers",
+      "metric": "≥70% accept premium pricing for micro-lots",
+      "timeline": "2 weeks",
+      "owner": "Business Development Lead",
+      "priority": "high",
+      "validation_method": "customer interviews and pricing scenarios"
+    },
+    {
+      "assumption": "Digital platform adoption will be high among target customers",
+      "test": "platform demo and usability testing with 10 customers",
+      "metric": "≥80% complete demo successfully and express interest",
+      "timeline": "3 weeks",
+      "owner": "Technology Lead",
+      "priority": "high",
+      "validation_method": "user experience testing and feedback collection"
+    },
+    {
+      "assumption": "Working capital financing demand exists in target market",
+      "test": "financial services survey with 15 potential customers",
+      "metric": "≥60% express interest in inventory financing options",
+      "timeline": "2 weeks",
+      "owner": "Finance Director",
+      "priority": "high",
+      "validation_method": "customer interviews focused on cash flow challenges"
+    },
+    {
+      "assumption": "Suppliers will provide flexible terms for smaller distributors",
+      "test": "supplier negotiations with 5 potential partners",
+      "metric": "≥3 suppliers agree to flexible payment and volume terms",
+      "timeline": "4 weeks",
+      "owner": "Operations Manager",
+      "priority": "high",
+      "validation_method": "direct supplier negotiations and term sheets"
+    },
+    {
+      "assumption": "48-hour delivery is achievable across Caribbean region",
+      "test": "logistics pilot with 3 regional partners",
+      "metric": "≥90% of test shipments delivered within 48 hours",
+      "timeline": "3 weeks",
+      "owner": "Operations Manager",
+      "priority": "medium",
+      "validation_method": "pilot shipment tracking and performance measurement"
+    },
+    {
+      "assumption": "Customer acquisition cost will be ≤$1,200 per customer",
+      "test": "marketing campaign pilot with $10K budget",
+      "metric": "Acquire ≥8 qualified leads (≤$1,250 per lead)",
+      "timeline": "4 weeks",
+      "owner": "Business Development Lead",
+      "priority": "medium",
+      "validation_method": "digital marketing campaign with conversion tracking"
+    },
+    {
+      "assumption": "Inventory turnover of 12-15x annually is achievable",
+      "test": "demand forecasting model with historical data",
+      "metric": "Model predicts ≥12x turnover with 80% accuracy",
+      "timeline": "2 weeks",
+      "owner": "Operations Manager",
+      "priority": "medium",
+      "validation_method": "data analysis and forecasting model validation"
+    },
+    {
+      "assumption": "Financial services will generate 10% of total revenue",
+      "test": "financial services pilot with 5 customers",
+      "metric": "≥3 customers utilize financing services within 30 days",
+      "timeline": "6 weeks",
+      "owner": "Finance Director",
+      "priority": "low",
+      "validation_method": "pilot program with actual financial service offerings"
+    },
+    {
+      "assumption": "Regional expansion to 5+ markets is viable by Year 2",
+      "test": "market entry analysis for Trinidad and Jamaica",
+      "metric": "Identify viable entry strategy with <$50K setup cost per market",
+      "timeline": "3 weeks",
+      "owner": "Business Development Lead",
+      "priority": "low",
+      "validation_method": "market research and regulatory analysis"
+    },
+    {
+      "assumption": "Customer retention rate will exceed 85% annually",
+      "test": "customer satisfaction survey and retention analysis",
+      "metric": "≥90% customer satisfaction score and retention intent",
+      "timeline": "2 weeks",
+      "owner": "Business Development Lead",
+      "priority": "low",
+      "validation_method": "customer satisfaction surveys and retention interviews"
+    }
+  ]
+}

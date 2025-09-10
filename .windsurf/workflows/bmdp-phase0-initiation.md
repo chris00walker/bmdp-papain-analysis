@@ -108,13 +108,17 @@ cat > businesses/$1/00_initiation/02_resource_plan.md << EOF
 - **Financial Analyst**: [Name/TBD]
 - **Team Size**: $TEAM_SIZE members
 
-## Budget Requirements
-- **Discovery Budget**: \$$DISCOVERY_BUDGET BBD (35% of BMDP budget)
-- **Validation Budget**: \$$VALIDATION_BUDGET BBD (35% of BMDP budget)
-- **Scaling Budget**: \$$PHASE3_BUDGET BBD (30% of BMDP budget)
-- **Total BMDP Budget**: \$$TOTAL_BUDGET BBD (15% of current unlocked capital)
+## BMDP Process Costs
+*Operational expenses for executing the business model design process*
 
-## Milestone Budget Unlocks
+- **Discovery Budget**: \$$DISCOVERY_BUDGET BBD
+- **Validation Budget**: \$$VALIDATION_BUDGET BBD
+- **Scaling Budget**: \$$PHASE3_BUDGET BBD
+- **Total BMDP Budget**: \$$TOTAL_BUDGET BBD
+
+## Business Capital Available
+*Total funding available to the business at each milestone*
+
 - **Initial Capital**: \$$INITIAL_CAPITAL BBD
 - **Post-Discovery**: \$$POST_DISCOVERY_CAPITAL BBD
 - **Post-Validation**: \$$POST_VALIDATION_CAPITAL BBD

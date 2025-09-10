@@ -164,31 +164,62 @@ def main():
         capital_bounds = frontmatter.get('capital_bounds_bbd', {})
         min_capital = capital_bounds.get('min', 300000)
         
-        budget_ratios = project_exec.get('budget_ratios', {})
-        milestone_unlocks = project_exec.get('milestone_budget_unlocks', {})
+        budget_ratios = project_exec.get('budget_ratios', {}) or {}
+        milestone_unlocks = project_exec.get('milestone_budget_unlocks', {}) or {}
         
-        if budget_ratios:
-            bmdp_budget_pct = budget_ratios.get('bmdp_budget_pct', 15)
-            discovery_pct = budget_ratios.get('discovery_pct', 35)
-            validation_pct = budget_ratios.get('validation_pct', 35)
-            scaling_pct = budget_ratios.get('scaling_pct', 30)
+        # Use new logic if project_execution section exists (even with empty budget_ratios)
+        if project_exec:
+            # Get capital bounds from brief
+            capital_bounds = frontmatter.get('capital_bounds_bbd', {})
+            min_capital_bound = capital_bounds.get('min', 300000)
+            max_capital_bound = capital_bounds.get('max', 1000000)
             
-            # Use milestone-based capital if available, otherwise use min_capital
+            # Set investor-realistic capital boundaries
+            discovery_min_capital = 250000  # $250K minimum for discovery phase
+            max_total_capital = max_capital_bound  # Use brief's maximum capital bound
+            
+            # Use milestone-based capital with investor-realistic bounds
             if milestone_unlocks:
-                initial_capital = milestone_unlocks.get('initial', min_capital)
-                post_discovery_capital = milestone_unlocks.get('post_discovery', min_capital)
-                post_validation_capital = milestone_unlocks.get('post_validation', min_capital)
-                max_capital = milestone_unlocks.get('post_scaling', min_capital)
+                initial_capital = max(discovery_min_capital, min(milestone_unlocks.get('initial', discovery_min_capital), max_total_capital))
+                post_discovery_capital = max(initial_capital, min(milestone_unlocks.get('post_discovery', discovery_min_capital), max_total_capital))
+                post_validation_capital = max(post_discovery_capital, min(milestone_unlocks.get('post_validation', discovery_min_capital), max_total_capital))
+                max_capital = max(post_validation_capital, min(milestone_unlocks.get('post_scaling', discovery_min_capital), max_total_capital))
             else:
-                initial_capital = min_capital
-                post_discovery_capital = min_capital
-                post_validation_capital = min_capital
-                max_capital = min_capital
+                # Use capital bounds when milestone_unlocks is empty
+                capital_bounds = frontmatter.get('capital_bounds_bbd', {})
+                min_capital_bound = capital_bounds.get('min', 300000)
+                max_capital_bound = capital_bounds.get('max', 1000000)
+                
+                # Progressive capital unlocking based on validation milestones
+                initial_capital = min_capital_bound  # Start with minimum
+                post_discovery_capital = min(int(min_capital_bound * 1.67), max_total_capital)  # ~67% increase
+                post_validation_capital = min(int(post_discovery_capital * 1.5), max_total_capital)  # ~50% increase  
+                max_capital = min(max_capital_bound, max_total_capital)  # Respect both bounds
             
-            # Calculate phase budgets based on available capital at each milestone
-            discovery_budget = int(initial_capital * bmdp_budget_pct / 100 * discovery_pct / 100)
-            validation_budget = int(post_discovery_capital * bmdp_budget_pct / 100 * validation_pct / 100)
-            scaling_budget = int(post_validation_capital * bmdp_budget_pct / 100 * scaling_pct / 100)
+            # Investor-realistic capital allocation (risk-inverse funding)
+            # Discovery: Lean validation - fail fast, fail cheap
+            discovery_budget = min(75000, int(initial_capital * 0.30))  # Max $75K or 30% of initial
+            
+            # Validation: Prove business model - moderate investment after discovery success
+            validation_budget = min(500000, int(post_discovery_capital * 0.40))  # Max $500K or 40% of unlocked capital
+            
+            # Scaling: Aggressive growth - major investment in proven winners
+            scaling_budget = min(1000000, int(post_validation_capital * 0.50))  # Max $1M or 50% of unlocked capital
+            
+            # Ensure minimum viable budgets (balanced compromise)
+            discovery_budget = max(discovery_budget, 150000)  # Min $150K for meaningful discovery
+            validation_budget = max(validation_budget, 300000) # Min $300K for comprehensive validation
+            scaling_budget = max(scaling_budget, 400000)      # Min $400K for substantial scaling impact
+            
+            # Investor principle: Total allocation cannot exceed available capital at each milestone
+            if discovery_budget > initial_capital:
+                discovery_budget = int(initial_capital * 0.90)  # Leave 10% buffer
+            
+            if validation_budget > (post_discovery_capital - discovery_budget):
+                validation_budget = int((post_discovery_capital - discovery_budget) * 0.80)  # Leave 20% buffer
+                
+            if scaling_budget > (max_total_capital - discovery_budget - validation_budget):
+                scaling_budget = int((max_total_capital - discovery_budget - validation_budget) * 0.75)  # Leave 25% buffer
             
             # Calculate totals
             phase1_2_budget = discovery_budget + validation_budget  # Combined for backward compatibility
@@ -212,13 +243,24 @@ def main():
         print(f"PHASE1_WEEKS='{phase1_weeks}'")
         print(f"PHASE2_WEEKS='{phase2_weeks}'")
         print(f"PHASE3_WEEKS='{phase3_weeks}'")
-        print(f"DISCOVERY_BUDGET='{discovery_budget if 'discovery_budget' in locals() else int(phase1_2_budget * 0.5)}'")
-        print(f"VALIDATION_BUDGET='{validation_budget if 'validation_budget' in locals() else int(phase1_2_budget * 0.5)}'")
+        print(f"BMDP_DISCOVERY_COST='{discovery_budget}'")
+        print(f"BMDP_VALIDATION_COST='{validation_budget}'")
+        print(f"BMDP_PHASE1_2_COST='{phase1_2_budget}'")
+        print(f"BMDP_SCALING_COST='{phase3_budget}'")
+        print(f"TOTAL_BMDP_COST='{total_budget}'")
+        
+        # Output business capital available (funding for actual business operations)
+        print(f"BUSINESS_INITIAL_CAPITAL='{current_capital}'")
+        print(f"BUSINESS_POST_DISCOVERY_CAPITAL='{post_discovery_capital}'")
+        print(f"BUSINESS_POST_VALIDATION_CAPITAL='{post_validation_capital}'")
+        print(f"BUSINESS_MAX_CAPITAL='{max_capital}'")
+        
+        # Legacy variable names for backward compatibility
+        print(f"DISCOVERY_BUDGET='{discovery_budget}'")
+        print(f"VALIDATION_BUDGET='{validation_budget}'")
         print(f"PHASE1_2_BUDGET='{phase1_2_budget}'")
         print(f"PHASE3_BUDGET='{phase3_budget}'")
         print(f"TOTAL_BUDGET='{total_budget}'")
-        
-        # Output milestone capital unlocks
         print(f"INITIAL_CAPITAL='{current_capital}'")
         print(f"POST_DISCOVERY_CAPITAL='{post_discovery_capital}'")
         print(f"POST_VALIDATION_CAPITAL='{post_validation_capital}'")

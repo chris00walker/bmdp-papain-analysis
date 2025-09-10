@@ -1,0 +1,15 @@
+risk,likelihood,impact,trigger,mitigation,owner
+Supplier quality inconsistency damages reputation,medium,high,customer complaints,multi-supplier strategy + local QA testing,Ops Manager
+Working capital requirements exceed projections,medium,high,inventory buildup,conservative inventory planning + credit facilities,Finance Lead
+Established competitors undercut pricing,high,medium,price war initiation,focus on service differentiation + niche markets,BD Lead
+Regulatory changes block market access,low,high,new import restrictions,diversify markets + regulatory monitoring,Legal Counsel
+Key customer concentration risk,medium,medium,loss of major customer,diversified customer base development,BD Lead
+Currency fluctuation impacts margins,high,medium,exchange rate volatility,hedge key exposures + local currency pricing,Finance Lead
+Warehouse facility issues,low,high,facility damage/closure,backup facility arrangements + insurance,Ops Manager
+Technology platform failures,medium,medium,system downtime,redundant systems + manual backup processes,Project Leader
+Talent acquisition challenges,medium,medium,key hire departures,competitive compensation + succession planning,Project Leader
+Economic downturn reduces demand,medium,high,recession indicators,flexible cost structure + essential product focus,Project Leader
+Supply chain disruption,medium,high,shipping delays/strikes,multiple logistics providers + safety stock,Ops Manager
+Intellectual property disputes,low,medium,patent/trademark claims,IP clearance + legal insurance,Legal Counsel
+Cybersecurity breaches,low,high,data breach/system compromise,security protocols + cyber insurance,Project Leader
+Political instability affects operations,low,high,government changes,political risk insurance + diversification,Project Leader
