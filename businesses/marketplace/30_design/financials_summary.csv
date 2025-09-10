@@ -1,7 +1,7 @@
 metric,value
-irr_pct,-0.0617
-npv_bbd,-535532
-roi_pct,-0.2190
+irr_pct,1.598
+npv_bbd,528000
+roi_pct,3.378
 discount_rate_pct,0.1500
-horizon_years,6
-capex_y0_bbd,600000
+horizon_years,5
+capex_y0_bbd,222000
