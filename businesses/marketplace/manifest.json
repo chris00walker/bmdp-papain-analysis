@@ -36,10 +36,10 @@
     "max": 1000000
   },
   "financial_metrics": {
-    "irr_pct": 35.2,
-    "npv_bbd": 287500,
-    "roi_pct": 111,
-    "capex_y0_bbd": 420000
+    "irr_pct": 159.8,
+    "npv_bbd": 528000,
+    "roi_pct": 337.8,
+    "capex_y0_bbd": 222000
   },
   "recommendation": "PROCEED_TO_VALIDATE",
   "confidence_score": 90,
