@@ -1,0 +1,15 @@
+{
+  "business_name": "{{ business_title }}",
+  "business_slug": "{{ business_slug | default(business_title | lower | replace(' ', '-')) }}",
+  "phases_completed": [],
+  "last_updated": "{{ current_date | default('TBD') }}",
+  "validation_status": "in_progress",
+  "capital_bounds_bbd": {
+    "min": {{ capital_min | default('300000') | replace('$', '') | replace(',', '') | int }},
+    "max": {{ capital_max | default('1000000') | replace('$', '') | replace(',', '') | int }}
+  },
+  "financial_metrics": {
+    "discount_rate": {{ discount_rate | default('15.0') | float }},
+    "roi_target": {{ roi_target | default('25.0') | float }}
+  }
+}

@@ -1,0 +1,105 @@
+# Sprint Plan - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Sprint Overview
+**Duration**: {{ sprint_duration | default("4") }} weeks
+**Sprint Goal**: Complete Phase 1 mobilization with validated business model framework
+
+## Sprint Cadence
+
+### Weekly Standups
+**Schedule**: {{ standup_schedule | default("Every Monday 9:00 AM") }}
+**Duration**: {{ standup_duration | default("30 minutes") }}
+**Participants**: {{ team_lead | default("Team Lead") }}, {{ business_expert | default("Business Expert") }}, {{ market_analyst | default("Market Analyst") }}, {{ financial_analyst | default("Financial Analyst") }}
+
+**Agenda**:
+- Progress since last standup
+- Current sprint deliverables status
+- Blockers and dependencies
+- Next week priorities
+
+### Biweekly Reviews
+**Schedule**: {{ review_schedule | default("Every other Friday 2:00 PM") }}
+**Duration**: {{ review_duration | default("60 minutes") }}
+**Participants**: Core team + {{ sponsor_name | default("Project Sponsor") }}
+
+**Agenda**:
+- Sprint deliverables demo
+- Stakeholder feedback
+- Risk and issue review
+- Next sprint planning
+
+## Sprint Deliverables
+
+### Week 1 Deliverables
+- [ ] Team roster finalized ({{ team_lead | default("Team Lead") }})
+- [ ] Access matrix completed ({{ market_analyst | default("Market Analyst") }})
+- [ ] Orientation brief delivered ({{ business_expert | default("Business Expert") }})
+- [ ] Initial stakeholder mapping ({{ team_lead | default("Team Lead") }})
+
+### Week 2 Deliverables
+- [ ] Canvas v0 first draft ({{ business_expert | default("Business Expert") }})
+- [ ] Kill/thrill analysis ({{ market_analyst | default("Market Analyst") }})
+- [ ] Risk register initial version ({{ team_lead | default("Team Lead") }})
+- [ ] Microtest definitions ({{ business_expert | default("Business Expert") }})
+
+### Week 3 Deliverables
+- [ ] Canvas v0 refinement ({{ business_expert | default("Business Expert") }})
+- [ ] Idea stories documentation ({{ business_expert | default("Business Expert") }})
+- [ ] Communications plan ({{ team_lead | default("Team Lead") }})
+- [ ] Sprint retrospective preparation
+
+### Week 4 Deliverables
+- [ ] Final canvas v0 ({{ business_expert | default("Business Expert") }})
+- [ ] Announcement one-pager ({{ team_lead | default("Team Lead") }})
+- [ ] Evidence ledger updates ({{ market_analyst | default("Market Analyst") }})
+- [ ] Phase 1 gate readiness assessment
+
+## Success Metrics
+
+### Completion Metrics
+- **Deliverable Completion**: 100% of planned deliverables
+- **Quality Gates**: All deliverables pass review criteria
+- **Timeline Adherence**: ≤5% variance from planned schedule
+
+### Engagement Metrics
+- **Team Participation**: 100% attendance at standups
+- **Stakeholder Engagement**: ≥80% stakeholder meeting attendance
+- **Feedback Integration**: ≥90% of feedback items addressed
+
+### Value Metrics
+- **Canvas Completeness**: All 9 building blocks defined
+- **Evidence Quality**: ≥5 evidence entries with high confidence
+- **Risk Coverage**: ≥10 risks identified and assessed
+
+## Risk Management
+
+### Sprint Risks
+| Risk | Probability | Impact | Mitigation | Owner |
+|------|-------------|--------|------------|-------|
+| Team member unavailability | Medium | High | Cross-training, backup assignments | {{ team_lead | default("Team Lead") }} |
+| Stakeholder feedback delays | High | Medium | Proactive scheduling, async feedback | {{ team_lead | default("Team Lead") }} |
+| Canvas complexity | Medium | Medium | Structured methodology, expert guidance | {{ business_expert | default("Business Expert") }} |
+
+### Escalation Path
+- **Level 1**: Team Lead resolution
+- **Level 2**: Sponsor escalation
+- **Level 3**: Steering committee review
+
+## Definition of Done
+
+### Deliverable Criteria
+- [ ] Content complete per specification
+- [ ] Reviewed by assigned team member
+- [ ] Stakeholder feedback incorporated
+- [ ] Evidence documented in ledger
+- [ ] Approved by {{ sponsor_name | default("Project Sponsor") }}
+
+### Sprint Completion Criteria
+- [ ] All deliverables meet definition of done
+- [ ] Phase 1 gate criteria satisfied
+- [ ] Stakeholder sign-off obtained
+- [ ] Phase 2 readiness confirmed

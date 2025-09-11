@@ -1,0 +1,190 @@
+# Customer Interview Guide - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Interview Objectives
+- Validate customer problems and pain points
+- Test solution concepts and value propositions
+- Understand decision-making processes and criteria
+- Gather insights on pricing and willingness to pay
+- Identify competitive alternatives and preferences
+
+## Interview Structure (45-60 minutes)
+
+### Opening (5 minutes)
+**Introduction**
+"Thank you for taking time to speak with us. I'm [Name] from [Company], and we're researching {{ business_type | default("business solutions") }} to better understand customer needs. This conversation will help us develop solutions that truly address market problems.
+
+Your responses will be kept confidential, and we're not selling anything today. May I record this conversation for our internal analysis?"
+
+**Background Questions**
+- Can you tell me about your role and responsibilities?
+- How long have you been with [Company Name]?
+- What does a typical day/week look like for you?
+
+### Problem Exploration (15 minutes)
+**Current State Questions**
+- How do you currently handle {{ problem_area | default("[specific problem area]") }}?
+- Walk me through your typical process for {{ key_process | default("[key process]") }}.
+- What tools or solutions do you currently use?
+
+**Pain Point Discovery**
+- What are the biggest challenges you face with {{ problem_area | default("your current approach") }}?
+- How much time do you spend on {{ time_consuming_task | default("[time-consuming task]") }} per week?
+- What happens when {{ failure_scenario | default("[failure scenario]") }} occurs?
+- How does this impact your business/team/customers?
+
+**Quantifying Impact**
+- Can you estimate the cost of {{ problem_impact | default("these challenges") }} to your organization?
+- How often do these problems occur?
+- What would solving this problem be worth to you?
+
+### Solution Validation (15 minutes)
+**Concept Introduction**
+"Based on what you've shared, let me describe a potential solution we're considering..."
+
+[Present {{ business_title }} concept in 2-3 sentences]
+
+**Initial Reaction**
+- What's your initial reaction to this concept?
+- How well does this address the problems you mentioned?
+- What concerns or questions do you have?
+
+**Feature Validation**
+- Which aspects of this solution are most valuable to you?
+- What features would be essential vs. nice-to-have?
+- What's missing from this concept?
+- How would this fit into your current workflow?
+
+**Competitive Comparison**
+- How does this compare to solutions you've seen or used?
+- What would make this better than your current approach?
+- What would prevent you from adopting something like this?
+
+### Decision Process (10 minutes)
+**Buying Process**
+- How do you typically evaluate and purchase new solutions?
+- Who else would be involved in this decision?
+- What criteria do you use to evaluate vendors/solutions?
+- How long does your typical evaluation process take?
+
+**Budget and Pricing**
+- Do you have budget allocated for solving this problem?
+- What do you currently spend on {{ current_solution | default("your current solution") }}?
+- What would you expect to pay for a solution like this?
+- How do you prefer to pay (monthly, annual, usage-based)?
+
+### Closing (5 minutes)
+**Additional Insights**
+- What haven't I asked that I should know about this problem?
+- Are there other people I should speak with about this topic?
+- Would you be interested in seeing this solution as it develops?
+
+**Next Steps**
+- Thank you for your time and insights
+- We'll follow up with key findings from our research
+- May we contact you for follow-up questions if needed?
+
+## Question Bank by Customer Segment
+
+### For {{ segment_1_name | default("Enterprise Customers") }}
+**Specific Questions**:
+- How do compliance requirements affect your solution selection?
+- What integration capabilities are essential for your environment?
+- How do you measure ROI for technology investments?
+- What security and governance requirements must any solution meet?
+
+### For {{ segment_2_name | default("Mid-Market Customers") }}
+**Specific Questions**:
+- How do you balance innovation with operational stability?
+- What's your experience with implementing new solutions?
+- How important is vendor size and stability to your decisions?
+- What support level do you expect from vendors?
+
+### For {{ segment_3_name | default("Small Business Customers") }}
+**Specific Questions**:
+- How do you typically learn about and evaluate new solutions?
+- What's most important: features, price, or ease of use?
+- How much time can you dedicate to implementing new tools?
+- What would make you switch from your current solution?
+
+## Interview Logistics
+
+### Participant Recruitment
+**Target Profile**: {{ target_profile | default("Decision makers and influencers in target customer segments") }}
+**Recruitment Methods**:
+- {{ recruitment_1 | default("LinkedIn outreach to target profiles") }}
+- {{ recruitment_2 | default("Network referrals and warm introductions") }}
+- {{ recruitment_3 | default("Industry event connections") }}
+- {{ recruitment_4 | default("Customer database and past prospects") }}
+
+### Scheduling and Setup
+**Platform**: {{ interview_platform | default("Zoom/Teams for remote, in-person when possible") }}
+**Duration**: {{ interview_duration | default("45-60 minutes") }}
+**Incentive**: {{ interview_incentive | default("$50 gift card or donation to charity") }}
+**Recording**: {{ recording_policy | default("With explicit consent, for internal analysis only") }}
+
+### Interview Team Roles
+**Primary Interviewer**: {{ primary_interviewer | default("Business Expert - leads conversation") }}
+**Note Taker**: {{ note_taker | default("Market Analyst - captures insights") }}
+**Observer**: {{ observer | default("Team Lead - strategic insights") }}
+
+## Documentation Template
+
+### Interview Summary Format
+**Participant**: [Name, Title, Company, Industry]
+**Date**: [Interview Date]
+**Duration**: [Actual Duration]
+**Interviewer**: [Team Member Name]
+
+**Key Insights**:
+- Problem Validation: [Confirmed problems and pain points]
+- Solution Feedback: [Reaction to proposed solution]
+- Feature Priorities: [Most/least important features]
+- Competitive Intelligence: [Current solutions and alternatives]
+- Decision Process: [How they evaluate and buy]
+- Pricing Insights: [Budget, willingness to pay, preferred models]
+
+**Quotes** (verbatim):
+- "[Most impactful quote about problem]"
+- "[Key feedback on solution concept]"
+- "[Insight about decision process]"
+
+**Follow-up Actions**:
+- [ ] Send thank you and summary
+- [ ] Add to prospect database if interested
+- [ ] Schedule follow-up if requested
+- [ ] Update research findings
+
+## Success Metrics
+
+### Quantitative Targets
+- **Interview Count**: ≥{{ min_interviews | default("8") }} customer interviews
+- **Segment Coverage**: ≥{{ min_per_segment | default("3") }} interviews per target segment
+- **Completion Rate**: ≥{{ completion_rate | default("80%") }} of scheduled interviews completed
+- **Duration**: Average {{ target_duration | default("50") }} minutes per interview
+
+### Qualitative Success Indicators
+- **Problem Validation**: Clear confirmation of target problems
+- **Solution Interest**: Positive reaction to solution concept
+- **Actionable Insights**: Specific feedback for product development
+- **Market Intelligence**: Competitive and pricing insights
+- **Pipeline Development**: Potential customers identified
+
+## Analysis Framework
+
+### Insight Categories
+1. **Problem Validation**: Evidence supporting/refuting problem hypotheses
+2. **Solution Fit**: How well our concept addresses customer needs
+3. **Feature Priorities**: Must-have vs. nice-to-have capabilities
+4. **Competitive Position**: How we compare to alternatives
+5. **Go-to-Market**: Insights on channels, messaging, pricing
+6. **Market Opportunity**: Size, growth, and accessibility of segments
+
+### Pattern Identification
+- **Consistent Themes**: Problems/needs mentioned by multiple customers
+- **Segment Differences**: How needs vary across customer types
+- **Surprising Insights**: Unexpected findings that challenge assumptions
+- **Opportunity Areas**: Unmet needs or market gaps identified

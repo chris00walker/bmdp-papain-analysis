@@ -1,0 +1,279 @@
+{
+  "deliverable_templates": {
+    "00_sponsor_brief.md": {
+      "template": "00_sponsor_brief.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["brief_file", "value_proposition", "customer_segments", "key_activities", "key_resources", "revenue_streams", "business_initial_capital", "business_max_capital", "horizon_years", "critical_risks", "discount_rate"]
+    },
+    "01_project_charter.md": {
+      "template": "01_project_charter.md.j2", 
+      "required_vars": ["business_name", "business_type", "business_slug"],
+      "optional_vars": ["charter_date", "project_manager", "industry", "current_status", "market_opportunity", "total_bmdp_cost", "bmdp_discovery_cost", "bmdp_validation_cost", "bmdp_scaling_cost", "business_initial_capital", "sponsor_name", "pm_name", "business_lead"]
+    },
+    "02_resource_plan.md": {
+      "template": "02_resource_plan.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["team_lead", "business_expert", "market_analyst", "financial_analyst", "team_size", "bmdp_discovery_cost", "bmdp_validation_cost", "bmdp_scaling_cost", "total_bmdp_cost", "business_initial_capital", "business_post_discovery_capital", "business_post_validation_capital", "business_max_capital", "phase1_weeks", "phase2_weeks", "phase3_weeks", "total_weeks"]
+    },
+    "03_readiness_assessment.md": {
+      "template": "03_readiness_assessment.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": []
+    },
+    "10_brief.md": {
+      "template": "10_brief.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["business_type", "target_market", "value_proposition", "key_capabilities"]
+    },
+    "11_team_roster.csv": {
+      "template": "11_team_roster.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["team_lead", "business_expert", "market_analyst", "financial_analyst", "team_lead_email", "business_expert_email", "market_analyst_email", "financial_analyst_email"]
+    },
+    "12_access_matrix.csv": {
+      "template": "12_access_matrix.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["team_lead", "market_analyst", "business_expert", "financial_analyst", "interview_eta", "research_eta", "competitor_eta", "financial_eta", "industry_eta"]
+    },
+    "13_orientation_brief.md": {
+      "template": "13_orientation_brief.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["business_type", "project_objectives", "team_roles"]
+    },
+    "14_mobilize_charter.md": {
+      "template": "14_mobilize_charter.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["charter_date", "project_scope", "success_criteria"]
+    },
+    "15_canvas_v0_main.md": {
+      "template": "15_canvas_v0_main.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["primary_segment", "secondary_segment_1", "secondary_segment_2", "value_proposition", "benefit_1", "benefit_2", "benefit_3", "channel_1", "channel_2", "channel_strategy", "relationship_type", "customer_acquisition", "customer_retention", "revenue_model", "pricing_strategy", "revenue_source_1", "revenue_source_2", "key_resource_1", "key_resource_2", "key_resource_3", "key_activity_1", "key_activity_2", "key_activity_3", "partner_1", "partner_2", "partnership_benefits", "cost_category_1", "cost_category_2", "cost_category_3", "cost_optimization"]
+    },
+    "16_idea_stories.md": {
+      "template": "16_idea_stories.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["idea_1", "idea_2", "idea_3", "story_1", "story_2", "story_3"]
+    },
+    "17_kill_thrill.csv": {
+      "template": "17_kill_thrill.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["business_type"]
+    },
+    "18_microtests.json": {
+      "template": "18_microtests.json.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["target_price", "value_proposition", "channel_1", "business_expert", "team_lead", "market_analyst", "business_type"]
+    },
+    "19_sprint_plan.md": {
+      "template": "19_sprint_plan.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["sprint_duration", "sprint_goals", "deliverables"]
+    },
+    "20_research_plan.md": {
+      "template": "20_research_plan.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["research_objectives", "methodology", "timeline"]
+    },
+    "20_stakeholder_map.csv": {
+      "template": "20_stakeholder_map.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["sponsor_name", "team_lead", "target_customers", "market_analyst", "business_expert", "financial_analyst"]
+    },
+    "21_research_questions.md": {
+      "template": "21_research_questions.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["primary_questions", "secondary_questions", "hypothesis"]
+    },
+    "21_risk_register.csv": {
+      "template": "21_risk_register.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["market_analyst", "team_lead", "business_expert", "financial_analyst"]
+    },
+    "22_comms_plan.md": {
+      "template": "22_comms_plan.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["communication_channels", "frequency", "stakeholders"]
+    },
+    "22_environment_scan.md": {
+      "template": "22_environment_scan.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["market_trends", "competitive_landscape", "regulatory_factors"]
+    },
+    "23_announcement_onepager.md": {
+      "template": "23_announcement_onepager.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["announcement_date", "key_message", "target_audience"]
+    },
+    "23_secondary_summary.md": {
+      "template": "23_secondary_summary.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["research_sources", "key_findings", "implications"]
+    },
+    "24_competitor_canvases.md": {
+      "template": "24_competitor_canvases.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["competitor_1", "competitor_2", "competitor_3", "competitive_analysis"]
+    },
+    "24_competitor_list.csv": {
+      "template": "24_competitor_list.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["industry", "market_segment", "competitive_factors"]
+    },
+    "25_customer_segments.md": {
+      "template": "25_customer_segments.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["primary_segment", "secondary_segment", "segment_characteristics"]
+    },
+    "26_interview_guide.md": {
+      "template": "26_interview_guide.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["interview_objectives", "target_personas", "key_questions"]
+    },
+    "27_screener.md": {
+      "template": "27_screener.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["screening_criteria", "target_demographics", "qualification_questions"]
+    },
+    "28_interviews_log.csv": {
+      "template": "28_interviews_log.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["interview_dates", "participants", "key_insights"]
+    },
+    "29_empathy_maps.md": {
+      "template": "29_empathy_maps.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["customer_persona", "pain_points", "motivations", "behaviors"]
+    },
+    "30_design_brief.md": {
+      "template": "30_design_brief.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["design_objectives", "constraints", "success_criteria"]
+    },
+    "30_jobs_to_be_done.md": {
+      "template": "30_jobs_to_be_done.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["functional_jobs", "emotional_jobs", "social_jobs", "job_outcomes"]
+    },
+    "31_ideation.md": {
+      "template": "31_ideation.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["ideation_methods", "generated_ideas", "evaluation_criteria"]
+    },
+    "31_insights.md": {
+      "template": "31_insights.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["key_insights", "customer_needs", "market_opportunities", "strategic_implications"]
+    },
+    "32_assumption_backlog.csv": {
+      "template": "32_assumption_backlog.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["assumptions", "validation_methods", "priority_levels"]
+    },
+    "33_concept_cards.md": {
+      "template": "33_concept_cards.md.j2",
+      "required_vars": ["business_name", "business_type", "business_slug"],
+      "optional_vars": ["concept_1_name", "concept_1_description", "feature_1", "feature_2", "feature_3", "value_prop_1", "revenue_model_1", "target_customers", "competitive_advantage", "concept_2_name", "concept_2_description", "alt_feature_1", "alt_feature_2", "value_prop_2", "revenue_model_2", "concept_3_name", "concept_3_description", "innovation_feature_1", "innovation_feature_2", "value_prop_3", "revenue_model_3", "recommended_concept", "selection_rationale", "next_step_1", "next_step_2", "next_step_3"]
+    },
+    "33_feedback_log.csv": {
+      "template": "33_feedback_log.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["feedback_sources", "feedback_themes", "action_items"]
+    },
+    "34_selection_criteria.md": {
+      "template": "34_selection_criteria.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["evaluation_criteria", "weighting_factors", "scoring_methodology"]
+    },
+    "34_test_cards.json": {
+      "template": "34_test_cards.json.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["target_price", "value_proposition", "channel_1", "market_size", "cac_target", "market_analyst", "business_expert", "team_lead"]
+    },
+    "35_failure_analysis.md": {
+      "template": "35_failure_analysis.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["failure_modes", "root_causes", "mitigation_strategies"]
+    },
+    "35_selection_scorecard.csv": {
+      "template": "35_selection_scorecard.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["evaluation_criteria", "prototype_scores", "weighted_results"]
+    },
+    "36_expert_panel_summary.md": {
+      "template": "36_expert_panel_summary.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["expert_participants", "key_recommendations", "consensus_points"]
+    },
+    "36_financial_projections.md": {
+      "template": "36_financial_projections.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["revenue_projections", "cost_projections", "profitability_analysis", "financial_assumptions"]
+    },
+    "37_bias_check.md": {
+      "template": "37_bias_check.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["identified_biases", "mitigation_approaches", "validation_methods"]
+    },
+    "37_implementation_roadmap.md": {
+      "template": "37_implementation_roadmap.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["implementation_phases", "milestones", "resource_requirements", "timeline"]
+    },
+    "38_progress_demo.md": {
+      "template": "38_progress_demo.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["demo_objectives", "key_achievements", "next_steps"]
+    },
+    "38_risk_mitigation.md": {
+      "template": "38_risk_mitigation.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["identified_risks", "mitigation_strategies", "contingency_plans"]
+    },
+    "39_test_cards.json": {
+      "template": "39_test_cards.json.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["test_hypotheses", "validation_methods", "success_criteria"]
+    },
+    "40_integration_decision.md": {
+      "template": "40_integration_decision.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["integration_options", "decision_criteria", "recommended_approach"]
+    },
+    "41_final_recommendation.md": {
+      "template": "41_final_recommendation.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["selected_prototype", "prototype_a_name", "prototype_a_score", "prototype_b_name", "prototype_b_score", "prototype_c_name", "prototype_c_score", "market_attractiveness_rationale", "competitive_advantage_rationale", "financial_viability_rationale", "implementation_feasibility_rationale", "business_initial_capital", "breakeven_year", "npv_5year", "irr_percentage", "implementation_phase1_1", "implementation_phase1_2", "implementation_phase1_3", "implementation_phase2_1", "implementation_phase2_2", "implementation_phase2_3", "implementation_phase3_1", "implementation_phase3_2", "implementation_phase3_3", "risk_1_name", "risk_1_mitigation", "risk_2_name", "risk_2_mitigation", "risk_3_name", "risk_3_mitigation", "next_step_immediate_1", "next_step_immediate_2", "next_step_immediate_3", "next_step_short_1", "next_step_short_2", "next_step_short_3", "next_step_medium_1", "next_step_medium_2", "next_step_medium_3", "final_decision", "decision_factor_1", "decision_factor_2", "decision_factor_3", "decision_factor_4"]
+    },
+    "prototype_A_canvas.md": {
+      "template": "32_prototypes/prototype_A_canvas.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["prototype_name", "value_proposition", "target_segment", "key_features"]
+    },
+    "prototype_B_canvas.md": {
+      "template": "32_prototypes/prototype_B_canvas.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["prototype_name", "value_proposition", "target_segment", "key_features"]
+    },
+    "prototype_C_canvas.md": {
+      "template": "32_prototypes/prototype_C_canvas.md.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["prototype_name", "value_proposition", "target_segment", "key_features"]
+    },
+    "evidence_ledger.csv": {
+      "template": "evidence_ledger.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["current_date"]
+    },
+    "manifest.json": {
+      "template": "manifest.json.j2",
+      "required_vars": ["business_name", "business_slug"],
+      "optional_vars": ["current_date", "business_initial_capital", "business_max_capital", "discount_rate", "roi_target"]
+    },
+    "financials_cashflow.csv": {
+      "template": "financials_cashflow.csv.j2",
+      "required_vars": ["business_slug"],
+      "optional_vars": ["initial_capex", "initial_opex", "initial_working_cap", "year1_revenue", "year1_opex", "year1_working_cap", "year2_revenue", "year2_capex", "year2_opex", "year2_working_cap", "year3_revenue", "year3_capex", "year3_opex", "year3_working_cap", "year4_revenue", "year4_capex", "year4_opex", "year4_working_cap", "year5_revenue", "year5_opex", "year5_working_cap"]
+    }
+  }
+}

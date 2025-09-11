@@ -1,0 +1,221 @@
+# Design Brief - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Project Context
+**Business**: {{ business_title }}
+**Phase**: Phase 3 - Design
+**Timeline**: {{ phase3_weeks | default("2") }} weeks
+**Objective**: Generate and select optimal business model for {{ business_title }}
+
+## Design Challenge Statement
+Design a viable, scalable business model for {{ business_title }} that addresses validated customer needs while achieving sustainable competitive advantage and financial returns within our capital constraints of ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD.
+
+## Key Insights from Phase 2
+
+### Market Opportunity
+- **Market Size**: {{ market_size | default("$X million addressable market") }}
+- **Growth Rate**: {{ growth_rate | default("Y% annual growth") }}
+- **Key Drivers**: {{ market_drivers | default("Digital transformation, compliance needs, efficiency demands") }}
+
+### Customer Validation
+- **Primary Segment**: {{ primary_segment | default("Mid-market companies (100-1000 employees)") }}
+- **Core Problem**: {{ core_problem | default("Manual processes causing inefficiency and compliance risks") }}
+- **Solution Interest**: {{ solution_interest | default("70% expressed strong interest in our approach") }}
+
+### Competitive Landscape
+- **Market Gap**: {{ market_gap | default("Mid-market segment underserved by current solutions") }}
+- **Key Differentiators**: {{ differentiators | default("Integration-first, rapid implementation, compliance-ready") }}
+- **Competitive Threats**: {{ threats | default("Established players may respond quickly") }}
+
+## Design Constraints
+
+### Financial Constraints
+- **Capital Range**: ${{ capital_min | default("300,000") }} - ${{ capital_max | default("750,000") }} BBD
+- **Revenue Target**: {{ revenue_target | default("$2M ARR by year 3") }}
+- **Profitability Timeline**: {{ profitability_target | default("Break-even by month 18") }}
+
+### Market Constraints
+- **Target Segments**: {{ target_segments | default("Mid-market primary, enterprise secondary") }}
+- **Geographic Scope**: {{ geographic_scope | default("North America initially") }}
+- **Regulatory Requirements**: {{ regulatory_constraints | default("Data privacy, industry compliance") }}
+
+### Operational Constraints
+- **Team Size**: {{ team_size | default("12-15 people by year 2") }}
+- **Technology Stack**: {{ tech_constraints | default("Cloud-native, API-first architecture") }}
+- **Partnership Requirements**: {{ partnership_constraints | default("System integrator relationships essential") }}
+
+## Design Requirements
+
+### Must-Have Requirements
+1. **{{ requirement_1 | default("Scalable SaaS architecture supporting 1000+ customers") }}**
+2. **{{ requirement_2 | default("Pre-built integrations with top 10 business systems") }}**
+3. **{{ requirement_3 | default("Compliance features for regulated industries") }}**
+4. **{{ requirement_4 | default("Mobile-responsive interface for all user roles") }}**
+
+### Should-Have Requirements
+- {{ should_have_1 | default("Advanced analytics and reporting capabilities") }}
+- {{ should_have_2 | default("White-label options for partner channel") }}
+- {{ should_have_3 | default("Multi-language support for international expansion") }}
+
+### Could-Have Requirements
+- {{ could_have_1 | default("AI-powered workflow optimization") }}
+- {{ could_have_2 | default("Industry-specific templates and configurations") }}
+- {{ could_have_3 | default("Advanced customization and workflow builder") }}
+
+## Success Criteria
+
+### Business Model Success Metrics
+- **Customer Acquisition**: {{ cac_target | default("Customer acquisition cost < $5,000") }}
+- **Customer Retention**: {{ retention_target | default("Annual churn rate < 10%") }}
+- **Unit Economics**: {{ unit_economics | default("LTV:CAC ratio > 3:1") }}
+- **Market Share**: {{ market_share_target | default("5% of addressable market by year 5") }}
+
+### Financial Success Metrics
+- **Revenue Growth**: {{ revenue_growth | default("100% year-over-year for first 3 years") }}
+- **Gross Margins**: {{ margin_target | default("Gross margins > 80%") }}
+- **Capital Efficiency**: {{ capital_efficiency | default("Revenue per dollar invested > 3x") }}
+
+### Operational Success Metrics
+- **Implementation Speed**: {{ implementation_speed | default("Average customer onboarding < 30 days") }}
+- **Customer Satisfaction**: {{ satisfaction_target | default("Net Promoter Score > 50") }}
+- **Team Productivity**: {{ productivity_target | default("Revenue per employee > $200K") }}
+
+## Design Process
+
+### Ideation Phase (Days 1-3)
+**Objective**: Generate multiple business model alternatives
+**Activities**:
+- Business model canvas variations
+- Revenue model alternatives
+- Go-to-market strategy options
+- Partnership model scenarios
+
+**Deliverables**:
+- ≥3 distinct business model concepts
+- Initial feasibility assessment
+- Stakeholder feedback collection
+
+### Prototyping Phase (Days 4-7)
+**Objective**: Develop detailed prototypes of top concepts
+**Activities**:
+- Financial modeling for each concept
+- Customer validation interviews
+- Competitive positioning analysis
+- Risk assessment for each model
+
+**Deliverables**:
+- Detailed business model prototypes
+- Financial projections and scenarios
+- Customer feedback and validation
+- Risk mitigation strategies
+
+### Selection Phase (Days 8-10)
+**Objective**: Select optimal business model
+**Activities**:
+- Multi-criteria decision analysis
+- Stakeholder alignment sessions
+- Final customer validation
+- Implementation planning
+
+**Deliverables**:
+- Selected business model with rationale
+- Implementation roadmap
+- Financial projections and funding requirements
+- Risk mitigation plan
+
+## Stakeholder Involvement
+
+### Decision Makers
+- **{{ sponsor_name | default("Project Sponsor") }}**: Final approval authority
+- **{{ ceo_name | default("CEO") }}**: Strategic direction and vision
+- **{{ cfo_name | default("CFO") }}**: Financial viability and funding
+
+### Key Contributors
+- **{{ team_lead | default("Team Lead") }}**: Process facilitation and coordination
+- **{{ business_expert | default("Business Expert") }}**: Business model design expertise
+- **{{ market_analyst | default("Market Analyst") }}**: Market and competitive intelligence
+- **{{ financial_analyst | default("Financial Analyst") }}**: Financial modeling and analysis
+
+### Reviewers and Validators
+- **Customer Advisory Board**: {{ customer_advisors | default("3-5 target customers") }}
+- **Industry Experts**: {{ industry_experts | default("2-3 domain experts") }}
+- **Technical Advisors**: {{ technical_advisors | default("CTO-level technical validation") }}
+
+## Risk Factors and Mitigation
+
+### High-Risk Factors
+1. **{{ high_risk_1 | default("Competitive response faster than expected") }}**
+   - Mitigation: {{ high_risk_1_mitigation | default("Speed to market, customer lock-in features") }}
+
+2. **{{ high_risk_2 | default("Customer acquisition costs exceed projections") }}**
+   - Mitigation: {{ high_risk_2_mitigation | default("Multiple acquisition channels, referral programs") }}
+
+3. **{{ high_risk_3 | default("Technology development complexity") }}**
+   - Mitigation: {{ high_risk_3_mitigation | default("Phased development, proven technology stack") }}
+
+### Medium-Risk Factors
+- {{ medium_risk_1 | default("Market adoption slower than projected") }}
+- {{ medium_risk_2 | default("Regulatory changes affecting target market") }}
+- {{ medium_risk_3 | default("Key talent acquisition challenges") }}
+
+## Quality Gates
+
+### Gate 1: Concept Validation (Day 3)
+**Criteria**:
+- ≥3 viable business model concepts developed
+- Initial customer feedback collected
+- Feasibility assessment completed
+
+### Gate 2: Prototype Validation (Day 7)
+**Criteria**:
+- Detailed prototypes with financial models
+- Customer validation interviews completed
+- Competitive analysis updated
+
+### Gate 3: Final Selection (Day 10)
+**Criteria**:
+- Business model selected with stakeholder consensus
+- Implementation plan developed
+- Financial projections validated
+
+## Resources and Tools
+
+### Design Tools
+- **Business Model Canvas**: {{ canvas_tool | default("Miro/Mural for collaborative design") }}
+- **Financial Modeling**: {{ financial_tool | default("Excel/Google Sheets with scenario analysis") }}
+- **Customer Validation**: {{ validation_tool | default("Interview guides and feedback forms") }}
+
+### Reference Materials
+- Phase 2 research findings and insights
+- Competitive analysis and market intelligence
+- Customer interview transcripts and summaries
+- Industry reports and market data
+
+### Expert Resources
+- {{ expert_resource_1 | default("Business model design methodology guides") }}
+- {{ expert_resource_2 | default("Industry-specific business model examples") }}
+- {{ expert_resource_3 | default("Financial modeling templates and benchmarks") }}
+
+## Timeline and Milestones
+
+### Week 1
+- **Day 1-2**: Ideation and concept generation
+- **Day 3**: Gate 1 review and concept selection
+- **Day 4-5**: Prototype development and modeling
+
+### Week 2
+- **Day 6-7**: Customer validation and feedback
+- **Day 7**: Gate 2 review and prototype refinement
+- **Day 8-9**: Selection analysis and stakeholder alignment
+- **Day 10**: Gate 3 final selection and approval
+
+## Success Definition
+The design phase will be considered successful when we have:
+1. **Validated Business Model**: Selected model validated by customers and experts
+2. **Financial Viability**: Projections show path to profitability within constraints
+3. **Implementation Readiness**: Clear roadmap with next steps and resource requirements
+4. **Stakeholder Alignment**: Full consensus on selected model and approach
+5. **Risk Mitigation**: Comprehensive risk assessment with mitigation strategies

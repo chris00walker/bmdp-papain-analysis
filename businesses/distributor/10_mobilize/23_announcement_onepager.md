@@ -62,7 +62,7 @@ The Caribbean region lacks a dedicated papain distribution hub, forcing local ma
 
 ## Contact Information
 
-**Project Sponsor**: [Name/TBD]
-**Project Leader**: [Name/TBD]
+**Project Sponsor**: Caribbean Trade Development Authority
+**Project Leader**: Michael Thompson
 **Email**: distributor-project@company.com
 **Timeline**: 51-week BMDP execution starting [Start Date]

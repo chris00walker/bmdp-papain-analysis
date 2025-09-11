@@ -1,0 +1,52 @@
+{
+  "tests": [
+    {
+      "assumption": "WTP >= $12/kg for premium Caribbean papain",
+      "test": "price interviews (n=5)",
+      "metric": "≥3 accept pricing",
+      "stop_condition": "timebox or 2 fails"
+    },
+    {
+      "assumption": "Regional food processors prefer Caribbean suppliers",
+      "test": "2 processor partnership calls",
+      "metric": "≥1 LOI for trial orders",
+      "stop_condition": "timebox"
+    },
+    {
+      "assumption": "Supply reliability is critical pain point for enzyme processors",
+      "test": "customer interviews (n=8)",
+      "metric": "≥6 confirm supply reliability pain severity ≥8/10",
+      "stop_condition": "timebox or clear pattern"
+    },
+    {
+      "assumption": "Direct B2B papain supply model addresses core customer needs",
+      "test": "concept validation interviews (n=5)",
+      "metric": "≥4 express purchase intent for Caribbean papain",
+      "stop_condition": "timebox or 2 clear rejections"
+    },
+    {
+      "assumption": "Quality traceability creates competitive advantage",
+      "test": "feature validation with quality managers (n=4)",
+      "metric": "≥3 confirm traceability as key differentiator",
+      "stop_condition": "timebox or clear disinterest"
+    },
+    {
+      "assumption": "10-hectare operation can meet initial customer demand",
+      "test": "production capacity validation",
+      "metric": "≥2 customers confirm 500kg annual volume acceptable",
+      "stop_condition": "capacity mismatch identified"
+    },
+    {
+      "assumption": "Weather risk acceptable to customers with mitigation",
+      "test": "risk tolerance interviews (n=3)",
+      "metric": "≥2 accept weather risk with backup plans",
+      "stop_condition": "risk deemed unacceptable"
+    },
+    {
+      "assumption": "Technical support services add value beyond raw material",
+      "test": "value-added service validation (n=4)",
+      "metric": "≥3 express interest in technical consulting",
+      "stop_condition": "clear lack of interest"
+    }
+  ]
+}

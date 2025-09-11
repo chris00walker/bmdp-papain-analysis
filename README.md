@@ -53,17 +53,28 @@ This repository contains a comprehensive Business Model Design Process (BMDP) an
 
 ```text
 bmdp/
-├── 00_portfolio_initiation/     # Portfolio-level charter and planning
-├── 90_portfolio_comparison/     # Cross-business analysis and recommendations
-├── businesses/                  # Individual business analyses
-│   ├── grower/                 # Phases 0-3 for grower business
-│   ├── processor/              # Phases 0-3 for processor business
-│   ├── distributor/            # Phases 0-3 for distributor business
-│   └── marketplace/            # Phases 0-3 for marketplace business
-├── common/                     # Shared frameworks and tracking
-│   ├── comparison_framework.md # Portfolio comparison methodology
-│   ├── evidence_ledger.csv    # Consolidated evidence tracking
-│   └── resource_tracker.csv   # Resource allocation tracking
+├── docs/                       # Project documentation
+│   ├── AI_SAFE_EXECUTION_GUIDE.md    # AI workflow execution guidelines
+│   ├── CREWAI_INTEGRATION_ANALYSIS.md # CrewAI framework integration analysis
+│   ├── QA_AUDIT_REPORT.md            # Quality assurance audit results
+│   └── TEMPLATE_QA_SUMMARY.md        # Template quality assessment
+├── 90_portfolio_comparison/    # Cross-business analysis and recommendations
+├── businesses/                 # Individual business analyses
+│   ├── grower/                # Phases 0-3 for grower business (completed)
+│   ├── processor/             # Phases 0-3 for processor business
+│   ├── distributor/           # Phases 0-3 for distributor business
+│   └── marketplace/           # Phases 0-3 for marketplace business
+├── templates/                  # Jinja2 templates for deliverable generation
+│   ├── deliverables/          # Phase-specific template files
+│   └── template_config.json   # Template configuration
+├── tools/                      # Automation and analysis tools
+│   ├── compute_financials.py  # Financial calculations (IRR, NPV, ROI)
+│   ├── generate_summary_report.py # Business analysis reporting
+│   ├── parse_business_brief.py # Business brief parsing
+│   ├── portfolio_rollup.py    # Portfolio-level analysis
+│   ├── validate.py            # Deliverable validation
+│   ├── workflow_*.py          # Workflow automation tools
+│   └── run_*.py              # Execution automation scripts
 ├── .windsurf/workflows/        # Automated workflow definitions
 └── brief-*.md                 # Original business opportunity briefs
 ```
@@ -78,6 +89,7 @@ bmdp/
 - **Distributor**: 6.7/10 (18% ROI, $635K investment)
 
 ### Recommended Strategy
+
 **Phased Sequential Entry** - $6.285M total investment over 60 months
 
 1. Phase 1: Grower business launch ($150K, Months 1-18)
@@ -100,12 +112,67 @@ This repository serves as:
 - BMDP methodology demonstration
 - Portfolio optimization framework
 
+## Automation & Tools
+
+### Workflow Automation
+
+- **13 Python tools** for automated analysis and validation
+- **AI-safe execution protocols** with 3-layer compliance system
+- **Template-driven deliverable generation** using Jinja2
+- **Progressive capital unlocking** based on milestone validation
+
+### Quality Assurance
+
+- **Comprehensive validation system** for all deliverables
+- **Template compliance checking** across all phases
+- **Financial calculation automation** with error handling
+- **Portfolio rollup and comparison** automation
+
+### Recent Improvements
+
+- Cleaned up tools directory (removed 3 unnecessary files)
+- Fixed markdown linting issues across all business briefs
+- Reorganized documentation into dedicated docs/ directory
+- Enhanced AI execution guidelines with working directory specifications
+
 ## Status
 
 **Current Phase**: Portfolio comparison complete  
-**Next Steps**: Investment decision and Phase 4 implementation  
-**Last Updated**: September 8, 2024
+**Grower Business**: Fully completed (Phases 0-3 + analysis)  
+**Other Businesses**: Ready for automated execution  
+**Next Steps**: Execute remaining businesses using validated workflows  
+**Last Updated**: September 10, 2025
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+ with required packages
+- Access to project root directory (`/home/chris/bmdp`)
+
+### Quick Start
+
+```bash
+# Validate a business
+python tools/validate.py --business grower
+
+# Run financial analysis
+python tools/compute_financials.py --business grower
+
+# Generate summary report
+python tools/generate_summary_report.py --business grower
+
+# Execute full business analysis
+python tools/run_business_analysis.py grower
+
+# Run portfolio analysis
+python tools/run_portfolio_analysis.py
+```
+
+### Workflow Execution
+
+Refer to `docs/AI_SAFE_EXECUTION_GUIDE.md` for detailed AI-safe workflow execution protocols.
 
 ---
 
-*This analysis was conducted using the Business Model Design Process (BMDP) framework for systematic business model evaluation and portfolio optimization.*
+*This analysis was conducted using the Business Model Design Process (BMDP) framework for systematic business model evaluation and portfolio optimization. The project includes comprehensive automation tools and AI-safe execution protocols for scalable business model analysis.*

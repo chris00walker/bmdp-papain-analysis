@@ -1,0 +1,40 @@
+{
+  "tests": [
+    {
+      "assumption": "WTP >= $15/kg for pharmaceutical-grade papain",
+      "test": "price interviews (n=5)",
+      "metric": "≥3 accept",
+      "stop_condition": "timebox or 2 fails"
+    },
+    {
+      "assumption": "Pharmaceutical distributors interested in Caribbean supplier",
+      "test": "2 partner calls",
+      "metric": "≥1 LOI",
+      "stop_condition": "timebox"
+    },
+    {
+      "assumption": "GMP compliance and sterile processing is critical for pharmaceutical segment",
+      "test": "customer interviews (n=8)",
+      "metric": "≥6 confirm pain severity ≥8/10",
+      "stop_condition": "timebox or clear pattern"
+    },
+    {
+      "assumption": "Pharmaceutical-grade refining with sterile capabilities addresses core need",
+      "test": "concept validation interviews (n=5)",
+      "metric": "≥4 express purchase intent",
+      "stop_condition": "timebox or 2 clear rejections"
+    },
+    {
+      "assumption": "12-month supplier qualification timeline acceptable",
+      "test": "qualification process interviews (n=4)",
+      "metric": "≥3 confirm acceptable timeline",
+      "stop_condition": "timebox or majority rejection"
+    },
+    {
+      "assumption": "Minimum order quantities of 100kg/month viable",
+      "test": "volume requirement validation (n=6)",
+      "metric": "≥4 confirm MOQ acceptable",
+      "stop_condition": "timebox or clear volume mismatch"
+    }
+  ]
+}

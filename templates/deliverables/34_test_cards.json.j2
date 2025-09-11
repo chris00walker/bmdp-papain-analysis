@@ -1,0 +1,29 @@
+{
+  "business": "{{ business_slug }}",
+  "tests": [
+    {
+      "assumption": "WTP >= ${{ wtp_amount | default('X') }}",
+      "test": "price interviews (n=5)",
+      "metric": "≥3 accept",
+      "stop_condition": "timebox or 2 fails"
+    },
+    {
+      "assumption": "Channel partner interest",
+      "test": "2 partner calls",
+      "metric": "≥1 LOI",
+      "stop_condition": "timebox"
+    },
+    {
+      "assumption": "{{ pain_point | default('Primary pain point') }} is critical for {{ target_segment | default('target segment') }}",
+      "test": "customer interviews (n=8)",
+      "metric": "≥6 confirm pain severity ≥8/10",
+      "stop_condition": "timebox or clear pattern"
+    },
+    {
+      "assumption": "{{ solution_approach | default('Proposed solution') }} addresses core need",
+      "test": "concept validation interviews (n=5)",
+      "metric": "≥4 express purchase intent",
+      "stop_condition": "timebox or 2 clear rejections"
+    }
+  ]
+}

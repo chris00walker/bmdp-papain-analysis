@@ -34,47 +34,47 @@ updated_at: 2025-09-09
 
 # **Brief 2: Processor (Pharma-Grade Papain Refining, Barbados)**
 
-**Value Proposition**
+## Value Proposition
 
 * Produce ≥6,000 USP U/mg papain powder, sterile and GMP-certified.  
 * Offer Caribbean-based, Western-regulated quality alternative to Asian suppliers.  
 * Enable pharma & cosmetic buyers to source closer to Western markets.
 
-**Customer Segments**
+## Customer Segments
 
 * Pharmaceutical ingredient distributors (Merck, Mitsubishi, Sigma).  
 * Wound care, nutraceutical, cosmetics companies.
 
-**Key Activities**
+## Key Activities
 
 * Purification: ultrafiltration, chromatography, lyophilisation.  
 * Quality & regulatory compliance (GMP, HACCP, CoA).  
 * Packaging and sterile handling.
 
-**Key Resources**
+## Key Resources
 
 * 25+ ha high-latex orchards (or secure crude supply).  
 * GMP-compliant facility (≈BDS $1.5–2M CAPEX).  
 * Skilled technicians & QA lab.
 
-**Channels**
+## Channels
 
 * Direct to pharma distributors.  
 * Partnerships with global traders.  
 * Export agents.
 
-**Revenue Streams**
+## Revenue Streams
 
 * Pharma-grade papain (US $60–90/kg).  
 * Custom grades (sterile, high-activity).
 
-**Cost Structure**
+## Cost Structure
 
 * High CAPEX amortisation.  
 * Utilities, skilled labour, QC.  
 * Regulatory audits.
 
-**Critical Risks**
+## Critical Risks
 
 * Scale mismatch (10 ha too small; ≥16 ha baseline).  
 * High fixed costs vs fluctuating demand.  

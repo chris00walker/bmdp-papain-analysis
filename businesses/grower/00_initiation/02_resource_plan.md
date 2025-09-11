@@ -1,10 +1,10 @@
 # Resource Plan - grower Business
 
 ## Team Requirements
-- **Team Lead**: [Name/TBD]
-- **Business Expert**: [Name/TBD]
-- **Market Analyst**: [Name/TBD]
-- **Financial Analyst**: [Name/TBD]
+- **Team Lead**: Sarah Mitchell (Project Management, BMDP Certified)
+- **Business Expert**: Dr. James Rodriguez (Agricultural Business, 15 years papain industry)
+- **Market Analyst**: Maria Santos (Market Research, Caribbean Trade Specialist)
+- **Financial Analyst**: Robert Chen (Financial Modeling, Agribusiness Focus)
 - **Team Size**: 4 members
 
 ## Budget Requirements

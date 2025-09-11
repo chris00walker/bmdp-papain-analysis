@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "assumption": "Customers will pay $X for our solution",
+      "test": "Price validation survey (n=20)",
+      "metric": "≥70% accept price point",
+      "timeline": "2 weeks",
+      "owner": "Market Analyst"
+    },
+    {
+      "assumption": "Primary channel partners interested in distribution",
+      "test": "Partner interviews (n=3)",
+      "metric": "≥2 express interest or provide LOI",
+      "timeline": "1 week",
+      "owner": "Business Expert"
+    },
+    {
+      "assumption": "Target market size is $X million",
+      "test": "Market sizing validation with industry experts",
+      "metric": "≥2 experts confirm size estimate within 25%",
+      "timeline": "1 week",
+      "owner": "Market Analyst"
+    },
+    {
+      "assumption": "Customer acquisition cost ≤ $Y",
+      "test": "Channel cost analysis and pilot campaigns",
+      "metric": "Validated CAC within target range",
+      "timeline": "3 weeks",
+      "owner": "Team Lead"
+    }
+  ]
+}

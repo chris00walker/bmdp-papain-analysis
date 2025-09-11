@@ -1,0 +1,9 @@
+# Business: { business_slug }
+risk,likelihood,impact,trigger,mitigation,owner
+Overestimating market demand,high,high,early customer feedback,kill/thrill validation checks,{{ market_analyst | default("Market Analyst") }}
+Technology development delays,medium,high,milestone slippage,phased development approach,{{ team_lead | default("Team Lead") }}
+Competitive response,medium,medium,competitor announcements,differentiation strategy,{{ business_expert | default("Business Expert") }}
+Regulatory changes,low,high,policy announcements,regulatory monitoring,{{ business_expert | default("Business Expert") }}
+Key team member departure,low,medium,resignation notice,knowledge documentation,{{ team_lead | default("Team Lead") }}
+Funding shortfall,medium,high,budget reviews,milestone-based funding,{{ financial_analyst | default("Financial Analyst") }}
+Customer acquisition slower than projected,high,medium,sales metrics,multiple channel strategy,{{ market_analyst | default("Market Analyst") }}

@@ -1,0 +1,9 @@
+# Business: { business_slug }
+stakeholder,interest,influence,stance,mitigation,owner
+{{ sponsor_name | default("Project Sponsor") }},high,high,supportive,maintain engagement,{{ team_lead | default("Team Lead") }}
+Business Unit Head,protect revenue,high,neutral,separate entity approach,{{ team_lead | default("Team Lead") }}
+{{ target_customers | default("Target Customers") }},solve problem,medium,interested,validate value prop,{{ market_analyst | default("Market Analyst") }}
+Regulatory Bodies,compliance,medium,neutral,early engagement,{{ business_expert | default("Business Expert") }}
+Competitors,market share,low,opposed,competitive intelligence,{{ market_analyst | default("Market Analyst") }}
+Technology Partners,partnership,medium,interested,mutual value creation,{{ team_lead | default("Team Lead") }}
+Financial Stakeholders,ROI,high,interested,demonstrate viability,{{ financial_analyst | default("Financial Analyst") }}

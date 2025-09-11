@@ -1,0 +1,93 @@
+# Project Charter - {{ business_slug|title }} {{ business_title }} BMDP
+
+## Project Overview
+**Business**: {{ business_title }}
+**Project Type**: Business Model Design Process (BMDP)
+**Charter Date**: {{ charter_date | default("TBD") }}
+**Project Manager**: {{ project_manager | default("TBD") }}
+
+## Business Context
+**Industry**: {{ industry | default(business_type) }}
+**Current Status**: {{ current_status | default("Early stage development") }}
+**Market Opportunity**: {{ market_opportunity | default("Market analysis pending") }}
+
+## Project Objectives
+1. {{ objective_1 | default("Complete comprehensive business model design") }}
+2. {{ objective_2 | default("Validate market desirability and feasibility") }}
+3. {{ objective_3 | default("Develop scalable business operations plan") }}
+
+## Success Criteria
+- [ ] {{ success_criteria_1 | default("All BMDP phases completed successfully") }}
+- [ ] {{ success_criteria_2 | default("Business model validated with target customers") }}
+- [ ] {{ success_criteria_3 | default("Financial projections demonstrate viability") }}
+
+## Resource Allocation
+**Total BMDP Budget**: ${{ total_bmdp_cost | default("TBD") }} BBD
+- Discovery Phase: ${{ bmdp_discovery_cost | default("TBD") }} BBD
+- Validation Phase: ${{ bmdp_validation_cost | default("TBD") }} BBD  
+- Scaling Phase: ${{ bmdp_scaling_cost | default("TBD") }} BBD
+
+**Business Capital Available**: ${{ capital_min | default("TBD") }} BBD (Initial)
+
+## Timeline
+| Phase | Duration | Start Date | End Date |
+|-------|----------|------------|----------|
+| Phase 0: Initiation | {{ phase0_duration | default("2 weeks") }} | {{ phase0_start | default("TBD") }} | {{ phase0_end | default("TBD") }} |
+| Phase 1: Mobilize | {{ phase1_duration | default("3 weeks") }} | {{ phase1_start | default("TBD") }} | {{ phase1_end | default("TBD") }} |
+| Phase 2: Understand | {{ phase2_duration | default("4 weeks") }} | {{ phase2_start | default("TBD") }} | {{ phase2_end | default("TBD") }} |
+| Phase 3: Design | {{ phase3_duration | default("5 weeks") }} | {{ phase3_start | default("TBD") }} | {{ phase3_end | default("TBD") }} |
+
+## Key Stakeholders
+| Role | Name | Responsibilities |
+|------|------|-----------------|
+| Sponsor | {{ sponsor_name | default("TBD") }} | {{ sponsor_responsibilities | default("Project oversight and resource approval") }} |
+| Project Manager | {{ pm_name | default("TBD") }} | {{ pm_responsibilities | default("Day-to-day project execution") }} |
+| Business Lead | {{ business_lead | default("TBD") }} | {{ business_lead_responsibilities | default("Domain expertise and validation") }} |
+
+## Risk Management
+| Risk | Impact | Mitigation Strategy |
+|------|--------|-------------------|
+| {{ risk_1 | default("Resource constraints") }} | {{ risk_1_impact | default("High") }} | {{ risk_1_mitigation | default("Secure committed funding") }} |
+| {{ risk_2 | default("Market validation failure") }} | {{ risk_2_impact | default("High") }} | {{ risk_2_mitigation | default("Pivot strategy prepared") }} |
+
+## Governance Structure
+**Project Sponsor**: {{ sponsor_name | default("TBD") }}
+- **Role**: Primary decision maker and resource provider
+- **Authority**: Budget approval, strategic direction, milestone gates
+- **Accountability**: Project success and business outcomes
+
+**Project Manager**: {{ pm_name | default("TBD") }}
+- **Role**: Day-to-day project execution and coordination
+- **Authority**: Resource allocation, task assignment, progress tracking
+- **Accountability**: Deliverable quality and timeline adherence
+
+**Steering Committee**: {{ steering_committee | default("Sponsor + Key Stakeholders") }}
+- **Role**: Strategic oversight and issue escalation
+- **Authority**: Scope changes, risk mitigation decisions
+- **Accountability**: Project alignment with business objectives
+
+## Scope & Constraints
+
+### In Scope
+- [ ] Complete business model design across all 9 canvas elements
+- [ ] Market research and customer validation activities
+- [ ] Financial projections and viability analysis
+- [ ] Risk assessment and mitigation strategies
+- [ ] Implementation roadmap and next steps
+
+### Out of Scope
+- [ ] Detailed operational planning beyond business model
+- [ ] Regulatory approvals and compliance implementation
+- [ ] Technology development or platform building
+- [ ] Staff hiring and organizational development
+- [ ] Market entry execution activities
+
+### Constraints
+**Financial**: Capital bounds ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD
+**Timeline**: {{ timeline_weeks | default("52") }} weeks total project duration
+**Resources**: {{ team_size | default("4") }} person team with {{ total_bmdp_cost | default("TBD") }} BBD BMDP budget
+**Regulatory**: {{ regulatory_constraints | default("Standard business registration and compliance requirements") }}
+
+## Approval
+**Sponsor Signature**: _________________________ Date: _________
+**Project Manager Signature**: _________________ Date: _________

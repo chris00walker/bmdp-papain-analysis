@@ -2,8 +2,8 @@
 
 ## Research Timebox
 - **Duration**: 10 days
-- **Start Date**: [TBD]
-- **End Date**: [TBD + 10 days]
+- **Start Date**: 2025-01-20
+- **End Date**: 2025-01-30
 - **Budget Allocation**: $214,000 BBD (Phase 2 budget)
 
 ## Research Objectives
@@ -51,7 +51,7 @@
 
 ### End-of-Sprint Demo (Day 10)
 - All 15+ customer interviews completed and analyzed
-- Empathy maps and JTBD analysis finalized
+- Empathy maps and Jobs-to-be-Done analysis finalized
 - Research insights synthesized with strategic implications
 - Updated business model canvas and assumption backlog
 - Go/no-go recommendation for Phase 3
