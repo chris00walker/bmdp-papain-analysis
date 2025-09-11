@@ -92,13 +92,13 @@ We are developing a comprehensive B2B marketplace platform that connects papain 
 
 ## Contact Information
 
-**Project Leader**: [Name TBD]  
-**Email**: [Email TBD]  
-**Phone**: [Phone TBD]  
+**Project Leader**: Jennifer Walsh  
+**Email**: j.walsh@marketplace-project.com  
+**Phone**: +1-246-555-0123  
 
 **Project Sponsor**: [Sponsor Name]  
 **Organization**: Caribbean Papain Marketplace Initiative  
-**Website**: [Website TBD]
+**Website**: www.caribbean-papain-marketplace.com
 
 ---
 

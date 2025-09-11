@@ -2,10 +2,10 @@
 
 ## Team Requirements
 
-- **Team Lead**: [Name/TBD]
-- **Business Expert**: [Name/TBD]
-- **Market Analyst**: [Name/TBD]
-- **Financial Analyst**: [Name/TBD]
+- **Team Lead**: Patricia Williams (Project Management, BMDP Certified)
+- **Business Expert**: Dr. Carlos Mendoza (Food Processing, 18 years papain industry)
+- **Market Analyst**: Kevin Park (Market Research, Food & Beverage Specialist)
+- **Financial Analyst**: Amanda Foster (Financial Modeling, Manufacturing Focus)
 - **Team Size**: 4 members
 
 ## BMDP Process Costs

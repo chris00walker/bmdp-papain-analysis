@@ -1,6 +1,6 @@
 # Interview Guide - Processor Business
 
-## Interview Framework (JTBD + Past Behavior)
+## Interview Framework (Jobs-to-be-Done + Past Behavior)
 
 ### Opening (5 minutes)
 - Introduction and purpose

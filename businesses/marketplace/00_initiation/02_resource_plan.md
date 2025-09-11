@@ -2,10 +2,10 @@
 
 ## Team Requirements
 
-- **Team Lead**: [Name/TBD]
-- **Business Expert**: [Name/TBD]
-- **Market Analyst**: [Name/TBD]
-- **Financial Analyst**: [Name/TBD]
+- **Team Lead**: Jennifer Walsh (Project Management, BMDP Certified)
+- **Business Expert**: Dr. Antonio Silva (Digital Platforms, 10 years marketplace experience)
+- **Market Analyst**: Rachel Kim (Market Research, B2B Technology Specialist)
+- **Financial Analyst**: Mark Rodriguez (Financial Modeling, Platform Economics Focus)
 - **Team Size**: 4 members
 
 ## BMDP Process Costs

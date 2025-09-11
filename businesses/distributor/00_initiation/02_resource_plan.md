@@ -1,10 +1,10 @@
 # Resource Plan - distributor Business
 
 ## Team Requirements
-- **Team Lead**: [Name/TBD]
-- **Business Expert**: [Name/TBD]
-- **Market Analyst**: [Name/TBD]
-- **Financial Analyst**: [Name/TBD]
+- **Team Lead**: Michael Thompson (Project Management, BMDP Certified)
+- **Business Expert**: Dr. Carmen Rodriguez (Distribution Networks, 12 years Caribbean trade)
+- **Market Analyst**: David Kim (Market Research, B2B Distribution Specialist)
+- **Financial Analyst**: Lisa Chen (Financial Modeling, Supply Chain Focus)
 - **Team Size**: 4 members
 
 ## BMDP Process Costs

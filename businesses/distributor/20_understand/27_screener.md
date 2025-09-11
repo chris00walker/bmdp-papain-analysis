@@ -1,198 +1,200 @@
-# Interview Screener - Distributor Business
+# Interview Participant Screener - Distributor
 
 ## Screening Objectives
-- Identify qualified interview participants across target customer segments
-- Ensure representative sample of company sizes, industries, and geographies
-- Filter for decision-makers or influencers in papain procurement
-- Validate current papain usage and procurement authority
-
-## Inclusion Criteria
-
-### Primary Criteria (Must Meet All)
-1. **Current Papain User**: Company currently uses papain in manufacturing processes
-2. **Caribbean Location**: Operations based in Caribbean region or serving Caribbean markets
-3. **Decision Authority**: Participant involved in procurement decisions or supplier selection
-4. **Minimum Usage**: Uses at least 100kg of papain annually
-5. **Willingness to Participate**: Available for 45-60 minute interview within research timeframe
-
-### Secondary Criteria (Preferred)
-1. **Growth Trajectory**: Company experiencing growth or expanding operations
-2. **Quality Focus**: Emphasis on quality, compliance, or premium positioning
-3. **Supply Chain Challenges**: Experiencing issues with current papain procurement
-4. **Innovation Orientation**: Open to new suppliers or supply chain improvements
-
-## Exclusion Criteria
-
-### Hard Exclusions
-1. **No Papain Usage**: Companies not currently using papain
-2. **Outside Region**: No Caribbean operations or market focus
-3. **No Decision Influence**: Participant has no input on supplier selection
-4. **Competitor**: Direct competitors in papain distribution
-5. **Unavailable**: Cannot participate in interview within research timeline
-
-### Soft Exclusions (Case-by-Case)
-1. **Very Small Usage**: Less than 100kg annually (may include for diversity)
-2. **Locked Contracts**: Long-term exclusive supplier agreements with no flexibility
-3. **Price-Only Focus**: Solely focused on lowest price with no value consideration
+- Identify qualified participants who match target customer segments
+- Ensure participants have relevant experience with papain procurement and distribution
+- Confirm decision-making authority or influence in ingredient sourcing
+- Screen for availability and willingness to participate
 
 ## Screening Questions
 
-### Opening and Qualification
-**Q1: Company and Role Confirmation**
-"Can you confirm your company name and your role in procurement or operations?"
-- *Screening for: Decision authority and company identification*
+### Basic Qualification
+**Q1: Company and Role**
+"Can you tell me about your current company and your role there?"
 
-**Q2: Papain Usage Confirmation**
-"Does your company currently use papain in any of your manufacturing processes or products?"
-- *Required: Yes (if No, thank and end screening)*
+**Qualifying Criteria**:
+- Company size matches target segments (Caribbean/Latin American food & beverage, cosmetics, regional pharma distributors)
+- Role involves ingredient procurement, quality control, operations, or business strategy
+- Industry relevance to papain usage or distribution
 
-**Q3: Usage Volume**
-"Approximately how much papain does your company use annually? Would you say it's:
-a) Less than 100kg per year
-b) 100kg to 1 metric ton per year  
-c) 1-5 metric tons per year
-d) More than 5 metric tons per year"
-- *Preferred: b, c, or d (may include some 'a' responses for segment diversity)*
+**Q2: Decision Authority**
+"How involved are you in evaluating and selecting ingredient suppliers or distributors for your organization?"
 
-**Q4: Geographic Scope**
-"Are your operations based in the Caribbean, or do you serve Caribbean markets?"
-- *Required: Yes (if No, thank and end screening)*
+**Qualifying Criteria**:
+- Decision maker (can approve supplier/distributor contracts)
+- Strong influencer (recommends suppliers for ingredient sourcing)
+- Heavy user (daily/weekly interaction with ingredient procurement)
 
-### Decision-Making Authority
-**Q5: Procurement Involvement**
-"Are you involved in decisions about selecting suppliers for raw materials like papain?"
-- *Required: Yes or significant influence (if No involvement, thank and end)*
+### Problem Area Experience
+**Q3: Current Challenges**
+"Do you currently face challenges with papain sourcing, ingredient distribution, or supply chain management in your organization?"
 
-**Q6: Supplier Flexibility**
-"Is your company able to consider new suppliers, or are you locked into long-term exclusive contracts?"
-- *Preferred: Able to consider new suppliers (may include some locked contracts for market understanding)*
+**Qualifying Criteria**:
+- Confirms experiencing papain sourcing or distribution challenges
+- Problem is active/ongoing (not solved)
+- Problem has business impact on production, costs, or operations
 
-### Segment Classification
-**Q7: Industry Application**
-"What products does your company make that use papain?"
-- *For segmentation: Food & beverage, cosmetics & personal care, pharmaceutical, other*
+**Q4: Solution Experience**
+"What suppliers or distributors do you currently use to source papain or similar enzymes?"
 
-**Q8: Papain Grade**
-"What grade of papain do you typically use?"
-a) Crude papain
-b) Food-grade papain
-c) Pharmaceutical-grade papain
-d) Multiple grades
-- *For segmentation and value proposition targeting*
+**Qualifying Criteria**:
+- Uses existing suppliers/distributors (not starting from zero)
+- Has experience evaluating alternative ingredient suppliers or distributors
+- Dissatisfied with current approach OR open to improvements
 
-### Current Challenges
-**Q9: Procurement Satisfaction**
-"How satisfied are you with your current papain supplier? Would you say:
-a) Very satisfied - no issues
-b) Mostly satisfied - minor issues
-c) Somewhat satisfied - some significant issues  
-d) Not satisfied - major issues"
-- *Preferred: b, c, or d (indicates openness to alternatives)*
+### Budget and Timeline
+**Q5: Investment Authority**
+"Does your organization have budget allocated for improving ingredient sourcing or exploring new suppliers/distributors?"
 
-**Q10: Supply Chain Pain Points**
-"Do you experience any of these challenges with papain procurement?"
-- Long lead times (8+ weeks)
-- Large minimum orders
-- Quality inconsistency
-- Limited technical support
-- Complex import procedures
-- High inventory costs
-- *Multiple selections indicate good interview candidate*
+**Qualifying Criteria**:
+- Has budget or budget influence for ingredient procurement
+- Timeline for supplier/distributor decisions within 6-12 months
+- Willing to invest in quality improvements and supply chain optimization
 
-### Interview Logistics
-**Q11: Availability**
-"Would you be available for a 45-60 minute interview about papain procurement within the next 2 weeks?"
-- *Required: Yes (if No, ask for alternative timeframe)*
+### Availability and Interest
+**Q6: Interview Participation**
+"Would you be available for a 45-60 minute conversation about your experiences and needs in papain sourcing and distribution?"
 
-**Q12: Interview Format**
-"Would you prefer the interview to be conducted:
-a) In person (if in Barbados area)
-b) Video call (Zoom, Teams, etc.)
-c) Phone call"
-- *For scheduling and logistics*
+**Qualifying Criteria**:
+- Available within research timeline
+- Willing to share detailed insights about supply chain and distribution
+- Comfortable with recording (if applicable)
 
-## Sample Composition Targets
+## Segment-Specific Screening
 
-### By Segment (15+ Total Interviews)
-- **Food & Beverage**: 8-10 interviews (60% of sample)
-- **Cosmetics & Personal Care**: 4-5 interviews (30% of sample)  
-- **Pharmaceutical**: 2-3 interviews (15% of sample)
+### Caribbean/Latin American Food & Beverage Companies Screening
+**Additional Questions**:
+- Company size: 50-500 employees
+- Industry: Food processing, beverage manufacturing
+- Role level: Procurement manager or operations director
+- Budget authority: $100K+ annual ingredient purchasing
 
-### By Company Size (Annual Papain Usage)
-- **Small (100kg-1MT)**: 4-5 interviews (30%)
-- **Medium (1-5MT)**: 6-8 interviews (50%)
-- **Large (5MT+)**: 3-4 interviews (20%)
+**Disqualifying Factors**:
+- Company too small (< 25 employees)
+- No ingredient procurement influence
+- Industry not relevant to enzyme usage
+- Recent supplier change (< 6 months)
 
-### By Geography
-- **Jamaica**: 4-5 interviews (major market)
-- **Trinidad & Tobago**: 3-4 interviews (industrial base)
-- **Barbados**: 2-3 interviews (local market)
-- **Other Caribbean**: 4-5 interviews (regional coverage)
+### Cosmetics Manufacturers Screening
+**Additional Questions**:
+- Company size: 25-200 employees
+- Product focus: Cosmetics using enzymatic ingredients
+- Quality requirements: Cosmetic-grade or higher standards
+- Decision speed: Can evaluate suppliers within 6-12 months
 
-### By Current Satisfaction Level
-- **Highly Satisfied**: 2-3 interviews (understand best practices)
-- **Moderately Satisfied**: 8-10 interviews (primary target)
-- **Dissatisfied**: 4-5 interviews (high conversion potential)
+**Disqualifying Factors**:
+- Very early stage startup (< 10 employees)
+- No enzyme ingredient budget
+- Outsources all procurement decisions
+- No enzyme usage in products
 
-## Recruitment Channels
+### Regional Pharma Distributors Screening
+**Additional Questions**:
+- Company size: 100-1000 employees
+- Distribution focus: Pharmaceutical ingredients or related products
+- Regulatory experience: Regional pharmaceutical distribution
+- Current suppliers: Uses multiple ingredient suppliers
 
-### Industry Associations
-- Caribbean Association of Industry and Commerce
-- Caribbean Food and Nutrition Institute
-- Caribbean Cosmetics Association
-- Caribbean Pharmaceutical Society
+**Disqualifying Factors**:
+- No budget for ingredient distribution
+- Completely satisfied with current suppliers
+- No authority to change suppliers
+- No pharmaceutical or enzyme distribution experience
 
-### Trade Shows and Events
-- Caribbean Food and Drink Expo
-- Caribbean Beauty and Wellness Expo
-- Caribbean Manufacturing Conference
-- Regional pharmaceutical conferences
+## Screening Script Template
 
-### Digital Channels
-- LinkedIn outreach to procurement professionals
-- Industry publication subscriber lists
-- Trade association member directories
-- Company websites and contact forms
+### Introduction
+"Hi [Name], thank you for your interest in participating in our research study. We're conducting interviews to better understand how businesses handle papain sourcing and ingredient distribution in the Caribbean and Latin American markets. 
 
-### Referral Networks
-- Existing industry contacts and relationships
-- Supplier and customer referrals
-- Professional services providers (consultants, lawyers)
-- Government trade promotion agencies
+I have a few quick questions to make sure you're a good fit for our study. This should take about 5 minutes. Is now a good time?"
 
-## Screening Process
+### Screening Flow
+1. **Start with broad questions** (company, role)
+2. **Narrow to specific experience** (papain sourcing, current suppliers/distributors)
+3. **Confirm decision authority** (budget, influence)
+4. **Check availability** (scheduling, time commitment)
 
-### Initial Contact Script
-"Hello, my name is [Name] and I'm conducting research on papain procurement in the Caribbean region. We're speaking with companies that use papain to understand current challenges and opportunities in the supply chain. Would you have 5 minutes to answer a few quick questions to see if you'd be a good fit for a more detailed interview?"
+### Qualification Decision
+**Highly Qualified** (Priority 1):
+- ✅ Target segment match
+- ✅ Decision authority
+- ✅ Active papain sourcing or distribution experience
+- ✅ Budget and timeline alignment
 
-### Qualification Process
-1. **Initial Screening**: 5-minute phone/email screening using questions above
-2. **Qualification Confirmation**: Email follow-up with interview details and confirmation
-3. **Interview Scheduling**: Calendar link or direct scheduling for qualified participants
-4. **Pre-Interview Reminder**: 24-hour reminder with interview guide overview
+**Moderately Qualified** (Priority 2):
+- ✅ Target segment match
+- ✅ Strong influence (not direct authority)
+- ✅ Ingredient sourcing or distribution experience
+- ⚠️ Uncertain budget/timeline
 
-### Incentives and Motivation
-- **Research Results**: Offer to share summary findings with participants
-- **Industry Insights**: Provide market intelligence and competitive analysis
-- **Networking**: Opportunity to connect with other industry professionals
-- **Early Access**: First consideration for pilot program if concept moves forward
+**Not Qualified**:
+- ❌ Outside target segments
+- ❌ No procurement or distribution influence
+- ❌ No relevant sourcing experience
+- ❌ No budget or immediate need
 
-## Quality Control
+## Documentation Template
 
-### Screening Documentation
-- Track all contacts and responses in CRM system
-- Document screening responses for analysis
-- Maintain participant database for follow-up research
-- Record recruitment channel effectiveness
+### Screening Record
+**Participant**: [Name, Title, Company]
+**Contact**: [Email, Phone]
+**Screening Date**: [Date]
+**Screener**: [Team Member]
 
-### Sample Validation
-- Verify company information and participant roles
-- Cross-check usage estimates with industry data
-- Ensure geographic and segment distribution targets met
-- Validate decision-making authority before interviews
+**Qualification Status**: [Highly/Moderately/Not Qualified]
 
-### Backup Recruitment
-- Maintain pipeline of 25+ qualified prospects
-- Have backup participants for each segment
-- Plan for 20-30% no-show/cancellation rate
-- Recruit continuously throughout research period
+**Screening Responses**:
+- Company Size: [Number of employees]
+- Industry: [Industry sector]
+- Role: [Job title and responsibilities]
+- Decision Authority: [Level of influence]
+- Problem Experience: [Current sourcing/distribution challenges]
+- Current Suppliers: [Papain/enzyme suppliers or distributors used]
+- Budget/Timeline: [Investment capacity and timing]
+
+**Interview Priority**: [1-3 or Not Qualified]
+**Notes**: [Additional context or special considerations]
+
+**Next Steps**:
+- [ ] Schedule interview (if qualified)
+- [ ] Send calendar invite and prep materials
+- [ ] Add to research database
+- [ ] Follow up if needed
+
+## Recruitment Tracking
+
+### Target Recruitment Goals
+- **Total Interviews**: 12 participants
+- **Food & Beverage Companies**: 4 participants
+- **Cosmetics Manufacturers**: 4 participants  
+- **Regional Pharma Distributors**: 4 participants
+
+### Screening Metrics
+- **Screening Conversion**: Target 25% (qualified/contacted)
+- **Interview Conversion**: Target 80% (completed/scheduled)
+- **Quality Score**: Target 4.0/5.0 average qualification score
+
+### Recruitment Sources
+| Source | Contacted | Screened | Qualified | Scheduled |
+|--------|-----------|----------|-----------|-----------|
+| Caribbean Trade Shows | | | | |
+| LinkedIn Outreach | | | | |
+| Industry Associations | | | | |
+| Regional Business Networks | | | | |
+| **Total** | | | | |
+
+## Quality Assurance
+
+### Screening Best Practices
+- **Be conversational**: Make it feel like a discussion, not an interrogation
+- **Listen actively**: Pay attention to nuances and follow-up opportunities
+- **Stay neutral**: Don't lead participants toward "correct" answers
+- **Respect time**: Keep screening brief and focused
+- **Document thoroughly**: Capture key insights for interview preparation
+
+### Common Screening Mistakes
+- **Leading questions**: "You probably struggle with papain distribution, right?"
+- **Overselling**: Making the study sound more interesting than it is
+- **Rushing**: Not allowing time for thoughtful responses
+- **Bias**: Screening in participants who don't truly qualify
+- **Poor documentation**: Missing key details for interview planning

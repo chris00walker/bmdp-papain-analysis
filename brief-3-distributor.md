@@ -34,48 +34,48 @@ updated_at: 2025-09-09
 
 # **Brief 3: Distributor (Import/Export & Regional Distribution, Barbados)**
 
-**Value Proposition**
+## Value Proposition
 
 * One-stop Caribbean distributor offering crude, food-grade, and pharma-grade papain.  
 * Lower transaction costs for local/regional buyers.  
 * Provide CoA, quality assurance, and logistics support.
 
-**Customer Segments**
+## Customer Segments
 
 * Caribbean and Latin American food & beverage companies.  
 * Cosmetics manufacturers.  
 * Regional pharma distributors.
 
-**Key Activities**
+## Key Activities
 
 * Source papain globally (India, China, Africa).  
 * Quality verification and repackaging.  
 * Sales, marketing, logistics.
 
-**Key Resources**
+## Key Resources
 
 * Warehousing in Barbados.  
 * QA lab for testing.  
 * Supply contracts with multiple producers.
 
-**Channels**
+## Channels
 
 * Direct B2B sales to processors.  
 * Distribution partnerships.  
 * Regional trade shows.
 
-**Revenue Streams**
+## Revenue Streams
 
 * Mark-up on papain sales (15–25%).  
 * Premium for guaranteed specs / smaller lot sizes.
 
-**Cost Structure**
+## Cost Structure
 
 * Working capital for inventory.  
 * Freight, duties, warehousing.  
 * Sales & admin overhead.
 
-**Critical Risks**
+## Critical Risks
 
 * Supplier reliability (quality, consistency).  
 * Regulatory compliance across markets.  

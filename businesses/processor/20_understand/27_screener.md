@@ -1,103 +1,200 @@
-# Interview Screener - Processor Business
+# Interview Participant Screener - Processor
 
-## Target Participant Criteria
-
-### Inclusion Criteria
-
-#### Primary Targets (Pharmaceutical Distributors)
-- **Role**: Procurement Manager, Supply Chain Director, or Sourcing Specialist
-- **Company Type**: Pharmaceutical ingredient distributors or large pharma companies
-- **Experience**: Minimum 3 years in pharmaceutical ingredient sourcing
-- **Decision Authority**: Involved in supplier selection or evaluation processes
-- **Geographic Scope**: North America, Europe, or global operations
-
-#### Secondary Targets (Wound Care/Cosmetics)
-- **Role**: Procurement, R&D, or Quality Assurance roles
-- **Company Type**: Wound care manufacturers, cosmetics companies, nutraceutical firms
-- **Product Involvement**: Direct experience with enzyme ingredients or papain
-- **Volume**: Companies purchasing >50kg annually of enzyme ingredients
-
-### Exclusion Criteria
-- **No Decision Influence**: Administrative or junior roles without procurement input
-- **Irrelevant Industries**: Companies not using enzymes in their products
-- **Competitors**: Direct competitors in enzyme manufacturing or processing
-- **Small Scale**: Research-only or very small volume users (<10kg annually)
+## Screening Objectives
+- Identify qualified participants who match target customer segments
+- Ensure participants have relevant experience with pharmaceutical-grade papain procurement
+- Confirm decision-making authority or influence in ingredient sourcing
+- Screen for availability and willingness to participate
 
 ## Screening Questions
 
-### Opening Qualification
-1. "What is your role in ingredient sourcing and procurement at [Company]?"
-2. "Are you involved in decisions about enzyme or pharmaceutical ingredient suppliers?"
-3. "Does your company currently use papain or similar enzymes in your products?"
+### Basic Qualification
+**Q1: Company and Role**
+"Can you tell me about your current company and your role there?"
 
-### Experience and Authority
-4. "How long have you been involved in pharmaceutical/ingredient procurement?"
-5. "What's your typical annual volume for enzyme ingredients like papain?"
-6. "Who else is involved in supplier selection decisions at your company?"
+**Qualifying Criteria**:
+- Company size matches target segments (pharmaceutical distributors, wound care companies, nutraceutical manufacturers)
+- Role involves ingredient procurement, quality control, regulatory affairs, or business strategy
+- Industry relevance to pharmaceutical-grade enzyme processing
 
-### Relevance Check
-7. "What types of enzyme suppliers do you currently work with?"
-8. "Have you evaluated new enzyme suppliers in the past 2 years?"
-9. "What geographic regions do your current suppliers operate from?"
+**Q2: Decision Authority**
+"How involved are you in evaluating and selecting pharmaceutical ingredient suppliers for your organization?"
+
+**Qualifying Criteria**:
+- Decision maker (can approve supplier contracts)
+- Strong influencer (recommends suppliers for pharmaceutical ingredients)
+- Heavy user (daily/weekly interaction with enzyme ingredient sourcing)
+
+### Problem Area Experience
+**Q3: Current Challenges**
+"Do you currently face challenges with pharmaceutical-grade papain sourcing or enzyme supply chain in your organization?"
+
+**Qualifying Criteria**:
+- Confirms experiencing pharma-grade papain sourcing challenges
+- Problem is active/ongoing (not solved)
+- Problem has business impact on production, compliance, or costs
+
+**Q4: Solution Experience**
+"What suppliers or approaches do you currently use to source pharmaceutical-grade papain or similar enzymes?"
+
+**Qualifying Criteria**:
+- Uses existing suppliers (not starting from zero)
+- Has experience evaluating alternative pharmaceutical ingredient suppliers
+- Dissatisfied with current approach OR open to improvements
+
+### Budget and Timeline
+**Q5: Investment Authority**
+"Does your organization have budget allocated for improving pharmaceutical ingredient sourcing or exploring new suppliers?"
+
+**Qualifying Criteria**:
+- Has budget or budget influence for pharmaceutical raw materials
+- Timeline for supplier decisions within 6-12 months
+- Willing to invest in quality improvements and regulatory compliance
 
 ### Availability and Interest
-10. "Would you be interested in a 45-60 minute conversation about enzyme sourcing trends?"
-11. "Are you available for a call in the next 2 weeks?"
-12. "Would you be open to discussing challenges and opportunities in your supply chain?"
+**Q6: Interview Participation**
+"Would you be available for a 45-60 minute conversation about your experiences and needs in pharmaceutical-grade papain sourcing?"
 
-## Sample Screening Script
+**Qualifying Criteria**:
+- Available within research timeline
+- Willing to share detailed insights about pharmaceutical supply chain
+- Comfortable with recording (if applicable)
 
-### Email Outreach Template
-**Subject**: Research on Pharmaceutical Enzyme Sourcing Trends
+## Segment-Specific Screening
 
-Dear [Name],
+### Pharmaceutical Ingredient Distributors Screening
+**Additional Questions**:
+- Company size: Large-scale distributors (1000+ employees)
+- Industry: Pharmaceutical distribution, ingredient trading
+- Role level: Procurement director or above
+- Budget authority: $500K+ annual pharmaceutical ingredient purchasing
 
-I'm conducting research on pharmaceutical enzyme sourcing trends and supply chain diversification. Your expertise in [specific area] at [Company] would provide valuable insights for our study.
+**Disqualifying Factors**:
+- Company too small (< 500 employees)
+- No pharmaceutical procurement influence
+- Industry not relevant to pharmaceutical ingredients
+- Recent supplier change (< 6 months)
 
-We're particularly interested in understanding:
-- Current challenges in enzyme supply chains
-- Evaluation criteria for new suppliers
-- Interest in supply chain diversification opportunities
+### Wound Care Companies Screening
+**Additional Questions**:
+- Company size: 100-1000 employees
+- Product focus: Wound care products using enzymatic debridement
+- Regulatory experience: FDA/EMA regulated product manufacturing
+- Decision speed: Can evaluate suppliers within 6-12 months
 
-Would you be available for a 45-60 minute conversation in the next two weeks? The discussion would be confidential, and we'd be happy to share relevant findings with you.
+**Disqualifying Factors**:
+- Very early stage startup (< 50 employees)
+- No pharmaceutical ingredient budget
+- Outsources all procurement decisions
+- No enzyme usage in products
 
-Best regards,
-[Researcher Name]
+### Nutraceutical Manufacturers Screening
+**Additional Questions**:
+- Company size: 50-500 employees
+- Owner/manager role: Direct procurement authority for ingredients
+- Current suppliers: Uses pharmaceutical-grade enzymes
+- Quality focus: GMP or similar quality standards
 
-### Phone Screening Script
-"Hi [Name], this is [Researcher] calling about the enzyme sourcing research study. Do you have 2-3 minutes for me to explain the study and see if you'd be a good fit to participate?"
+**Disqualifying Factors**:
+- No budget for pharmaceutical-grade ingredients
+- Completely satisfied with current suppliers
+- No authority to change suppliers
+- No pharmaceutical-grade requirements
 
-**If yes, continue with screening questions above**
+## Screening Script Template
 
-**If qualified**: "Great! It sounds like your experience would be very valuable for our research. Would you be available for a 45-60 minute interview sometime in the next two weeks?"
+### Introduction
+"Hi [Name], thank you for your interest in participating in our research study. We're conducting interviews to better understand how businesses handle pharmaceutical-grade papain sourcing and enzyme procurement. 
 
-## Target Sample Composition
+I have a few quick questions to make sure you're a good fit for our study. This should take about 5 minutes. Is now a good time?"
 
-### Primary Segment (8-10 interviews)
-- 4-5 Large pharmaceutical distributors
-- 2-3 Direct pharmaceutical manufacturers
-- 1-2 Wound care specialists
+### Screening Flow
+1. **Start with broad questions** (company, role)
+2. **Narrow to specific experience** (pharmaceutical papain sourcing, current suppliers)
+3. **Confirm decision authority** (budget, influence)
+4. **Check availability** (scheduling, time commitment)
 
-### Secondary Segment (4-6 interviews)
-- 2-3 Cosmetics ingredient suppliers
-- 1-2 Nutraceutical manufacturers
-- 1 Research institution (if time permits)
+### Qualification Decision
+**Highly Qualified** (Priority 1):
+- ✅ Target segment match
+- ✅ Decision authority
+- ✅ Active pharmaceutical papain sourcing experience
+- ✅ Budget and timeline alignment
 
-### Geographic Distribution
-- 60% North America
-- 30% Europe
-- 10% Other regions (Australia, Japan)
+**Moderately Qualified** (Priority 2):
+- ✅ Target segment match
+- ✅ Strong influence (not direct authority)
+- ✅ Pharmaceutical enzyme sourcing experience
+- ⚠️ Uncertain budget/timeline
 
-## Recruitment Channels
+**Not Qualified**:
+- ❌ Outside target segments
+- ❌ No procurement influence
+- ❌ No relevant pharmaceutical sourcing experience
+- ❌ No budget or immediate need
 
-### Professional Networks
-- LinkedIn outreach to procurement professionals
-- Industry association member directories
-- Trade show contact lists
-- Professional referrals
+## Documentation Template
 
-### Industry Sources
-- Pharmaceutical trade publications
-- Ingredient supplier directories
-- Conference attendee lists
-- Industry consultant networks
+### Screening Record
+**Participant**: [Name, Title, Company]
+**Contact**: [Email, Phone]
+**Screening Date**: [Date]
+**Screener**: [Team Member]
+
+**Qualification Status**: [Highly/Moderately/Not Qualified]
+
+**Screening Responses**:
+- Company Size: [Number of employees]
+- Industry: [Industry sector]
+- Role: [Job title and responsibilities]
+- Decision Authority: [Level of influence]
+- Problem Experience: [Current sourcing challenges]
+- Current Suppliers: [Pharmaceutical papain/enzyme suppliers used]
+- Budget/Timeline: [Investment capacity and timing]
+
+**Interview Priority**: [1-3 or Not Qualified]
+**Notes**: [Additional context or special considerations]
+
+**Next Steps**:
+- [ ] Schedule interview (if qualified)
+- [ ] Send calendar invite and prep materials
+- [ ] Add to research database
+- [ ] Follow up if needed
+
+## Recruitment Tracking
+
+### Target Recruitment Goals
+- **Total Interviews**: 12 participants
+- **Pharmaceutical Distributors**: 4 participants
+- **Wound Care Companies**: 4 participants  
+- **Nutraceutical Manufacturers**: 4 participants
+
+### Screening Metrics
+- **Screening Conversion**: Target 25% (qualified/contacted)
+- **Interview Conversion**: Target 80% (completed/scheduled)
+- **Quality Score**: Target 4.0/5.0 average qualification score
+
+### Recruitment Sources
+| Source | Contacted | Screened | Qualified | Scheduled |
+|--------|-----------|----------|-----------|-----------|
+| Pharmaceutical Trade Shows | | | | |
+| LinkedIn Outreach | | | | |
+| Industry Associations | | | | |
+| Regulatory Conferences | | | | |
+| **Total** | | | | |
+
+## Quality Assurance
+
+### Screening Best Practices
+- **Be conversational**: Make it feel like a discussion, not an interrogation
+- **Listen actively**: Pay attention to nuances and follow-up opportunities
+- **Stay neutral**: Don't lead participants toward "correct" answers
+- **Respect time**: Keep screening brief and focused
+- **Document thoroughly**: Capture key insights for interview preparation
+
+### Common Screening Mistakes
+- **Leading questions**: "You probably struggle with pharmaceutical papain quality, right?"
+- **Overselling**: Making the study sound more interesting than it is
+- **Rushing**: Not allowing time for thoughtful responses
+- **Bias**: Screening in participants who don't truly qualify
+- **Poor documentation**: Missing key details for interview planning

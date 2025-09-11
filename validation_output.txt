@@ -1,5 +1,0 @@
-Validating business: grower
-==================================================
-
-❌ VALIDATION FAILED (1 errors)
-  ERROR: Error reading evidence ledger: I/O operation on closed file.
