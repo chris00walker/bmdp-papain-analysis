@@ -1,0 +1,82 @@
+# Mobilize Charter - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## SMART Objectives
+
+### Objective 1: Market Validation
+**Specific**: Validate {{ business_title }} market opportunity through customer interviews
+**Measurable**: Complete ≥8 customer interviews with target segments
+**Achievable**: Leverage existing network and research capabilities
+**Relevant**: Critical for business model validation
+**Time-bound**: Complete within {{ phase1_weeks | default("4") }} weeks
+
+### Objective 2: Business Model Framework
+**Specific**: Develop comprehensive Business Model Canvas v0
+**Measurable**: Complete all 9 canvas building blocks with evidence
+**Achievable**: Use structured canvas methodology
+**Relevant**: Foundation for all subsequent design work
+**Time-bound**: Canvas v0 completed by week {{ canvas_deadline | default("3") }}
+
+### Objective 3: Risk Assessment
+**Specific**: Identify and assess top business model risks
+**Measurable**: Document ≥5 kill factors and ≥5 thrill factors
+**Achievable**: Structured kill/thrill methodology
+**Relevant**: Critical for go/no-go decisions
+**Time-bound**: Risk assessment completed within {{ risk_timeline | default("2") }} weeks
+
+### Objective 4: Team Mobilization
+**Specific**: Assemble cross-functional team with clear roles
+**Measurable**: {{ team_size | default("4") }} team members with defined responsibilities
+**Achievable**: Leverage internal resources and expertise
+**Relevant**: Essential for project execution
+**Time-bound**: Team assembled within {{ team_timeline | default("1") }} week
+
+### Objective 5: Stakeholder Alignment
+**Specific**: Secure stakeholder buy-in for project approach
+**Measurable**: Stakeholder map with engagement strategies
+**Achievable**: Structured stakeholder management approach
+**Relevant**: Critical for project success
+**Time-bound**: Stakeholder alignment within {{ stakeholder_timeline | default("2") }} weeks
+
+## Key Performance Indicators (KPIs)
+
+### Phase 1 KPIs
+- **Customer Interviews**: ≥8 completed
+- **Canvas Completion**: 100% of building blocks defined
+- **Kill/Thrill Analysis**: ≥10 factors identified
+- **Team Engagement**: 100% team member participation
+- **Stakeholder Buy-in**: ≥80% stakeholder approval
+
+### Phase 2 KPIs
+- **Market Research**: ≥10 evidence ledger entries
+- **Competitive Analysis**: ≥3 competitor canvases
+- **Customer Insights**: ≥5 key insights documented
+- **Assumption Testing**: ≥3 assumptions tested
+
+### Phase 3 KPIs
+- **Prototype Development**: ≥3 business model alternatives
+- **Stakeholder Feedback**: ≥9 feedback sessions
+- **Financial Projections**: 5-year financial model
+- **Implementation Plan**: Detailed roadmap with milestones
+
+## Resource Constraints
+
+### Budget Constraints
+- **Total BMDP Budget**: ${{ total_bmdp_cost | default("TBD") }} BBD
+- **Phase 1 Allocation**: ${{ bmdp_discovery_cost | default("TBD") }} BBD
+- **Phase 2 Allocation**: ${{ bmdp_validation_cost | default("TBD") }} BBD
+- **Phase 3 Allocation**: ${{ bmdp_scaling_cost | default("TBD") }} BBD
+
+### Time Constraints
+- **Total Timeline**: {{ total_weeks | default("9") }} weeks
+- **Phase 1 Duration**: {{ phase1_weeks | default("4") }} weeks
+- **Phase 2 Duration**: {{ phase2_weeks | default("3") }} weeks
+- **Phase 3 Duration**: {{ phase3_weeks | default("2") }} weeks
+
+### Resource Constraints
+- **Team Size**: {{ team_size | default("4") }} members
+- **Team Allocation**: {{ team_allocation | default("50%") }} average allocation
+- **External Resources**: {{ external_resources | default("Market research budget, customer access") }}

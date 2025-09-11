@@ -1,0 +1,6 @@
+# Business: { business_slug }
+name,role,function,allocation_pct,email
+{{ team_lead | default("TBD") }},Leader,Strategy,50%,{{ team_lead_email | default("") }}
+{{ business_expert | default("TBD") }},Expert,Domain Knowledge,40%,{{ business_expert_email | default("") }}
+{{ market_analyst | default("TBD") }},Analyst,Market Research,30%,{{ market_analyst_email | default("") }}
+{{ financial_analyst | default("TBD") }},Analyst,Financial Modeling,25%,{{ financial_analyst_email | default("") }}

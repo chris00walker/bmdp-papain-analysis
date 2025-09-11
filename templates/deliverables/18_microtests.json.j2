@@ -1,0 +1,26 @@
+{
+  "business": "{{ business_slug }}",
+  "microtests": [
+    {
+      "assumption": "Customers will pay ${{ target_price | default('X') }} for {{ value_proposition | default('our solution') }}",
+      "test": "Price validation interviews (n=5)",
+      "metric": "≥3 customers accept price point",
+      "owner": "{{ business_expert | default('BD Lead') }}",
+      "timeline": "1 week"
+    },
+    {
+      "assumption": "{{ channel_1 | default('Primary channel') }} partners interested in distribution",
+      "test": "Partner discovery calls (n=3)",
+      "metric": "≥1 LOI or partnership expression",
+      "owner": "{{ team_lead | default('Team Lead') }}",
+      "timeline": "2 weeks"
+    },
+    {
+      "assumption": "Target customers have budget for {{ business_type }} solutions",
+      "test": "Budget qualification in customer interviews",
+      "metric": "≥70% have allocated budget",
+      "owner": "{{ market_analyst | default('Market Analyst') }}",
+      "timeline": "1 week"
+    }
+  ]
+}
