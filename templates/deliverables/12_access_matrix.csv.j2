@@ -1,3 +1,10 @@
+---
+phase: 00_initiation
+artifact: 12_access_matrix.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
 # Business: { business_slug }
 data_source,owner,permission_status,ETA
 Customer interviews,{{ team_lead | default("TBD") }},pending,{{ interview_eta | default("TBD") }}

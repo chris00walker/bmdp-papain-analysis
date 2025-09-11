@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 BMDP Portfolio Rollup Tool
-Aggregates financial metrics across all businesses
+Aggregates financial metrics and methodology compliance across all businesses
 """
 
 import argparse
 import csv
 import json
 from pathlib import Path
+import subprocess
 import sys
 
 def main():
@@ -33,15 +34,63 @@ def main():
             with open(summary_path, 'r') as f:
                 reader = csv.DictReader(f)
                 metrics = {row['metric']: row['value'] for row in reader}
-                
+
+            # Default methodology values
+            vpd_status = 'unknown'
+            bmg_status = 'unknown'
+            tbi_status = 'unknown'
+            meth_overall = 0.0
+            vpd_score = 0.0
+            bmg_score = 0.0
+            tbi_score = 0.0
+
+            # Attempt to get methodology scores (scorer)
+            try:
+                res = subprocess.run([
+                    'python', 'tools/osterwalder_pigneur_scorer.py',
+                    '--business', business, '--format', 'json'
+                ], capture_output=True, text=True)
+                if res.returncode == 0:
+                    scorer = json.loads(res.stdout)
+                    scores = scorer.get('scores', {})
+                    vpd_score = float(scores.get('vpd', 0))
+                    bmg_score = float(scores.get('bmg', 0))
+                    tbi_score = float(scores.get('tbi', 0))
+                    meth_overall = float(scores.get('overall', 0))
+            except Exception:
+                pass
+
+            # Attempt to get methodology statuses (validator heuristics)
+            try:
+                res = subprocess.run([
+                    'python', 'tools/workflow_validator.py',
+                    '--business', business, '--format', 'json'
+                ], capture_output=True, text=True)
+                if res.returncode == 0:
+                    rep = json.loads(res.stdout)
+                    meth = rep.get('methodology', {})
+                    vpd_status = (meth.get('vpd') or {}).get('status', vpd_status)
+                    bmg_status = (meth.get('bmg') or {}).get('status', bmg_status)
+                    tbi_status = (meth.get('tbi') or {}).get('status', tbi_status)
+            except Exception:
+                pass
+
             portfolio_data.append({
                 'business_slug': business,
                 'irr_pct': float(metrics.get('irr_pct', 0)),
                 'npv_bbd': float(metrics.get('npv_bbd', 0)),
                 'roi_pct': float(metrics.get('roi_pct', 0)),
-                'capex_y0_bbd': float(metrics.get('capex_y0_bbd', 0))
+                'capex_y0_bbd': float(metrics.get('capex_y0_bbd', 0)),
+                # Methodology
+                'method_overall': meth_overall,
+                'vpd_score': vpd_score,
+                'bmg_score': bmg_score,
+                'tbi_score': tbi_score,
+                'vpd_status': vpd_status,
+                'bmg_status': bmg_status,
+                'tbi_status': tbi_status,
             })
-            
+
         except Exception as e:
             print(f"❌ ERROR: Cannot read financial summary for {business}: {e}")
             continue
@@ -57,7 +106,14 @@ def main():
     # Write portfolio CSV
     portfolio_csv = output_dir / "financials_portfolio.csv"
     with open(portfolio_csv, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['business_slug', 'irr_pct', 'npv_bbd', 'roi_pct', 'capex_y0_bbd'])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                'business_slug', 'irr_pct', 'npv_bbd', 'roi_pct', 'capex_y0_bbd',
+                'method_overall', 'vpd_score', 'bmg_score', 'tbi_score',
+                'vpd_status', 'bmg_status', 'tbi_status'
+            ]
+        )
         writer.writeheader()
         writer.writerows(portfolio_data)
     
@@ -101,6 +157,22 @@ def main():
         if total_capex > 0:
             npv_per_bbd = total_npv / total_capex
             f.write(f"- **NPV per BBD Invested**: {npv_per_bbd:.2f}\n")
+
+        # Methodology summary table
+        f.write("\n## Methodology Compliance Summary\n\n")
+        f.write("| Business | Overall | VPD (score/status) | BMG (score/status) | TBI (score/status) |\n")
+        f.write("|----------|---------|--------------------|--------------------|--------------------|\n")
+        for data in portfolio_data:
+            f.write(
+                f"| {data['business_slug'].title()} | {data['method_overall']:.2f} | "
+                f"{data['vpd_score']:.2f}/{data['vpd_status']} | {data['bmg_score']:.2f}/{data['bmg_status']} | {data['tbi_score']:.2f}/{data['tbi_status']} |\n"
+            )
+
+        # Optional: methodology ranking by overall
+        meth_sorted = sorted(portfolio_data, key=lambda x: x['method_overall'], reverse=True)
+        f.write("\n## Ranking by Methodology Compliance\n\n")
+        for i, data in enumerate(meth_sorted, 1):
+            f.write(f"{i}. **{data['business_slug'].title()}**: Overall {data['method_overall']:.2f}, VPD {data['vpd_score']:.2f} ({data['vpd_status']}), BMG {data['bmg_score']:.2f} ({data['bmg_status']}), TBI {data['tbi_score']:.2f} ({data['tbi_status']})\n")
     
     print(f"✅ Portfolio rollup completed")
     print(f"   Businesses analyzed: {len(portfolio_data)}")

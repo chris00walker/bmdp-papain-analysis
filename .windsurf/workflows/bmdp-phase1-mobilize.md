@@ -70,6 +70,23 @@ Create `businesses/{business_slug}/10_mobilize/15_canvas_v0_main.md` with initia
 Create `businesses/{business_slug}/10_mobilize/16_idea_stories.md` with narrative:
 - Story format: problem, solution, who, why now, mechanics
 
+### 6b. Create Value Proposition Canvas and Customer Jobs Analysis (VPD)
+
+Create VPD artifacts and validate structure using tools:
+
+```bash
+# Create scaffold files (idempotent; safe to run multiple times)
+python tools/vpd_canvas_creator.py --business businesses/{business_slug} --apply
+
+# Optional quick validation (summary output)
+python tools/vpd_validator.py --business businesses/{business_slug} --validate all --format summary
+```
+
+Files created/updated:
+- `businesses/{business_slug}/10_mobilize/value_proposition_canvas.md`
+- `businesses/{business_slug}/10_mobilize/customer_jobs_analysis.md`
+- `businesses/{business_slug}/20_understand/pain_gain_mapping.md`
+
 ### 7. Kill/Thrill session
 
 Create `businesses/{business_slug}/10_mobilize/17_kill_thrill.csv`:
@@ -142,6 +159,8 @@ microtest,customers sign LOIs,assumption test,pending,,decision impact: go/no-go
 - [ ] Project brief and charter
 - [ ] Team roster and access matrix  
 - [ ] v0 Business Model Canvas
+- [ ] Value Proposition Canvas (VPD)
+- [ ] Customer Jobs Analysis (functional, emotional, social)
 - [ ] Kill/thrill analysis
 - [ ] Micro-test definitions
 - [ ] Sprint plan

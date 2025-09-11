@@ -46,12 +46,17 @@ def compute_roi(cashflows):
     return (total_returns + total_investment) / abs(total_investment)
 
 def main():
-    parser = argparse.ArgumentParser(description='Compute financial metrics for BMDP business')
+    parser = argparse.ArgumentParser(description='Compute financial metrics for BMDP business (with viability checks)')
     parser.add_argument('--business', required=True, help='Business slug')
     parser.add_argument('--capital-min', type=float, default=300000, help='Minimum capital (BBD)')
     parser.add_argument('--capital-max', type=float, default=1000000, help='Maximum capital (BBD)')
     parser.add_argument('--discount-rate', type=float, default=0.15, help='Discount rate (decimal)')
     parser.add_argument('--repo-root', default='.', help='Repository root path')
+    # Viability thresholds (BMG hybrid checks)
+    parser.add_argument('--irr-hurdle', type=float, default=None, help='IRR hurdle (decimal); default = discount-rate')
+    parser.add_argument('--roi-min', type=float, default=0.15, help='Minimum ROI acceptable (decimal)')
+    parser.add_argument('--payback-max-years', type=int, default=5, help='Maximum acceptable payback period in years')
+    parser.add_argument('--require-positive-npv', action='store_true', help='Require NPV > 0 at discount rate')
     
     args = parser.parse_args()
     
@@ -103,6 +108,32 @@ def main():
     irr = compute_irr(cashflows)
     npv = compute_npv(cashflows, args.discount_rate)
     roi = compute_roi(cashflows)
+
+    # Compute simple payback period (years until cumulative cashflow >= 0)
+    cumulative = 0.0
+    payback_years = None
+    for i, cf in enumerate(cashflows):
+        cumulative += cf
+        if cumulative >= 0 and payback_years is None:
+            payback_years = i  # i years from start (year index)
+
+    # Viability assessment (hybrid approach - warn, do not fail)
+    irr_hurdle = args.irr_hurdle if args.irr_hurdle is not None else args.discount_rate
+    warnings = []
+    passes = True
+    if irr < irr_hurdle:
+        warnings.append(f"IRR {irr:.1%} below hurdle {irr_hurdle:.1%}")
+        passes = False
+    if args.require_positive_npv and npv <= 0:
+        warnings.append(f"NPV {npv:,.0f} BBD is not positive at discount rate {args.discount_rate:.1%}")
+        passes = False
+    if roi < args.roi_min:
+        warnings.append(f"ROI {roi:.1%} below minimum {args.roi_min:.1%}")
+        passes = False
+    if payback_years is None or payback_years > args.payback_max_years:
+        pb_txt = 'never' if payback_years is None else f"{payback_years}y"
+        warnings.append(f"Payback period {pb_txt} exceeds max {args.payback_max_years}y")
+        passes = False
     
     # Output results
     summary_path = business_path / "30_design" / "financials_summary.csv"
@@ -117,11 +148,22 @@ def main():
         writer.writerow(['discount_rate_pct', f"{args.discount_rate:.4f}"])
         writer.writerow(['horizon_years', len(cashflows)])
         writer.writerow(['capex_y0_bbd', f"{total_capex:.0f}"])
-    
+        # Viability extras
+        writer.writerow(['payback_years', payback_years if payback_years is not None else 'NEVER'])
+        writer.writerow(['irr_hurdle_pct', f"{irr_hurdle:.4f}"])
+        writer.writerow(['roi_min_pct', f"{args.roi_min:.4f}"])
+        writer.writerow(['require_positive_npv', 'true' if args.require_positive_npv else 'false'])
+        writer.writerow(['viability_status', 'pass' if passes else 'warn'])
+
     print(f"✅ Financial metrics computed for {args.business}")
-    print(f"   IRR: {irr:.1%}")
-    print(f"   NPV: {npv:,.0f} BBD")
-    print(f"   ROI: {roi:.1%}")
+    print(f"   IRR: {irr:.1%} (hurdle: {irr_hurdle:.1%})")
+    print(f"   NPV: {npv:,.0f} BBD @ {args.discount_rate:.1%}")
+    print(f"   ROI: {roi:.1%} (min: {args.roi_min:.1%})")
+    print(f"   Payback: {payback_years if payback_years is not None else 'NEVER'} years (max: {args.payback_max_years}y)")
+    if warnings:
+        print("   ⚠️  Viability warnings:")
+        for w in warnings:
+            print(f"     - {w}")
     print(f"   Results saved to: {summary_path}")
 
 if __name__ == '__main__':

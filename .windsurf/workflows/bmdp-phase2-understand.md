@@ -119,6 +119,19 @@ Create `businesses/{business_slug}/20_understand/30_jobs_to_be_done.md`:
 - Functional, Social, Emotional jobs
 - Pains and gains
 
+### 10b. Structure JTBD and Pain/Gain using VPD; validate
+
+Use the VPD validator to ensure Jobs-to-be-Done and pain/gain mapping are structured per VPD methodology (severity/importance classification, customer-value fit signals).
+
+```bash
+# Validate VPD structure for JTBD and pain/gain (summary output)
+python tools/vpd_validator.py --business businesses/{business_slug} --validate jobs-to-be-done --format summary
+```
+
+Recommendations:
+- Ensure `pain_gain_mapping.md` classifies pains and gains with VPD severity/importance.
+- Cross-reference customer jobs with value map elements in the VPD canvas.
+
 ### 11. Synthesize insights
 
 Create `businesses/{business_slug}/20_understand/31_insights.md`:
@@ -208,6 +221,7 @@ Create `businesses/{business_slug}/20_understand/38_progress_demo.md`:
 - [ ] Customer segments and interview toolkit
 - [ ] Interview logs (≥8 interviews)
 - [ ] Empathy maps and JTBD
+- [ ] VPD-structured JTBD and pain/gain classification (validated)
 - [ ] Insights synthesis
 - [ ] Updated assumption backlog
 - [ ] Early concept cards and test cards

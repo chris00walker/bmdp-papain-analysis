@@ -21,6 +21,19 @@ Generates, prototypes, and tests multiple business model options with selection 
 mkdir -p businesses/{business_slug}/30_design
 ```
 
+### 6b. BMG viability assessment (validate)
+
+Validate Business Model Generation (BMG) coherence and viability for candidate prototypes using the BMG validator.
+
+```bash
+# Validate BMG nine building blocks coherence (summary output)
+python tools/bmg_validator.py --business businesses/{business_slug} --validate viability --format summary
+```
+
+Recommendations:
+- Ensure selected prototype's canvas elements reinforce each other (nine blocks).
+- Align financial projections and cost structure with the canvas assumptions.
+
 ### 2. Design brief and timebox
 
 Create `businesses/{business_slug}/30_design/30_design_brief.md`:
@@ -203,10 +216,12 @@ design,financial projections,ROI 25%,medium,,investment decision,Finance,today
 - [ ] ≥3 prototype business model canvases
 - [ ] Stakeholder feedback from ≥9 sources
 - [ ] Selection criteria and scorecard
+- [ ] BMG viability assessment (validated)
 - [ ] Financial projections for selected model
 - [ ] Implementation roadmap
 - [ ] Risk assessment and mitigation plan
 - [ ] Test cards for key assumptions
+- [ ] TBI testing rigor (validated)
 - [ ] Integration/separation decision
 - [ ] Final recommendation with rationale
 - [ ] ≥5 evidence ledger entries

@@ -21,6 +21,26 @@ Run this workflow with a business parameter: grower, processor, distributor, or 
 mkdir -p businesses/$1/00_initiation
 ```
 
+### 1b. Methodology setup and workspace rules orientation
+
+Introduce methodology prerequisites and ensure base structure exists. This step is idempotent.
+
+```bash
+# Run setup checks (safe, no changes) or apply minimal structure fixes if desired
+python tools/methodology_setup.py --business businesses/$1 --format summary
+
+# Optional (creates missing directories only; no content overwritten)
+# python tools/methodology_setup.py --business businesses/$1 --apply --format summary
+```
+
+Workspace rules now active for continuous validation:
+
+- `.windsurf/rules/structure-validation.md` — structure checks on business changes
+- `.windsurf/rules/vpd-compliance.md` — VPD validation on VPD-related edits
+- `.windsurf/rules/financial-validation.md` — financial CSV validation on change
+- `.windsurf/rules/auto-generation.md` — generate missing deliverables when directories are added
+- `.windsurf/rules/phase-gates.md` — enforce methodology gates before phase transitions
+
 ### 2. Parse business brief and create sponsor brief
 
 ```bash

@@ -37,14 +37,29 @@ python tools/compute_financials.py --business {business_slug} --capital-min 3000
 - IRR, NPV, ROI calculations
 - Results saved to `businesses/{business_slug}/30_design/financials_summary.csv`
 
-### 3. Update business manifest
+### 3. Methodology compliance assessment (VPD/BMG/TBI)
+
+```bash
+# VPD/BMG/TBI methodology compliance scoring (summary)
+python tools/osterwalder_pigneur_scorer.py --business {business_slug} --format summary
+
+# Content-level methodology checks (VPD/BMG/TBI heuristics)
+python tools/content_validator.py --business {business_slug} --analysis semantic --mode all --format summary
+```
+
+**Expected output**:
+
+- VPD/BMG/TBI sub-scores and overall methodology score
+- Content validation messages for VPD/BMG/TBI artifacts
+
+### 4. Update business manifest
 
 ```bash
 # Replace {business_slug} with: grower, processor, distributor, or marketplace
 python tools/update_manifest.py --business {business_slug} --validation-status passed
 ```
 
-### 4. Generate business summary report
+### 5. Generate business summary report
 
 ```bash
 # Replace {business_slug} with: grower, processor, distributor, or marketplace
@@ -57,6 +72,7 @@ python tools/generate_summary_report.py --business {business_slug}
 
 - [ ] Validation passes without errors
 - [ ] Financial metrics computed and saved
+- [ ] Methodology compliance assessment executed (VPD/BMG/TBI)
 - [ ] Business manifest updated
 - [ ] Summary report generated
 
