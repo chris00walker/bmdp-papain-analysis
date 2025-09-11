@@ -81,6 +81,62 @@ class WorkflowCheckpoint:
         except json.JSONDecodeError:
             print("❌ Failed to parse validation results")
             return {"status": "error", "compliance": 0}
+
+    def validate_methodology_gates(self, phase: str) -> Dict:
+        """Validate methodology gates (VPD/BMG/TBI) for a phase.
+
+        Gates (heuristic requirements):
+        - Phase 10_mobilize: VPD must be OK (no WARN)
+        - Phase 20_understand: VPD must be OK (no WARN)
+        - Phase 30_design: BMG and TBI must be OK (no WARN)
+        """
+        print(f"\n🔒 GATES: Validating methodology gates for {self.business} phase {phase}")
+
+        result = subprocess.run([
+            'python', 'tools/workflow_validator.py',
+            '--business', self.business,
+            '--format', 'json'
+        ], capture_output=True, text=True)
+
+        if result.returncode != 0:
+            print("❌ Gate validation failed to run")
+            return {"status": "error", "messages": ["workflow_validator returned non-zero"], "requirements": []}
+
+        try:
+            report = json.loads(result.stdout)
+        except json.JSONDecodeError:
+            print("❌ Failed to parse validator output for gates")
+            return {"status": "error", "messages": ["invalid JSON from workflow_validator"], "requirements": []}
+
+        meth = report.get('methodology', {})
+        vpd_status = (meth.get('vpd') or {}).get('status', 'unknown')
+        bmg_status = (meth.get('bmg') or {}).get('status', 'unknown')
+        tbi_status = (meth.get('tbi') or {}).get('status', 'unknown')
+
+        # Define phase-to-methodology requirements
+        requirements = []
+        if phase == '10_mobilize':
+            requirements.append(('VPD', vpd_status == 'ok', vpd_status))
+        elif phase == '20_understand':
+            requirements.append(('VPD', vpd_status == 'ok', vpd_status))
+        elif phase == '30_design':
+            requirements.append(('BMG', bmg_status == 'ok', bmg_status))
+            requirements.append(('TBI', tbi_status == 'ok', tbi_status))
+        else:
+            # For other phases, no strict gates defined
+            print("ℹ️  No methodology gates defined for phase", phase)
+            return {"status": "skipped", "messages": [f"No gates for phase {phase}"], "requirements": []}
+
+        failed = [name for (name, ok, _st) in requirements if not ok]
+        if failed:
+            print("❌ Methodology gates not satisfied:")
+            for name, ok, st in requirements:
+                if not ok:
+                    print(f"   - {name}: status={st}")
+            return {"status": "failed", "messages": [f"Failed: {', '.join(failed)}"], "requirements": requirements}
+
+        print("✅ Methodology gates satisfied")
+        return {"status": "complete", "messages": ["All required gates satisfied"], "requirements": requirements}
     
     def record_checkpoint(self, phase: str, status: str, notes: str = ""):
         """Record a checkpoint completion"""
@@ -199,6 +255,10 @@ def main():
     # Post-validate command
     post_parser = subparsers.add_parser("post-validate", help="Post-execution validation")
     post_parser.add_argument("--phase", required=True, help="Phase to validate")
+
+    # Gates command (methodology gates validation)
+    gates_parser = subparsers.add_parser("gates", help="Validate methodology gates for a phase")
+    gates_parser.add_argument("--phase", required=True, help="Phase to validate gates for")
     
     args = parser.parse_args()
     
@@ -219,6 +279,10 @@ def main():
     elif args.command == "post-validate":
         success = checkpoint.post_execution_validation(args.phase)
         return 0 if success else 1
+    
+    elif args.command == "gates":
+        result = checkpoint.validate_methodology_gates(args.phase)
+        return 0 if result.get("status") == "complete" else 1
     
     elif args.command == "status":
         status = checkpoint.get_status_report()
