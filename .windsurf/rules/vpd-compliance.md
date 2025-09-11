@@ -1,6 +1,6 @@
 ---
 trigger: glob
-globs: businesses/*/{10_mobilize,20_understand}/*.md
+globs: businesses/*/{10_mobilize,20_understand,30_design}/*.md
 ---
 
 # VPD Methodology Compliance Rule
