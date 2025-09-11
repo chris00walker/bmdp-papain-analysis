@@ -45,7 +45,20 @@ done
 echo "✅ All financial metrics computed"
 ```
 
-### 3. Generate portfolio rollup
+### 3. Methodology compliance for all businesses (VPD/BMG/TBI)
+
+```bash
+echo "Assessing methodology compliance..."
+for business in grower processor distributor marketplace; do
+  echo "Scoring methodology for $business..."
+  python tools/osterwalder_pigneur_scorer.py --business $business --format summary
+  echo "Running content-level methodology checks for $business..."
+  python tools/content_validator.py --business $business --analysis semantic --mode all --format summary
+done
+echo "✅ Methodology compliance assessment completed"
+```
+
+### 4. Generate portfolio rollup
 
 ```bash
 python tools/portfolio_rollup.py --businesses grower processor distributor marketplace
@@ -55,7 +68,7 @@ python tools/portfolio_rollup.py --businesses grower processor distributor marke
 - `90_portfolio_comparison/financials_portfolio.csv`
 - `90_portfolio_comparison/portfolio_analysis.md`
 
-### 4. Display portfolio summary
+### 5. Display portfolio summary
 
 ```bash
 echo ""
@@ -68,7 +81,7 @@ echo ""
 column -t -s',' 90_portfolio_comparison/financials_portfolio.csv
 ```
 
-### 5. Update portfolio manifest
+### 6. Update portfolio manifest
 
 ```bash
 python -c "

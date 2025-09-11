@@ -1,29 +1,15 @@
 ---
 business_slug: marketplace
 capital_bounds_bbd:
-  min: 250000
-  max: 1000000
+  min: 750000
+  max: 2500000
 financial_method:
-  horizon_years: 3
+  horizon_years: 5
   discount_rate_pct: 15
-  roi_target_pct: 20
-  metrics: [IRR, NPV, ROI]
+  kpis: [IRR, NPV, ROI]
 project_execution:
   team_size: 4
-  timeline_weeks: 52
-  phase_ratios:
-    discovery_pct: 50  # 3 parts of 6 total (3:2:1)
-    validation_pct: 33  # 2 parts of 6 total
-    scaling_pct: 17     # 1 part of 6 total
-  budget_ratios:
-    # Parser uses investor-realistic allocation (risk-inverse funding):
-    # Discovery: 30% of initial capital (min $150K) - lean validation
-    # Validation: 40% of unlocked capital (min $300K) - prove model  
-    # Scaling: 50% of unlocked capital (min $400K) - aggressive growth
-    # Actual percentages vary based on minimum thresholds and capital progression
-  milestone_budget_unlocks:
-    # Progressive capital unlocking based on validation milestones
-    # Parser will calculate actual amounts using capital bounds and risk progression
+  timeline_weeks: 78
   milestone_criteria:
     discovery_complete: "Customer desirability validated through interviews and market research"
     validation_complete: "Business feasibility proven through prototype testing and early sales"
@@ -66,14 +52,14 @@ updated_at: 2025-09-09
 
 ## Revenue Streams
 
-* Transaction fee (5–10%).  
+* Transaction fee model to be validated during market research.  
 * Premium listings & certification fees.  
 * Logistics/finance add-ons.
 
 ## Cost Structure
 
-* Platform build (BDS $50k - $75k).  
-* Ongoing hosting, dev, marketing (BDS $10k - $20k).  
+* Platform build (budget to be validated).  
+* Ongoing hosting, development, and marketing (budget to be validated).  
 * Verification & escrow operations.
 
 ## Critical Risks

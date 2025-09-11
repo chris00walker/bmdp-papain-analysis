@@ -85,18 +85,18 @@ This is the **central actionable guide** for BMDP system refactoring. All suppor
 
 - [x] **Convert `validate.py` → Structure Validation Rule** - Continuous structure validation
 - [x] **Convert `workflow_enforcer.py` → Auto-Generation Rule** - Auto-create missing files
-- [ ] **Convert `business_rule_engine.py` → Business Logic Rule** - Real-time BMG validation
+- [x] **Convert `business_rule_engine.py` → Business Logic Rule** - Real-time BMG validation
 - [ ] **Test workspace rules integration** - Validate rule triggers and actions
 
 #### ✅ Action Checklist - Remaining Tool Updates (Priority 2B)
 
-- [ ] **Update `content_validator.py`** - Integrate VPD/BMG/TBI content validation (keep as tool)
+- [x] **Update `content_validator.py`** - Integrate VPD/BMG/TBI content validation (keep as tool)
 - [ ] **Update `quality_scorer.py`** - Already done ✅
 
 #### ✅ Action Checklist - Workflow Integration (Priority 2C)
 
-- [ ] **Update Phase 0 Workflow** - Add methodology setup and workspace rules orientation
-- [ ] **Update Analysis Workflows** - Include methodology compliance assessment
+- [x] **Update Phase 0 Workflow** - Add methodology setup and workspace rules orientation
+- [x] **Update Analysis Workflows** - Include methodology compliance assessment
 - [ ] **Test integrated workflow + rules** - Validate continuous compliance
 
 ### **Phase 3: Enhancement (Week 3)**
@@ -105,8 +105,8 @@ This is the **central actionable guide** for BMDP system refactoring. All suppor
 
 #### ✅ Action Checklist - Background Analysis Rules (Priority 3A)
 
-- [ ] **Create `.windsurf/rules/quality-analysis.md`** - Auto-update quality scores on content changes
-- [ ] **Create `.windsurf/rules/financial-analysis.md`** - Auto-recompute financials on CSV changes
+- [x] **Create `.windsurf/rules/quality-analysis.md`** - Auto-update quality scores on content changes
+- [x] **Create `.windsurf/rules/financial-analysis.md`** - Auto-recompute financials on CSV changes
 - [ ] **Test background analysis performance** - Ensure rules don't impact IDE performance
 
 #### ✅ Action Checklist - Remaining Tool Updates (Priority 3B)

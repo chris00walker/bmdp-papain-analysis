@@ -1,3 +1,13 @@
+---
+phase: 00_initiation
+artifact: 28_interviews_log.csv
+methodology_tags:
+  - VPD
+rule_targets:
+  - structure-validation
+  - auto-generation
+  - vpd-compliance
+---
 # Business: { business_slug }
 date,participant_name,title,company,industry,segment,duration_minutes,interviewer,key_insights,problem_validation,solution_feedback,pricing_insights,follow_up_needed
 {{ interview_1_date | default("2024-01-15") }},"{{ interview_1_name | default("Sarah Johnson") }}","{{ interview_1_title | default("CTO") }}","{{ interview_1_company | default("TechScale Inc") }}","{{ interview_1_industry | default("SaaS") }}","{{ segment_2_name | default("Mid-Market") }}",{{ interview_1_duration | default("52") }},"{{ primary_interviewer | default("Business Expert") }}","{{ interview_1_insights | default("Strong need for scalable solution, current tools don't integrate well") }}","{{ interview_1_problem | default("High - confirmed integration and scaling challenges") }}","{{ interview_1_solution | default("Very positive - sees clear value in our approach") }}","{{ interview_1_pricing | default("Budget $50K-100K annually, prefers monthly billing") }}","{{ interview_1_followup | default("Yes - wants to see prototype demo") }}"

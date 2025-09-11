@@ -1,3 +1,13 @@
+---
+phase: 00_initiation
+artifact: financials_cashflow.csv
+methodology_tags:
+  - FINANCIAL
+rule_targets:
+  - structure-validation
+  - auto-generation
+  - financial-validation
+---
 # Business: { business_slug }
 Period,Revenue,Operating_Expenses,Capital_Expenses,Net_Cash_Flow,Cumulative_Cash_Flow
 Month 1,${{ m1_revenue | default("0") }},${{ m1_opex | default("250000") }},${{ m1_capex | default("100000") }},${{ m1_net | default("-350000") }},${{ m1_cumulative | default("-350000") }}

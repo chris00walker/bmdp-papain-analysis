@@ -64,6 +64,15 @@ class WorkflowValidator:
             "manifest.json"
         ]
 
+    # ------------------------------
+    # Helpers
+    # ------------------------------
+    def _read_text(self, path: Path) -> str:
+        try:
+            return path.read_text(encoding="utf-8")
+        except Exception:
+            return ""
+
     def validate_phase(self, phase: str) -> Tuple[List[str], List[str], List[str]]:
         """Validate deliverables for a specific phase"""
         phase_path = self.business_path / phase
@@ -123,6 +132,7 @@ class WorkflowValidator:
             "phases": {},
             "prototypes": {},
             "business_level": {},
+            "methodology": {},
             "overall_compliance": 0
         }
         
@@ -163,8 +173,120 @@ class WorkflowValidator:
         
         # Calculate overall compliance
         report["overall_compliance"] = (total_present / total_required * 100) if total_required > 0 else 0
-        
+
+        # Methodology adherence checks (lightweight heuristics)
+        report["methodology"] = {
+            "vpd": self._check_vpd(),
+            "bmg": self._check_bmg(),
+            "tbi": self._check_tbi(),
+        }
+
         return report
+
+    # ------------------------------
+    # Methodology checks (heuristics)
+    # ------------------------------
+    def _check_vpd(self) -> Dict:
+        base = self.business_path
+        missing: List[str] = []
+        messages: List[str] = []
+        status = "ok"
+
+        vpc = base / "10_mobilize" / "value_proposition_canvas.md"
+        jobs = base / "10_mobilize" / "customer_jobs_analysis.md"
+        pain_gain = base / "20_understand" / "pain_gain_mapping.md"
+
+        for p in [vpc, jobs, pain_gain]:
+            if not p.exists():
+                missing.append(str(p.relative_to(base)))
+
+        if missing:
+            status = "warn"
+            messages.append(f"Missing VPD artifacts: {', '.join(missing)}")
+
+        # Content heuristics
+        jobs_text = self._read_text(jobs)
+        if jobs_text:
+            for bucket in ["Functional", "Emotional", "Social"]:
+                if bucket.lower() not in jobs_text.lower():
+                    status = "warn"
+                    messages.append(f"Customer jobs missing category: {bucket}")
+
+        pain_gain_text = self._read_text(pain_gain)
+        if pain_gain_text and ("severity" not in pain_gain_text.lower() or "importance" not in pain_gain_text.lower()):
+            status = "warn"
+            messages.append("Pain/Gain mapping should include severity and importance classification")
+
+        vpc_text = self._read_text(vpc)
+        if vpc_text and ("Pain Relievers" not in vpc_text and "Gain Creators" not in vpc_text):
+            status = "warn"
+            messages.append("VPC value map sections (Pain Relievers, Gain Creators) not clearly present")
+
+        return {"status": status, "messages": messages}
+
+    def _check_bmg(self) -> Dict:
+        base = self.business_path
+        proto_dir = base / "30_design" / "32_prototypes"
+        messages: List[str] = []
+        status = "ok"
+
+        canvases = list(proto_dir.glob("prototype_*_canvas.md")) if proto_dir.exists() else []
+        if not canvases:
+            status = "warn"
+            messages.append("No prototype canvases found under 30_design/32_prototypes/")
+            return {"status": status, "messages": messages}
+
+        required_blocks = [
+            "Customer Segments", "Value Propositions", "Channels", "Customer Relationships",
+            "Revenue Streams", "Key Resources", "Key Activities", "Key Partnerships", "Cost Structure",
+        ]
+        for cv in canvases:
+            text = self._read_text(cv)
+            for block in required_blocks:
+                if block.lower() not in text.lower():
+                    status = "warn"
+                    messages.append(f"{cv.name}: Missing BMG block: {block}")
+
+        fin = base / "30_design" / "36_financial_projections.md"
+        if not fin.exists():
+            status = "warn"
+            messages.append("Missing 30_design/36_financial_projections.md for viability alignment")
+
+        return {"status": status, "messages": messages}
+
+    def _check_tbi(self) -> Dict:
+        base = self.business_path
+        files = [
+            base / "20_understand" / "34_test_cards.json",
+            base / "30_design" / "39_test_cards.json",
+        ]
+        messages: List[str] = []
+        status = "ok"
+
+        for f in files:
+            if not f.exists():
+                status = "warn"
+                messages.append(f"Missing test cards file: {f.relative_to(base)}")
+                continue
+            # Light JSON validation
+            try:
+                data = json.loads(self._read_text(f) or "{}")
+            except json.JSONDecodeError:
+                status = "warn"
+                messages.append(f"Invalid JSON in {f.relative_to(base)}")
+                continue
+            tests = data.get("tests")
+            if not isinstance(tests, list) or not tests:
+                status = "warn"
+                messages.append(f"{f.name}: 'tests' array missing or empty")
+                continue
+            for idx, t in enumerate(tests):
+                for key in ("assumption", "test", "metric", "stop_condition"):
+                    if key not in t or not str(t[key]).strip():
+                        status = "warn"
+                        messages.append(f"{f.name}[{idx}]: missing field '{key}'")
+
+        return {"status": status, "messages": messages}
 
     def validate_file_naming(self) -> List[str]:
         """Check for file naming violations"""
@@ -228,6 +350,14 @@ def main():
             print(f"\nNaming Violations:")
             for violation in naming_violations:
                 print(f"  - {violation}")
+
+        # Methodology summary
+        print("\nMethodology Checks:")
+        for domain in ("vpd", "bmg", "tbi"):
+            dom = report["methodology"].get(domain, {})
+            print(f"  {domain.upper()}: status={dom.get('status', 'unknown')}")
+            for msg in dom.get("messages", [])[:5]:  # limit output
+                print(f"    - {msg}")
     
     # Return non-zero exit code if compliance < 100%
     return 0 if report["overall_compliance"] == 100 else 1

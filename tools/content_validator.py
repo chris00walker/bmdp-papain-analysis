@@ -382,9 +382,11 @@ def main():
     parser = argparse.ArgumentParser(description="Advanced content validation for BMDP deliverables")
     parser.add_argument("--business", required=True, help="Business slug (grower, processor, etc.)")
     parser.add_argument("--phase", help="Specific phase to validate")
-    parser.add_argument("--analysis", choices=["basic", "semantic", "comprehensive"], 
-                       default="semantic", help="Validation depth")
+    parser.add_argument("--analysis", choices=["basic", "semantic", "comprehensive"],
+                        default="semantic", help="Validation depth")
     parser.add_argument("--deliverable", help="Specific deliverable to validate")
+    parser.add_argument("--mode", choices=["all", "vpd", "bmg", "tbi"], default="all",
+                        help="Run methodology checks for VPD/BMG/TBI in addition to content checks")
     parser.add_argument("--format", choices=["json", "summary"], default="summary")
     
     args = parser.parse_args()
@@ -393,17 +395,24 @@ def main():
     if not business_path.exists():
         print(f"ERROR: Business path not found: {business_path}")
         return 1
-    
+
     validator = ContentValidator(str(business_path))
     validation_level = ValidationLevel(args.analysis)
-    
+
+    # Container to aggregate optional methodology checks
+    methodology_checks = {}
+
     if args.deliverable:
         # Validate specific deliverable
         deliverable_path = business_path / args.phase / args.deliverable if args.phase else business_path / args.deliverable
         result = validator.validate_deliverable(deliverable_path, validation_level)
-        
+
+        # Optional domain checks
+        methodology_checks = _run_methodology_checks(validator, args.mode)
+
         if args.format == "json":
-            print(json.dumps(result.__dict__, indent=2, default=str))
+            out = {"deliverable": result.__dict__, "methodology_checks": methodology_checks}
+            print(json.dumps(out, indent=2, default=str))
         else:
             print(f"\n=== CONTENT VALIDATION: {args.deliverable} ===")
             print(f"Score: {result.score:.1f} (Grade: {result.quality_grade.value})")
@@ -415,24 +424,38 @@ def main():
                 print(f"Recommendations:")
                 for rec in result.recommendations:
                     print(f"  + {rec}")
-    
+            _print_methodology_checks(methodology_checks)
+
     elif args.phase:
         # Validate specific phase
         results = validator.validate_phase(args.phase, validation_level)
-        
+
+        # Optional domain checks
+        methodology_checks = _run_methodology_checks(validator, args.mode)
+
         if args.format == "json":
-            print(json.dumps({k: v.__dict__ for k, v in results.items()}, indent=2, default=str))
+            out = {
+                "phase": args.phase,
+                "results": {k: v.__dict__ for k, v in results.items()},
+                "methodology_checks": methodology_checks,
+            }
+            print(json.dumps(out, indent=2, default=str))
         else:
             print(f"\n=== PHASE VALIDATION: {args.phase} ===")
             for deliverable, result in results.items():
                 print(f"{deliverable}: {result.score:.1f} ({result.quality_grade.value}) - {len(result.issues)} issues")
-    
+            _print_methodology_checks(methodology_checks)
+
     else:
         # Full business validation
         report = validator.generate_quality_report(validation_level)
-        
+
+        # Optional domain checks
+        methodology_checks = _run_methodology_checks(validator, args.mode)
+
         if args.format == "json":
-            print(json.dumps(report, indent=2, default=str))
+            out = {"report": report, "methodology_checks": methodology_checks}
+            print(json.dumps(out, indent=2, default=str))
         else:
             print(f"\n=== QUALITY REPORT: {args.business.upper()} ===")
             print(f"Overall Score: {report['overall_score']} (Grade: {report['overall_grade']})")
@@ -442,13 +465,149 @@ def main():
             for grade, count in report['grade_distribution'].items():
                 if count > 0:
                     print(f"  {grade}: {count}")
-            
+
             print(f"\nSummary:")
             print(f"  Excellent (A): {report['summary']['excellent']}")
             print(f"  Good (B): {report['summary']['good']}")
             print(f"  Needs Work (C-F): {report['summary']['needs_work']}")
-    
+            _print_methodology_checks(methodology_checks)
+
     return 0
 
-if __name__ == "__main__":
-    exit(main())
+# Methodology Check Helpers #
+#############################
+
+def _run_methodology_checks(validator: ContentValidator, mode: str) -> dict:
+    """Run VPD/BMG/TBI methodology checks based on selected mode."""
+    results: dict = {}
+    modes = [mode] if mode != "all" else ["vpd", "bmg", "tbi"]
+
+    if "vpd" in modes:
+        results["vpd"] = _check_vpd(validator)
+    if "bmg" in modes:
+        results["bmg"] = _check_bmg(validator)
+    if "tbi" in modes:
+        results["tbi"] = _check_tbi(validator)
+
+    return results
+
+
+def _print_methodology_checks(methodology_checks: dict) -> None:
+    if not methodology_checks:
+        return
+    print("\n--- Methodology Checks ---")
+    for domain, res in methodology_checks.items():
+        status = res.get("status", "unknown")
+        print(f"[{domain.upper()}] status={status}")
+        for msg in res.get("messages", []):
+            print(f" - {msg}")
+
+
+def _read_text(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8")
+    except Exception:
+        return ""
+
+
+def _check_vpd(validator: ContentValidator) -> dict:
+    base = validator.business_path
+    required = [
+        base / "10_mobilize" / "value_proposition_canvas.md",
+        base / "10_mobilize" / "customer_jobs_analysis.md",
+        base / "20_understand" / "pain_gain_mapping.md",
+    ]
+    messages = []
+    status = "ok"
+
+    # Existence
+    missing = [str(p.relative_to(base)) for p in required if not p.exists()]
+    if missing:
+        status = "warn"
+        messages.append(f"Missing VPD artifacts: {', '.join(missing)}")
+
+    # Simple content heuristics
+    jobs = _read_text(base / "10_mobilize" / "customer_jobs_analysis.md")
+    if jobs:
+        for bucket in ["Functional", "Emotional", "Social"]:
+            if bucket.lower() not in jobs.lower():
+                status = "warn"
+                messages.append(f"Customer jobs missing category: {bucket}")
+
+    pain_gain = _read_text(base / "20_understand" / "pain_gain_mapping.md")
+    if pain_gain and ("severity" not in pain_gain.lower() or "importance" not in pain_gain.lower()):
+        status = "warn"
+        messages.append("Pain/Gain mapping should include severity and importance classification")
+
+    vpc = _read_text(base / "10_mobilize" / "value_proposition_canvas.md")
+    if vpc and ("Pain Relievers" not in vpc and "Gain Creators" not in vpc):
+        status = "warn"
+        messages.append("VPC value map sections (Pain Relievers, Gain Creators) not clearly present")
+
+    return {"status": status, "messages": messages}
+
+def _check_bmg(validator: ContentValidator) -> dict:
+    base = validator.business_path
+    proto_dir = base / "30_design" / "32_prototypes"
+    messages = []
+    status = "ok"
+
+    canvases = list(proto_dir.glob("prototype_*_canvas.md")) if proto_dir.exists() else []
+    if not canvases:
+        status = "warn"
+        messages.append("No prototype canvases found under 30_design/32_prototypes/")
+        return {"status": status, "messages": messages}
+
+    required_blocks = [
+        "Customer Segments", "Value Propositions", "Channels", "Customer Relationships",
+        "Revenue Streams", "Key Resources", "Key Activities", "Key Partnerships", "Cost Structure",
+    ]
+    for cv in canvases:
+        text = _read_text(cv)
+        for block in required_blocks:
+            if block.lower() not in text.lower():
+                status = "warn"
+                messages.append(f"{cv.name}: Missing BMG block: {block}")
+
+    # Financial alignment presence check
+    fin = base / "30_design" / "36_financial_projections.md"
+    if not fin.exists():
+        status = "warn"
+        messages.append("Missing 30_design/36_financial_projections.md for viability alignment")
+
+    return {"status": status, "messages": messages}
+
+
+def _check_tbi(validator: ContentValidator) -> dict:
+    base = validator.business_path
+    files = [
+        base / "20_understand" / "34_test_cards.json",
+        base / "30_design" / "39_test_cards.json",
+    ]
+    messages = []
+    status = "ok"
+
+    for f in files:
+        if not f.exists():
+            status = "warn"
+            messages.append(f"Missing test cards file: {f.relative_to(base)}")
+            continue
+        try:
+            data = json.loads(_read_text(f) or "{}")
+        except json.JSONDecodeError:
+            status = "warn"
+            messages.append(f"Invalid JSON in {f.relative_to(base)}")
+            continue
+        tests = data.get("tests")
+        if not isinstance(tests, list) or not tests:
+            status = "warn"
+            messages.append(f"{f.name}: 'tests' array missing or empty")
+            continue
+        # Basic schema checks for each test
+        for idx, t in enumerate(tests):
+            for key in ("assumption", "test", "metric", "stop_condition"):
+                if key not in t or not str(t[key]).strip():
+                    status = "warn"
+                    messages.append(f"{f.name}[{idx}]: missing field '{key}'")
+
+    return {"status": status, "messages": messages}

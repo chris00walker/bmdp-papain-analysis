@@ -1,3 +1,10 @@
+---
+phase: 00_initiation
+artifact: 33_feedback_log.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
 # Business: { business_slug }
 date,stakeholder,role,prototype,feedback,concerns,preferences,priority,action_required
 {{ feedback_1_date | default("2024-01-20") }},"{{ feedback_1_stakeholder | default("Sarah Johnson") }}","{{ feedback_1_role | default("Target Customer - CTO") }}","{{ prototype_1_name | default("Premium Integration Platform") }}","{{ feedback_1_feedback | default("Strong interest in pre-built integrations, concerned about implementation timeline") }}","{{ feedback_1_concerns | default("6-month implementation too long, need faster ROI") }}","{{ feedback_1_preferences | default("Phased rollout, pilot program approach") }}","{{ feedback_1_priority | default("High") }}","{{ feedback_1_action | default("Develop rapid deployment methodology") }}"

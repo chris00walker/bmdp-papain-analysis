@@ -1,3 +1,10 @@
+---
+phase: 20_understand
+artifact: 20_stakeholder_map.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
 # Business: { business_slug }
 stakeholder,interest,influence,stance,mitigation,owner
 {{ sponsor_name | default("Project Sponsor") }},high,high,supportive,maintain engagement,{{ team_lead | default("Team Lead") }}

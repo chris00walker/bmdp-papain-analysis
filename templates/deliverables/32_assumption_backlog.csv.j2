@@ -1,3 +1,12 @@
+---
+phase: 00_initiation
+artifact: 32_assumption_backlog.csv
+methodology_tags:
+  - TBI
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
 # Business: { business_slug }
 assumption_id,category,assumption_statement,confidence_level,priority,test_method,success_criteria,owner,status,test_results,evidence_source
 ASM001,Customer Problem,"{{ assumption_1 | default("Target customers experience significant pain with manual processes") }}","{{ conf_1 | default("Medium") }}","{{ priority_1 | default("High") }}","{{ test_1 | default("Customer interviews") }}","{{ success_1 | default("70% of customers confirm problem") }}","{{ owner_1 | default("Market Analyst") }}","{{ status_1 | default("Tested") }}","{{ result_1 | default("85% confirmed - VALIDATED") }}","{{ evidence_1 | default("Customer interview log") }}"
