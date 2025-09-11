@@ -83,8 +83,8 @@ This is the **central actionable guide** for BMDP system refactoring. All suppor
 
 > 📋 **Reference**: See [Windsurf Workspace Rules Analysis](WINDSURF_WORKSPACE_RULES_ANALYSIS.md) for conversion patterns and [Template Refactoring Strategy](TEMPLATE_REFACTORING_STRATEGY.md) for template integration considerations.
 
-- [ ] **Convert `validate.py` → Structure Validation Rule** - Continuous structure validation
-- [ ] **Convert `workflow_enforcer.py` → Auto-Generation Rule** - Auto-create missing files
+- [x] **Convert `validate.py` → Structure Validation Rule** - Continuous structure validation
+- [x] **Convert `workflow_enforcer.py` → Auto-Generation Rule** - Auto-create missing files
 - [ ] **Convert `business_rule_engine.py` → Business Logic Rule** - Real-time BMG validation
 - [ ] **Test workspace rules integration** - Validate rule triggers and actions
 
