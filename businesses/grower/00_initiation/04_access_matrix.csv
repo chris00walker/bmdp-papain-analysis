@@ -1,0 +1,14 @@
+---
+phase: 00_initiation
+artifact: 12_access_matrix.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Business: Grower
+data_source,owner,permission_status,ETA
+Industry benchmarking data,Business Development,Requested,Week 2
+Customer interview data,Market Research,Pending,Week 3
+Competitive analysis data,Strategy Team,Available,Week 1
+Financial modeling data,Finance Team,Requested,Week 3
+Regulatory compliance docs,Legal Team,Pending,Week 4
