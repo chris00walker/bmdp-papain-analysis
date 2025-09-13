@@ -1,0 +1,145 @@
+---
+phase: 20_understand
+artifact: 20_research_plan.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Research Plan - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Research Objectives
+
+### Primary Research Questions
+1. **Market Size & Opportunity**: What is the total addressable market for {{ business_title }}?
+2. **Customer Validation**: Do target customers experience the problems we aim to solve?
+3. **Solution Fit**: How well does our proposed solution address customer needs?
+4. **Competitive Landscape**: Who are our direct and indirect competitors?
+5. **Market Dynamics**: What trends and forces shape this market?
+
+### Secondary Research Questions
+- What are the key market segments and their characteristics?
+- What are customers currently paying for alternative solutions?
+- What are the main barriers to adoption for new solutions?
+- What regulatory or compliance factors affect this market?
+
+## Research Methodology
+
+### Primary Research
+**Customer Interviews** ({{ interview_count | default("8-12") }} interviews)
+- Target: {{ target_segments | default("Key customer segments identified in canvas") }}
+- Method: Semi-structured interviews (45-60 minutes)
+- Focus: Problem validation, solution feedback, willingness to pay
+
+**Expert Interviews** ({{ expert_count | default("3-5") }} interviews)
+- Target: Industry experts, advisors, former executives
+- Method: Structured interviews (30-45 minutes)
+- Focus: Market dynamics, competitive insights, trend validation
+
+### Secondary Research
+**Market Analysis**
+- Industry reports and market research
+- Competitive intelligence and analysis
+- Regulatory and compliance research
+- Technology and trend analysis
+
+**Financial Research**
+- Market sizing and segmentation data
+- Pricing benchmarks and models
+- Investment and funding landscape
+- Economic indicators and forecasts
+
+## Research Timeline
+
+### Week 1: Research Design & Preparation
+- [ ] Finalize research questions and methodology
+- [ ] Develop interview guides and screeners
+- [ ] Identify and recruit interview participants
+- [ ] Set up research tools and documentation
+
+### Week 2: Primary Research Execution
+- [ ] Conduct customer interviews ({{ customer_interviews_week2 | default("4-6") }} interviews)
+- [ ] Begin expert interviews ({{ expert_interviews_week2 | default("2-3") }} interviews)
+- [ ] Document findings in real-time
+- [ ] Adjust approach based on initial insights
+
+### Week 3: Research Completion & Analysis
+- [ ] Complete remaining interviews
+- [ ] Synthesize primary research findings
+- [ ] Complete secondary research analysis
+- [ ] Develop insights and recommendations
+
+## Research Participants
+
+### Customer Interview Targets
+| Segment | Count | Characteristics | Recruitment Method |
+|---------|-------|-----------------|-------------------|
+| {{ segment_1 | default("Primary Segment") }} | {{ segment_1_count | default("4-5") }} | {{ segment_1_chars | default("Key characteristics") }} | {{ segment_1_method | default("Network referrals") }} |
+| {{ segment_2 | default("Secondary Segment") }} | {{ segment_2_count | default("3-4") }} | {{ segment_2_chars | default("Key characteristics") }} | {{ segment_2_method | default("LinkedIn outreach") }} |
+
+### Expert Interview Targets
+- **Industry Veterans**: {{ expert_veterans | default("2-3 former executives or industry leaders") }}
+- **Market Analysts**: {{ expert_analysts | default("1-2 research analysts or consultants") }}
+- **Technical Experts**: {{ expert_technical | default("1-2 domain specialists") }}
+
+## Research Tools & Resources
+
+### Interview Tools
+- **Video Platform**: {{ video_platform | default("Zoom/Teams for remote interviews") }}
+- **Recording**: {{ recording_tool | default("Built-in recording with consent") }}
+- **Documentation**: {{ doc_tool | default("Real-time notes in shared documents") }}
+- **Scheduling**: {{ scheduling_tool | default("Calendly for participant coordination") }}
+
+### Analysis Tools
+- **Transcription**: {{ transcription_tool | default("Automated transcription with manual review") }}
+- **Analysis**: {{ analysis_tool | default("Thematic analysis and pattern identification") }}
+- **Visualization**: {{ viz_tool | default("Affinity mapping and insight clustering") }}
+
+## Success Metrics
+
+### Quantitative Metrics
+- **Interview Completion**: ≥{{ min_interviews | default("8") }} customer interviews completed
+- **Expert Engagement**: ≥{{ min_experts | default("3") }} expert interviews completed
+- **Response Quality**: ≥{{ response_quality | default("80%") }} of questions answered satisfactorily
+- **Timeline Adherence**: Research completed within {{ research_weeks | default("3") }} weeks
+
+### Qualitative Metrics
+- **Insight Quality**: Clear, actionable insights generated
+- **Problem Validation**: Strong evidence for problem existence
+- **Solution Feedback**: Constructive feedback on proposed solution
+- **Market Understanding**: Comprehensive competitive landscape
+
+## Risk Mitigation
+
+### Recruitment Risks
+- **Risk**: Difficulty recruiting target participants
+- **Mitigation**: Multiple recruitment channels, incentive offers, network leveraging
+
+### Quality Risks
+- **Risk**: Poor quality responses or insights
+- **Mitigation**: Skilled interviewer training, structured guides, follow-up questions
+
+### Timeline Risks
+- **Risk**: Research delays affecting project timeline
+- **Mitigation**: Parallel recruitment and interviewing, flexible scheduling
+
+## Deliverables
+
+### Research Outputs
+- [ ] **Research Questions Document**: Detailed questions and methodology
+- [ ] **Interview Guides**: Structured guides for customer and expert interviews
+- [ ] **Participant Screener**: Qualification criteria and screening questions
+- [ ] **Interview Log**: Complete record of all interviews conducted
+- [ ] **Research Summary**: Synthesized findings and insights
+- [ ] **Competitive Analysis**: Detailed competitor landscape
+- [ ] **Market Sizing**: Addressable market analysis
+
+### Analysis Outputs
+- [ ] **Customer Insights**: Key findings from customer research
+- [ ] **Expert Insights**: Strategic insights from expert interviews
+- [ ] **Market Trends**: Relevant trends and dynamics
+- [ ] **Opportunity Assessment**: Market opportunity validation
+- [ ] **Recommendation**: Research-based recommendations for business model

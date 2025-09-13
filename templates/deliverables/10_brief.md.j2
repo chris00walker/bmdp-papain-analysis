@@ -1,0 +1,36 @@
+---
+phase: 10_mobilize
+artifact: 10_brief.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Project Brief - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Sponsor Context
+**Sponsor Prompt**: {{ sponsor_prompt | default("Business model design for " + business_name + " venture") }}
+
+**Project Scope**: {{ project_scope | default("Complete business model design process through Phases 1-3") }}
+
+**Key Constraints**: 
+- Budget: ${{ total_bmdp_cost | default("TBD") }} BBD
+- Timeline: {{ total_weeks | default("9") }} weeks
+- Capital bounds: ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD
+
+## Decision Cadence
+**Meeting Schedule**: {{ meeting_schedule | default("Weekly standups, biweekly reviews") }}
+
+**Decision Points**:
+- Phase 1 Gate: {{ phase1_gate_date | default("Week 4") }}
+- Phase 2 Gate: {{ phase2_gate_date | default("Week 7") }}
+- Phase 3 Gate: {{ phase3_gate_date | default("Week 9") }}
+
+## Success Criteria
+- [ ] Viable business model within capital constraints
+- [ ] Market validation completed
+- [ ] Financial projections demonstrate viability
+- [ ] Implementation roadmap defined

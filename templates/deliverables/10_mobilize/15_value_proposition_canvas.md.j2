@@ -1,0 +1,103 @@
+---
+phase: 10_mobilize
+artifact: 15_value_proposition_canvas.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+methodology_tags:
+  - VPD
+---
+# Value Proposition Canvas - {{ BUSINESS_SLUG|title }} {{ BUSINESS_TITLE }}
+
+## Business Context
+**Business**: {{ BUSINESS_SLUG|title }}
+**Phase**: Phase 1 - Mobilize
+**Framework**: Osterwalder & Pigneur Value Proposition Design
+
+## Customer Profile
+
+### Customer Jobs
+**Functional Jobs** (What customers are trying to get done):
+- {{ FUNCTIONAL_JOB_1 }}
+- {{ FUNCTIONAL_JOB_2 }}
+- {{ FUNCTIONAL_JOB_3 }}
+
+**Emotional Jobs** (How customers want to feel):
+- {{ EMOTIONAL_JOB_1 }}
+- {{ EMOTIONAL_JOB_2 }}
+
+**Social Jobs** (How customers want to be perceived):
+- {{ SOCIAL_JOB_1 }}
+- {{ SOCIAL_JOB_2 }}
+
+### Customer Pains
+**Severity: High**
+- {{ HIGH_PAIN_1 }}
+- {{ HIGH_PAIN_2 }}
+
+**Severity: Medium**
+- {{ MEDIUM_PAIN_1 }}
+- {{ MEDIUM_PAIN_2 }}
+
+**Severity: Low**
+- {{ LOW_PAIN_1 }}
+
+### Customer Gains
+**Essential Gains** (Must have):
+- {{ ESSENTIAL_GAIN_1 }}
+- {{ ESSENTIAL_GAIN_2 }}
+
+**Expected Gains** (Should have):
+- {{ EXPECTED_GAIN_1 }}
+- {{ EXPECTED_GAIN_2 }}
+
+**Desired Gains** (Nice to have):
+- {{ DESIRED_GAIN_1 }}
+
+## Value Map
+
+### Products & Services
+**Core Offering**:
+- {{ CORE_PRODUCT_1 }}
+- {{ CORE_PRODUCT_2 }}
+
+**Supporting Services**:
+- {{ SUPPORT_SERVICE_1 }}
+- {{ SUPPORT_SERVICE_2 }}
+
+### Pain Relievers
+**Eliminates Pains**:
+- {{ PAIN_RELIEVER_1 }}
+- {{ PAIN_RELIEVER_2 }}
+
+**Reduces Pains**:
+- {{ PAIN_REDUCER_1 }}
+- {{ PAIN_REDUCER_2 }}
+
+### Gain Creators
+**Creates Gains**:
+- {{ GAIN_CREATOR_1 }}
+- {{ GAIN_CREATOR_2 }}
+
+**Maximizes Gains**:
+- {{ GAIN_MAXIMIZER_1 }}
+- {{ GAIN_MAXIMIZER_2 }}
+
+## Fit Assessment
+
+### Pain-Relief Fit
+- **{{ HIGH_PAIN_1 }}** → **{{ PAIN_RELIEVER_1 }}** ({{ PAIN_FIT_SCORE_1 }}/10)
+- **{{ HIGH_PAIN_2 }}** → **{{ PAIN_RELIEVER_2 }}** ({{ PAIN_FIT_SCORE_2 }}/10)
+
+### Gain-Creation Fit
+- **{{ ESSENTIAL_GAIN_1 }}** → **{{ GAIN_CREATOR_1 }}** ({{ GAIN_FIT_SCORE_1 }}/10)
+- **{{ ESSENTIAL_GAIN_2 }}** → **{{ GAIN_CREATOR_2 }}** ({{ GAIN_FIT_SCORE_2 }}/10)
+
+## Value Proposition Statement
+{{ VALUE_PROPOSITION_STATEMENT }}
+
+## Next Steps
+1. Validate customer jobs through interviews
+2. Test pain-relief assumptions
+3. Measure gain-creation effectiveness
+4. Refine value proposition based on evidence

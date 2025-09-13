@@ -1,0 +1,163 @@
+---
+phase: 20_understand
+artifact: 25_pain_gain_mapping.md
+rule_targets:
+  - structure-validation
+  - vpd-compliance
+methodology_tags:
+  - VPD
+  - JTBD
+---
+# Pain & Gain Mapping - {{ BUSINESS_SLUG|title }} {{ BUSINESS_TITLE }}
+
+## Business Context
+**Business**: {{ BUSINESS_SLUG|title }}
+**Phase**: Phase 2 - Understand
+**Framework**: Value Proposition Design (VPD) + Jobs-to-be-Done (JTBD)
+
+## Customer Segment Analysis
+
+### Primary Segment: {{ PRIMARY_SEGMENT }}
+
+#### Pain Classification (VPD Severity Framework)
+
+**Extreme Pains** (Severity: 9-10/10)
+- {{ EXTREME_PAIN_1 }} 
+  - *Impact*: {{ EXTREME_PAIN_1_IMPACT }}
+  - *Frequency*: {{ EXTREME_PAIN_1_FREQUENCY }}
+  - *Evidence*: {{ EXTREME_PAIN_1_EVIDENCE }}
+
+- {{ EXTREME_PAIN_2 }}
+  - *Impact*: {{ EXTREME_PAIN_2_IMPACT }}
+  - *Frequency*: {{ EXTREME_PAIN_2_FREQUENCY }}
+  - *Evidence*: {{ EXTREME_PAIN_2_EVIDENCE }}
+
+**Moderate Pains** (Severity: 5-8/10)
+- {{ MODERATE_PAIN_1 }}
+  - *Impact*: {{ MODERATE_PAIN_1_IMPACT }}
+  - *Evidence*: {{ MODERATE_PAIN_1_EVIDENCE }}
+
+- {{ MODERATE_PAIN_2 }}
+  - *Impact*: {{ MODERATE_PAIN_2_IMPACT }}
+  - *Evidence*: {{ MODERATE_PAIN_2_EVIDENCE }}
+
+**Minor Pains** (Severity: 1-4/10)
+- {{ MINOR_PAIN_1 }}
+- {{ MINOR_PAIN_2 }}
+
+#### Gain Classification (VPD Importance Framework)
+
+**Must-Have Gains** (Importance: 9-10/10)
+- {{ MUST_HAVE_GAIN_1 }}
+  - *Value*: {{ MUST_HAVE_GAIN_1_VALUE }}
+  - *Measurability*: {{ MUST_HAVE_GAIN_1_MEASURE }}
+  - *Evidence*: {{ MUST_HAVE_GAIN_1_EVIDENCE }}
+
+- {{ MUST_HAVE_GAIN_2 }}
+  - *Value*: {{ MUST_HAVE_GAIN_2_VALUE }}
+  - *Measurability*: {{ MUST_HAVE_GAIN_2_MEASURE }}
+  - *Evidence*: {{ MUST_HAVE_GAIN_2_EVIDENCE }}
+
+**Performance Gains** (Importance: 5-8/10)
+- {{ PERFORMANCE_GAIN_1 }}
+  - *Value*: {{ PERFORMANCE_GAIN_1_VALUE }}
+  - *Evidence*: {{ PERFORMANCE_GAIN_1_EVIDENCE }}
+
+- {{ PERFORMANCE_GAIN_2 }}
+  - *Value*: {{ PERFORMANCE_GAIN_2_VALUE }}
+  - *Evidence*: {{ PERFORMANCE_GAIN_2_EVIDENCE }}
+
+**Delight Gains** (Importance: 1-4/10)
+- {{ DELIGHT_GAIN_1 }}
+- {{ DELIGHT_GAIN_2 }}
+
+## Jobs-to-be-Done Integration
+
+### Functional Job Mapping
+**Primary Job**: {{ PRIMARY_FUNCTIONAL_JOB }}
+- *Related Pains*: {{ PRIMARY_JOB_PAINS }}
+- *Expected Gains*: {{ PRIMARY_JOB_GAINS }}
+- *Success Criteria*: {{ PRIMARY_JOB_SUCCESS }}
+
+**Supporting Jobs**:
+1. {{ SUPPORTING_JOB_1 }}
+   - *Pain Points*: {{ SUPPORTING_JOB_1_PAINS }}
+   - *Desired Outcomes*: {{ SUPPORTING_JOB_1_GAINS }}
+
+2. {{ SUPPORTING_JOB_2 }}
+   - *Pain Points*: {{ SUPPORTING_JOB_2_PAINS }}
+   - *Desired Outcomes*: {{ SUPPORTING_JOB_2_GAINS }}
+
+### Emotional Job Mapping
+**Emotional Context**: {{ EMOTIONAL_CONTEXT }}
+- *Emotional Pains*: {{ EMOTIONAL_PAINS }}
+- *Emotional Gains*: {{ EMOTIONAL_GAINS }}
+
+### Social Job Mapping
+**Social Context**: {{ SOCIAL_CONTEXT }}
+- *Social Pains*: {{ SOCIAL_PAINS }}
+- *Social Gains*: {{ SOCIAL_GAINS }}
+
+## Customer-Value Fit Signals
+
+### Strong Fit Indicators
+- {{ FIT_SIGNAL_1 }}
+- {{ FIT_SIGNAL_2 }}
+- {{ FIT_SIGNAL_3 }}
+
+### Weak Fit Indicators
+- {{ WEAK_FIT_1 }}
+- {{ WEAK_FIT_2 }}
+
+### No Fit Indicators
+- {{ NO_FIT_1 }}
+- {{ NO_FIT_2 }}
+
+## Prioritization Matrix
+
+| Pain/Gain | Severity/Importance | Addressability | Market Size | Priority Score |
+|-----------|-------------------|----------------|-------------|----------------|
+| {{ PAIN_GAIN_1 }} | {{ PG1_SEVERITY }} | {{ PG1_ADDRESSABILITY }} | {{ PG1_MARKET }} | {{ PG1_SCORE }} |
+| {{ PAIN_GAIN_2 }} | {{ PG2_SEVERITY }} | {{ PG2_ADDRESSABILITY }} | {{ PG2_MARKET }} | {{ PG2_SCORE }} |
+| {{ PAIN_GAIN_3 }} | {{ PG3_SEVERITY }} | {{ PG3_ADDRESSABILITY }} | {{ PG3_MARKET }} | {{ PG3_SCORE }} |
+
+## Validation Requirements
+
+### Pain Validation Tests
+1. **{{ EXTREME_PAIN_1 }}**
+   - *Test Method*: {{ PAIN_TEST_1_METHOD }}
+   - *Success Metric*: {{ PAIN_TEST_1_METRIC }}
+   - *Timeline*: {{ PAIN_TEST_1_TIMELINE }}
+
+2. **{{ EXTREME_PAIN_2 }}**
+   - *Test Method*: {{ PAIN_TEST_2_METHOD }}
+   - *Success Metric*: {{ PAIN_TEST_2_METRIC }}
+   - *Timeline*: {{ PAIN_TEST_2_TIMELINE }}
+
+### Gain Validation Tests
+1. **{{ MUST_HAVE_GAIN_1 }}**
+   - *Test Method*: {{ GAIN_TEST_1_METHOD }}
+   - *Success Metric*: {{ GAIN_TEST_1_METRIC }}
+   - *Timeline*: {{ GAIN_TEST_1_TIMELINE }}
+
+2. **{{ MUST_HAVE_GAIN_2 }}**
+   - *Test Method*: {{ GAIN_TEST_2_METHOD }}
+   - *Success Metric*: {{ GAIN_TEST_2_METRIC }}
+   - *Timeline*: {{ GAIN_TEST_2_TIMELINE }}
+
+## Insights & Implications
+
+### Key Insights
+1. {{ KEY_INSIGHT_1 }}
+2. {{ KEY_INSIGHT_2 }}
+3. {{ KEY_INSIGHT_3 }}
+
+### Design Implications
+1. {{ DESIGN_IMPLICATION_1 }}
+2. {{ DESIGN_IMPLICATION_2 }}
+3. {{ DESIGN_IMPLICATION_3 }}
+
+### Next Phase Recommendations
+- Focus on addressing: {{ TOP_PRIORITY_PAIN }}
+- Maximize delivery of: {{ TOP_PRIORITY_GAIN }}
+- Test assumptions about: {{ TOP_ASSUMPTION_TO_TEST }}
