@@ -5,303 +5,303 @@ rule_targets:
   - structure-validation
   - auto-generation
 ---
-# Integration Decision - {{ business_slug|title }} {{ business_title }}
+# Integration Decision - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
 **Business**: {{ business_slug|title }}
 
 ## Executive Summary
-This document presents the final integration decision for {{ business_title }}, synthesizing insights from all phases of the Business Model Design Process to recommend the optimal business model for implementation.
+This document presents the final integration decision for {{ BUSINESS_TITLE }}, synthesizing insights from all phases of the Business Model Design Process to recommend the optimal business model for implementation.
 
 ## Decision Framework
 
 ### Evaluation Criteria
 The integration decision is based on comprehensive analysis across multiple dimensions:
 
-**Strategic Fit** (Weight: {{ strategic_weight | default("25") }}%):
+**Strategic Fit** (Weight: {{ STRATEGIC_WEIGHT }}%):
 - Alignment with market opportunity and competitive positioning
 - Scalability potential and long-term viability
 - Resource requirements and organizational capabilities
 
-**Financial Viability** (Weight: {{ financial_weight | default("30") }}%):
+**Financial Viability** (Weight: {{ FINANCIAL_WEIGHT }}%):
 - Revenue potential and profitability projections
 - Capital requirements and funding feasibility
 - Risk-adjusted return on investment
 
-**Market Validation** (Weight: {{ market_weight | default("25") }}%):
+**Market Validation** (Weight: {{ MARKET_WEIGHT }}%):
 - Customer demand validation and willingness to pay
 - Competitive differentiation and market positioning
 - Go-to-market feasibility and channel effectiveness
 
-**Operational Feasibility** (Weight: {{ operational_weight | default("20") }}%):
+**Operational Feasibility** (Weight: {{ OPERATIONAL_WEIGHT }}%):
 - Technical complexity and development requirements
 - Team capabilities and resource availability
 - Implementation timeline and risk factors
 
 ## Business Model Options Analysis
 
-### Option 1: {{ option_1_name | default("Premium Integration Platform") }}
-**Description**: {{ option_1_desc | default("Comprehensive workflow automation platform targeting mid-market enterprises with premium pricing and full-service approach") }}
+### Option 1: {{ OPTION_1_NAME }}
+**Description**: {{ OPTION_1_DESC }}
 
 **Strategic Assessment**:
-- **Market Opportunity**: {{ option_1_market | default("Large addressable market with clear customer pain points") }}
-- **Competitive Position**: {{ option_1_competitive | default("Strong differentiation through no-code approach and SMB focus") }}
-- **Scalability**: {{ option_1_scalability | default("High scalability with SaaS model and cloud architecture") }}
+- **Market Opportunity**: {{ OPTION_1_MARKET }}
+- **Competitive Position**: {{ OPTION_1_COMPETITIVE }}
+- **Scalability**: {{ OPTION_1_SCALABILITY }}
 
 **Financial Projections**:
-- **Year 1 Revenue**: ${{ option_1_y1_revenue | default("500,000") }} BBD
-- **Year 3 Revenue**: ${{ option_1_y3_revenue | default("5,000,000") }} BBD
-- **Capital Required**: ${{ option_1_capital | default("8,000,000") }} BBD
-- **Break-even Timeline**: {{ option_1_breakeven | default("Month 18") }}
+- **Year 1 Revenue**: ${{ OPTION_1_Y1_REVENUE }} BBD
+- **Year 3 Revenue**: ${{ OPTION_1_Y3_REVENUE }} BBD
+- **Capital Required**: ${{ OPTION_1_CAPITAL }} BBD
+- **Break-even Timeline**: {{ OPTION_1_BREAKEVEN }}
 
 **Market Validation Results**:
-- **Customer Interest**: {{ option_1_interest | default("85% of prospects express strong interest") }}
-- **Pricing Acceptance**: {{ option_1_pricing | default("70% accept target pricing model") }}
-- **Competitive Win Rate**: {{ option_1_winrate | default("65% in head-to-head evaluations") }}
+- **Customer Interest**: {{ OPTION_1_INTEREST }}
+- **Pricing Acceptance**: {{ OPTION_1_PRICING }}
+- **Competitive Win Rate**: {{ OPTION_1_WINRATE }}
 
 **Operational Requirements**:
-- **Team Size**: {{ option_1_team | default("35 people by Year 2") }}
-- **Technical Complexity**: {{ option_1_complexity | default("Medium - leverages proven technologies") }}
-- **Time to Market**: {{ option_1_ttm | default("6 months to MVP, 12 months to full platform") }}
+- **Team Size**: {{ OPTION_1_TEAM }}
+- **Technical Complexity**: {{ OPTION_1_COMPLEXITY }}
+- **Time to Market**: {{ OPTION_1_TTM }}
 
-**Overall Score**: {{ option_1_score | default("8.2") }}/10
+**Overall Score**: {{ OPTION_1_SCORE }}/10
 
-### Option 2: {{ option_2_name | default("Niche Vertical Solution") }}
-**Description**: {{ option_2_desc | default("Specialized solution for specific industry vertical with deep domain expertise and targeted features") }}
+### Option 2: {{ OPTION_2_NAME }}
+**Description**: {{ OPTION_2_DESC }}
 
 **Strategic Assessment**:
-- **Market Opportunity**: {{ option_2_market | default("Smaller but focused market with specific needs") }}
-- **Competitive Position**: {{ option_2_competitive | default("Strong position through vertical specialization") }}
-- **Scalability**: {{ option_2_scalability | default("Limited scalability but higher margins") }}
+- **Market Opportunity**: {{ OPTION_2_MARKET }}
+- **Competitive Position**: {{ OPTION_2_COMPETITIVE }}
+- **Scalability**: {{ OPTION_2_SCALABILITY }}
 
 **Financial Projections**:
-- **Year 1 Revenue**: ${{ option_2_y1_revenue | default("300,000") }} BBD
-- **Year 3 Revenue**: ${{ option_2_y3_revenue | default("2,500,000") }} BBD
-- **Capital Required**: ${{ option_2_capital | default("4,000,000") }} BBD
-- **Break-even Timeline**: {{ option_2_breakeven | default("Month 15") }}
+- **Year 1 Revenue**: ${{ OPTION_2_Y1_REVENUE }} BBD
+- **Year 3 Revenue**: ${{ OPTION_2_Y3_REVENUE }} BBD
+- **Capital Required**: ${{ OPTION_2_CAPITAL }} BBD
+- **Break-even Timeline**: {{ OPTION_2_BREAKEVEN }}
 
 **Market Validation Results**:
-- **Customer Interest**: {{ option_2_interest | default("95% of vertical prospects show strong interest") }}
-- **Pricing Acceptance**: {{ option_2_pricing | default("80% accept premium vertical pricing") }}
-- **Competitive Win Rate**: {{ option_2_winrate | default("75% in vertical-specific competitions") }}
+- **Customer Interest**: {{ OPTION_2_INTEREST }}
+- **Pricing Acceptance**: {{ OPTION_2_PRICING }}
+- **Competitive Win Rate**: {{ OPTION_2_WINRATE }}
 
 **Operational Requirements**:
-- **Team Size**: {{ option_2_team | default("20 people by Year 2") }}
-- **Technical Complexity**: {{ option_2_complexity | default("High - requires deep domain expertise") }}
-- **Time to Market**: {{ option_2_ttm | default("9 months to vertical MVP") }}
+- **Team Size**: {{ OPTION_2_TEAM }}
+- **Technical Complexity**: {{ OPTION_2_COMPLEXITY }}
+- **Time to Market**: {{ OPTION_2_TTM }}
 
-**Overall Score**: {{ option_2_score | default("7.1") }}/10
+**Overall Score**: {{ OPTION_2_SCORE }}/10
 
-### Option 3: {{ option_3_name | default("Freemium Marketplace") }}
-**Description**: {{ option_3_desc | default("Open marketplace model with freemium pricing, focusing on volume and network effects") }}
+### Option 3: {{ OPTION_3_NAME }}
+**Description**: {{ OPTION_3_DESC }}
 
 **Strategic Assessment**:
-- **Market Opportunity**: {{ option_3_market | default("Very large market but high competition") }}
-- **Competitive Position**: {{ option_3_competitive | default("Challenging to differentiate in crowded market") }}
-- **Scalability**: {{ option_3_scalability | default("Extremely high scalability potential") }}
+- **Market Opportunity**: {{ OPTION_3_MARKET }}
+- **Competitive Position**: {{ OPTION_3_COMPETITIVE }}
+- **Scalability**: {{ OPTION_3_SCALABILITY }}
 
 **Financial Projections**:
-- **Year 1 Revenue**: ${{ option_3_y1_revenue | default("200,000") }} BBD
-- **Year 3 Revenue**: ${{ option_3_y3_revenue | default("8,000,000") }} BBD
-- **Capital Required**: ${{ option_3_capital | default("15,000,000") }} BBD
-- **Break-even Timeline**: {{ option_3_breakeven | default("Month 30") }}
+- **Year 1 Revenue**: ${{ OPTION_3_Y1_REVENUE }} BBD
+- **Year 3 Revenue**: ${{ OPTION_3_Y3_REVENUE }} BBD
+- **Capital Required**: ${{ OPTION_3_CAPITAL }} BBD
+- **Break-even Timeline**: {{ OPTION_3_BREAKEVEN }}
 
 **Market Validation Results**:
-- **Customer Interest**: {{ option_3_interest | default("60% interested but price-sensitive") }}
-- **Pricing Acceptance**: {{ option_3_pricing | default("40% willing to pay for premium features") }}
-- **Competitive Win Rate**: {{ option_3_winrate | default("45% in competitive situations") }}
+- **Customer Interest**: {{ OPTION_3_INTEREST }}
+- **Pricing Acceptance**: {{ OPTION_3_PRICING }}
+- **Competitive Win Rate**: {{ OPTION_3_WINRATE }}
 
 **Operational Requirements**:
-- **Team Size**: {{ option_3_team | default("50 people by Year 2") }}
-- **Technical Complexity**: {{ option_3_complexity | default("Very high - requires massive scale architecture") }}
-- **Time to Market**: {{ option_3_ttm | default("12 months to marketplace launch") }}
+- **Team Size**: {{ OPTION_3_TEAM }}
+- **Technical Complexity**: {{ OPTION_3_COMPLEXITY }}
+- **Time to Market**: {{ OPTION_3_TTM }}
 
-**Overall Score**: {{ option_3_score | default("6.8") }}/10
+**Overall Score**: {{ OPTION_3_SCORE }}/10
 
 ## Detailed Evaluation Matrix
 
 | Criteria | Weight | Option 1 | Option 2 | Option 3 |
 |----------|--------|----------|----------|----------|
-| **Strategic Fit** | {{ strategic_weight | default("25") }}% | {{ option_1_strategic_score | default("8.5") }} | {{ option_2_strategic_score | default("7.0") }} | {{ option_3_strategic_score | default("6.5") }} |
-| Market Opportunity | | {{ option_1_market_score | default("9") }} | {{ option_2_market_score | default("6") }} | {{ option_3_market_score | default("8") }} |
-| Competitive Position | | {{ option_1_comp_score | default("8") }} | {{ option_2_comp_score | default("8") }} | {{ option_3_comp_score | default("5") }} |
-| Scalability | | {{ option_1_scale_score | default("8.5") }} | {{ option_2_scale_score | default("7") }} | {{ option_3_scale_score | default("9") }} |
-| **Financial Viability** | {{ financial_weight | default("30") }}% | {{ option_1_financial_score | default("8.0") }} | {{ option_2_financial_score | default("7.5") }} | {{ option_3_financial_score | default("7.0") }} |
-| Revenue Potential | | {{ option_1_revenue_score | default("8") }} | {{ option_2_revenue_score | default("7") }} | {{ option_3_revenue_score | default("9") }} |
-| Capital Efficiency | | {{ option_1_capital_score | default("7") }} | {{ option_2_capital_score | default("9") }} | {{ option_3_capital_score | default("5") }} |
-| Risk-Adjusted ROI | | {{ option_1_roi_score | default("9") }} | {{ option_2_roi_score | default("7") }} | {{ option_3_roi_score | default("7") }} |
-| **Market Validation** | {{ market_weight | default("25") }}% | {{ option_1_validation_score | default("8.5") }} | {{ option_2_validation_score | default("8.0") }} | {{ option_3_validation_score | default("6.0") }} |
-| Customer Demand | | {{ option_1_demand_score | default("8.5") }} | {{ option_2_demand_score | default("9") }} | {{ option_3_demand_score | default("6") }} |
-| Pricing Acceptance | | {{ option_1_price_score | default("7") }} | {{ option_2_price_score | default("8") }} | {{ option_3_price_score | default("4") }} |
-| Go-to-Market Fit | | {{ option_1_gtm_score | default("9") }} | {{ option_2_gtm_score | default("7") }} | {{ option_3_gtm_score | default("7") }} |
-| **Operational Feasibility** | {{ operational_weight | default("20") }}% | {{ option_1_operational_score | default("7.5") }} | {{ option_2_operational_score | default("6.0") }} | {{ option_3_operational_score | default("5.5") }} |
-| Technical Complexity | | {{ option_1_tech_score | default("8") }} | {{ option_2_tech_score | default("6") }} | {{ option_3_tech_score | default("4") }} |
-| Resource Availability | | {{ option_1_resource_score | default("7") }} | {{ option_2_resource_score | default("7") }} | {{ option_3_resource_score | default("6") }} |
-| Implementation Risk | | {{ option_1_impl_score | default("7.5") }} | {{ option_2_impl_score | default("5") }} | {{ option_3_impl_score | default("6.5") }} |
-| **WEIGHTED TOTAL** | **100%** | **{{ option_1_total | default("8.2") }}** | **{{ option_2_total | default("7.1") }}** | **{{ option_3_total | default("6.8") }}** |
+| **Strategic Fit** | {{ STRATEGIC_WEIGHT }}% | {{ OPTION_1_STRATEGIC_SCORE }} | {{ OPTION_2_STRATEGIC_SCORE }} | {{ OPTION_3_STRATEGIC_SCORE }} |
+| Market Opportunity | | {{ OPTION_1_MARKET_SCORE }} | {{ OPTION_2_MARKET_SCORE }} | {{ OPTION_3_MARKET_SCORE }} |
+| Competitive Position | | {{ OPTION_1_COMP_SCORE }} | {{ OPTION_2_COMP_SCORE }} | {{ OPTION_3_COMP_SCORE }} |
+| Scalability | | {{ OPTION_1_SCALE_SCORE }} | {{ OPTION_2_SCALE_SCORE }} | {{ OPTION_3_SCALE_SCORE }} |
+| **Financial Viability** | {{ FINANCIAL_WEIGHT }}% | {{ OPTION_1_FINANCIAL_SCORE }} | {{ OPTION_2_FINANCIAL_SCORE }} | {{ OPTION_3_FINANCIAL_SCORE }} |
+| Revenue Potential | | {{ OPTION_1_REVENUE_SCORE }} | {{ OPTION_2_REVENUE_SCORE }} | {{ OPTION_3_REVENUE_SCORE }} |
+| Capital Efficiency | | {{ OPTION_1_CAPITAL_SCORE }} | {{ OPTION_2_CAPITAL_SCORE }} | {{ OPTION_3_CAPITAL_SCORE }} |
+| Risk-Adjusted ROI | | {{ OPTION_1_ROI_SCORE }} | {{ OPTION_2_ROI_SCORE }} | {{ OPTION_3_ROI_SCORE }} |
+| **Market Validation** | {{ MARKET_WEIGHT }}% | {{ OPTION_1_VALIDATION_SCORE }} | {{ OPTION_2_VALIDATION_SCORE }} | {{ OPTION_3_VALIDATION_SCORE }} |
+| Customer Demand | | {{ OPTION_1_DEMAND_SCORE }} | {{ OPTION_2_DEMAND_SCORE }} | {{ OPTION_3_DEMAND_SCORE }} |
+| Pricing Acceptance | | {{ OPTION_1_PRICE_SCORE }} | {{ OPTION_2_PRICE_SCORE }} | {{ OPTION_3_PRICE_SCORE }} |
+| Go-to-Market Fit | | {{ OPTION_1_GTM_SCORE }} | {{ OPTION_2_GTM_SCORE }} | {{ OPTION_3_GTM_SCORE }} |
+| **Operational Feasibility** | {{ OPERATIONAL_WEIGHT }}% | {{ OPTION_1_OPERATIONAL_SCORE }} | {{ OPTION_2_OPERATIONAL_SCORE }} | {{ OPTION_3_OPERATIONAL_SCORE }} |
+| Technical Complexity | | {{ OPTION_1_TECH_SCORE }} | {{ OPTION_2_TECH_SCORE }} | {{ OPTION_3_TECH_SCORE }} |
+| Resource Availability | | {{ OPTION_1_RESOURCE_SCORE }} | {{ OPTION_2_RESOURCE_SCORE }} | {{ OPTION_3_RESOURCE_SCORE }} |
+| Implementation Risk | | {{ OPTION_1_IMPL_SCORE }} | {{ OPTION_2_IMPL_SCORE }} | {{ OPTION_3_IMPL_SCORE }} |
+| **WEIGHTED TOTAL** | **100%** | **{{ OPTION_1_TOTAL }}** | **{{ OPTION_2_TOTAL }}** | **{{ OPTION_3_TOTAL }}** |
 
 ## Risk Analysis
 
 ### Option 1 Risk Profile
 **High Risks**:
-- {{ option_1_high_risk_1 | default("Competitive response from established players") }}
-- {{ option_1_high_risk_2 | default("Customer acquisition cost escalation") }}
+- {{ OPTION_1_HIGH_RISK_1 }}
+- {{ OPTION_1_HIGH_RISK_2 }}
 
 **Medium Risks**:
-- {{ option_1_med_risk_1 | default("Technical development complexity") }}
-- {{ option_1_med_risk_2 | default("Market adoption slower than expected") }}
+- {{ OPTION_1_MED_RISK_1 }}
+- {{ OPTION_1_MED_RISK_2 }}
 
 **Risk Mitigation**:
-- {{ option_1_mitigation_1 | default("Strong IP protection and technical moats") }}
-- {{ option_1_mitigation_2 | default("Diversified customer acquisition channels") }}
+- {{ OPTION_1_MITIGATION_1 }}
+- {{ OPTION_1_MITIGATION_2 }}
 
 ### Option 2 Risk Profile
 **High Risks**:
-- {{ option_2_high_risk_1 | default("Limited market size constrains growth") }}
-- {{ option_2_high_risk_2 | default("Vertical expertise acquisition challenges") }}
+- {{ OPTION_2_HIGH_RISK_1 }}
+- {{ OPTION_2_HIGH_RISK_2 }}
 
 **Medium Risks**:
-- {{ option_2_med_risk_1 | default("Customer concentration risk") }}
-- {{ option_2_med_risk_2 | default("Regulatory changes in target vertical") }}
+- {{ OPTION_2_MED_RISK_1 }}
+- {{ OPTION_2_MED_RISK_2 }}
 
 ### Option 3 Risk Profile
 **High Risks**:
-- {{ option_3_high_risk_1 | default("High capital requirements and burn rate") }}
-- {{ option_3_high_risk_2 | default("Intense competition and pricing pressure") }}
+- {{ OPTION_3_HIGH_RISK_1 }}
+- {{ OPTION_3_HIGH_RISK_2 }}
 
 **Medium Risks**:
-- {{ option_3_med_risk_1 | default("Network effects may not materialize") }}
-- {{ option_3_med_risk_2 | default("Monetization challenges with freemium model") }}
+- {{ OPTION_3_MED_RISK_1 }}
+- {{ OPTION_3_MED_RISK_2 }}
 
 ## Stakeholder Input Summary
 
 ### Customer Feedback
-**Option 1**: {{ customer_feedback_1 | default("Strong enthusiasm for comprehensive platform approach, willing to pay premium for full solution") }}
-**Option 2**: {{ customer_feedback_2 | default("Vertical customers love specialized features but concerned about vendor lock-in") }}
-**Option 3**: {{ customer_feedback_3 | default("Price-sensitive customers like freemium but question long-term viability") }}
+**Option 1**: {{ CUSTOMER_FEEDBACK_1 }}
+**Option 2**: {{ CUSTOMER_FEEDBACK_2 }}
+**Option 3**: {{ CUSTOMER_FEEDBACK_3 }}
 
 ### Investor Perspective
-**Option 1**: {{ investor_feedback_1 | default("Balanced approach with clear path to profitability and scale") }}
-**Option 2**: {{ investor_feedback_2 | default("Lower risk but limited upside potential concerns investors") }}
-**Option 3**: {{ investor_feedback_3 | default("High growth potential but significant capital requirements and execution risk") }}
+**Option 1**: {{ INVESTOR_FEEDBACK_1 }}
+**Option 2**: {{ INVESTOR_FEEDBACK_2 }}
+**Option 3**: {{ INVESTOR_FEEDBACK_3 }}
 
 ### Team Assessment
-**Option 1**: {{ team_feedback_1 | default("Team confident in execution with current capabilities and hiring plan") }}
-**Option 2**: {{ team_feedback_2 | default("Requires significant domain expertise acquisition") }}
-**Option 3**: {{ team_feedback_3 | default("Ambitious but may stretch team capabilities too thin") }}
+**Option 1**: {{ TEAM_FEEDBACK_1 }}
+**Option 2**: {{ TEAM_FEEDBACK_2 }}
+**Option 3**: {{ TEAM_FEEDBACK_3 }}
 
 ## Financial Impact Analysis
 
 ### Revenue Projections Comparison
 | Year | Option 1 | Option 2 | Option 3 |
 |------|----------|----------|----------|
-| Year 1 | ${{ option_1_y1_revenue | default("500,000") }} BBD | ${{ option_2_y1_revenue | default("300,000") }} BBD | ${{ option_3_y1_revenue | default("200,000") }} BBD |
-| Year 2 | ${{ option_1_y2_revenue | default("2,000,000") }} BBD | ${{ option_2_y2_revenue | default("1,200,000") }} BBD | ${{ option_3_y2_revenue | default("1,500,000") }} BBD |
-| Year 3 | ${{ option_1_y3_revenue | default("5,000,000") }} BBD | ${{ option_2_y3_revenue | default("2,500,000") }} BBD | ${{ option_3_y3_revenue | default("8,000,000") }} BBD |
+| Year 1 | ${{ OPTION_1_Y1_REVENUE }} BBD | ${{ OPTION_2_Y1_REVENUE }} BBD | ${{ OPTION_3_Y1_REVENUE }} BBD |
+| Year 2 | ${{ OPTION_1_Y2_REVENUE }} BBD | ${{ OPTION_2_Y2_REVENUE }} BBD | ${{ OPTION_3_Y2_REVENUE }} BBD |
+| Year 3 | ${{ OPTION_1_Y3_REVENUE }} BBD | ${{ OPTION_2_Y3_REVENUE }} BBD | ${{ OPTION_3_Y3_REVENUE }} BBD |
 
 ### Capital Requirements
 | Metric | Option 1 | Option 2 | Option 3 |
 |--------|----------|----------|----------|
-| Total Capital | ${{ option_1_capital | default("8,000,000") }} BBD | ${{ option_2_capital | default("4,000,000") }} BBD | ${{ option_3_capital | default("15,000,000") }} BBD |
-| Series A | ${{ option_1_series_a | default("3,000,000") }} BBD | ${{ option_2_series_a | default("2,000,000") }} BBD | ${{ option_3_series_a | default("5,000,000") }} BBD |
-| Series B | ${{ option_1_series_b | default("5,000,000") }} BBD | ${{ option_2_series_b | default("2,000,000") }} BBD | ${{ option_3_series_b | default("10,000,000") }} BBD |
+| Total Capital | ${{ OPTION_1_CAPITAL }} BBD | ${{ OPTION_2_CAPITAL }} BBD | ${{ OPTION_3_CAPITAL }} BBD |
+| Series A | ${{ OPTION_1_SERIES_A }} BBD | ${{ OPTION_2_SERIES_A }} BBD | ${{ OPTION_3_SERIES_A }} BBD |
+| Series B | ${{ OPTION_1_SERIES_B }} BBD | ${{ OPTION_2_SERIES_B }} BBD | ${{ OPTION_3_SERIES_B }} BBD |
 
 ### ROI Analysis
 | Metric | Option 1 | Option 2 | Option 3 |
 |--------|----------|----------|----------|
-| 3-Year ROI | {{ option_1_roi | default("62%") }} | {{ option_2_roi | default("63%") }} | {{ option_3_roi | default("53%") }} |
-| IRR | {{ option_1_irr | default("45%") }} | {{ option_2_irr | default("48%") }} | {{ option_3_irr | default("35%") }} |
-| Payback Period | {{ option_1_payback | default("2.1 years") }} | {{ option_2_payback | default("1.8 years") }} | {{ option_3_payback | default("2.8 years") }} |
+| 3-Year ROI | {{ OPTION_1_ROI }} | {{ OPTION_2_ROI }} | {{ OPTION_3_ROI }} |
+| IRR | {{ OPTION_1_IRR }} | {{ OPTION_2_IRR }} | {{ OPTION_3_IRR }} |
+| Payback Period | {{ OPTION_1_PAYBACK }} | {{ OPTION_2_PAYBACK }} | {{ OPTION_3_PAYBACK }} |
 
 ## RECOMMENDATION
 
-### Selected Option: {{ selected_option | default("Option 1 - Premium Integration Platform") }}
+### Selected Option: {{ SELECTED_OPTION }}
 
 **Rationale**:
-{{ recommendation_rationale | default("Option 1 provides the optimal balance of market opportunity, financial returns, and execution feasibility. The comprehensive platform approach aligns with validated customer needs while offering strong competitive differentiation and scalable business model.") }}
+{{ RECOMMENDATION_RATIONALE }}
 
 **Key Success Factors**:
-1. **{{ success_factor_1 | default("Strong product-market fit validation through customer pilots") }}**
-2. **{{ success_factor_2 | default("Effective go-to-market execution with multiple acquisition channels") }}**
-3. **{{ success_factor_3 | default("Technical excellence and platform scalability") }}**
-4. **{{ success_factor_4 | default("Strategic partnerships and ecosystem development") }}**
+1. **{{ SUCCESS_FACTOR_1 }}**
+2. **{{ SUCCESS_FACTOR_2 }}**
+3. **{{ SUCCESS_FACTOR_3 }}**
+4. **{{ SUCCESS_FACTOR_4 }}**
 
 **Critical Assumptions Validated**:
-- {{ validated_assumption_1 | default("Customer willingness to pay premium for comprehensive solution") }}
-- {{ validated_assumption_2 | default("Technical feasibility of no-code platform architecture") }}
-- {{ validated_assumption_3 | default("Market size and growth potential confirmed") }}
-- {{ validated_assumption_4 | default("Competitive differentiation sustainable") }}
+- {{ VALIDATED_ASSUMPTION_1 }}
+- {{ VALIDATED_ASSUMPTION_2 }}
+- {{ VALIDATED_ASSUMPTION_3 }}
+- {{ VALIDATED_ASSUMPTION_4 }}
 
 ## Implementation Roadmap
 
 ### Phase 1: Foundation (Months 1-6)
-**Objectives**: {{ phase_1_objectives | default("Build MVP, validate product-market fit, secure Series A funding") }}
+**Objectives**: {{ PHASE_1_OBJECTIVES }}
 **Key Milestones**:
-- {{ phase_1_milestone_1 | default("MVP development and beta launch") }}
-- {{ phase_1_milestone_2 | default("First 10 paying customers") }}
-- {{ phase_1_milestone_3 | default("Series A funding closed") }}
+- {{ PHASE_1_MILESTONE_1 }}
+- {{ PHASE_1_MILESTONE_2 }}
+- {{ PHASE_1_MILESTONE_3 }}
 
 ### Phase 2: Scale (Months 7-18)
-**Objectives**: {{ phase_2_objectives | default("Scale customer acquisition, expand product capabilities, achieve profitability") }}
+**Objectives**: {{ PHASE_2_OBJECTIVES }}
 **Key Milestones**:
-- {{ phase_2_milestone_1 | default("100 customers and $2M ARR") }}
-- {{ phase_2_milestone_2 | default("Full platform launch with enterprise features") }}
-- {{ phase_2_milestone_3 | default("Break-even achievement") }}
+- {{ PHASE_2_MILESTONE_1 }}
+- {{ PHASE_2_MILESTONE_2 }}
+- {{ PHASE_2_MILESTONE_3 }}
 
 ### Phase 3: Growth (Months 19-36)
-**Objectives**: {{ phase_3_objectives | default("Market leadership, international expansion, Series B preparation") }}
+**Objectives**: {{ PHASE_3_OBJECTIVES }}
 **Key Milestones**:
-- {{ phase_3_milestone_1 | default("500 customers and $10M ARR") }}
-- {{ phase_3_milestone_2 | default("International market entry") }}
-- {{ phase_3_milestone_3 | default("Series B funding for expansion") }}
+- {{ PHASE_3_MILESTONE_1 }}
+- {{ PHASE_3_MILESTONE_2 }}
+- {{ PHASE_3_MILESTONE_3 }}
 
 ## Success Metrics and KPIs
 
 ### Financial Metrics
-- **Monthly Recurring Revenue (MRR)**: Target ${{ mrr_target | default("400,000") }} BBD by Month 18
-- **Customer Acquisition Cost (CAC)**: Target < ${{ cac_target | default("2,000") }} BBD
-- **Customer Lifetime Value (LTV)**: Target > ${{ ltv_target | default("15,000") }} BBD
-- **LTV/CAC Ratio**: Target > {{ ltv_cac_target | default("7.5") }}:1
+- **Monthly Recurring Revenue (MRR)**: Target ${{ MRR_TARGET }} BBD by Month 18
+- **Customer Acquisition Cost (CAC)**: Target < ${{ CAC_TARGET }} BBD
+- **Customer Lifetime Value (LTV)**: Target > ${{ LTV_TARGET }} BBD
+- **LTV/CAC Ratio**: Target > {{ LTV_CAC_TARGET }}:1
 
 ### Operational Metrics
-- **Customer Count**: Target {{ customer_target | default("100") }} customers by Month 18
-- **Net Revenue Retention**: Target > {{ nrr_target | default("110") }}%
-- **Gross Revenue Retention**: Target > {{ grr_target | default("95") }}%
-- **Net Promoter Score (NPS)**: Target > {{ nps_target | default("50") }}
+- **Customer Count**: Target {{ CUSTOMER_TARGET }} customers by Month 18
+- **Net Revenue Retention**: Target > {{ NRR_TARGET }}%
+- **Gross Revenue Retention**: Target > {{ GRR_TARGET }}%
+- **Net Promoter Score (NPS)**: Target > {{ NPS_TARGET }}
 
 ### Product Metrics
-- **Monthly Active Users**: Target {{ mau_target | default("80") }}% of customers
-- **Feature Adoption**: Target {{ adoption_target | default("70") }}% for core features
-- **Time to Value**: Target < {{ ttv_target | default("30") }} days for first workflow
+- **Monthly Active Users**: Target {{ MAU_TARGET }}% of customers
+- **Feature Adoption**: Target {{ ADOPTION_TARGET }}% for core features
+- **Time to Value**: Target < {{ TTV_TARGET }} days for first workflow
 
 ## Risk Mitigation Plan
 
 ### High-Priority Risks
 1. **Competitive Response**
-   - **Mitigation**: {{ comp_mitigation | default("Accelerate product development, build customer switching costs") }}
-   - **Monitoring**: {{ comp_monitoring | default("Weekly competitive intelligence and win/loss analysis") }}
+   - **Mitigation**: {{ COMP_MITIGATION }}
+   - **Monitoring**: {{ COMP_MONITORING }}
 
 2. **Customer Acquisition Challenges**
-   - **Mitigation**: {{ acq_mitigation | default("Diversify channels, strengthen referral programs") }}
-   - **Monitoring**: {{ acq_monitoring | default("Monthly CAC and conversion rate tracking") }}
+   - **Mitigation**: {{ ACQ_MITIGATION }}
+   - **Monitoring**: {{ ACQ_MONITORING }}
 
 3. **Technical Execution Risk**
-   - **Mitigation**: {{ tech_mitigation | default("Experienced team, proven architecture, regular reviews") }}
-   - **Monitoring**: {{ tech_monitoring | default("Sprint velocity and quality metrics") }}
+   - **Mitigation**: {{ TECH_MITIGATION }}
+   - **Monitoring**: {{ TECH_MONITORING }}
 
 ## Governance and Decision Authority
 
 ### Decision Approval
-**Recommended by**: {{ recommended_by | default("BMDP Project Team") }}
-**Reviewed by**: {{ reviewed_by | default("Executive Leadership Team") }}
-**Approved by**: {{ approved_by | default("Board of Directors") }}
-**Date**: {{ decision_date | default("TBD") }}
+**Recommended by**: {{ RECOMMENDED_BY }}
+**Reviewed by**: {{ REVIEWED_BY }}
+**Approved by**: {{ APPROVED_BY }}
+**Date**: {{ DECISION_DATE }}
 
 ### Next Steps
-1. **{{ next_step_1 | default("Communicate decision to all stakeholders") }}**
-2. **{{ next_step_2 | default("Initiate implementation planning and resource allocation") }}**
-3. **{{ next_step_3 | default("Begin Series A fundraising process") }}**
-4. **{{ next_step_4 | default("Execute Phase 1 implementation roadmap") }}**
+1. **{{ NEXT_STEP_1 }}**
+2. **{{ NEXT_STEP_2 }}**
+3. **{{ NEXT_STEP_3 }}**
+4. **{{ NEXT_STEP_4 }}**
 
-This integration decision provides {{ business_title }} with a clear path forward based on comprehensive analysis and stakeholder input across all dimensions of business model viability.
+This integration decision provides {{ BUSINESS_TITLE }} with a clear path forward based on comprehensive analysis and stakeholder input across all dimensions of business model viability.

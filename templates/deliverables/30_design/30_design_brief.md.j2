@@ -5,90 +5,90 @@ rule_targets:
   - structure-validation
   - auto-generation
 ---
-# Design Brief - {{ business_slug|title }} {{ business_title }}
+# Design Brief - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
 **Business**: {{ business_slug|title }}
 
 ## Project Context
-**Business**: {{ business_title }}
+**Business**: {{ BUSINESS_TITLE }}
 **Phase**: Phase 3 - Design
-**Timeline**: {{ phase3_weeks | default("2") }} weeks
-**Objective**: Generate and select optimal business model for {{ business_title }}
+**Timeline**: {{ PHASE3_WEEKS }} weeks
+**Objective**: Generate and select optimal business model for {{ BUSINESS_TITLE }}
 
 ## Design Challenge Statement
-Design a viable, scalable business model for {{ business_title }} that addresses validated customer needs while achieving sustainable competitive advantage and financial returns within our capital constraints of ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD.
+Design a viable, scalable business model for {{ BUSINESS_TITLE }} that addresses validated customer needs while achieving sustainable competitive advantage and financial returns within our capital constraints of ${{ CAPITAL_MIN }} - ${{ CAPITAL_MAX }} BBD.
 
 ## Key Insights from Phase 2
 
 ### Market Opportunity
-- **Market Size**: {{ market_size | default("$X million addressable market") }}
-- **Growth Rate**: {{ growth_rate | default("Y% annual growth") }}
-- **Key Drivers**: {{ market_drivers | default("Digital transformation, compliance needs, efficiency demands") }}
+- **Market Size**: {{ MARKET_SIZE }}
+- **Growth Rate**: {{ GROWTH_RATE }}
+- **Key Drivers**: {{ MARKET_DRIVERS }}
 
 ### Customer Validation
-- **Primary Segment**: {{ primary_segment | default("Mid-market companies (100-1000 employees)") }}
-- **Core Problem**: {{ core_problem | default("Manual processes causing inefficiency and compliance risks") }}
-- **Solution Interest**: {{ solution_interest | default("70% expressed strong interest in our approach") }}
+- **Primary Segment**: {{ PRIMARY_SEGMENT }}
+- **Core Problem**: {{ CORE_PROBLEM }}
+- **Solution Interest**: {{ SOLUTION_INTEREST }}
 
 ### Competitive Landscape
-- **Market Gap**: {{ market_gap | default("Mid-market segment underserved by current solutions") }}
-- **Key Differentiators**: {{ differentiators | default("Integration-first, rapid implementation, compliance-ready") }}
-- **Competitive Threats**: {{ threats | default("Established players may respond quickly") }}
+- **Market Gap**: {{ MARKET_GAP }}
+- **Key Differentiators**: {{ DIFFERENTIATORS }}
+- **Competitive Threats**: {{ THREATS }}
 
 ## Design Constraints
 
 ### Financial Constraints
-- **Capital Range**: ${{ capital_min | default("300,000") }} - ${{ capital_max | default("750,000") }} BBD
-- **Revenue Target**: {{ revenue_target | default("$2M ARR by year 3") }}
-- **Profitability Timeline**: {{ profitability_target | default("Break-even by month 18") }}
+- **Capital Range**: ${{ CAPITAL_MIN }} - ${{ CAPITAL_MAX }} BBD
+- **Revenue Target**: {{ REVENUE_TARGET }}
+- **Profitability Timeline**: {{ PROFITABILITY_TARGET }}
 
 ### Market Constraints
-- **Target Segments**: {{ target_segments | default("Mid-market primary, enterprise secondary") }}
-- **Geographic Scope**: {{ geographic_scope | default("North America initially") }}
-- **Regulatory Requirements**: {{ regulatory_constraints | default("Data privacy, industry compliance") }}
+- **Target Segments**: {{ TARGET_SEGMENTS }}
+- **Geographic Scope**: {{ GEOGRAPHIC_SCOPE }}
+- **Regulatory Requirements**: {{ REGULATORY_CONSTRAINTS }}
 
 ### Operational Constraints
-- **Team Size**: {{ team_size | default("12-15 people by year 2") }}
-- **Technology Stack**: {{ tech_constraints | default("Cloud-native, API-first architecture") }}
-- **Partnership Requirements**: {{ partnership_constraints | default("System integrator relationships essential") }}
+- **Team Size**: {{ TEAM_SIZE }}
+- **Technology Stack**: {{ TECH_CONSTRAINTS }}
+- **Partnership Requirements**: {{ PARTNERSHIP_CONSTRAINTS }}
 
 ## Design Requirements
 
 ### Must-Have Requirements
-1. **{{ requirement_1 | default("Scalable SaaS architecture supporting 1000+ customers") }}**
-2. **{{ requirement_2 | default("Pre-built integrations with top 10 business systems") }}**
-3. **{{ requirement_3 | default("Compliance features for regulated industries") }}**
-4. **{{ requirement_4 | default("Mobile-responsive interface for all user roles") }}**
+1. **{{ REQUIREMENT_1 }}**
+2. **{{ REQUIREMENT_2 }}**
+3. **{{ REQUIREMENT_3 }}**
+4. **{{ REQUIREMENT_4 }}**
 
 ### Should-Have Requirements
-- {{ should_have_1 | default("Advanced analytics and reporting capabilities") }}
-- {{ should_have_2 | default("White-label options for partner channel") }}
-- {{ should_have_3 | default("Multi-language support for international expansion") }}
+- {{ SHOULD_HAVE_1 }}
+- {{ SHOULD_HAVE_2 }}
+- {{ SHOULD_HAVE_3 }}
 
 ### Could-Have Requirements
-- {{ could_have_1 | default("AI-powered workflow optimization") }}
-- {{ could_have_2 | default("Industry-specific templates and configurations") }}
-- {{ could_have_3 | default("Advanced customization and workflow builder") }}
+- {{ COULD_HAVE_1 }}
+- {{ COULD_HAVE_2 }}
+- {{ COULD_HAVE_3 }}
 
 ## Success Criteria
 
 ### Business Model Success Metrics
-- **Customer Acquisition**: {{ cac_target | default("Customer acquisition cost < $5,000") }}
-- **Customer Retention**: {{ retention_target | default("Annual churn rate < 10%") }}
-- **Unit Economics**: {{ unit_economics | default("LTV:CAC ratio > 3:1") }}
-- **Market Share**: {{ market_share_target | default("5% of addressable market by year 5") }}
+- **Customer Acquisition**: {{ CAC_TARGET }}
+- **Customer Retention**: {{ RETENTION_TARGET }}
+- **Unit Economics**: {{ UNIT_ECONOMICS }}
+- **Market Share**: {{ MARKET_SHARE_TARGET }}
 
 ### Financial Success Metrics
-- **Revenue Growth**: {{ revenue_growth | default("100% year-over-year for first 3 years") }}
-- **Gross Margins**: {{ margin_target | default("Gross margins > 80%") }}
-- **Capital Efficiency**: {{ capital_efficiency | default("Revenue per dollar invested > 3x") }}
+- **Revenue Growth**: {{ REVENUE_GROWTH }}
+- **Gross Margins**: {{ MARGIN_TARGET }}
+- **Capital Efficiency**: {{ CAPITAL_EFFICIENCY }}
 
 ### Operational Success Metrics
-- **Implementation Speed**: {{ implementation_speed | default("Average customer onboarding < 30 days") }}
-- **Customer Satisfaction**: {{ satisfaction_target | default("Net Promoter Score > 50") }}
-- **Team Productivity**: {{ productivity_target | default("Revenue per employee > $200K") }}
+- **Implementation Speed**: {{ IMPLEMENTATION_SPEED }}
+- **Customer Satisfaction**: {{ SATISFACTION_TARGET }}
+- **Team Productivity**: {{ PRODUCTIVITY_TARGET }}
 
 ## Design Process
 
@@ -136,37 +136,37 @@ Design a viable, scalable business model for {{ business_title }} that addresses
 ## Stakeholder Involvement
 
 ### Decision Makers
-- **{{ sponsor_name | default("Project Sponsor") }}**: Final approval authority
-- **{{ ceo_name | default("CEO") }}**: Strategic direction and vision
-- **{{ cfo_name | default("CFO") }}**: Financial viability and funding
+- **{{ SPONSOR_NAME }}**: Final approval authority
+- **{{ CEO_NAME }}**: Strategic direction and vision
+- **{{ CFO_NAME }}**: Financial viability and funding
 
 ### Key Contributors
-- **{{ team_lead | default("Team Lead") }}**: Process facilitation and coordination
-- **{{ business_expert | default("Business Expert") }}**: Business model design expertise
-- **{{ market_analyst | default("Market Analyst") }}**: Market and competitive intelligence
-- **{{ financial_analyst | default("Financial Analyst") }}**: Financial modeling and analysis
+- **{{ TEAM_LEAD }}**: Process facilitation and coordination
+- **{{ BUSINESS_EXPERT }}**: Business model design expertise
+- **{{ MARKET_ANALYST }}**: Market and competitive intelligence
+- **{{ FINANCIAL_ANALYST }}**: Financial modeling and analysis
 
 ### Reviewers and Validators
-- **Customer Advisory Board**: {{ customer_advisors | default("3-5 target customers") }}
-- **Industry Experts**: {{ industry_experts | default("2-3 domain experts") }}
-- **Technical Advisors**: {{ technical_advisors | default("CTO-level technical validation") }}
+- **Customer Advisory Board**: {{ CUSTOMER_ADVISORS }}
+- **Industry Experts**: {{ INDUSTRY_EXPERTS }}
+- **Technical Advisors**: {{ TECHNICAL_ADVISORS }}
 
 ## Risk Factors and Mitigation
 
 ### High-Risk Factors
-1. **{{ high_risk_1 | default("Competitive response faster than expected") }}**
-   - Mitigation: {{ high_risk_1_mitigation | default("Speed to market, customer lock-in features") }}
+1. **{{ HIGH_RISK_1 }}**
+   - Mitigation: {{ HIGH_RISK_1_MITIGATION }}
 
-2. **{{ high_risk_2 | default("Customer acquisition costs exceed projections") }}**
-   - Mitigation: {{ high_risk_2_mitigation | default("Multiple acquisition channels, referral programs") }}
+2. **{{ HIGH_RISK_2 }}**
+   - Mitigation: {{ HIGH_RISK_2_MITIGATION }}
 
-3. **{{ high_risk_3 | default("Technology development complexity") }}**
-   - Mitigation: {{ high_risk_3_mitigation | default("Phased development, proven technology stack") }}
+3. **{{ HIGH_RISK_3 }}**
+   - Mitigation: {{ HIGH_RISK_3_MITIGATION }}
 
 ### Medium-Risk Factors
-- {{ medium_risk_1 | default("Market adoption slower than projected") }}
-- {{ medium_risk_2 | default("Regulatory changes affecting target market") }}
-- {{ medium_risk_3 | default("Key talent acquisition challenges") }}
+- {{ MEDIUM_RISK_1 }}
+- {{ MEDIUM_RISK_2 }}
+- {{ MEDIUM_RISK_3 }}
 
 ## Quality Gates
 
@@ -191,9 +191,9 @@ Design a viable, scalable business model for {{ business_title }} that addresses
 ## Resources and Tools
 
 ### Design Tools
-- **Business Model Canvas**: {{ canvas_tool | default("Miro/Mural for collaborative design") }}
-- **Financial Modeling**: {{ financial_tool | default("Excel/Google Sheets with scenario analysis") }}
-- **Customer Validation**: {{ validation_tool | default("Interview guides and feedback forms") }}
+- **Business Model Canvas**: {{ CANVAS_TOOL }}
+- **Financial Modeling**: {{ FINANCIAL_TOOL }}
+- **Customer Validation**: {{ VALIDATION_TOOL }}
 
 ### Reference Materials
 - Phase 2 research findings and insights
@@ -202,9 +202,9 @@ Design a viable, scalable business model for {{ business_title }} that addresses
 - Industry reports and market data
 
 ### Expert Resources
-- {{ expert_resource_1 | default("Business model design methodology guides") }}
-- {{ expert_resource_2 | default("Industry-specific business model examples") }}
-- {{ expert_resource_3 | default("Financial modeling templates and benchmarks") }}
+- {{ EXPERT_RESOURCE_1 }}
+- {{ EXPERT_RESOURCE_2 }}
+- {{ EXPERT_RESOURCE_3 }}
 
 ## Timeline and Milestones
 

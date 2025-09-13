@@ -7,7 +7,7 @@ rule_targets:
   - structure-validation
   - auto-generation
 ---
-# Business Model Selection Criteria - {{ business_slug|title }} {{ business_title }}
+# Business Model Selection Criteria - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
@@ -103,11 +103,11 @@ This document defines the weighted criteria and methodology for selecting the op
 Each core team member independently scores each business model alternative against all criteria using the 1-10 scale.
 
 **Scoring Team**:
-- {{ team_lead | default("Team Lead") }}: Overall business perspective
-- {{ business_expert | default("Business Expert") }}: Market and business model expertise
-- {{ market_analyst | default("Market Analyst") }}: Market and competitive analysis
-- {{ financial_analyst | default("Financial Analyst") }}: Financial viability assessment
-- {{ technical_lead | default("Technical Lead") }}: Technology and execution feasibility
+- {{ TEAM_LEAD }}: Overall business perspective
+- {{ BUSINESS_EXPERT }}: Market and business model expertise
+- {{ MARKET_ANALYST }}: Market and competitive analysis
+- {{ FINANCIAL_ANALYST }}: Financial viability assessment
+- {{ TECHNICAL_LEAD }}: Technology and execution feasibility
 
 ### Step 2: Score Normalization
 Individual scores are averaged across team members for each criterion to create normalized scores.
@@ -125,9 +125,9 @@ Test different weighting scenarios to understand robustness of rankings:
 
 | Business Model | Market Attractiveness (25%) | Financial Viability (25%) | Competitive Advantage (20%) | Execution Feasibility (20%) | Strategic Fit (10%) | **Total Score** |
 |----------------|----------------------------|--------------------------|----------------------------|----------------------------|-------------------|-----------------|
-| {{ model_1_name | default("Premium Integration Platform") }} | {{ model_1_market_score | default("TBD") }} | {{ model_1_financial_score | default("TBD") }} | {{ model_1_competitive_score | default("TBD") }} | {{ model_1_execution_score | default("TBD") }} | {{ model_1_strategic_score | default("TBD") }} | {{ model_1_total_score | default("TBD") }} |
-| {{ model_2_name | default("Workflow SaaS") }} | {{ model_2_market_score | default("TBD") }} | {{ model_2_financial_score | default("TBD") }} | {{ model_2_competitive_score | default("TBD") }} | {{ model_2_execution_score | default("TBD") }} | {{ model_2_strategic_score | default("TBD") }} | {{ model_2_total_score | default("TBD") }} |
-| {{ model_3_name | default("Compliance Platform") }} | {{ model_3_market_score | default("TBD") }} | {{ model_3_financial_score | default("TBD") }} | {{ model_3_competitive_score | default("TBD") }} | {{ model_3_execution_score | default("TBD") }} | {{ model_3_strategic_score | default("TBD") }} | {{ model_3_total_score | default("TBD") }} |
+| {{ MODEL_1_NAME }} | {{ MODEL_1_MARKET_SCORE }} | {{ MODEL_1_FINANCIAL_SCORE }} | {{ MODEL_1_COMPETITIVE_SCORE }} | {{ MODEL_1_EXECUTION_SCORE }} | {{ MODEL_1_STRATEGIC_SCORE }} | {{ MODEL_1_TOTAL_SCORE }} |
+| {{ MODEL_2_NAME }} | {{ MODEL_2_MARKET_SCORE }} | {{ MODEL_2_FINANCIAL_SCORE }} | {{ MODEL_2_COMPETITIVE_SCORE }} | {{ MODEL_2_EXECUTION_SCORE }} | {{ MODEL_2_STRATEGIC_SCORE }} | {{ MODEL_2_TOTAL_SCORE }} |
+| {{ MODEL_3_NAME }} | {{ MODEL_3_MARKET_SCORE }} | {{ MODEL_3_FINANCIAL_SCORE }} | {{ MODEL_3_COMPETITIVE_SCORE }} | {{ MODEL_3_EXECUTION_SCORE }} | {{ MODEL_3_STRATEGIC_SCORE }} | {{ MODEL_3_TOTAL_SCORE }} |
 
 ## Qualitative Assessment Factors
 
@@ -156,12 +156,12 @@ Evaluate market timing factors:
 
 ### Minimum Thresholds
 Business models must meet minimum scores to be considered:
-- **Overall Score**: ≥ {{ min_overall_score | default("7.0") }}
-- **Financial Viability**: ≥ {{ min_financial_score | default("6.0") }}
-- **Execution Feasibility**: ≥ {{ min_execution_score | default("6.0") }}
+- **Overall Score**: ≥ {{ MIN_OVERALL_SCORE }}
+- **Financial Viability**: ≥ {{ MIN_FINANCIAL_SCORE }}
+- **Execution Feasibility**: ≥ {{ MIN_EXECUTION_SCORE }}
 
 ### Tie-Breaking Criteria
-If models score within {{ tie_threshold | default("0.3") }} points:
+If models score within {{ TIE_THRESHOLD }} points:
 1. **Customer Validation Strength**: Preference for stronger customer validation
 2. **Team Passion**: Consider team enthusiasm and motivation
 3. **Risk Profile**: Prefer lower-risk options if scores are equal
@@ -170,9 +170,9 @@ If models score within {{ tie_threshold | default("0.3") }} points:
 ### Consensus Requirements
 Final selection requires:
 - **Quantitative Analysis**: Completed scoring matrix
-- **Stakeholder Alignment**: ≥{{ consensus_threshold | default("80%") }} team agreement
-- **Customer Validation**: Positive feedback from ≥{{ customer_threshold | default("70%") }} of customers
-- **Expert Endorsement**: Support from ≥{{ expert_threshold | default("2") }} external experts
+- **Stakeholder Alignment**: ≥{{ CONSENSUS_THRESHOLD }} team agreement
+- **Customer Validation**: Positive feedback from ≥{{ CUSTOMER_THRESHOLD }} of customers
+- **Expert Endorsement**: Support from ≥{{ EXPERT_THRESHOLD }} external experts
 
 ## Documentation Requirements
 

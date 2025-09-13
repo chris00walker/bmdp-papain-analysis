@@ -1,48 +1,77 @@
 # Resource Plan - grower Business
 
-## Team Requirements
-- **Team Lead**: Sarah Mitchell (Project Management, BMDP Certified)
-- **Business Expert**: Dr. James Rodriguez (Agricultural Business, 15 years papain industry)
-- **Market Analyst**: Maria Santos (Market Research, Caribbean Trade Specialist)
-- **Financial Analyst**: Robert Chen (Financial Modeling, Agribusiness Focus)
+## Human Resources
+
+### Core Team Structure
 - **Team Size**: 4 members
+- **Sponsor**: Agricultural venture sponsor
+- **Project Manager**: Agricultural project manager  
+- **Lead**: Agricultural operations lead
+- **Domain Expert**: Agricultural specialist
 
-## Budget Requirements
-- **Discovery Budget**: $150,000 BBD (50% of $300K initial capital)
-- **Validation Budget**: $165,000 BBD (33% of $500K post-discovery capital)
-- **Scaling Budget**: $127,500 BBD (17% of $750K post-validation capital)
-- **Total Progressive Budget**: $442,500 BBD (scales with milestone capital unlocks)
+### Team Composition
+- **Leadership**: 1 sponsor, 1 project manager
+- **Technical**: 1 agricultural operations lead
+- **Advisory**: 1 domain expert
+- **Total FTE**: 4.0 equivalent positions
 
-## Phase Allocation Breakdown
-- **Discovery Phase**: 50% of timeline (26 weeks) with 50% of available capital ($300K)
-- **Validation Phase**: 33% of timeline (17 weeks) with 33% of unlocked capital ($500K)
-- **Scaling Phase**: 17% of timeline (8 weeks) with 17% of unlocked capital ($750K)
+## Financial Resources
 
-## Milestone Budget Unlocks
-- **Initial Capital**: $300000 BBD
-- **Post-Discovery**: $500000 BBD
-- **Post-Validation**: $750000 BBD
-- **Maximum Capital**: $1000000 BBD
+### Capital Structure
+- **Minimum Capital**: 750000 BBD
+- **Maximum Capital**: 2500000 BBD
+- **Initial Unlock**: 750000 BBD
+- **Progressive Unlock**: Based on milestone achievement
 
-## Timeline
-- **Discovery Duration**: 50% of timeline (26 weeks)
-- **Validation Duration**: 33% of timeline (17 weeks)
-- **Scaling Duration**: 17% of timeline (8 weeks)
-- **Total Timeline**: 51 weeks
+### BMDP Budget Allocation
+- **Discovery Budget**: 126000 BBD
+- **Validation Budget**: 126000 BBD
+- **Scaling Budget**: 126000 BBD
+- **Total BMDP Budget**: 126000 BBD
 
-## Resource Availability
-- [ ] Team members identified and committed
-- [ ] Budget allocation approved by sponsor
-- [ ] Timeline feasible within organizational constraints
-- [ ] Milestone criteria understood and accepted
+### Phase Budget Distribution
+- **Phase 1 (Mobilize)**: 44100 BBD (16 weeks)
+- **Phase 2 (Understand)**: 71500 BBD (26 weeks)
+- **Phase 3 (Design)**: 27500 BBD (10 weeks)
 
-## Milestone Criteria
-- **Discovery Complete**: Customer desirability validated through interviews and market research
-- **Validation Complete**: Business feasibility proven through prototype testing and early sales
-- **Scaling Complete**: Business viability demonstrated through sustainable operations and growth
+## Timeline Resources
 
-## Dependencies
-- [ ] Access to target market for research
-- [ ] Regulatory guidance for papain production
-- [ ] Land availability assessment for orchard establishment
-- [ ] Supply chain analysis for equipment and materials
+### Phase Duration
+- **Phase 1**: 16 weeks (Mobilize)
+- **Phase 2**: 26 weeks (Understand)
+- **Phase 3**: 10 weeks (Design)
+- **Total**: 52 weeks
+
+### Critical Path
+- Agricultural season alignment
+- Processing equipment procurement
+- Quality certification timeline
+- Market validation cycles
+
+## Technology Resources
+
+### Required Infrastructure
+- Agricultural land and facilities
+- Processing and extraction equipment
+- Quality control systems
+- Supply chain management tools
+
+### Technology Requirements
+- Drying equipment, quality control systems, basic ERP
+- Laboratory testing capabilities
+- Traceability systems
+- Digital marketing platforms
+
+## Risk Mitigation Resources
+
+### Contingency Planning
+- **Weather Risk**: 15% budget contingency
+- **Market Risk**: Alternative customer development
+- **Quality Risk**: Enhanced testing protocols
+- **Supply Risk**: Diversified supplier base
+
+## Success Metrics
+- [ ] Team assembled and committed
+- [ ] Budget approved and allocated
+- [ ] Timeline confirmed with stakeholders
+- [ ] Technology requirements validated

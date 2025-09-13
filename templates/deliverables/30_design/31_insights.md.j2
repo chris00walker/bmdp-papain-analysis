@@ -9,181 +9,181 @@ rule_targets:
   - auto-generation
   - vpd-compliance
 ---
-# Customer Research Insights - {{ business_slug|title }} {{ business_title }}
+# Customer Research Insights - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
 **Business**: {{ business_slug|title }}
 
 ## Executive Summary
-Based on {{ total_interviews | default("12") }} customer interviews and comprehensive market research, we have identified key insights that validate our business model assumptions and reveal critical market opportunities for {{ business_title }}.
+Based on {{ TOTAL_INTERVIEWS }} customer interviews and comprehensive market research, we have identified key insights that validate our business model assumptions and reveal critical market opportunities for {{ BUSINESS_TITLE }}.
 
 ## Key Insights Overview
 
-### Insight 1: {{ insight_1_title | default("Strong Problem Validation Across Segments") }}
-**Finding**: {{ insight_1_finding | default("85% of interviewed customers confirmed experiencing the core problem we aim to solve") }}
+### Insight 1: {{ INSIGHT_1_TITLE }}
+**Finding**: {{ INSIGHT_1_FINDING }}
 
 **Evidence**:
-- {{ insight_1_evidence_1 | default("Enterprise customers spend average 15 hours/week on manual processes") }}
-- {{ insight_1_evidence_2 | default("Mid-market companies lose $50K annually due to inefficiencies") }}
-- {{ insight_1_evidence_3 | default("Small businesses report 20% error rates in current processes") }}
+- {{ INSIGHT_1_EVIDENCE_1 }}
+- {{ INSIGHT_1_EVIDENCE_2 }}
+- {{ INSIGHT_1_EVIDENCE_3 }}
 
 **Implications**:
-- {{ insight_1_implication_1 | default("Market demand is validated across all target segments") }}
-- {{ insight_1_implication_2 | default("Problem severity justifies investment in solutions") }}
-- {{ insight_1_implication_3 | default("Opportunity exists for significant value creation") }}
+- {{ INSIGHT_1_IMPLICATION_1 }}
+- {{ INSIGHT_1_IMPLICATION_2 }}
+- {{ INSIGHT_1_IMPLICATION_3 }}
 
-### Insight 2: {{ insight_2_title | default("Competitive Gap in Mid-Market Segment") }}
-**Finding**: {{ insight_2_finding | default("Mid-market customers feel underserved by current solution providers") }}
+### Insight 2: {{ INSIGHT_2_TITLE }}
+**Finding**: {{ INSIGHT_2_FINDING }}
 
 **Evidence**:
-- {{ insight_2_evidence_1 | default("60% of mid-market respondents use suboptimal solutions") }}
-- {{ insight_2_evidence_2 | default("Enterprise solutions too complex and expensive") }}
-- {{ insight_2_evidence_3 | default("Small business tools lack necessary features") }}
+- {{ INSIGHT_2_EVIDENCE_1 }}
+- {{ INSIGHT_2_EVIDENCE_2 }}
+- {{ INSIGHT_2_EVIDENCE_3 }}
 
 **Implications**:
-- {{ insight_2_implication_1 | default("Clear market opportunity in mid-market segment") }}
-- {{ insight_2_implication_2 | default("Positioning opportunity between enterprise and SMB solutions") }}
-- {{ insight_2_implication_3 | default("Potential for rapid market penetration") }}
+- {{ INSIGHT_2_IMPLICATION_1 }}
+- {{ INSIGHT_2_IMPLICATION_2 }}
+- {{ INSIGHT_2_IMPLICATION_3 }}
 
-### Insight 3: {{ insight_3_title | default("Integration Complexity is Primary Barrier") }}
-**Finding**: {{ insight_3_finding | default("Integration challenges are the #1 concern across all segments") }}
+### Insight 3: {{ INSIGHT_3_TITLE }}
+**Finding**: {{ INSIGHT_3_FINDING }}
 
 **Evidence**:
-- {{ insight_3_evidence_1 | default("78% cite integration as top evaluation criterion") }}
-- {{ insight_3_evidence_2 | default("Average 6-month implementation timeline due to integration") }}
-- {{ insight_3_evidence_3 | default("Failed implementations primarily due to integration issues") }}
+- {{ INSIGHT_3_EVIDENCE_1 }}
+- {{ INSIGHT_3_EVIDENCE_2 }}
+- {{ INSIGHT_3_EVIDENCE_3 }}
 
 **Implications**:
-- {{ insight_3_implication_1 | default("Integration capabilities must be core product strength") }}
-- {{ insight_3_implication_2 | default("Pre-built integrations provide competitive advantage") }}
-- {{ insight_3_implication_3 | default("Implementation services critical for success") }}
+- {{ INSIGHT_3_IMPLICATION_1 }}
+- {{ INSIGHT_3_IMPLICATION_2 }}
+- {{ INSIGHT_3_IMPLICATION_3 }}
 
 ## Detailed Research Findings
 
 ### Problem Validation Results
 | Problem Area | Validation Rate | Severity (1-10) | Current Solution Satisfaction |
 |--------------|-----------------|-----------------|------------------------------|
-| {{ problem_1 | default("Manual Process Inefficiency") }} | {{ prob_1_validation | default("85%") }} | {{ prob_1_severity | default("8") }} | {{ prob_1_satisfaction | default("3") }} |
-| {{ problem_2 | default("Integration Complexity") }} | {{ prob_2_validation | default("78%") }} | {{ prob_2_severity | default("7") }} | {{ prob_2_satisfaction | default("4") }} |
-| {{ problem_3 | default("Compliance Burden") }} | {{ prob_3_validation | default("65%") }} | {{ prob_3_severity | default("6") }} | {{ prob_3_satisfaction | default("5") }} |
+| {{ PROBLEM_1 }} | {{ PROB_1_VALIDATION }} | {{ PROB_1_SEVERITY }} | {{ PROB_1_SATISFACTION }} |
+| {{ PROBLEM_2 }} | {{ PROB_2_VALIDATION }} | {{ PROB_2_SEVERITY }} | {{ PROB_2_SATISFACTION }} |
+| {{ PROBLEM_3 }} | {{ PROB_3_VALIDATION }} | {{ PROB_3_SEVERITY }} | {{ PROB_3_SATISFACTION }} |
 
 ### Solution Concept Feedback
-**Overall Reception**: {{ solution_reception | default("Positive - 70% expressed strong interest") }}
+**Overall Reception**: {{ SOLUTION_RECEPTION }}
 
 **Most Valued Features**:
-1. {{ valued_feature_1 | default("Automated workflow capabilities") }} ({{ feature_1_interest | default("90%") }} interest)
-2. {{ valued_feature_2 | default("Pre-built integrations") }} ({{ feature_2_interest | default("85%") }} interest)
-3. {{ valued_feature_3 | default("Compliance reporting") }} ({{ feature_3_interest | default("75%") }} interest)
+1. {{ VALUED_FEATURE_1 }} ({{ FEATURE_1_INTEREST }} interest)
+2. {{ VALUED_FEATURE_2 }} ({{ FEATURE_2_INTEREST }} interest)
+3. {{ VALUED_FEATURE_3 }} ({{ FEATURE_3_INTEREST }} interest)
 
 **Concerns Raised**:
-- {{ concern_1 | default("Implementation complexity and timeline") }} ({{ concern_1_frequency | default("60%") }} of respondents)
-- {{ concern_2 | default("Data security and privacy") }} ({{ concern_2_frequency | default("45%") }} of respondents)
-- {{ concern_3 | default("Vendor lock-in and switching costs") }} ({{ concern_3_frequency | default("35%") }} of respondents)
+- {{ CONCERN_1 }} ({{ CONCERN_1_FREQUENCY }} of respondents)
+- {{ CONCERN_2 }} ({{ CONCERN_2_FREQUENCY }} of respondents)
+- {{ CONCERN_3 }} ({{ CONCERN_3_FREQUENCY }} of respondents)
 
 ### Pricing and Budget Insights
 **Willingness to Pay by Segment**:
-- **{{ segment_1_name | default("Enterprise") }}**: {{ seg_1_wtp | default("$100K-500K annually") }}
-- **{{ segment_2_name | default("Mid-Market") }}**: {{ seg_2_wtp | default("$25K-100K annually") }}
-- **{{ segment_3_name | default("Small Business") }}**: {{ seg_3_wtp | default("$5K-25K annually") }}
+- **{{ SEGMENT_1_NAME }}**: {{ SEG_1_WTP }}
+- **{{ SEGMENT_2_NAME }}**: {{ SEG_2_WTP }}
+- **{{ SEGMENT_3_NAME }}**: {{ SEG_3_WTP }}
 
 **Preferred Pricing Models**:
-1. {{ pricing_model_1 | default("Annual subscription") }} ({{ model_1_preference | default("55%") }} preference)
-2. {{ pricing_model_2 | default("Monthly subscription") }} ({{ model_2_preference | default("30%") }} preference)
-3. {{ pricing_model_3 | default("Usage-based pricing") }} ({{ model_3_preference | default("15%") }} preference)
+1. {{ PRICING_MODEL_1 }} ({{ MODEL_1_PREFERENCE }} preference)
+2. {{ PRICING_MODEL_2 }} ({{ MODEL_2_PREFERENCE }} preference)
+3. {{ PRICING_MODEL_3 }} ({{ MODEL_3_PREFERENCE }} preference)
 
 ### Competitive Intelligence
 **Current Solution Landscape**:
-- {{ current_solution_1 | default("Manual processes/spreadsheets") }}: {{ solution_1_usage | default("40%") }} usage
-- {{ current_solution_2 | default("Legacy enterprise software") }}: {{ solution_2_usage | default("35%") }} usage
-- {{ current_solution_3 | default("Point solutions") }}: {{ solution_3_usage | default("25%") }} usage
+- {{ CURRENT_SOLUTION_1 }}: {{ SOLUTION_1_USAGE }} usage
+- {{ CURRENT_SOLUTION_2 }}: {{ SOLUTION_2_USAGE }} usage
+- {{ CURRENT_SOLUTION_3 }}: {{ SOLUTION_3_USAGE }} usage
 
 **Switching Likelihood**:
-- **High likelihood** (within 12 months): {{ high_switch | default("35%") }}
-- **Medium likelihood** (within 24 months): {{ medium_switch | default("40%") }}
-- **Low likelihood** (satisfied with current): {{ low_switch | default("25%") }}
+- **High likelihood** (within 12 months): {{ HIGH_SWITCH }}
+- **Medium likelihood** (within 24 months): {{ MEDIUM_SWITCH }}
+- **Low likelihood** (satisfied with current): {{ LOW_SWITCH }}
 
 ## Segment-Specific Insights
 
-### {{ segment_1_name | default("Enterprise Segment") }} Insights
+### {{ SEGMENT_1_NAME }} Insights
 **Key Characteristics**:
-- {{ ent_char_1 | default("Risk-averse, thorough evaluation process") }}
-- {{ ent_char_2 | default("Security and compliance paramount") }}
-- {{ ent_char_3 | default("Willing to pay premium for proven solutions") }}
+- {{ ENT_CHAR_1 }}
+- {{ ENT_CHAR_2 }}
+- {{ ENT_CHAR_3 }}
 
 **Decision Process**:
-- **Timeline**: {{ ent_timeline | default("6-12 months") }}
-- **Decision Makers**: {{ ent_decision_makers | default("IT, Finance, Operations leadership") }}
-- **Evaluation Criteria**: {{ ent_criteria | default("Security, scalability, vendor stability") }}
+- **Timeline**: {{ ENT_TIMELINE }}
+- **Decision Makers**: {{ ENT_DECISION_MAKERS }}
+- **Evaluation Criteria**: {{ ENT_CRITERIA }}
 
-### {{ segment_2_name | default("Mid-Market Segment") }} Insights
+### {{ SEGMENT_2_NAME }} Insights
 **Key Characteristics**:
-- {{ mid_char_1 | default("Balance innovation with operational stability") }}
-- {{ mid_char_2 | default("Resource-conscious but growth-focused") }}
-- {{ mid_char_3 | default("Value speed and flexibility") }}
+- {{ MID_CHAR_1 }}
+- {{ MID_CHAR_2 }}
+- {{ MID_CHAR_3 }}
 
 **Decision Process**:
-- **Timeline**: {{ mid_timeline | default("3-6 months") }}
-- **Decision Makers**: {{ mid_decision_makers | default("CTO, Operations Manager") }}
-- **Evaluation Criteria**: {{ mid_criteria | default("ROI, ease of implementation, scalability") }}
+- **Timeline**: {{ MID_TIMELINE }}
+- **Decision Makers**: {{ MID_DECISION_MAKERS }}
+- **Evaluation Criteria**: {{ MID_CRITERIA }}
 
-### {{ segment_3_name | default("Small Business Segment") }} Insights
+### {{ SEGMENT_3_NAME }} Insights
 **Key Characteristics**:
-- {{ smb_char_1 | default("Price-sensitive and simplicity-focused") }}
-- {{ smb_char_2 | default("Limited technical resources") }}
-- {{ smb_char_3 | default("Need immediate value and results") }}
+- {{ SMB_CHAR_1 }}
+- {{ SMB_CHAR_2 }}
+- {{ SMB_CHAR_3 }}
 
 **Decision Process**:
-- **Timeline**: {{ smb_timeline | default("1-3 months") }}
-- **Decision Makers**: {{ smb_decision_makers | default("Owner, Manager") }}
-- **Evaluation Criteria**: {{ smb_criteria | default("Price, ease of use, support quality") }}
+- **Timeline**: {{ SMB_TIMELINE }}
+- **Decision Makers**: {{ SMB_DECISION_MAKERS }}
+- **Evaluation Criteria**: {{ SMB_CRITERIA }}
 
 ## Surprising Findings
 
-### Unexpected Insight 1: {{ surprise_1_title | default("Compliance Concerns Across All Segments") }}
-**Finding**: {{ surprise_1_finding | default("Even small businesses expressed significant compliance concerns") }}
-**Implication**: {{ surprise_1_implication | default("Compliance features should be included in all product tiers") }}
+### Unexpected Insight 1: {{ SURPRISE_1_TITLE }}
+**Finding**: {{ SURPRISE_1_FINDING }}
+**Implication**: {{ SURPRISE_1_IMPLICATION }}
 
-### Unexpected Insight 2: {{ surprise_2_title | default("Mobile Access Critical") }}
-**Finding**: {{ surprise_2_finding | default("75% of users need mobile access for approval workflows") }}
-**Implication**: {{ surprise_2_implication | default("Mobile-first design is essential, not optional") }}
+### Unexpected Insight 2: {{ SURPRISE_2_TITLE }}
+**Finding**: {{ SURPRISE_2_FINDING }}
+**Implication**: {{ SURPRISE_2_IMPLICATION }}
 
-### Unexpected Insight 3: {{ surprise_3_title | default("Industry-Specific Needs") }}
-**Finding**: {{ surprise_3_finding | default("Different industries have unique workflow requirements") }}
-**Implication**: {{ surprise_3_implication | default("Consider industry-specific templates or configurations") }}
+### Unexpected Insight 3: {{ SURPRISE_3_TITLE }}
+**Finding**: {{ SURPRISE_3_FINDING }}
+**Implication**: {{ SURPRISE_3_IMPLICATION }}
 
 ## Strategic Recommendations
 
 ### Product Strategy
-1. **{{ product_rec_1 | default("Focus on integration capabilities as core differentiator") }}**
-2. **{{ product_rec_2 | default("Develop tiered solution for different market segments") }}**
-3. **{{ product_rec_3 | default("Include compliance features across all tiers") }}**
+1. **{{ PRODUCT_REC_1 }}**
+2. **{{ PRODUCT_REC_2 }}**
+3. **{{ PRODUCT_REC_3 }}**
 
 ### Go-to-Market Strategy
-1. **{{ gtm_rec_1 | default("Target mid-market segment as primary beachhead") }}**
-2. **{{ gtm_rec_2 | default("Lead with integration and ease of implementation") }}**
-3. **{{ gtm_rec_3 | default("Develop segment-specific pricing and packaging") }}**
+1. **{{ GTM_REC_1 }}**
+2. **{{ GTM_REC_2 }}**
+3. **{{ GTM_REC_3 }}**
 
 ### Competitive Strategy
-1. **{{ comp_rec_1 | default("Position between enterprise complexity and SMB limitations") }}**
-2. **{{ comp_rec_2 | default("Emphasize speed of implementation vs. enterprise solutions") }}**
-3. **{{ comp_rec_3 | default("Highlight advanced features vs. basic SMB tools") }}**
+1. **{{ COMP_REC_1 }}**
+2. **{{ COMP_REC_2 }}**
+3. **{{ COMP_REC_3 }}**
 
 ## Validation Status
 
 ### Assumptions Validated ✅
-- {{ validated_1 | default("Strong market demand exists for our solution") }}
-- {{ validated_2 | default("Mid-market segment is underserved") }}
-- {{ validated_3 | default("Integration complexity is major pain point") }}
+- {{ VALIDATED_1 }}
+- {{ VALIDATED_2 }}
+- {{ VALIDATED_3 }}
 
 ### Assumptions Challenged ⚠️
-- {{ challenged_1 | default("Price sensitivity higher than expected across segments") }}
-- {{ challenged_2 | default("Mobile access more critical than anticipated") }}
-- {{ challenged_3 | default("Compliance needs exist in all segments") }}
+- {{ CHALLENGED_1 }}
+- {{ CHALLENGED_2 }}
+- {{ CHALLENGED_3 }}
 
 ### Assumptions Invalidated ❌
-- {{ invalidated_1 | default("Small businesses willing to pay premium for features") }}
-- {{ invalidated_2 | default("Enterprise segment ready for innovative approaches") }}
+- {{ INVALIDATED_1 }}
+- {{ INVALIDATED_2 }}
 
 ## Next Steps
 1. **Refine Value Proposition**: Update messaging based on validated customer needs

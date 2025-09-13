@@ -7,7 +7,7 @@ rule_targets:
   - structure-validation
   - auto-generation
 ---
-# Concept Cards - {{ business_slug|title }} {{ business_title }}
+# Concept Cards - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
@@ -15,47 +15,47 @@ rule_targets:
 
 ## Business Model Concepts Explored
 
-### Concept 1: {{ concept_1_name | default("Primary Value Proposition") }}
-**Description**: {{ concept_1_description | default("Core business model leveraging " + business_type + " capabilities") }}
+### Concept 1: {{ CONCEPT_1_NAME }}
+**Description**: {{ CONCEPT_1_DESCRIPTION }}
 
 **Key Features**:
-- {{ feature_1 | default("Feature 1") }}
-- {{ feature_2 | default("Feature 2") }}
-- {{ feature_3 | default("Feature 3") }}
+- {{ FEATURE_1 }}
+- {{ FEATURE_2 }}
+- {{ FEATURE_3 }}
 
-**Value Proposition**: {{ value_prop_1 | default("Delivers value through " + business_type + " operations") }}
+**Value Proposition**: {{ VALUE_PROP_1 }}
 
-**Revenue Model**: {{ revenue_model_1 | default("Revenue generated via " + business_type + " activities") }}
+**Revenue Model**: {{ REVENUE_MODEL_1 }}
 
-**Target Customers**: {{ target_customers | default("Primary customer segment") }}
+**Target Customers**: {{ TARGET_CUSTOMERS }}
 
-**Competitive Advantage**: {{ competitive_advantage | default("Unique positioning in " + business_type + " market") }}
+**Competitive Advantage**: {{ COMPETITIVE_ADVANTAGE }}
 
 ---
 
-### Concept 2: {{ concept_2_name | default("Alternative Approach") }}
-**Description**: {{ concept_2_description | default("Alternative business model variation") }}
+### Concept 2: {{ CONCEPT_2_NAME }}
+**Description**: {{ CONCEPT_2_DESCRIPTION }}
 
 **Key Features**:
-- {{ alt_feature_1 | default("Alternative Feature 1") }}
-- {{ alt_feature_2 | default("Alternative Feature 2") }}
+- {{ ALT_FEATURE_1 }}
+- {{ ALT_FEATURE_2 }}
 
-**Value Proposition**: {{ value_prop_2 | default("Alternative value delivery mechanism") }}
+**Value Proposition**: {{ VALUE_PROP_2 }}
 
-**Revenue Model**: {{ revenue_model_2 | default("Alternative revenue approach") }}
+**Revenue Model**: {{ REVENUE_MODEL_2 }}
 
 ---
 
-### Concept 3: {{ concept_3_name | default("Innovation Opportunity") }}
-**Description**: {{ concept_3_description | default("Innovative approach to " + business_type + " model") }}
+### Concept 3: {{ CONCEPT_3_NAME }}
+**Description**: {{ CONCEPT_3_DESCRIPTION }}
 
 **Key Features**:
-- {{ innovation_feature_1 | default("Innovation Feature 1") }}
-- {{ innovation_feature_2 | default("Innovation Feature 2") }}
+- {{ INNOVATION_FEATURE_1 }}
+- {{ INNOVATION_FEATURE_2 }}
 
-**Value Proposition**: {{ value_prop_3 | default("Innovative value creation") }}
+**Value Proposition**: {{ VALUE_PROP_3 }}
 
-**Revenue Model**: {{ revenue_model_3 | default("New revenue mechanism") }}
+**Revenue Model**: {{ REVENUE_MODEL_3 }}
 
 ---
 
@@ -63,17 +63,17 @@ rule_targets:
 
 | Concept | Feasibility | Market Appeal | Resource Requirements | Risk Level | Overall Score |
 |---------|-------------|---------------|----------------------|------------|---------------|
-| {{ concept_1_name | default("Concept 1") }} | __/10 | __/10 | __/10 | __/10 | __/40 |
-| {{ concept_2_name | default("Concept 2") }} | __/10 | __/10 | __/10 | __/10 | __/40 |
-| {{ concept_3_name | default("Concept 3") }} | __/10 | __/10 | __/10 | __/10 | __/40 |
+| {{ CONCEPT_1_NAME }} | __/10 | __/10 | __/10 | __/10 | __/40 |
+| {{ CONCEPT_2_NAME }} | __/10 | __/10 | __/10 | __/10 | __/40 |
+| {{ CONCEPT_3_NAME }} | __/10 | __/10 | __/10 | __/10 | __/40 |
 
 ## Recommended Concept for Prototyping
 
-**Selected Concept**: {{ recommended_concept | default("[To be determined]") }}
+**Selected Concept**: {{ RECOMMENDED_CONCEPT }}
 
-**Rationale**: {{ selection_rationale | default("[Explain why this concept was selected for further development]") }}
+**Rationale**: {{ SELECTION_RATIONALE }}
 
 **Next Steps**: 
-1. {{ next_step_1 | default("Develop detailed prototype specifications") }}
-2. {{ next_step_2 | default("Identify key validation metrics") }}
-3. {{ next_step_3 | default("Plan prototype development timeline") }}
+1. {{ NEXT_STEP_1 }}
+2. {{ NEXT_STEP_2 }}
+3. {{ NEXT_STEP_3 }}

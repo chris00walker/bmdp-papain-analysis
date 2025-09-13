@@ -8,10 +8,10 @@ rule_targets:
   - auto-generation
 ---
 {
-  "business": "{{ business_slug }}",
+  "business": "{{ BUSINESS_SLUG }}",
   "tests": [
     {
-      "assumption": "WTP >= ${{ wtp_amount | default('X') }}",
+      "assumption": "WTP >= ${{ WTP_AMOUNT }}",
       "test": "price interviews (n=5)",
       "metric": "≥3 accept",
       "stop_condition": "timebox or 2 fails"
@@ -23,13 +23,13 @@ rule_targets:
       "stop_condition": "timebox"
     },
     {
-      "assumption": "{{ pain_point | default('Primary pain point') }} is critical for {{ target_segment | default('target segment') }}",
+      "assumption": "{{ PAIN_POINT }} is critical for {{ TARGET_SEGMENT }}",
       "test": "customer interviews (n=8)",
       "metric": "≥6 confirm pain severity ≥8/10",
       "stop_condition": "timebox or clear pattern"
     },
     {
-      "assumption": "{{ solution_approach | default('Proposed solution') }} addresses core need",
+      "assumption": "{{ SOLUTION_APPROACH }} addresses core need",
       "test": "concept validation interviews (n=5)",
       "metric": "≥4 express purchase intent",
       "stop_condition": "timebox or 2 clear rejections"

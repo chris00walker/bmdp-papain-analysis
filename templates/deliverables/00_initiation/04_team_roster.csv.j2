@@ -1,0 +1,12 @@
+---
+phase: 00_initiation
+artifact: 04_team_roster.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+name,role,function,allocation_pct,email
+{{ SPONSOR_NAME }},Project Sponsor,Strategic Oversight & Decision Authority,25,{{ SPONSOR_EMAIL }}
+{{ PM_NAME }},Project Manager,BMDP Execution & Coordination,30,{{ PM_EMAIL }}
+{{ BUSINESS_LEAD }},Business Lead,Domain Expertise & Operations,25,{{ BUSINESS_LEAD_EMAIL }}
+{{ MARKET_ANALYST }},Market Analyst,Customer & Competitive Analysis,20,{{ MARKET_ANALYST_EMAIL }}

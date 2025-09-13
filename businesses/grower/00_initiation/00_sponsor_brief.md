@@ -7,20 +7,20 @@
 - **Decision Authority**: Primary sponsor for venture development
 
 ## Business Context
-**Value Proposition**: Supply reliable, traceable crude papain (dried latex) from Barbados.. Meet food-grade or feed-grade specifications at competitive cost.. Differentiate on transparency, local quality, and consistent potency.
+**Value Proposition**: High-quality crude papain enzyme production from locally cultivated papayas, targeting pharmaceutical and food processing industries with premium pricing and reliable supply chain
 
-**Target Market**: International enzyme processors (India, US, EU).. Regional food processors seeking local papain.
+**Target Market**: Pharmaceutical companies requiring papain for digestive supplements, food processing companies for meat tenderizers, cosmetic manufacturers for enzyme-based products
 
 ## Initial Scope
-- **Core Activities**: Orchard establishment (10–25 ha).. Latex tapping, drying, packaging.. Quality control (potency, microbial).
-- **Key Resources**: Arable land (≥10 ha).. Skilled labor for tapping/drying.. Drying equipment & basic QA lab.
-- **Revenue Model**: Crude papain sales: \~US $10–20/kg.. By-products (papaya fruit, seeds).
-- **Capital Requirements**: $300000 - $1000000 BBD
-- **Timeline**: 3-year financial horizon
+- **Core Activities**: Papaya cultivation, latex extraction, crude papain processing, quality control, supply chain management
+- **Key Resources**: Agricultural land, papaya trees, processing equipment, quality control systems, skilled agricultural and processing staff
+- **Revenue Model**: Direct sales of crude papain to pharmaceutical and food processing companies, premium pricing for certified organic and high-purity products
+- **Capital Requirements**: $750000 - $2500000 BBD
+- **Timeline**: 5-year financial horizon
 
 ## Critical Constraints
-- **Market Risks**: Crop disease, hurricane/weather risk.. Price pressure from low-cost producers (India/Africa).. Seasonal yield decline.
-- **Financial**: Discount rate 15%, capital bounds $300000-$1000000 BBD
+- **Market Risks**: Weather dependency, seasonal production variations, international competition from established suppliers, quality control requirements
+- **Financial**: Discount rate 15%, capital bounds $750000-$2500000 BBD
 
 ## Success Criteria
 - [ ] Viable business model within capital bounds

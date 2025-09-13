@@ -5,182 +5,182 @@ rule_targets:
   - structure-validation
   - auto-generation
 ---
-# Expert Panel Summary - {{ business_slug|title }} {{ business_title }}
+# Expert Panel Summary - {{ business_slug|title }} {{ BUSINESS_TITLE }}
 
 
 ## Business Context
 **Business**: {{ business_slug|title }}
 
 ## Panel Overview
-**Date**: {{ panel_date | default("TBD") }}
-**Duration**: {{ panel_duration | default("90 minutes") }}
-**Format**: {{ panel_format | default("Virtual roundtable discussion") }}
-**Facilitator**: {{ panel_facilitator | default("Business Expert") }}
+**Date**: {{ PANEL_DATE }}
+**Duration**: {{ PANEL_DURATION }}
+**Format**: {{ PANEL_FORMAT }}
+**Facilitator**: {{ PANEL_FACILITATOR }}
 
 ## Expert Panel Composition
 
-### Expert 1: {{ expert_1_name | default("Industry Veteran") }}
-**Background**: {{ expert_1_background | default("Former executive with 20+ years in target industry") }}
-**Expertise**: {{ expert_1_expertise | default("Market dynamics, competitive strategy, operational scaling") }}
-**Current Role**: {{ expert_1_role | default("Independent consultant and advisor") }}
+### Expert 1: {{ EXPERT_1_NAME }}
+**Background**: {{ EXPERT_1_BACKGROUND }}
+**Expertise**: {{ EXPERT_1_EXPERTISE }}
+**Current Role**: {{ EXPERT_1_ROLE }}
 
-### Expert 2: {{ expert_2_name | default("Technology Specialist") }}
-**Background**: {{ expert_2_background | default("CTO with experience in similar solutions") }}
-**Expertise**: {{ expert_2_expertise | default("Technology architecture, implementation challenges, scalability") }}
-**Current Role**: {{ expert_2_role | default("Technology advisor and investor") }}
+### Expert 2: {{ EXPERT_2_NAME }}
+**Background**: {{ EXPERT_2_BACKGROUND }}
+**Expertise**: {{ EXPERT_2_EXPERTISE }}
+**Current Role**: {{ EXPERT_2_ROLE }}
 
-### Expert 3: {{ expert_3_name | default("Market Analyst") }}
-**Background**: {{ expert_3_background | default("Research analyst covering target market") }}
-**Expertise**: {{ expert_3_expertise | default("Market sizing, trends, competitive intelligence") }}
-**Current Role**: {{ expert_3_role | default("Senior analyst at research firm") }}
+### Expert 3: {{ EXPERT_3_NAME }}
+**Background**: {{ EXPERT_3_BACKGROUND }}
+**Expertise**: {{ EXPERT_3_EXPERTISE }}
+**Current Role**: {{ EXPERT_3_ROLE }}
 
-### Expert 4: {{ expert_4_name | default("Customer Representative") }}
-**Background**: {{ expert_4_background | default("Senior executive from target customer segment") }}
-**Expertise**: {{ expert_4_expertise | default("Customer needs, decision processes, vendor evaluation") }}
-**Current Role**: {{ expert_4_role | default("VP Operations at target company") }}
+### Expert 4: {{ EXPERT_4_NAME }}
+**Background**: {{ EXPERT_4_BACKGROUND }}
+**Expertise**: {{ EXPERT_4_EXPERTISE }}
+**Current Role**: {{ EXPERT_4_ROLE }}
 
 ## Key Discussion Topics
 
 ### Topic 1: Market Opportunity Validation
-**Question**: {{ topic_1_question | default("How do you assess the market opportunity for this type of solution?") }}
+**Question**: {{ TOPIC_1_QUESTION }}
 
-**Expert Consensus**: {{ topic_1_consensus | default("Strong market opportunity with growing demand") }}
+**Expert Consensus**: {{ TOPIC_1_CONSENSUS }}
 
 **Key Insights**:
-- {{ topic_1_insight_1 | default("Market timing appears favorable due to digital transformation trends") }}
-- {{ topic_1_insight_2 | default("Customer pain points are real and significant") }}
-- {{ topic_1_insight_3 | default("Market size estimates appear reasonable but may be conservative") }}
+- {{ TOPIC_1_INSIGHT_1 }}
+- {{ TOPIC_1_INSIGHT_2 }}
+- {{ TOPIC_1_INSIGHT_3 }}
 
-**Dissenting Views**: {{ topic_1_dissent | default("Some concern about market saturation in enterprise segment") }}
+**Dissenting Views**: {{ TOPIC_1_DISSENT }}
 
 ### Topic 2: Competitive Positioning
-**Question**: {{ topic_2_question | default("How should we position against existing competitors?") }}
+**Question**: {{ TOPIC_2_QUESTION }}
 
-**Expert Consensus**: {{ topic_2_consensus | default("Focus on mid-market gap and integration capabilities") }}
+**Expert Consensus**: {{ TOPIC_2_CONSENSUS }}
 
 **Key Insights**:
-- {{ topic_2_insight_1 | default("Clear opportunity between enterprise and SMB solutions") }}
-- {{ topic_2_insight_2 | default("Integration complexity is universal pain point") }}
-- {{ topic_2_insight_3 | default("Speed of implementation can be key differentiator") }}
+- {{ TOPIC_2_INSIGHT_1 }}
+- {{ TOPIC_2_INSIGHT_2 }}
+- {{ TOPIC_2_INSIGHT_3 }}
 
-**Dissenting Views**: {{ topic_2_dissent | default("Risk of competitive response from established players") }}
+**Dissenting Views**: {{ TOPIC_2_DISSENT }}
 
 ### Topic 3: Business Model Viability
-**Question**: {{ topic_3_question | default("What are your thoughts on our proposed business model?") }}
+**Question**: {{ TOPIC_3_QUESTION }}
 
-**Expert Consensus**: {{ topic_3_consensus | default("SaaS model appropriate but pricing needs validation") }}
+**Expert Consensus**: {{ TOPIC_3_CONSENSUS }}
 
 **Key Insights**:
-- {{ topic_3_insight_1 | default("Subscription model aligns with customer preferences") }}
-- {{ topic_3_insight_2 | default("Tiered pricing important for market coverage") }}
-- {{ topic_3_insight_3 | default("Professional services may be necessary for success") }}
+- {{ TOPIC_3_INSIGHT_1 }}
+- {{ TOPIC_3_INSIGHT_2 }}
+- {{ TOPIC_3_INSIGHT_3 }}
 
-**Dissenting Views**: {{ topic_3_dissent | default("Concern about customer acquisition costs in competitive market") }}
+**Dissenting Views**: {{ TOPIC_3_DISSENT }}
 
 ### Topic 4: Implementation Challenges
-**Question**: {{ topic_4_question | default("What implementation challenges should we anticipate?") }}
+**Question**: {{ TOPIC_4_QUESTION }}
 
-**Expert Consensus**: {{ topic_4_consensus | default("Integration and change management are primary challenges") }}
+**Expert Consensus**: {{ TOPIC_4_CONSENSUS }}
 
 **Key Insights**:
-- {{ topic_4_insight_1 | default("Customer success team critical for adoption") }}
-- {{ topic_4_insight_2 | default("Pre-built integrations provide significant value") }}
-- {{ topic_4_insight_3 | default("Training and support quality differentiates vendors") }}
+- {{ TOPIC_4_INSIGHT_1 }}
+- {{ TOPIC_4_INSIGHT_2 }}
+- {{ TOPIC_4_INSIGHT_3 }}
 
-**Dissenting Views**: {{ topic_4_dissent | default("Some believe customers overestimate implementation complexity") }}
+**Dissenting Views**: {{ TOPIC_4_DISSENT }}
 
 ## Expert Recommendations
 
 ### Strategic Recommendations
-1. **{{ strategic_rec_1 | default("Focus initial efforts on mid-market segment where competition is lighter") }}**
-   - Supporting Expert: {{ strategic_rec_1_expert | default("Industry Veteran, Market Analyst") }}
-   - Rationale: {{ strategic_rec_1_rationale | default("Better product-market fit and faster sales cycles") }}
+1. **{{ STRATEGIC_REC_1 }}**
+   - Supporting Expert: {{ STRATEGIC_REC_1_EXPERT }}
+   - Rationale: {{ STRATEGIC_REC_1_RATIONALE }}
 
-2. **{{ strategic_rec_2 | default("Invest heavily in integration capabilities and partnerships") }}**
-   - Supporting Expert: {{ strategic_rec_2_expert | default("Technology Specialist, Customer Representative") }}
-   - Rationale: {{ strategic_rec_2_rationale | default("Critical differentiator and customer requirement") }}
+2. **{{ STRATEGIC_REC_2 }}**
+   - Supporting Expert: {{ STRATEGIC_REC_2_EXPERT }}
+   - Rationale: {{ STRATEGIC_REC_2_RATIONALE }}
 
-3. **{{ strategic_rec_3 | default("Build strong customer success organization from the start") }}**
-   - Supporting Expert: {{ strategic_rec_3_expert | default("All experts") }}
-   - Rationale: {{ strategic_rec_3_rationale | default("Essential for retention and expansion in SaaS model") }}
+3. **{{ STRATEGIC_REC_3 }}**
+   - Supporting Expert: {{ STRATEGIC_REC_3_EXPERT }}
+   - Rationale: {{ STRATEGIC_REC_3_RATIONALE }}
 
 ### Tactical Recommendations
-- **Product Development**: {{ product_rec | default("Prioritize core workflow automation and integration APIs") }}
-- **Go-to-Market**: {{ gtm_rec | default("Partner with system integrators for enterprise reach") }}
-- **Pricing**: {{ pricing_rec | default("Start with value-based pricing, adjust based on market feedback") }}
-- **Team Building**: {{ team_rec | default("Hire experienced customer success and integration specialists") }}
+- **Product Development**: {{ PRODUCT_REC }}
+- **Go-to-Market**: {{ GTM_REC }}
+- **Pricing**: {{ PRICING_REC }}
+- **Team Building**: {{ TEAM_REC }}
 
 ## Risk Assessment from Experts
 
 ### High-Risk Areas Identified
-1. **{{ high_risk_1 | default("Competitive Response") }}**
-   - Risk: {{ high_risk_1_desc | default("Established players may quickly match capabilities") }}
-   - Mitigation: {{ high_risk_1_mitigation | default("Build IP moats and customer switching costs") }}
+1. **{{ HIGH_RISK_1 }}**
+   - Risk: {{ HIGH_RISK_1_DESC }}
+   - Mitigation: {{ HIGH_RISK_1_MITIGATION }}
 
-2. **{{ high_risk_2 | default("Customer Acquisition Costs") }}**
-   - Risk: {{ high_risk_2_desc | default("CAC may be higher than projected in competitive market") }}
-   - Mitigation: {{ high_risk_2_mitigation | default("Focus on referrals and product-led growth") }}
+2. **{{ HIGH_RISK_2 }}**
+   - Risk: {{ HIGH_RISK_2_DESC }}
+   - Mitigation: {{ HIGH_RISK_2_MITIGATION }}
 
-3. **{{ high_risk_3 | default("Technology Complexity") }}**
-   - Risk: {{ high_risk_3_desc | default("Integration challenges may delay implementations") }}
-   - Mitigation: {{ high_risk_3_mitigation | default("Invest in robust testing and professional services") }}
+3. **{{ HIGH_RISK_3 }}**
+   - Risk: {{ HIGH_RISK_3_DESC }}
+   - Mitigation: {{ HIGH_RISK_3_MITIGATION }}
 
 ### Medium-Risk Areas
-- {{ medium_risk_1 | default("Market timing and economic conditions") }}
-- {{ medium_risk_2 | default("Talent acquisition in competitive market") }}
-- {{ medium_risk_3 | default("Regulatory changes affecting target industries") }}
+- {{ MEDIUM_RISK_1 }}
+- {{ MEDIUM_RISK_2 }}
+- {{ MEDIUM_RISK_3 }}
 
 ## Market Intelligence Gathered
 
 ### Competitive Intelligence
-**New Competitive Threats**: {{ comp_threats | default("Two startups in stealth mode working on similar solutions") }}
-**Competitive Weaknesses**: {{ comp_weaknesses | default("Legacy players struggle with modern UX and integration") }}
-**Market Consolidation**: {{ market_consolidation | default("Expect M&A activity as market matures") }}
+**New Competitive Threats**: {{ COMP_THREATS }}
+**Competitive Weaknesses**: {{ COMP_WEAKNESSES }}
+**Market Consolidation**: {{ MARKET_CONSOLIDATION }}
 
 ### Customer Intelligence
-**Buying Patterns**: {{ buying_patterns | default("Customers increasingly prefer pilot programs before full commitment") }}
-**Decision Criteria Evolution**: {{ decision_criteria | default("Security and compliance becoming more important across all segments") }}
-**Budget Trends**: {{ budget_trends | default("Technology budgets stable but ROI requirements stricter") }}
+**Buying Patterns**: {{ BUYING_PATTERNS }}
+**Decision Criteria Evolution**: {{ DECISION_CRITERIA }}
+**Budget Trends**: {{ BUDGET_TRENDS }}
 
 ### Technology Trends
-**Emerging Technologies**: {{ tech_trends | default("AI/ML integration becoming table stakes") }}
-**Architecture Shifts**: {{ architecture_trends | default("Move toward API-first, microservices architecture") }}
-**Integration Standards**: {{ integration_trends | default("Industry pushing for standardized integration protocols") }}
+**Emerging Technologies**: {{ TECH_TRENDS }}
+**Architecture Shifts**: {{ ARCHITECTURE_TRENDS }}
+**Integration Standards**: {{ INTEGRATION_TRENDS }}
 
 ## Validation of Business Model Assumptions
 
 ### Assumptions Strongly Validated ✅
-- {{ validated_strong_1 | default("Market demand exists for mid-market focused solution") }}
-- {{ validated_strong_2 | default("Integration complexity is major customer pain point") }}
-- {{ validated_strong_3 | default("SaaS model preferred by target customers") }}
+- {{ VALIDATED_STRONG_1 }}
+- {{ VALIDATED_STRONG_2 }}
+- {{ VALIDATED_STRONG_3 }}
 
 ### Assumptions Partially Validated ⚠️
-- {{ validated_partial_1 | default("Pricing assumptions need market testing") }}
-- {{ validated_partial_2 | default("Customer acquisition timeline may be longer") }}
-- {{ validated_partial_3 | default("Professional services component larger than expected") }}
+- {{ VALIDATED_PARTIAL_1 }}
+- {{ VALIDATED_PARTIAL_2 }}
+- {{ VALIDATED_PARTIAL_3 }}
 
 ### Assumptions Challenged ❌
-- {{ challenged_1 | default("Enterprise segment may be more accessible than thought") }}
-- {{ challenged_2 | default("Technology differentiation may be harder to maintain") }}
+- {{ CHALLENGED_1 }}
+- {{ CHALLENGED_2 }}
 
 ## Expert Panel Conclusions
 
 ### Overall Assessment
-**Business Viability**: {{ overall_viability | default("Strong - experts see clear market opportunity") }}
-**Success Probability**: {{ expert_success_prob | default("70% with proper execution") }}
-**Key Success Factors**: {{ key_success_factors | default("Customer success, integration capabilities, market timing") }}
+**Business Viability**: {{ OVERALL_VIABILITY }}
+**Success Probability**: {{ EXPERT_SUCCESS_PROB }}
+**Key Success Factors**: {{ KEY_SUCCESS_FACTORS }}
 
 ### Recommended Next Steps
-1. **{{ next_step_1 | default("Conduct pilot program with 2-3 mid-market customers") }}**
-2. **{{ next_step_2 | default("Develop partnership strategy with system integrators") }}**
-3. **{{ next_step_3 | default("Validate pricing model through customer interviews") }}**
-4. **{{ next_step_4 | default("Build MVP focusing on core workflow and integration features") }}**
+1. **{{ NEXT_STEP_1 }}**
+2. **{{ NEXT_STEP_2 }}**
+3. **{{ NEXT_STEP_3 }}**
+4. **{{ NEXT_STEP_4 }}**
 
 ### Expert Availability for Future Engagement
-- **{{ expert_1_name | default("Industry Veteran") }}**: {{ expert_1_availability | default("Available for quarterly advisory calls") }}
-- **{{ expert_2_name | default("Technology Specialist") }}**: {{ expert_2_availability | default("Willing to review technical architecture") }}
-- **{{ expert_3_name | default("Market Analyst") }}**: {{ expert_3_availability | default("Can provide ongoing market intelligence") }}
-- **{{ expert_4_name | default("Customer Representative") }}**: {{ expert_4_availability | default("Open to pilot program participation") }}
+- **{{ EXPERT_1_NAME }}**: {{ EXPERT_1_AVAILABILITY }}
+- **{{ EXPERT_2_NAME }}**: {{ EXPERT_2_AVAILABILITY }}
+- **{{ EXPERT_3_NAME }}**: {{ EXPERT_3_AVAILABILITY }}
+- **{{ EXPERT_4_NAME }}**: {{ EXPERT_4_AVAILABILITY }}
 
 ## Action Items from Panel
 - [ ] Schedule follow-up calls with interested experts

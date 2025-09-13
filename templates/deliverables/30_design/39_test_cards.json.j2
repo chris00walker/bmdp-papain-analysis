@@ -8,43 +8,43 @@ rule_targets:
   - auto-generation
 ---
 {
-  "business": "{{ business_slug }}",
+  "business": "{{ BUSINESS_SLUG }}",
   "tests": [
     {
-      "assumption": "{{ test_1_assumption | default('Customers will pay $1000+ monthly for integration platform') }}",
-      "test": "{{ test_1_method | default('pricing survey (n=20)') }}",
-      "metric": "{{ test_1_metric | default('≥70% accept price') }}",
-      "timeline": "{{ test_1_timeline | default('2 weeks') }}"
+      "assumption": "{{ TEST_1_ASSUMPTION }}",
+      "test": "{{ TEST_1_METHOD }}",
+      "metric": "{{ TEST_1_METRIC }}",
+      "timeline": "{{ TEST_1_TIMELINE }}"
     },
     {
-      "assumption": "{{ test_2_assumption | default('Channel partners interested in referral program') }}",
-      "test": "{{ test_2_method | default('partner interviews (n=3)') }}",
-      "metric": "{{ test_2_metric | default('≥2 express interest') }}",
-      "timeline": "{{ test_2_timeline | default('1 week') }}"
+      "assumption": "{{ TEST_2_ASSUMPTION }}",
+      "test": "{{ TEST_2_METHOD }}",
+      "metric": "{{ TEST_2_METRIC }}",
+      "timeline": "{{ TEST_2_TIMELINE }}"
     },
     {
-      "assumption": "{{ test_3_assumption | default('No-code approach appeals to target market') }}",
-      "test": "{{ test_3_method | default('user testing sessions (n=10)') }}",
-      "metric": "{{ test_3_metric | default('≥80% prefer visual designer') }}",
-      "timeline": "{{ test_3_timeline | default('3 weeks') }}"
+      "assumption": "{{ TEST_3_ASSUMPTION }}",
+      "test": "{{ TEST_3_METHOD }}",
+      "metric": "{{ TEST_3_METRIC }}",
+      "timeline": "{{ TEST_3_TIMELINE }}"
     },
     {
-      "assumption": "{{ test_4_assumption | default('Customer acquisition cost under $2000') }}",
-      "test": "{{ test_4_method | default('pilot marketing campaigns') }}",
-      "metric": "{{ test_4_metric | default('CAC < $2000 across channels') }}",
-      "timeline": "{{ test_4_timeline | default('4 weeks') }}"
+      "assumption": "{{ TEST_4_ASSUMPTION }}",
+      "test": "{{ TEST_4_METHOD }}",
+      "metric": "{{ TEST_4_METRIC }}",
+      "timeline": "{{ TEST_4_TIMELINE }}"
     },
     {
-      "assumption": "{{ test_5_assumption | default('Integration ecosystem drives customer value') }}",
-      "test": "{{ test_5_method | default('beta user behavior analysis') }}",
-      "metric": "{{ test_5_metric | default('≥70% use 3+ integrations') }}",
-      "timeline": "{{ test_5_timeline | default('6 weeks') }}"
+      "assumption": "{{ TEST_5_ASSUMPTION }}",
+      "test": "{{ TEST_5_METHOD }}",
+      "metric": "{{ TEST_5_METRIC }}",
+      "timeline": "{{ TEST_5_TIMELINE }}"
     },
     {
-      "assumption": "{{ test_6_assumption | default('Market size supports $10M+ revenue target') }}",
-      "test": "{{ test_6_method | default('market research and TAM analysis') }}",
-      "metric": "{{ test_6_metric | default('Validated TAM > $2B') }}",
-      "timeline": "{{ test_6_timeline | default('2 weeks') }}"
+      "assumption": "{{ TEST_6_ASSUMPTION }}",
+      "test": "{{ TEST_6_METHOD }}",
+      "metric": "{{ TEST_6_METRIC }}",
+      "timeline": "{{ TEST_6_TIMELINE }}"
     }
   ]
 }
