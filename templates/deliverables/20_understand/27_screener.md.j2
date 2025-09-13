@@ -1,0 +1,214 @@
+---
+phase: 00_initiation
+artifact: 27_screener.md
+methodology_tags:
+  - VPD
+rule_targets:
+  - structure-validation
+  - auto-generation
+  - vpd-compliance
+---
+# Interview Participant Screener - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Screening Objectives
+- Identify qualified participants who match target customer segments
+- Ensure participants have relevant experience with the problem area
+- Confirm decision-making authority or influence
+- Screen for availability and willingness to participate
+
+## Screening Questions
+
+### Basic Qualification
+**Q1: Company and Role**
+"Can you tell me about your current company and your role there?"
+
+**Qualifying Criteria**:
+- Company size matches target segments ({{ company_size_range | default("10-1000+ employees") }})
+- Role involves {{ relevant_responsibilities | default("technology decisions, operations, or business strategy") }}
+- Industry relevance to {{ business_title }} solution
+
+**Q2: Decision Authority**
+"How involved are you in evaluating and selecting {{ solution_category | default("business solutions") }} for your organization?"
+
+**Qualifying Criteria**:
+- Decision maker (can approve purchases)
+- Strong influencer (recommends solutions)
+- Heavy user (daily/weekly interaction with relevant tools)
+
+### Problem Area Experience
+**Q3: Current Challenges**
+"Do you currently face challenges with {{ problem_area | default("[specific problem area]") }} in your organization?"
+
+**Qualifying Criteria**:
+- Confirms experiencing target problems
+- Problem is active/ongoing (not solved)
+- Problem has business impact
+
+**Q4: Solution Experience**
+"What tools or approaches do you currently use to handle {{ problem_area | default("this area") }}?"
+
+**Qualifying Criteria**:
+- Uses existing solutions (not starting from zero)
+- Has experience evaluating alternatives
+- Dissatisfied with current approach OR open to improvements
+
+### Budget and Timeline
+**Q5: Investment Authority**
+"Does your organization have budget allocated for improving {{ problem_area | default("this area") }}?"
+
+**Qualifying Criteria**:
+- Has budget or budget influence
+- Timeline for decisions within {{ decision_timeline | default("6-12 months") }}
+- Willing to invest in solutions
+
+### Availability and Interest
+**Q6: Interview Participation**
+"Would you be available for a 45-60 minute conversation about your experiences and needs in this area?"
+
+**Qualifying Criteria**:
+- Available within research timeline
+- Willing to share detailed insights
+- Comfortable with recording (if applicable)
+
+## Segment-Specific Screening
+
+### {{ segment_1_name | default("Enterprise Segment") }} Screening
+**Additional Questions**:
+- Company size: {{ seg_1_size_range | default("1000+ employees") }}
+- Industry: {{ seg_1_industries | default("Technology, Financial Services, Healthcare") }}
+- Role level: {{ seg_1_roles | default("Director level or above") }}
+- Budget authority: {{ seg_1_budget | default("$100K+ solution authority") }}
+
+**Disqualifying Factors**:
+- Company too small (< {{ seg_1_min_size | default("500") }} employees)
+- No decision influence
+- Industry not relevant
+- Recent solution implementation (< {{ seg_1_recent_change | default("6") }} months)
+
+### {{ segment_2_name | default("Mid-Market Segment") }} Screening
+**Additional Questions**:
+- Company size: {{ seg_2_size_range | default("100-1000 employees") }}
+- Growth stage: {{ seg_2_growth | default("Scaling or established") }}
+- Technology adoption: {{ seg_2_tech | default("Modern tech stack") }}
+- Decision speed: {{ seg_2_speed | default("Can make decisions within 3-6 months") }}
+
+**Disqualifying Factors**:
+- Very early stage startup (< {{ seg_2_min_employees | default("50") }} employees)
+- No technology budget
+- Outsources all technology decisions
+- Industry not addressable
+
+### {{ segment_3_name | default("Small Business Segment") }} Screening
+**Additional Questions**:
+- Company size: {{ seg_3_size_range | default("10-100 employees") }}
+- Owner/manager role: {{ seg_3_authority | default("Direct decision authority") }}
+- Current tools: {{ seg_3_tools | default("Uses basic business software") }}
+- Price sensitivity: {{ seg_3_budget | default("Budget-conscious but willing to invest") }}
+
+**Disqualifying Factors**:
+- No budget for new tools
+- Completely satisfied with current approach
+- No authority to make changes
+- Industry not relevant
+
+## Screening Script Template
+
+### Introduction
+"Hi [Name], thank you for your interest in participating in our research study. We're conducting interviews to better understand how businesses handle {{ problem_area | default("[problem area]") }}. 
+
+I have a few quick questions to make sure you're a good fit for our study. This should take about 5 minutes. Is now a good time?"
+
+### Screening Flow
+1. **Start with broad questions** (company, role)
+2. **Narrow to specific experience** (problem area, current solutions)
+3. **Confirm decision authority** (budget, influence)
+4. **Check availability** (scheduling, time commitment)
+
+### Qualification Decision
+**Highly Qualified** (Priority 1):
+- ✅ Target segment match
+- ✅ Decision authority
+- ✅ Active problem experience
+- ✅ Budget and timeline alignment
+
+**Moderately Qualified** (Priority 2):
+- ✅ Target segment match
+- ✅ Strong influence (not direct authority)
+- ✅ Problem experience
+- ⚠️ Uncertain budget/timeline
+
+**Not Qualified**:
+- ❌ Outside target segments
+- ❌ No decision influence
+- ❌ No relevant problem experience
+- ❌ No budget or immediate need
+
+## Documentation Template
+
+### Screening Record
+**Participant**: [Name, Title, Company]
+**Contact**: [Email, Phone]
+**Screening Date**: [Date]
+**Screener**: [Team Member]
+
+**Qualification Status**: [Highly/Moderately/Not Qualified]
+
+**Screening Responses**:
+- Company Size: [Number of employees]
+- Industry: [Industry sector]
+- Role: [Job title and responsibilities]
+- Decision Authority: [Level of influence]
+- Problem Experience: [Current challenges]
+- Current Solutions: [Tools/approaches used]
+- Budget/Timeline: [Investment capacity and timing]
+
+**Interview Priority**: [1-3 or Not Qualified]
+**Notes**: [Additional context or special considerations]
+
+**Next Steps**:
+- [ ] Schedule interview (if qualified)
+- [ ] Send calendar invite and prep materials
+- [ ] Add to research database
+- [ ] Follow up if needed
+
+## Recruitment Tracking
+
+### Target Recruitment Goals
+- **Total Interviews**: {{ total_target | default("12") }} participants
+- **{{ segment_1_name | default("Enterprise") }}**: {{ seg_1_target | default("4") }} participants
+- **{{ segment_2_name | default("Mid-Market") }}**: {{ seg_2_target | default("5") }} participants  
+- **{{ segment_3_name | default("Small Business") }}**: {{ seg_3_target | default("3") }} participants
+
+### Screening Metrics
+- **Screening Conversion**: Target {{ screening_conversion | default("30%") }} (qualified/contacted)
+- **Interview Conversion**: Target {{ interview_conversion | default("80%") }} (completed/scheduled)
+- **Quality Score**: Target {{ quality_score | default("4.0/5.0") }} average qualification score
+
+### Recruitment Sources
+| Source | Contacted | Screened | Qualified | Scheduled |
+|--------|-----------|----------|-----------|-----------|
+| {{ source_1 | default("LinkedIn Outreach") }} | | | | |
+| {{ source_2 | default("Network Referrals") }} | | | | |
+| {{ source_3 | default("Industry Events") }} | | | | |
+| {{ source_4 | default("Customer Database") }} | | | | |
+| **Total** | | | | |
+
+## Quality Assurance
+
+### Screening Best Practices
+- **Be conversational**: Make it feel like a discussion, not an interrogation
+- **Listen actively**: Pay attention to nuances and follow-up opportunities
+- **Stay neutral**: Don't lead participants toward "correct" answers
+- **Respect time**: Keep screening brief and focused
+- **Document thoroughly**: Capture key insights for interview preparation
+
+### Common Screening Mistakes
+- **Leading questions**: "You probably struggle with X, right?"
+- **Overselling**: Making the study sound more interesting than it is
+- **Rushing**: Not allowing time for thoughtful responses
+- **Bias**: Screening in participants who don't truly qualify
+- **Poor documentation**: Missing key details for interview planning

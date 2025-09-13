@@ -1,0 +1,200 @@
+---
+phase: 00_initiation
+artifact: 35_failure_analysis.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Failure Analysis - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Analysis Overview
+This analysis examines potential failure modes for the {{ business_title }} business model, identifying risks, root causes, and mitigation strategies to improve our probability of success.
+
+## Business Model Failure Modes
+
+### Failure Mode 1: {{ failure_1_title | default("Market Adoption Failure") }}
+**Description**: {{ failure_1_desc | default("Target customers fail to adopt the solution at expected rates") }}
+
+**Probability**: {{ failure_1_prob | default("Medium (30%)") }}
+**Impact**: {{ failure_1_impact | default("High - Business model becomes unviable") }}
+
+**Root Causes**:
+- {{ failure_1_cause_1 | default("Solution doesn't adequately address customer pain points") }}
+- {{ failure_1_cause_2 | default("Competitive alternatives emerge with better value proposition") }}
+- {{ failure_1_cause_3 | default("Market education and awareness insufficient") }}
+
+**Early Warning Indicators**:
+- {{ failure_1_indicator_1 | default("Low trial-to-paid conversion rates (<20%)") }}
+- {{ failure_1_indicator_2 | default("High customer churn in first 6 months") }}
+- {{ failure_1_indicator_3 | default("Difficulty generating qualified leads") }}
+
+**Mitigation Strategies**:
+- {{ failure_1_mitigation_1 | default("Continuous customer feedback and product iteration") }}
+- {{ failure_1_mitigation_2 | default("Strong customer success and onboarding programs") }}
+- {{ failure_1_mitigation_3 | default("Aggressive market education and thought leadership") }}
+
+### Failure Mode 2: {{ failure_2_title | default("Competitive Displacement") }}
+**Description**: {{ failure_2_desc | default("Established competitors or new entrants capture market share") }}
+
+**Probability**: {{ failure_2_prob | default("High (40%)") }}
+**Impact**: {{ failure_2_impact | default("Medium - Reduced growth and margins") }}
+
+**Root Causes**:
+- {{ failure_2_cause_1 | default("Competitors match or exceed our capabilities") }}
+- {{ failure_2_cause_2 | default("Lack of sustainable competitive advantages") }}
+- {{ failure_2_cause_3 | default("Insufficient resources to compete on marketing/sales") }}
+
+**Early Warning Indicators**:
+- {{ failure_2_indicator_1 | default("Competitors announcing similar solutions") }}
+- {{ failure_2_indicator_2 | default("Loss of competitive deals") }}
+- {{ failure_2_indicator_3 | default("Declining market share or growth rate") }}
+
+**Mitigation Strategies**:
+- {{ failure_2_mitigation_1 | default("Build strong IP and technical moats") }}
+- {{ failure_2_mitigation_2 | default("Focus on customer relationships and switching costs") }}
+- {{ failure_2_mitigation_3 | default("Continuous innovation and feature development") }}
+
+### Failure Mode 3: {{ failure_3_title | default("Operational Scaling Failure") }}
+**Description**: {{ failure_3_desc | default("Inability to scale operations efficiently as business grows") }}
+
+**Probability**: {{ failure_3_prob | default("Medium (25%)") }}
+**Impact**: {{ failure_3_impact | default("High - Growth stalls, customer satisfaction drops") }}
+
+**Root Causes**:
+- {{ failure_3_cause_1 | default("Inadequate technology infrastructure") }}
+- {{ failure_3_cause_2 | default("Insufficient operational processes and systems") }}
+- {{ failure_3_cause_3 | default("Inability to hire and retain quality talent") }}
+
+**Early Warning Indicators**:
+- {{ failure_3_indicator_1 | default("Customer support response times increasing") }}
+- {{ failure_3_indicator_2 | default("System performance degrading under load") }}
+- {{ failure_3_indicator_3 | default("High employee turnover in key roles") }}
+
+**Mitigation Strategies**:
+- {{ failure_3_mitigation_1 | default("Invest in scalable technology architecture early") }}
+- {{ failure_3_mitigation_2 | default("Develop robust operational processes and documentation") }}
+- {{ failure_3_mitigation_3 | default("Build strong company culture and retention programs") }}
+
+### Failure Mode 4: {{ failure_4_title | default("Financial Sustainability Failure") }}
+**Description**: {{ failure_4_desc | default("Business model fails to achieve profitability or sustainable unit economics") }}
+
+**Probability**: {{ failure_4_prob | default("Medium (35%)") }}
+**Impact**: {{ failure_4_impact | default("Critical - Business cannot continue operations") }}
+
+**Root Causes**:
+- {{ failure_4_cause_1 | default("Customer acquisition costs exceed customer lifetime value") }}
+- {{ failure_4_cause_2 | default("Pricing model doesn't support sustainable margins") }}
+- {{ failure_4_cause_3 | default("Operational costs higher than projected") }}
+
+**Early Warning Indicators**:
+- {{ failure_4_indicator_1 | default("CAC payback period exceeding 18 months") }}
+- {{ failure_4_indicator_2 | default("Gross margins below 70%") }}
+- {{ failure_4_indicator_3 | default("Burn rate exceeding funding runway") }}
+
+**Mitigation Strategies**:
+- {{ failure_4_mitigation_1 | default("Rigorous unit economics tracking and optimization") }}
+- {{ failure_4_mitigation_2 | default("Flexible pricing model testing and iteration") }}
+- {{ failure_4_mitigation_3 | default("Conservative financial planning with multiple scenarios") }}
+
+## Market Risk Analysis
+
+### Market Risk 1: {{ market_risk_1 | default("Economic Downturn Impact") }}
+**Risk**: {{ market_risk_1_desc | default("Economic recession reduces customer spending on new solutions") }}
+**Likelihood**: {{ market_risk_1_likelihood | default("Medium") }}
+**Mitigation**: {{ market_risk_1_mitigation | default("Focus on ROI-positive solutions, flexible pricing") }}
+
+### Market Risk 2: {{ market_risk_2 | default("Regulatory Changes") }}
+**Risk**: {{ market_risk_2_desc | default("New regulations change market dynamics or requirements") }}
+**Likelihood**: {{ market_risk_2_likelihood | default("Low") }}
+**Mitigation**: {{ market_risk_2_mitigation | default("Stay informed on regulatory trends, build compliance capabilities") }}
+
+### Market Risk 3: {{ market_risk_3 | default("Technology Disruption") }}
+**Risk**: {{ market_risk_3_desc | default("New technology makes our approach obsolete") }}
+**Likelihood**: {{ market_risk_3_likelihood | default("Medium") }}
+**Mitigation**: {{ market_risk_3_mitigation | default("Continuous technology monitoring, R&D investment") }}
+
+## Customer Risk Analysis
+
+### Customer Risk 1: {{ customer_risk_1 | default("Customer Concentration") }}
+**Risk**: {{ customer_risk_1_desc | default("Over-dependence on small number of large customers") }}
+**Impact**: {{ customer_risk_1_impact | default("High - Loss of major customer threatens viability") }}
+**Mitigation**: {{ customer_risk_1_mitigation | default("Diversify customer base, limit single customer revenue %") }}
+
+### Customer Risk 2: {{ customer_risk_2 | default("Customer Success Failure") }}
+**Risk**: {{ customer_risk_2_desc | default("Customers fail to achieve expected value from solution") }}
+**Impact**: {{ customer_risk_2_impact | default("High - Churn increases, referrals decrease") }}
+**Mitigation**: {{ customer_risk_2_mitigation | default("Robust onboarding, success metrics tracking, proactive support") }}
+
+### Customer Risk 3: {{ customer_risk_3 | default("Changing Customer Needs") }}
+**Risk**: {{ customer_risk_3_desc | default("Customer requirements evolve faster than product development") }}
+**Impact**: {{ customer_risk_3_impact | default("Medium - Solution becomes less relevant over time") }}
+**Mitigation**: {{ customer_risk_3_mitigation | default("Regular customer research, agile development process") }}
+
+## Operational Risk Analysis
+
+### Operational Risk 1: {{ operational_risk_1 | default("Key Person Dependency") }}
+**Risk**: {{ operational_risk_1_desc | default("Critical business functions depend on specific individuals") }}
+**Impact**: {{ operational_risk_1_impact | default("High - Loss of key person disrupts operations") }}
+**Mitigation**: {{ operational_risk_1_mitigation | default("Cross-training, documentation, succession planning") }}
+
+### Operational Risk 2: {{ operational_risk_2 | default("Technology Infrastructure Failure") }}
+**Risk**: {{ operational_risk_2_desc | default("System outages or security breaches impact service delivery") }}
+**Impact**: {{ operational_risk_2_impact | default("High - Customer trust and satisfaction damaged") }}
+**Mitigation**: {{ operational_risk_2_mitigation | default("Redundant systems, security protocols, incident response plans") }}
+
+### Operational Risk 3: {{ operational_risk_3 | default("Supply Chain Disruption") }}
+**Risk**: {{ operational_risk_3_desc | default("Key suppliers or partners fail to deliver") }}
+**Impact**: {{ operational_risk_3_impact | default("Medium - Service delivery delays or quality issues") }}
+**Mitigation**: {{ operational_risk_3_mitigation | default("Diversified supplier base, backup plans, SLA monitoring") }}
+
+## Failure Prevention Framework
+
+### Early Warning System
+**Metrics to Monitor**:
+- {{ warning_metric_1 | default("Customer acquisition cost trends") }}
+- {{ warning_metric_2 | default("Customer satisfaction scores") }}
+- {{ warning_metric_3 | default("Competitive win/loss rates") }}
+- {{ warning_metric_4 | default("Employee satisfaction and turnover") }}
+
+**Review Frequency**: {{ review_frequency | default("Monthly executive review, quarterly deep dive") }}
+
+### Decision Points and Triggers
+**Go/No-Go Criteria**:
+- {{ decision_criteria_1 | default("Customer acquisition cost < 12 months payback") }}
+- {{ decision_criteria_2 | default("Net Promoter Score > 50") }}
+- {{ decision_criteria_3 | default("Monthly recurring revenue growth > 10%") }}
+
+**Pivot Triggers**:
+- {{ pivot_trigger_1 | default("Consistent failure to meet customer acquisition targets") }}
+- {{ pivot_trigger_2 | default("Fundamental shift in market dynamics") }}
+- {{ pivot_trigger_3 | default("Emergence of superior competitive solution") }}
+
+### Contingency Planning
+**Scenario A - Slow Growth**: {{ scenario_a | default("Reduce burn rate, focus on customer success, extend runway") }}
+**Scenario B - Competitive Pressure**: {{ scenario_b | default("Accelerate differentiation, increase marketing, consider partnerships") }}
+**Scenario C - Market Shift**: {{ scenario_c | default("Pivot product focus, explore adjacent markets, reassess strategy") }}
+
+## Success Probability Assessment
+
+### Current Success Probability: {{ success_probability | default("65%") }}
+
+**Factors Increasing Success**:
+- {{ success_factor_1 | default("Strong customer validation and market demand") }}
+- {{ success_factor_2 | default("Experienced team with relevant expertise") }}
+- {{ success_factor_3 | default("Adequate funding and financial runway") }}
+
+**Factors Decreasing Success**:
+- {{ risk_factor_1 | default("Competitive market with established players") }}
+- {{ risk_factor_2 | default("Complex solution requiring significant customer change") }}
+- {{ risk_factor_3 | default("Unproven business model in target market") }}
+
+### Recommendations to Improve Success Probability
+1. **{{ rec_1 | default("Focus on customer success and retention from day one") }}**
+2. **{{ rec_2 | default("Build sustainable competitive advantages early") }}**
+3. **{{ rec_3 | default("Maintain financial discipline and scenario planning") }}**
+4. **{{ rec_4 | default("Invest in operational scalability before it's needed") }}**
+5. **{{ rec_5 | default("Develop strong market intelligence and competitive monitoring") }}**

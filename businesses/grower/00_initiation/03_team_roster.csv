@@ -1,0 +1,13 @@
+---
+phase: 10_mobilize
+artifact: 11_team_roster.csv
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Business: Grower
+name,role,function,allocation_pct,email
+Grower Business Lead,Project Lead,Strategy & Coordination,40,grower.business.lead@grower.biz
+Project Manager,Project Manager,BMDP Execution,30,project.manager@grower.biz
+Market Research Specialist,Market Analyst,Customer & Competitive Analysis,20,market.research@grower.biz
+Financial Modeling Expert,Financial Analyst,Financial Projections & Validation,10,financial.analyst@grower.biz

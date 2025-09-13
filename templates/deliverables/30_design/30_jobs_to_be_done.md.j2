@@ -1,0 +1,180 @@
+---
+phase: 30_design
+artifact: 30_jobs_to_be_done.md
+methodology_tags:
+  - VPD
+rule_targets:
+  - structure-validation
+  - auto-generation
+  - vpd-compliance
+---
+# Jobs to be Done Analysis - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Jobs-to-be-Done Framework
+
+### Core Job Statement
+When {{ customer_context | default("business leaders need to improve operations") }}, they want to {{ functional_job | default("implement effective solutions") }}, so they can {{ desired_outcome | default("achieve better business results") }}.
+
+## Primary Jobs Analysis
+
+### Job 1: {{ job_1_title | default("Improve Operational Efficiency") }}
+
+**Job Statement**: When {{ job_1_context | default("operations teams face manual processes") }}, they want to {{ job_1_functional | default("automate routine tasks") }}, so they can {{ job_1_outcome | default("focus on higher-value activities") }}.
+
+**Job Context**:
+- **Trigger**: {{ job_1_trigger | default("Manual processes causing errors or delays") }}
+- **Frequency**: {{ job_1_frequency | default("Daily/weekly occurrence") }}
+- **Duration**: {{ job_1_duration | default("Ongoing operational need") }}
+
+**Success Criteria**:
+- {{ job_1_success_1 | default("Reduced time spent on manual tasks") }}
+- {{ job_1_success_2 | default("Fewer errors and improved accuracy") }}
+- {{ job_1_success_3 | default("Better resource allocation") }}
+
+**Current Solutions**:
+- {{ job_1_current_1 | default("Manual processes and spreadsheets") }}
+- {{ job_1_current_2 | default("Basic automation tools") }}
+- {{ job_1_current_3 | default("Outsourcing to third parties") }}
+
+**Satisfaction with Current Solutions**: {{ job_1_satisfaction | default("Low - significant pain points remain") }}
+
+### Job 2: {{ job_2_title | default("Ensure Compliance and Risk Management") }}
+
+**Job Statement**: When {{ job_2_context | default("organizations face regulatory requirements") }}, they want to {{ job_2_functional | default("maintain compliance efficiently") }}, so they can {{ job_2_outcome | default("avoid penalties and build trust") }}.
+
+**Job Context**:
+- **Trigger**: {{ job_2_trigger | default("Regulatory changes or audit requirements") }}
+- **Frequency**: {{ job_2_frequency | default("Ongoing with periodic intensification") }}
+- **Duration**: {{ job_2_duration | default("Continuous compliance monitoring") }}
+
+**Success Criteria**:
+- {{ job_2_success_1 | default("100% compliance with regulations") }}
+- {{ job_2_success_2 | default("Reduced compliance costs") }}
+- {{ job_2_success_3 | default("Faster audit preparation") }}
+
+**Current Solutions**:
+- {{ job_2_current_1 | default("Manual compliance tracking") }}
+- {{ job_2_current_2 | default("Specialized compliance software") }}
+- {{ job_2_current_3 | default("External compliance consultants") }}
+
+**Satisfaction with Current Solutions**: {{ job_2_satisfaction | default("Medium - works but expensive and complex") }}
+
+### Job 3: {{ job_3_title | default("Scale Business Operations") }}
+
+**Job Statement**: When {{ job_3_context | default("growing companies need to expand") }}, they want to {{ job_3_functional | default("scale operations efficiently") }}, so they can {{ job_3_outcome | default("grow without proportional cost increases") }}.
+
+**Job Context**:
+- **Trigger**: {{ job_3_trigger | default("Business growth and expansion needs") }}
+- **Frequency**: {{ job_3_frequency | default("Periodic during growth phases") }}
+- **Duration**: {{ job_3_duration | default("Multi-month scaling projects") }}
+
+**Success Criteria**:
+- {{ job_3_success_1 | default("Scalable processes and systems") }}
+- {{ job_3_success_2 | default("Maintained service quality during growth") }}
+- {{ job_3_success_3 | default("Controlled operational costs") }}
+
+**Current Solutions**:
+- {{ job_3_current_1 | default("Hiring additional staff") }}
+- {{ job_3_current_2 | default("Upgrading existing systems") }}
+- {{ job_3_current_3 | default("Implementing new technologies") }}
+
+**Satisfaction with Current Solutions**: {{ job_3_satisfaction | default("Medium - works but resource-intensive") }}
+
+## Supporting Jobs Analysis
+
+### Emotional Jobs
+- {{ emotional_job_1 | default("Feel confident in business decisions") }}
+- {{ emotional_job_2 | default("Reduce stress from operational challenges") }}
+- {{ emotional_job_3 | default("Gain recognition for business improvements") }}
+
+### Social Jobs
+- {{ social_job_1 | default("Demonstrate leadership in innovation") }}
+- {{ social_job_2 | default("Build reputation as efficient organization") }}
+- {{ social_job_3 | default("Attract and retain top talent") }}
+
+## Job Prioritization
+
+### Job Importance vs. Satisfaction Matrix
+| Job | Importance (1-10) | Current Satisfaction (1-10) | Opportunity Score |
+|-----|-------------------|----------------------------|-------------------|
+| {{ job_1_title | default("Operational Efficiency") }} | {{ job_1_importance | default("9") }} | {{ job_1_current_satisfaction | default("4") }} | {{ job_1_opportunity | default("5") }} |
+| {{ job_2_title | default("Compliance Management") }} | {{ job_2_importance | default("8") }} | {{ job_2_current_satisfaction | default("6") }} | {{ job_2_opportunity | default("2") }} |
+| {{ job_3_title | default("Business Scaling") }} | {{ job_3_importance | default("7") }} | {{ job_3_current_satisfaction | default("5") }} | {{ job_3_opportunity | default("2") }} |
+
+**Opportunity Score = Importance - Current Satisfaction**
+
+## Customer Journey Mapping
+
+### Job 1 Journey: {{ job_1_title | default("Operational Efficiency") }}
+
+**Awareness Stage**:
+- **Trigger**: {{ journey_1_trigger | default("Recognition of inefficiencies") }}
+- **Thoughts**: {{ journey_1_awareness | default("We need to improve our processes") }}
+- **Actions**: {{ journey_1_awareness_actions | default("Research best practices, assess current state") }}
+
+**Consideration Stage**:
+- **Evaluation**: {{ journey_1_consideration | default("Compare solution options") }}
+- **Concerns**: {{ journey_1_concerns | default("Implementation complexity, cost, disruption") }}
+- **Actions**: {{ journey_1_consideration_actions | default("Vendor demos, pilot programs, ROI analysis") }}
+
+**Decision Stage**:
+- **Criteria**: {{ journey_1_decision | default("ROI, ease of implementation, vendor support") }}
+- **Process**: {{ journey_1_process | default("Committee evaluation, stakeholder buy-in") }}
+- **Actions**: {{ journey_1_decision_actions | default("Final negotiations, contract approval") }}
+
+**Implementation Stage**:
+- **Challenges**: {{ journey_1_implementation | default("Change management, training, integration") }}
+- **Support Needs**: {{ journey_1_support | default("Technical assistance, user training") }}
+- **Success Measures**: {{ journey_1_measures | default("Efficiency gains, user adoption") }}
+
+## Competitive Job Analysis
+
+### How Competitors Address Jobs
+
+**{{ competitor_1_name | default("Market Leader") }}**:
+- **Jobs Addressed**: {{ comp_1_jobs | default("Primarily operational efficiency and compliance") }}
+- **Strengths**: {{ comp_1_job_strengths | default("Comprehensive features, proven track record") }}
+- **Gaps**: {{ comp_1_job_gaps | default("Complex implementation, high costs") }}
+
+**{{ competitor_2_name | default("Innovation Leader") }}**:
+- **Jobs Addressed**: {{ comp_2_jobs | default("Operational efficiency with modern UX") }}
+- **Strengths**: {{ comp_2_job_strengths | default("Easy to use, quick implementation") }}
+- **Gaps**: {{ comp_2_job_gaps | default("Limited enterprise features") }}
+
+### Competitive Job Opportunities
+- {{ job_opportunity_1 | default("Better address scaling job with mid-market focus") }}
+- {{ job_opportunity_2 | default("Combine efficiency and compliance in single solution") }}
+- {{ job_opportunity_3 | default("Address emotional jobs through superior UX") }}
+
+## Solution Implications for {{ business_title }}
+
+### Primary Job Focus
+**Target Job**: {{ target_job | default("Improve Operational Efficiency") }}
+**Rationale**: {{ target_rationale | default("Highest opportunity score and broad market appeal") }}
+
+### Job-Solution Fit Analysis
+**How {{ business_title }} Addresses the Job**:
+- **Functional Dimension**: {{ solution_functional | default("Automates key processes with intelligent workflows") }}
+- **Emotional Dimension**: {{ solution_emotional | default("Reduces stress through reliable, intuitive operation") }}
+- **Social Dimension**: {{ solution_social | default("Enables teams to demonstrate innovation and efficiency") }}
+
+### Success Metrics by Job
+- **{{ job_1_title | default("Operational Efficiency") }}**: {{ job_1_metrics | default("Time saved, error reduction, cost savings") }}
+- **{{ job_2_title | default("Compliance Management") }}**: {{ job_2_metrics | default("Compliance score, audit time, penalty avoidance") }}
+- **{{ job_3_title | default("Business Scaling") }}**: {{ job_3_metrics | default("Scalability ratio, growth support, resource efficiency") }}
+
+### Product Development Priorities
+1. **{{ dev_priority_1 | default("Core automation capabilities for primary job") }}**
+2. **{{ dev_priority_2 | default("Compliance features for regulatory requirements") }}**
+3. **{{ dev_priority_3 | default("Scalability features for growth support") }}**
+
+### Go-to-Market Messaging
+- **Primary Message**: {{ gtm_primary | default("Finally, a solution that makes [primary job] simple and effective") }}
+- **Supporting Messages**: 
+  - {{ gtm_support_1 | default("Reduce operational complexity") }}
+  - {{ gtm_support_2 | default("Scale with confidence") }}
+  - {{ gtm_support_3 | default("Stay compliant effortlessly") }}

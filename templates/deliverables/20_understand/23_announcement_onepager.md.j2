@@ -1,0 +1,92 @@
+---
+phase: 00_initiation
+artifact: 23_announcement_onepager.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# {{ business_title }} Business Model Design - {{ business_slug|title }} Project Announcement
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Executive Summary
+We are launching a comprehensive business model design process for {{ business_title }}, a {{ business_type | default("new venture") }} opportunity that addresses {{ market_opportunity | default("significant market needs in our target sector") }}.
+
+## Project Overview
+
+### Objective
+Develop and validate a robust business model for {{ business_title }} through systematic market research, customer validation, and financial modeling.
+
+### Approach
+**Business Model Design Process (BMDP)** - A proven 3-phase methodology:
+- **Phase 1 - Mobilize** ({{ phase1_weeks | default("4") }} weeks): Team formation, initial canvas, risk assessment
+- **Phase 2 - Understand** ({{ phase2_weeks | default("3") }} weeks): Market research, customer validation, competitive analysis  
+- **Phase 3 - Design** ({{ phase3_weeks | default("2") }} weeks): Business model alternatives, selection, implementation planning
+
+### Investment
+- **Total BMDP Budget**: ${{ total_bmdp_cost | default("TBD") }} BBD
+- **Business Capital Range**: ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD
+- **Timeline**: {{ total_weeks | default("9") }} weeks
+
+## Business Opportunity
+
+### Market Problem
+{{ problem_statement | default("Target market faces significant challenges that create opportunity for innovative solutions") }}
+
+### Our Solution
+{{ solution_statement | default(business_name + " provides a unique approach that addresses these market needs effectively") }}
+
+### Target Market
+{{ target_market | default("Primary focus on [customer segments] with [specific characteristics]") }}
+
+## Team & Governance
+
+### Core Team
+- **{{ team_lead | default("Team Lead") }}**: Project leadership and coordination
+- **{{ business_expert | default("Business Expert") }}**: Business model development
+- **{{ market_analyst | default("Market Analyst") }}**: Market research and analysis
+- **{{ financial_analyst | default("Financial Analyst") }}**: Financial modeling and projections
+
+### Sponsor
+**{{ sponsor_name | default("Project Sponsor") }}**: Executive oversight and decision authority
+
+### Governance
+- **Weekly Standups**: Progress tracking and issue resolution
+- **Biweekly Reviews**: Stakeholder updates and feedback
+- **Phase Gates**: Go/no-go decisions at each phase completion
+
+## Key Milestones
+
+| Milestone | Date | Deliverables |
+|-----------|------|--------------|
+| Phase 1 Gate | Week {{ phase1_weeks | default("4") }} | Business Model Canvas v0, Risk Assessment |
+| Phase 2 Gate | Week {{ phase2_weeks_cumulative | default("7") }} | Market Validation, Customer Insights |
+| Phase 3 Gate | Week {{ total_weeks | default("9") }} | Final Business Model, Implementation Plan |
+
+## Success Criteria
+- [ ] Validated business model within capital constraints
+- [ ] Market opportunity confirmed through customer research
+- [ ] Financial projections demonstrate viability
+- [ ] Clear implementation roadmap with next steps
+- [ ] Stakeholder alignment on go/no-go decision
+
+## Communication Plan
+- **Progress Updates**: {{ communication_frequency | default("Biweekly") }} email reports to stakeholders
+- **Stakeholder Meetings**: {{ meeting_frequency | default("Weekly") }} reviews with key participants
+- **Documentation**: All deliverables maintained in shared project repository
+
+## Next Steps
+1. **Team Assembly** (Week 1): Finalize team roster and access permissions
+2. **Kickoff Meeting** (Week 1): Project orientation and initial planning
+3. **Canvas Development** (Week 2-3): Initial business model framework
+4. **Risk Assessment** (Week 3-4): Kill/thrill analysis and mitigation planning
+
+## Contact Information
+- **Project Lead**: {{ team_lead | default("Team Lead") }} - {{ team_lead_email | default("team.lead@company.com") }}
+- **Project Sponsor**: {{ sponsor_name | default("Project Sponsor") }} - {{ sponsor_email | default("sponsor@company.com") }}
+- **Project Channel**: {{ slack_channel | default("#bmdp-" + business_name.lower()) }}
+
+---
+*This announcement marks the official launch of the {{ business_title }} business model design process. All stakeholders are encouraged to engage actively in this strategic initiative.*

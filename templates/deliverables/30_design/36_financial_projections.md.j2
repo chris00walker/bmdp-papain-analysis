@@ -1,0 +1,227 @@
+---
+phase: 00_initiation
+artifact: 36_financial_projections.md
+methodology_tags:
+  - BMG
+  - FINANCIAL
+rule_targets:
+  - structure-validation
+  - auto-generation
+  - financial-validation
+---
+# Financial Projections - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Executive Summary
+This document presents 5-year financial projections for the selected {{ business_title }} business model, including revenue forecasts, cost structure, profitability analysis, and key financial metrics.
+
+## Business Model Overview
+**Selected Model**: {{ selected_model | default("Premium Integration Platform") }}
+**Revenue Model**: {{ revenue_model | default("Tiered SaaS subscriptions with professional services") }}
+**Target Market**: {{ target_market | default("Mid-market and enterprise companies") }}
+**Go-to-Market**: {{ gtm_approach | default("Direct sales with partner channel") }}
+
+## Revenue Projections
+
+### Revenue Assumptions
+**Customer Acquisition**:
+- Year 1: {{ y1_customers | default("25") }} customers
+- Year 2: {{ y2_customers | default("75") }} customers  
+- Year 3: {{ y3_customers | default("150") }} customers
+- Year 4: {{ y4_customers | default("275") }} customers
+- Year 5: {{ y5_customers | default("450") }} customers
+
+**Average Contract Value (ACV)**:
+- Year 1: ${{ y1_acv | default("60,000") }} BBD
+- Year 2: ${{ y2_acv | default("65,000") }} BBD
+- Year 3: ${{ y3_acv | default("70,000") }} BBD
+- Year 4: ${{ y4_acv | default("75,000") }} BBD
+- Year 5: ${{ y5_acv | default("80,000") }} BBD
+
+### Revenue Breakdown by Stream
+
+#### Subscription Revenue ({{ subscription_pct | default("85%") }})
+| Year | Customers | ACV | Annual Subscription Revenue |
+|------|-----------|-----|----------------------------|
+| 1 | {{ y1_customers | default("25") }} | ${{ y1_acv | default("60,000") }} | ${{ y1_subscription | default("1,500,000") }} BBD |
+| 2 | {{ y2_customers | default("75") }} | ${{ y2_acv | default("65,000") }} | ${{ y2_subscription | default("4,875,000") }} BBD |
+| 3 | {{ y3_customers | default("150") }} | ${{ y3_acv | default("70,000") }} | ${{ y3_subscription | default("10,500,000") }} BBD |
+| 4 | {{ y4_customers | default("275") }} | ${{ y4_acv | default("75,000") }} | ${{ y4_subscription | default("20,625,000") }} BBD |
+| 5 | {{ y5_customers | default("450") }} | ${{ y5_acv | default("80,000") }} | ${{ y5_subscription | default("36,000,000") }} BBD |
+
+#### Professional Services Revenue ({{ services_pct | default("15%") }})
+| Year | Services Revenue | % of Subscription |
+|------|------------------|-------------------|
+| 1 | ${{ y1_services | default("265,000") }} BBD | {{ y1_services_pct | default("18%") }} |
+| 2 | ${{ y2_services | default("730,000") }} BBD | {{ y2_services_pct | default("15%") }} |
+| 3 | ${{ y3_services | default("1,400,000") }} BBD | {{ y3_services_pct | default("13%") }} |
+| 4 | ${{ y4_services | default("2,475,000") }} BBD | {{ y4_services_pct | default("12%") }} |
+| 5 | ${{ y5_services | default("3,960,000") }} BBD | {{ y5_services_pct | default("11%") }} |
+
+#### Total Revenue Summary
+| Year | Subscription | Services | **Total Revenue** | Growth Rate |
+|------|-------------|----------|-------------------|-------------|
+| 1 | ${{ y1_subscription | default("1,500,000") }} | ${{ y1_services | default("265,000") }} | **${{ y1_total | default("1,765,000") }} BBD** | - |
+| 2 | ${{ y2_subscription | default("4,875,000") }} | ${{ y2_services | default("730,000") }} | **${{ y2_total | default("5,605,000") }} BBD** | {{ y2_growth | default("217%") }} |
+| 3 | ${{ y3_subscription | default("10,500,000") }} | ${{ y3_services | default("1,400,000") }} | **${{ y3_total | default("11,900,000") }} BBD** | {{ y3_growth | default("112%") }} |
+| 4 | ${{ y4_subscription | default("20,625,000") }} | ${{ y4_services | default("2,475,000") }} | **${{ y4_total | default("23,100,000") }} BBD** | {{ y4_growth | default("94%") }} |
+| 5 | ${{ y5_subscription | default("36,000,000") }} | ${{ y5_services | default("3,960,000") }} | **${{ y5_total | default("39,960,000") }} BBD** | {{ y5_growth | default("73%") }} |
+
+## Cost Structure
+
+### Cost of Goods Sold (COGS)
+**Cloud Infrastructure**: {{ cloud_pct | default("8%") }} of revenue
+**Customer Support**: {{ support_pct | default("12%") }} of revenue  
+**Professional Services Delivery**: {{ delivery_pct | default("60%") }} of services revenue
+
+| Year | Cloud Infrastructure | Customer Support | Services Delivery | **Total COGS** | Gross Margin |
+|------|---------------------|------------------|-------------------|----------------|--------------|
+| 1 | ${{ y1_cloud | default("141,000") }} | ${{ y1_support | default("212,000") }} | ${{ y1_delivery | default("159,000") }} | **${{ y1_cogs | default("512,000") }} BBD** | {{ y1_gross_margin | default("71%") }} |
+| 2 | ${{ y2_cloud | default("448,000") }} | ${{ y2_support | default("673,000") }} | ${{ y2_delivery | default("438,000") }} | **${{ y2_cogs | default("1,559,000") }} BBD** | {{ y2_gross_margin | default("72%") }} |
+| 3 | ${{ y3_cloud | default("952,000") }} | ${{ y3_support | default("1,428,000") }} | ${{ y3_delivery | default("840,000") }} | **${{ y3_cogs | default("3,220,000") }} BBD** | {{ y3_gross_margin | default("73%") }} |
+| 4 | ${{ y4_cloud | default("1,848,000") }} | ${{ y4_support | default("2,772,000") }} | ${{ y4_delivery | default("1,485,000") }} | **${{ y4_cogs | default("6,105,000") }} BBD** | {{ y4_gross_margin | default("74%") }} |
+| 5 | ${{ y5_cloud | default("3,197,000") }} | ${{ y5_support | default("4,795,000") }} | ${{ y5_delivery | default("2,376,000") }} | **${{ y5_cogs | default("10,368,000") }} BBD** | {{ y5_gross_margin | default("74%") }} |
+
+### Operating Expenses
+
+#### Sales & Marketing
+**Sales Team**: {{ sales_team_pct | default("25%") }} of revenue
+**Marketing**: {{ marketing_pct | default("15%") }} of revenue
+**Customer Acquisition**: Blended CAC of ${{ blended_cac | default("8,000") }} BBD per customer
+
+| Year | Sales Team | Marketing | **Total S&M** | % of Revenue |
+|------|------------|-----------|---------------|--------------|
+| 1 | ${{ y1_sales | default("441,000") }} | ${{ y1_marketing | default("265,000") }} | **${{ y1_sm | default("706,000") }} BBD** | {{ y1_sm_pct | default("40%") }} |
+| 2 | ${{ y2_sales | default("1,401,000") }} | ${{ y2_marketing | default("841,000") }} | **${{ y2_sm | default("2,242,000") }} BBD** | {{ y2_sm_pct | default("40%") }} |
+| 3 | ${{ y3_sales | default("2,975,000") }} | ${{ y3_marketing | default("1,785,000") }} | **${{ y3_sm | default("4,760,000") }} BBD** | {{ y3_sm_pct | default("40%") }} |
+| 4 | ${{ y4_sales | default("5,775,000") }} | ${{ y4_marketing | default("3,465,000") }} | **${{ y4_sm | default("9,240,000") }} BBD** | {{ y4_sm_pct | default("40%") }} |
+| 5 | ${{ y5_sales | default("9,990,000") }} | ${{ y5_marketing | default("5,994,000") }} | **${{ y5_sm | default("15,984,000") }} BBD** | {{ y5_sm_pct | default("40%") }} |
+
+#### Research & Development
+**Engineering Team**: {{ rd_pct | default("20%") }} of revenue
+
+| Year | R&D Investment | % of Revenue |
+|------|----------------|--------------|
+| 1 | ${{ y1_rd | default("353,000") }} BBD | {{ y1_rd_pct | default("20%") }} |
+| 2 | ${{ y2_rd | default("1,121,000") }} BBD | {{ y2_rd_pct | default("20%") }} |
+| 3 | ${{ y3_rd | default("2,380,000") }} BBD | {{ y3_rd_pct | default("20%") }} |
+| 4 | ${{ y4_rd | default("4,620,000") }} BBD | {{ y4_rd_pct | default("20%") }} |
+| 5 | ${{ y5_rd | default("7,992,000") }} BBD | {{ y5_rd_pct | default("20%") }} |
+
+#### General & Administrative
+**G&A Expenses**: {{ ga_pct | default("10%") }} of revenue
+
+| Year | G&A Expenses | % of Revenue |
+|------|--------------|--------------|
+| 1 | ${{ y1_ga | default("177,000") }} BBD | {{ y1_ga_pct | default("10%") }} |
+| 2 | ${{ y2_ga | default("561,000") }} BBD | {{ y2_ga_pct | default("10%") }} |
+| 3 | ${{ y3_ga | default("1,190,000") }} BBD | {{ y3_ga_pct | default("10%") }} |
+| 4 | ${{ y4_ga | default("2,310,000") }} BBD | {{ y4_ga_pct | default("10%") }} |
+| 5 | ${{ y5_ga | default("3,996,000") }} BBD | {{ y5_ga_pct | default("10%") }} |
+
+## Profitability Analysis
+
+### Income Statement Summary
+| Year | Revenue | COGS | Gross Profit | S&M | R&D | G&A | **EBITDA** | EBITDA Margin |
+|------|---------|------|--------------|-----|-----|-----|------------|---------------|
+| 1 | ${{ y1_total | default("1,765,000") }} | ${{ y1_cogs | default("512,000") }} | ${{ y1_gross | default("1,253,000") }} | ${{ y1_sm | default("706,000") }} | ${{ y1_rd | default("353,000") }} | ${{ y1_ga | default("177,000") }} | **${{ y1_ebitda | default("17,000") }} BBD** | {{ y1_ebitda_margin | default("1%") }} |
+| 2 | ${{ y2_total | default("5,605,000") }} | ${{ y2_cogs | default("1,559,000") }} | ${{ y2_gross | default("4,046,000") }} | ${{ y2_sm | default("2,242,000") }} | ${{ y2_rd | default("1,121,000") }} | ${{ y2_ga | default("561,000") }} | **${{ y2_ebitda | default("122,000") }} BBD** | {{ y2_ebitda_margin | default("2%") }} |
+| 3 | ${{ y3_total | default("11,900,000") }} | ${{ y3_cogs | default("3,220,000") }} | ${{ y3_gross | default("8,680,000") }} | ${{ y3_sm | default("4,760,000") }} | ${{ y3_rd | default("2,380,000") }} | ${{ y3_ga | default("1,190,000") }} | **${{ y3_ebitda | default("350,000") }} BBD** | {{ y3_ebitda_margin | default("3%") }} |
+| 4 | ${{ y4_total | default("23,100,000") }} | ${{ y4_cogs | default("6,105,000") }} | ${{ y4_gross | default("16,995,000") }} | ${{ y4_sm | default("9,240,000") }} | ${{ y4_rd | default("4,620,000") }} | ${{ y4_ga | default("2,310,000") }} | **${{ y4_ebitda | default("825,000") }} BBD** | {{ y4_ebitda_margin | default("4%") }} |
+| 5 | ${{ y5_total | default("39,960,000") }} | ${{ y5_cogs | default("10,368,000") }} | ${{ y5_gross | default("29,592,000") }} | ${{ y5_sm | default("15,984,000") }} | ${{ y5_rd | default("7,992,000") }} | ${{ y5_ga | default("3,996,000") }} | **${{ y5_ebitda | default("1,620,000") }} BBD** | {{ y5_ebitda_margin | default("4%") }} |
+
+## Key Financial Metrics
+
+### Unit Economics
+**Customer Lifetime Value (LTV)**: ${{ ltv | default("420,000") }} BBD
+**Customer Acquisition Cost (CAC)**: ${{ cac | default("8,000") }} BBD
+**LTV:CAC Ratio**: {{ ltv_cac_ratio | default("52.5:1") }}
+**CAC Payback Period**: {{ payback_period | default("1.5") }} months
+**Gross Revenue Retention**: {{ grr | default("95%") }}
+**Net Revenue Retention**: {{ nrr | default("115%") }}
+
+### Growth Metrics
+**Annual Recurring Revenue (ARR) Growth**:
+- Year 2: {{ y2_arr_growth | default("225%") }}
+- Year 3: {{ y3_arr_growth | default("115%") }}
+- Year 4: {{ y4_arr_growth | default("96%") }}
+- Year 5: {{ y5_arr_growth | default("75%") }}
+
+**Customer Growth Rate**:
+- Year 2: {{ y2_customer_growth | default("200%") }}
+- Year 3: {{ y3_customer_growth | default("100%") }}
+- Year 4: {{ y4_customer_growth | default("83%") }}
+- Year 5: {{ y5_customer_growth | default("64%") }}
+
+### Efficiency Metrics
+**Magic Number** (Net New ARR / S&M Spend):
+- Year 2: {{ y2_magic_number | default("1.5") }}
+- Year 3: {{ y3_magic_number | default("1.2") }}
+- Year 4: {{ y4_magic_number | default("1.1") }}
+- Year 5: {{ y5_magic_number | default("1.0") }}
+
+**Revenue per Employee**:
+- Year 1: ${{ y1_rev_per_employee | default("147,000") }} BBD ({{ y1_employees | default("12") }} employees)
+- Year 3: ${{ y3_rev_per_employee | default("238,000") }} BBD ({{ y3_employees | default("50") }} employees)
+- Year 5: ${{ y5_rev_per_employee | default("333,000") }} BBD ({{ y5_employees | default("120") }} employees)
+
+## Capital Requirements
+
+### Funding Needs
+**Initial Capital**: ${{ initial_capital | default("750,000") }} BBD
+**Series A**: ${{ series_a | default("5,000,000") }} BBD (End of Year 1)
+**Series B**: ${{ series_b | default("15,000,000") }} BBD (End of Year 3)
+
+### Cash Flow Analysis
+| Year | Starting Cash | Operating Cash Flow | Funding Raised | **Ending Cash** |
+|------|---------------|-------------------|----------------|-----------------|
+| 1 | ${{ y1_start_cash | default("750,000") }} | ${{ y1_ocf | default("-1,200,000") }} | ${{ y1_funding | default("5,000,000") }} | **${{ y1_end_cash | default("4,550,000") }} BBD** |
+| 2 | ${{ y2_start_cash | default("4,550,000") }} | ${{ y2_ocf | default("-2,800,000") }} | ${{ y2_funding | default("0") }} | **${{ y2_end_cash | default("1,750,000") }} BBD** |
+| 3 | ${{ y3_start_cash | default("1,750,000") }} | ${{ y3_ocf | default("-1,500,000") }} | ${{ y3_funding | default("15,000,000") }} | **${{ y3_end_cash | default("15,250,000") }} BBD** |
+| 4 | ${{ y4_start_cash | default("15,250,000") }} | ${{ y4_ocf | default("2,200,000") }} | ${{ y4_funding | default("0") }} | **${{ y4_end_cash | default("17,450,000") }} BBD** |
+| 5 | ${{ y5_start_cash | default("17,450,000") }} | ${{ y5_ocf | default("8,500,000") }} | ${{ y5_funding | default("0") }} | **${{ y5_end_cash | default("25,950,000") }} BBD** |
+
+## Sensitivity Analysis
+
+### Revenue Sensitivity
+**Optimistic Scenario** (+20% customer acquisition):
+- Year 5 Revenue: ${{ optimistic_y5_revenue | default("47,952,000") }} BBD
+- Year 5 EBITDA: ${{ optimistic_y5_ebitda | default("3,240,000") }} BBD
+
+**Pessimistic Scenario** (-20% customer acquisition):
+- Year 5 Revenue: ${{ pessimistic_y5_revenue | default("31,968,000") }} BBD  
+- Year 5 EBITDA: ${{ pessimistic_y5_ebitda | default("0") }} BBD
+
+### Key Assumptions Risk Analysis
+**High Risk Assumptions**:
+- {{ risk_assumption_1 | default("Customer acquisition rates in competitive market") }}
+- {{ risk_assumption_2 | default("Average contract value growth sustainability") }}
+- {{ risk_assumption_3 | default("Customer retention in economic downturn") }}
+
+**Medium Risk Assumptions**:
+- {{ medium_risk_1 | default("Sales and marketing efficiency maintenance") }}
+- {{ medium_risk_2 | default("Technology development costs") }}
+- {{ medium_risk_3 | default("Competitive pricing pressure") }}
+
+## Return Analysis
+
+### Investor Returns
+**Total Investment**: ${{ total_investment | default("20,750,000") }} BBD
+**Year 5 Valuation** (10x revenue): ${{ y5_valuation | default("399,600,000") }} BBD
+**Investor ROI**: {{ investor_roi | default("19.3x") }}
+**IRR**: {{ irr | default("85%") }}
+
+### Break-Even Analysis
+**Revenue Break-Even**: Month {{ revenue_breakeven | default("18") }}
+**Cash Flow Positive**: Month {{ cashflow_positive | default("42") }}
+**EBITDA Positive**: Month {{ ebitda_positive | default("15") }}
+
+## Key Success Factors
+1. **{{ success_factor_1 | default("Achieve target customer acquisition rates") }}**
+2. **{{ success_factor_2 | default("Maintain high customer retention and expansion") }}**
+3. **{{ success_factor_3 | default("Control customer acquisition costs") }}**
+4. **{{ success_factor_4 | default("Scale operations efficiently") }}**
+5. **{{ success_factor_5 | default("Secure follow-on funding as planned") }}**

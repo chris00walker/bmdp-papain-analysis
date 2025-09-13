@@ -1,0 +1,18 @@
+---
+phase: 00_initiation
+artifact: 32_assumption_backlog.csv
+methodology_tags:
+  - TBI
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Business: { business_slug }
+assumption_id,category,assumption_statement,confidence_level,priority,test_method,success_criteria,owner,status,test_results,evidence_source
+ASM001,Customer Problem,"{{ assumption_1 | default("Target customers experience significant pain with manual processes") }}","{{ conf_1 | default("Medium") }}","{{ priority_1 | default("High") }}","{{ test_1 | default("Customer interviews") }}","{{ success_1 | default("70% of customers confirm problem") }}","{{ owner_1 | default("Market Analyst") }}","{{ status_1 | default("Tested") }}","{{ result_1 | default("85% confirmed - VALIDATED") }}","{{ evidence_1 | default("Customer interview log") }}"
+ASM002,Market Size,"{{ assumption_2 | default("Mid-market segment represents $500M opportunity") }}","{{ conf_2 | default("Low") }}","{{ priority_2 | default("High") }}","{{ test_2 | default("Secondary research") }}","{{ success_2 | default("Market size within 25% of estimate") }}","{{ owner_2 | default("Market Analyst") }}","{{ status_2 | default("Tested") }}","{{ result_2 | default("$400M market - PARTIALLY VALIDATED") }}","{{ evidence_2 | default("Industry reports") }}"
+ASM003,Solution Fit,"{{ assumption_3 | default("Our solution approach resonates with target customers") }}","{{ conf_3 | default("Medium") }}","{{ priority_3 | default("High") }}","{{ test_3 | default("Solution concept testing") }}","{{ success_3 | default("60% positive reception") }}","{{ owner_3 | default("Business Expert") }}","{{ status_3 | default("Tested") }}","{{ result_3 | default("70% positive - VALIDATED") }}","{{ evidence_3 | default("Interview feedback") }}"
+ASM004,Pricing,"{{ assumption_4 | default("Customers willing to pay $50K+ annually") }}","{{ conf_4 | default("Low") }}","{{ priority_4 | default("Medium") }}","{{ test_4 | default("Pricing research") }}","{{ success_4 | default("50% willing to pay target price") }}","{{ owner_4 | default("Financial Analyst") }}","{{ status_4 | default("Tested") }}","{{ result_4 | default("40% willing - CHALLENGED") }}","{{ evidence_4 | default("Price sensitivity analysis") }}"
+ASM005,Competition,"{{ assumption_5 | default("Limited direct competition in mid-market") }}","{{ conf_5 | default("Medium") }}","{{ priority_5 | default("Medium") }}","{{ test_5 | default("Competitive analysis") }}","{{ success_5 | default("Fewer than 5 direct competitors") }}","{{ owner_5 | default("Market Analyst") }}","{{ status_5 | default("Tested") }}","{{ result_5 | default("3 direct competitors - VALIDATED") }}","{{ evidence_5 | default("Competitor research") }}"
+ASM006,Implementation,"{{ assumption_6 | default("Customers can implement solution within 3 months") }}","{{ conf_6 | default("High") }}","{{ priority_6 | default("Medium") }}","{{ test_6 | default("Implementation planning") }}","{{ success_6 | default("80% feasible within timeline") }}","{{ owner_6 | default("Business Expert") }}","{{ status_6 | default("In Progress") }}","{{ result_6 | default("TBD") }}","{{ evidence_6 | default("TBD") }}"
+ASM007,Technology,"{{ assumption_7 | default("Current technology stack can support solution") }}","{{ conf_7 | default("High") }}","{{ priority_7 | default("Low") }}","{{ test_7 | default("Technical feasibility study") }}","{{ success_7 | default("No major technical blockers") }}","{{ owner_7 | default("Technical Lead") }}","{{ status_7 | default("Not Started") }}","{{ result_7 | default("TBD") }}","{{ evidence_7 | default("TBD") }}"

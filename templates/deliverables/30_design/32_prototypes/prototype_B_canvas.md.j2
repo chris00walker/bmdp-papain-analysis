@@ -1,0 +1,41 @@
+---
+phase: 30_design
+artifact: prototype_B_canvas.md
+methodology_tags:
+  - BMG
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Business Model Canvas - {{ business_slug|title }} Prototype B: {{ prototype_b_name | default("Vertical Industry Solution") }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Customer Segments
+{{ prototype_b_customer_segments | default("Healthcare organizations (hospitals, clinics, medical practices) requiring specialized workflow automation and compliance with industry regulations") }}
+
+## Value Propositions
+{{ prototype_b_value_propositions | default("Industry-specific workflow automation platform with built-in compliance features, healthcare integrations, and deep domain expertise for medical practice optimization") }}
+
+## Channels
+{{ prototype_b_channels | default("Healthcare industry events, medical association partnerships, specialized sales team, healthcare technology consultants, and referrals from existing customers") }}
+
+## Customer Relationships
+{{ prototype_b_customer_relationships | default("White-glove onboarding, dedicated healthcare success managers, compliance consulting, industry-specific training, and peer user communities") }}
+
+## Revenue Streams
+{{ prototype_b_revenue_streams | default("Premium SaaS subscriptions ($2000-$5000), compliance consulting services, custom healthcare integrations, and ongoing regulatory update services") }}
+
+## Key Resources
+{{ prototype_b_key_resources | default("Healthcare domain expertise, compliance certifications, specialized integration platform, healthcare partnerships, regulatory knowledge base, and industry reputation") }}
+
+## Key Activities
+{{ prototype_b_key_activities | default("Healthcare-specific platform development, compliance management, specialized customer success, regulatory monitoring, and industry relationship building") }}
+
+## Key Partnerships
+{{ prototype_b_key_partnerships | default("Healthcare technology vendors (Epic, Cerner), medical associations, compliance consultants, healthcare cloud providers, and regulatory bodies") }}
+
+## Cost Structure
+{{ prototype_b_cost_structure | default("Specialized engineering (45%), compliance and regulatory (20%), healthcare sales and marketing (20%), customer success (10%), operations (5%)") }}

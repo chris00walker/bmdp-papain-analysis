@@ -1,0 +1,321 @@
+---
+phase: 00_initiation
+artifact: 38_risk_mitigation.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Risk Mitigation Plan - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Risk Management Framework
+This document outlines identified risks for {{ business_title }} and corresponding mitigation strategies to ensure successful business model implementation and operation.
+
+## Risk Assessment Matrix
+
+### Risk Categories
+- **Strategic Risks**: Market, competitive, and business model risks
+- **Operational Risks**: Execution, technology, and organizational risks  
+- **Financial Risks**: Funding, cash flow, and profitability risks
+- **External Risks**: Economic, regulatory, and industry risks
+
+### Risk Scoring
+- **Probability**: Low (1-3), Medium (4-6), High (7-9)
+- **Impact**: Low (1-3), Medium (4-6), High (7-9)
+- **Risk Score**: Probability × Impact
+
+## Strategic Risks
+
+### Risk S1: Competitive Response
+**Description**: {{ risk_s1_desc | default("Established competitors rapidly match our capabilities or launch competing solutions") }}
+**Probability**: {{ risk_s1_prob | default("7 (High)") }}
+**Impact**: {{ risk_s1_impact | default("8 (High)") }}
+**Risk Score**: {{ risk_s1_score | default("56") }}
+
+**Mitigation Strategies**:
+- {{ s1_mitigation_1 | default("Build strong IP portfolio and technical moats") }}
+- {{ s1_mitigation_2 | default("Focus on customer relationships and switching costs") }}
+- {{ s1_mitigation_3 | default("Continuous innovation and feature development") }}
+- {{ s1_mitigation_4 | default("Strategic partnerships for market protection") }}
+
+**Early Warning Indicators**:
+- {{ s1_indicator_1 | default("Competitor announcements of similar features") }}
+- {{ s1_indicator_2 | default("Loss of competitive deals to established players") }}
+- {{ s1_indicator_3 | default("Pricing pressure in target market") }}
+
+**Contingency Plans**:
+- {{ s1_contingency_1 | default("Pivot to niche specialization if broad market becomes contested") }}
+- {{ s1_contingency_2 | default("Accelerate M&A discussions if competitive pressure intensifies") }}
+
+### Risk S2: Market Adoption Slower Than Expected
+**Description**: {{ risk_s2_desc | default("Target customers adopt solution more slowly than projected, impacting growth") }}
+**Probability**: {{ risk_s2_prob | default("6 (Medium)") }}
+**Impact**: {{ risk_s2_impact | default("7 (High)") }}
+**Risk Score**: {{ risk_s2_score | default("42") }}
+
+**Mitigation Strategies**:
+- {{ s2_mitigation_1 | default("Robust customer validation and pilot programs") }}
+- {{ s2_mitigation_2 | default("Strong customer success and onboarding programs") }}
+- {{ s2_mitigation_3 | default("Market education and thought leadership") }}
+- {{ s2_mitigation_4 | default("Flexible pricing and contract terms") }}
+
+**Early Warning Indicators**:
+- {{ s2_indicator_1 | default("Low trial-to-paid conversion rates") }}
+- {{ s2_indicator_2 | default("Extended sales cycles beyond projections") }}
+- {{ s2_indicator_3 | default("High customer churn in early months") }}
+
+**Contingency Plans**:
+- {{ s2_contingency_1 | default("Adjust target market or customer segments") }}
+- {{ s2_contingency_2 | default("Modify product positioning and messaging") }}
+
+### Risk S3: Business Model Viability Issues
+**Description**: {{ risk_s3_desc | default("Unit economics or revenue model fails to achieve sustainable profitability") }}
+**Probability**: {{ risk_s3_prob | default("5 (Medium)") }}
+**Impact**: {{ risk_s3_impact | default("9 (High)") }}
+**Risk Score**: {{ risk_s3_score | default("45") }}
+
+**Mitigation Strategies**:
+- {{ s3_mitigation_1 | default("Continuous monitoring of unit economics and key metrics") }}
+- {{ s3_mitigation_2 | default("Flexible pricing model testing and optimization") }}
+- {{ s3_mitigation_3 | default("Multiple revenue stream development") }}
+- {{ s3_mitigation_4 | default("Cost structure optimization and efficiency improvements") }}
+
+**Early Warning Indicators**:
+- {{ s3_indicator_1 | default("CAC payback period exceeding 18 months") }}
+- {{ s3_indicator_2 | default("Gross margins below 70%") }}
+- {{ s3_indicator_3 | default("Customer lifetime value declining") }}
+
+**Contingency Plans**:
+- {{ s3_contingency_1 | default("Pivot to higher-margin business model") }}
+- {{ s3_contingency_2 | default("Focus on most profitable customer segments") }}
+
+## Operational Risks
+
+### Risk O1: Key Talent Acquisition and Retention
+**Description**: {{ risk_o1_desc | default("Difficulty hiring or retaining critical team members, especially technical talent") }}
+**Probability**: {{ risk_o1_prob | default("6 (Medium)") }}
+**Impact**: {{ risk_o1_impact | default("7 (High)") }}
+**Risk Score**: {{ risk_o1_score | default("42") }}
+
+**Mitigation Strategies**:
+- {{ o1_mitigation_1 | default("Competitive compensation packages with equity upside") }}
+- {{ o1_mitigation_2 | default("Strong company culture and mission alignment") }}
+- {{ o1_mitigation_3 | default("Professional development and growth opportunities") }}
+- {{ o1_mitigation_4 | default("Cross-training and knowledge documentation") }}
+
+**Early Warning Indicators**:
+- {{ o1_indicator_1 | default("High employee turnover rates") }}
+- {{ o1_indicator_2 | default("Difficulty filling open positions") }}
+- {{ o1_indicator_3 | default("Declining employee satisfaction scores") }}
+
+**Contingency Plans**:
+- {{ o1_contingency_1 | default("Outsource non-core functions if needed") }}
+- {{ o1_contingency_2 | default("Accelerate automation to reduce dependency") }}
+
+### Risk O2: Technology Development Complexity
+**Description**: {{ risk_o2_desc | default("Technical challenges or delays in product development impact timeline and quality") }}
+**Probability**: {{ risk_o2_prob | default("5 (Medium)") }}
+**Impact**: {{ risk_o2_impact | default("6 (Medium)") }}
+**Risk Score**: {{ risk_o2_score | default("30") }}
+
+**Mitigation Strategies**:
+- {{ o2_mitigation_1 | default("Experienced technical leadership and architecture review") }}
+- {{ o2_mitigation_2 | default("Agile development methodology with regular sprints") }}
+- {{ o2_mitigation_3 | default("Proven technology stack and third-party components") }}
+- {{ o2_mitigation_4 | default("Regular code reviews and quality assurance") }}
+
+**Early Warning Indicators**:
+- {{ o2_indicator_1 | default("Development milestones consistently missed") }}
+- {{ o2_indicator_2 | default("Increasing technical debt and bugs") }}
+- {{ o2_indicator_3 | default("System performance issues under load") }}
+
+**Contingency Plans**:
+- {{ o2_contingency_1 | default("Bring in external technical consultants") }}
+- {{ o2_contingency_2 | default("Simplify feature set to meet timeline") }}
+
+### Risk O3: Operational Scaling Challenges
+**Description**: {{ risk_o3_desc | default("Inability to scale operations efficiently as customer base grows") }}
+**Probability**: {{ risk_o3_prob | default("4 (Medium)") }}
+**Impact**: {{ risk_o3_impact | default("6 (Medium)") }}
+**Risk Score**: {{ risk_o3_score | default("24") }}
+
+**Mitigation Strategies**:
+- {{ o3_mitigation_1 | default("Scalable technology architecture and infrastructure") }}
+- {{ o3_mitigation_2 | default("Automated processes and self-service capabilities") }}
+- {{ o3_mitigation_3 | default("Standardized procedures and documentation") }}
+- {{ o3_mitigation_4 | default("Proactive capacity planning and monitoring") }}
+
+**Early Warning Indicators**:
+- {{ o3_indicator_1 | default("Customer support response times increasing") }}
+- {{ o3_indicator_2 | default("System performance degrading with growth") }}
+- {{ o3_indicator_3 | default("Employee productivity declining") }}
+
+**Contingency Plans**:
+- {{ o3_contingency_1 | default("Temporary hiring surge to handle growth") }}
+- {{ o3_contingency_2 | default("Outsource non-core operations") }}
+
+## Financial Risks
+
+### Risk F1: Funding Availability
+**Description**: {{ risk_f1_desc | default("Difficulty raising follow-on funding rounds or unfavorable terms") }}
+**Probability**: {{ risk_f1_prob | default("4 (Medium)") }}
+**Impact**: {{ risk_f1_impact | default("8 (High)") }}
+**Risk Score**: {{ risk_f1_score | default("32") }}
+
+**Mitigation Strategies**:
+- {{ f1_mitigation_1 | default("Strong financial performance and metrics tracking") }}
+- {{ f1_mitigation_2 | default("Multiple investor relationships and options") }}
+- {{ f1_mitigation_3 | default("Conservative cash management and runway extension") }}
+- {{ f1_mitigation_4 | default("Revenue-based financing alternatives") }}
+
+**Early Warning Indicators**:
+- {{ f1_indicator_1 | default("Investor market conditions deteriorating") }}
+- {{ f1_indicator_2 | default("Missing key performance milestones") }}
+- {{ f1_indicator_3 | default("Burn rate exceeding projections") }}
+
+**Contingency Plans**:
+- {{ f1_contingency_1 | default("Reduce burn rate and extend runway") }}
+- {{ f1_contingency_2 | default("Explore strategic partnerships or acquisition") }}
+
+### Risk F2: Customer Acquisition Cost Escalation
+**Description**: {{ risk_f2_desc | default("Customer acquisition costs increase beyond sustainable levels") }}
+**Probability**: {{ risk_f2_prob | default("5 (Medium)") }}
+**Impact**: {{ risk_f2_impact | default("7 (High)") }}
+**Risk Score**: {{ risk_f2_score | default("35") }}
+
+**Mitigation Strategies**:
+- {{ f2_mitigation_1 | default("Diversified customer acquisition channels") }}
+- {{ f2_mitigation_2 | default("Strong referral and word-of-mouth programs") }}
+- {{ f2_mitigation_3 | default("Product-led growth and viral features") }}
+- {{ f2_mitigation_4 | default("Continuous optimization of sales and marketing") }}
+
+**Early Warning Indicators**:
+- {{ f2_indicator_1 | default("CAC increasing faster than LTV") }}
+- {{ f2_indicator_2 | default("Marketing channel efficiency declining") }}
+- {{ f2_indicator_3 | default("Sales cycle length increasing") }}
+
+**Contingency Plans**:
+- {{ f2_contingency_1 | default("Shift to lower-cost acquisition channels") }}
+- {{ f2_contingency_2 | default("Increase pricing to improve unit economics") }}
+
+### Risk F3: Cash Flow Management
+**Description**: {{ risk_f3_desc | default("Cash flow timing mismatches or unexpected expenses impact operations") }}
+**Probability**: {{ risk_f3_prob | default("3 (Low)") }}
+**Impact**: {{ risk_f3_impact | default("6 (Medium)") }}
+**Risk Score**: {{ risk_f3_score | default("18") }}
+
+**Mitigation Strategies**:
+- {{ f3_mitigation_1 | default("Detailed cash flow forecasting and monitoring") }}
+- {{ f3_mitigation_2 | default("Maintain cash reserves for unexpected expenses") }}
+- {{ f3_mitigation_3 | default("Flexible payment terms and collection processes") }}
+- {{ f3_mitigation_4 | default("Line of credit or bridge financing options") }}
+
+**Early Warning Indicators**:
+- {{ f3_indicator_1 | default("Cash runway below 12 months") }}
+- {{ f3_indicator_2 | default("Customer payment delays increasing") }}
+- {{ f3_indicator_3 | default("Unexpected major expenses") }}
+
+**Contingency Plans**:
+- {{ f3_contingency_1 | default("Accelerate collections and reduce expenses") }}
+- {{ f3_contingency_2 | default("Draw on credit facilities or emergency funding") }}
+
+## External Risks
+
+### Risk E1: Economic Downturn Impact
+**Description**: {{ risk_e1_desc | default("Economic recession reduces customer spending on new technology solutions") }}
+**Probability**: {{ risk_e1_prob | default("4 (Medium)") }}
+**Impact**: {{ risk_e1_impact | default("7 (High)") }}
+**Risk Score**: {{ risk_e1_score | default("28") }}
+
+**Mitigation Strategies**:
+- {{ e1_mitigation_1 | default("Focus on ROI-positive solutions with clear value") }}
+- {{ e1_mitigation_2 | default("Flexible pricing and contract terms") }}
+- {{ e1_mitigation_3 | default("Target recession-resistant customer segments") }}
+- {{ e1_mitigation_4 | default("Cost structure flexibility for downturn scenarios") }}
+
+**Early Warning Indicators**:
+- {{ e1_indicator_1 | default("Economic indicators showing recession risk") }}
+- {{ e1_indicator_2 | default("Customer budget freezes or delays") }}
+- {{ e1_indicator_3 | default("Increased price sensitivity in market") }}
+
+**Contingency Plans**:
+- {{ e1_contingency_1 | default("Reduce costs and extend runway") }}
+- {{ e1_contingency_2 | default("Focus on essential-use cases and cost savings") }}
+
+### Risk E2: Regulatory Changes
+**Description**: {{ risk_e2_desc | default("New regulations impact target industries or business model") }}
+**Probability**: {{ risk_e2_prob | default("3 (Low)") }}
+**Impact**: {{ risk_e2_impact | default("5 (Medium)") }}
+**Risk Score**: {{ risk_e2_score | default("15") }}
+
+**Mitigation Strategies**:
+- {{ e2_mitigation_1 | default("Active monitoring of regulatory developments") }}
+- {{ e2_mitigation_2 | default("Compliance-first product design") }}
+- {{ e2_mitigation_3 | default("Legal counsel and regulatory expertise") }}
+- {{ e2_mitigation_4 | default("Flexible architecture for compliance changes") }}
+
+**Early Warning Indicators**:
+- {{ e2_indicator_1 | default("Proposed regulations affecting target industries") }}
+- {{ e2_indicator_2 | default("Industry compliance requirements changing") }}
+- {{ e2_indicator_3 | default("Customer concerns about regulatory compliance") }}
+
+**Contingency Plans**:
+- {{ e2_contingency_1 | default("Rapid compliance feature development") }}
+- {{ e2_contingency_2 | default("Partner with compliance specialists") }}
+
+## Risk Monitoring and Response
+
+### Risk Monitoring Framework
+**Monthly Risk Review**: {{ monthly_review | default("Executive team reviews risk dashboard and indicators") }}
+**Quarterly Risk Assessment**: {{ quarterly_assessment | default("Comprehensive risk evaluation and mitigation updates") }}
+**Annual Risk Strategy**: {{ annual_strategy | default("Strategic risk planning and framework updates") }}
+
+### Risk Response Protocols
+**Green Status** (Risk Score 1-20): {{ green_protocol | default("Monitor indicators, maintain standard mitigation") }}
+**Yellow Status** (Risk Score 21-40): {{ yellow_protocol | default("Enhanced monitoring, activate additional mitigation") }}
+**Red Status** (Risk Score 41+): {{ red_protocol | default("Immediate action required, implement contingency plans") }}
+
+### Escalation Procedures
+**Level 1**: {{ escalation_1 | default("Department head manages risk within standard procedures") }}
+**Level 2**: {{ escalation_2 | default("Executive team involvement for cross-functional risks") }}
+**Level 3**: {{ escalation_3 | default("Board notification for company-threatening risks") }}
+
+## Risk Dashboard Metrics
+
+### Key Risk Indicators (KRIs)
+**Strategic KRIs**:
+- {{ strategic_kri_1 | default("Competitive win/loss ratio") }}
+- {{ strategic_kri_2 | default("Customer acquisition velocity") }}
+- {{ strategic_kri_3 | default("Market share trends") }}
+
+**Operational KRIs**:
+- {{ operational_kri_1 | default("Employee turnover rate") }}
+- {{ operational_kri_2 | default("System uptime and performance") }}
+- {{ operational_kri_3 | default("Customer satisfaction scores") }}
+
+**Financial KRIs**:
+- {{ financial_kri_1 | default("Cash runway months") }}
+- {{ financial_kri_2 | default("Customer acquisition cost trends") }}
+- {{ financial_kri_3 | default("Monthly recurring revenue growth") }}
+
+### Risk Reporting
+**Weekly Dashboard**: {{ weekly_dashboard | default("Key metrics and indicator status") }}
+**Monthly Report**: {{ monthly_report | default("Detailed risk analysis and mitigation status") }}
+**Quarterly Review**: {{ quarterly_review | default("Comprehensive risk assessment and strategy updates") }}
+
+## Success Metrics
+
+### Risk Management Success Indicators
+- **Risk Identification**: {{ risk_id_success | default("95% of material risks identified before impact") }}
+- **Mitigation Effectiveness**: {{ mitigation_success | default("80% of risks successfully mitigated") }}
+- **Response Time**: {{ response_success | default("Average 48-hour response to high-risk events") }}
+- **Cost of Risk**: {{ cost_success | default("Risk-related costs < 5% of revenue") }}
+
+### Continuous Improvement
+- Regular risk assessment methodology updates
+- Lessons learned integration from risk events
+- Industry best practice adoption
+- Stakeholder feedback incorporation

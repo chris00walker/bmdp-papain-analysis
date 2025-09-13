@@ -1,0 +1,226 @@
+---
+phase: 00_initiation
+artifact: 34_selection_criteria.md
+methodology_tags:
+  - BMG
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Business Model Selection Criteria - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Selection Framework Overview
+This document defines the weighted criteria and methodology for selecting the optimal business model from the alternatives generated during Phase 3 ideation and prototyping.
+
+## Selection Criteria and Weights
+
+### 1. Market Attractiveness (25%)
+**Definition**: The appeal and viability of the target market for the business model
+
+**Sub-criteria**:
+- **Market Size** (8%): Total addressable market and growth potential
+- **Customer Demand** (7%): Validated customer need and willingness to pay
+- **Market Timing** (5%): Favorability of current market conditions
+- **Competitive Intensity** (5%): Level of competition and market saturation
+
+**Scoring Guidelines**:
+- **9-10**: Large, growing market with strong validated demand
+- **7-8**: Significant market with good demand validation
+- **5-6**: Moderate market size with some demand validation
+- **3-4**: Small market or weak demand validation
+- **1-2**: Very limited market or no demand validation
+
+### 2. Financial Viability (25%)
+**Definition**: The business model's ability to generate sustainable profits and returns
+
+**Sub-criteria**:
+- **Revenue Potential** (8%): Projected revenue scale and growth
+- **Profitability** (7%): Path to profitability and margin sustainability
+- **Capital Efficiency** (5%): Return on invested capital
+- **Unit Economics** (5%): Customer lifetime value vs. acquisition cost
+
+**Scoring Guidelines**:
+- **9-10**: Strong revenue potential with clear path to high profitability
+- **7-8**: Good revenue potential with reasonable profitability
+- **5-6**: Moderate revenue with uncertain profitability timeline
+- **3-4**: Limited revenue potential or poor unit economics
+- **1-2**: Weak financial model or unsustainable economics
+
+### 3. Competitive Advantage (20%)
+**Definition**: Sustainable differentiation and defensibility against competitors
+
+**Sub-criteria**:
+- **Differentiation** (7%): Unique value proposition and positioning
+- **Barriers to Entry** (6%): Difficulty for competitors to replicate
+- **Network Effects** (4%): Increasing value with scale
+- **Switching Costs** (3%): Customer lock-in and retention factors
+
+**Scoring Guidelines**:
+- **9-10**: Strong, sustainable competitive moats
+- **7-8**: Clear differentiation with some defensibility
+- **5-6**: Moderate differentiation, limited barriers
+- **3-4**: Weak differentiation, easy to replicate
+- **1-2**: No clear competitive advantage
+
+### 4. Execution Feasibility (20%)
+**Definition**: The team's ability to successfully execute the business model
+
+**Sub-criteria**:
+- **Team Capabilities** (7%): Skills and experience alignment
+- **Technology Complexity** (5%): Technical development requirements
+- **Go-to-Market Fit** (4%): Sales and marketing execution requirements
+- **Operational Scaling** (4%): Ability to scale operations efficiently
+
+**Scoring Guidelines**:
+- **9-10**: Excellent team fit with straightforward execution
+- **7-8**: Good team capabilities with manageable complexity
+- **5-6**: Adequate capabilities with some execution challenges
+- **3-4**: Significant capability gaps or execution risks
+- **1-2**: Poor team fit or extremely complex execution
+
+### 5. Strategic Fit (10%)
+**Definition**: Alignment with company vision, values, and long-term strategy
+
+**Sub-criteria**:
+- **Vision Alignment** (4%): Consistency with company mission and vision
+- **Growth Potential** (3%): Long-term scalability and expansion opportunities
+- **Exit Strategy** (3%): Attractiveness to potential acquirers or IPO
+
+**Scoring Guidelines**:
+- **9-10**: Perfect alignment with strong growth and exit potential
+- **7-8**: Good alignment with solid growth prospects
+- **5-6**: Reasonable fit with moderate growth potential
+- **3-4**: Some misalignment or limited growth prospects
+- **1-2**: Poor strategic fit or limited long-term potential
+
+## Evaluation Process
+
+### Step 1: Individual Scoring
+Each core team member independently scores each business model alternative against all criteria using the 1-10 scale.
+
+**Scoring Team**:
+- {{ team_lead | default("Team Lead") }}: Overall business perspective
+- {{ business_expert | default("Business Expert") }}: Market and business model expertise
+- {{ market_analyst | default("Market Analyst") }}: Market and competitive analysis
+- {{ financial_analyst | default("Financial Analyst") }}: Financial viability assessment
+- {{ technical_lead | default("Technical Lead") }}: Technology and execution feasibility
+
+### Step 2: Score Normalization
+Individual scores are averaged across team members for each criterion to create normalized scores.
+
+### Step 3: Weighted Calculation
+Normalized scores are multiplied by criterion weights to calculate weighted scores for each business model.
+
+### Step 4: Sensitivity Analysis
+Test different weighting scenarios to understand robustness of rankings:
+- **Conservative Scenario**: Higher weight on execution feasibility and financial viability
+- **Aggressive Scenario**: Higher weight on market attractiveness and competitive advantage
+- **Balanced Scenario**: Equal weighting across all major criteria
+
+## Decision Matrix Template
+
+| Business Model | Market Attractiveness (25%) | Financial Viability (25%) | Competitive Advantage (20%) | Execution Feasibility (20%) | Strategic Fit (10%) | **Total Score** |
+|----------------|----------------------------|--------------------------|----------------------------|----------------------------|-------------------|-----------------|
+| {{ model_1_name | default("Premium Integration Platform") }} | {{ model_1_market_score | default("TBD") }} | {{ model_1_financial_score | default("TBD") }} | {{ model_1_competitive_score | default("TBD") }} | {{ model_1_execution_score | default("TBD") }} | {{ model_1_strategic_score | default("TBD") }} | {{ model_1_total_score | default("TBD") }} |
+| {{ model_2_name | default("Workflow SaaS") }} | {{ model_2_market_score | default("TBD") }} | {{ model_2_financial_score | default("TBD") }} | {{ model_2_competitive_score | default("TBD") }} | {{ model_2_execution_score | default("TBD") }} | {{ model_2_strategic_score | default("TBD") }} | {{ model_2_total_score | default("TBD") }} |
+| {{ model_3_name | default("Compliance Platform") }} | {{ model_3_market_score | default("TBD") }} | {{ model_3_financial_score | default("TBD") }} | {{ model_3_competitive_score | default("TBD") }} | {{ model_3_execution_score | default("TBD") }} | {{ model_3_strategic_score | default("TBD") }} | {{ model_3_total_score | default("TBD") }} |
+
+## Qualitative Assessment Factors
+
+### Risk Assessment
+Beyond quantitative scoring, consider qualitative risk factors:
+- **Market Risk**: Economic conditions, regulatory changes
+- **Competitive Risk**: Established player response, new entrants
+- **Execution Risk**: Team scaling, technology development
+- **Financial Risk**: Funding requirements, cash flow timing
+
+### Stakeholder Preferences
+Weight stakeholder input appropriately:
+- **Customer Feedback**: Direct input from target customers
+- **Investor Perspective**: Funding and return expectations
+- **Team Motivation**: Alignment with team interests and capabilities
+- **Advisory Input**: Expert recommendations and concerns
+
+### Timing Considerations
+Evaluate market timing factors:
+- **Market Readiness**: Customer adoption timeline
+- **Competitive Window**: Time advantage before competition
+- **Technology Maturity**: Readiness of enabling technologies
+- **Economic Conditions**: Favorability of business environment
+
+## Decision Rules
+
+### Minimum Thresholds
+Business models must meet minimum scores to be considered:
+- **Overall Score**: ≥ {{ min_overall_score | default("7.0") }}
+- **Financial Viability**: ≥ {{ min_financial_score | default("6.0") }}
+- **Execution Feasibility**: ≥ {{ min_execution_score | default("6.0") }}
+
+### Tie-Breaking Criteria
+If models score within {{ tie_threshold | default("0.3") }} points:
+1. **Customer Validation Strength**: Preference for stronger customer validation
+2. **Team Passion**: Consider team enthusiasm and motivation
+3. **Risk Profile**: Prefer lower-risk options if scores are equal
+4. **Capital Efficiency**: Favor models requiring less capital
+
+### Consensus Requirements
+Final selection requires:
+- **Quantitative Analysis**: Completed scoring matrix
+- **Stakeholder Alignment**: ≥{{ consensus_threshold | default("80%") }} team agreement
+- **Customer Validation**: Positive feedback from ≥{{ customer_threshold | default("70%") }} of customers
+- **Expert Endorsement**: Support from ≥{{ expert_threshold | default("2") }} external experts
+
+## Documentation Requirements
+
+### Scoring Documentation
+For each business model, document:
+- Individual team member scores with rationale
+- Supporting evidence for each criterion score
+- Key assumptions underlying the evaluation
+- Sensitivity analysis results
+
+### Decision Rationale
+Final selection documentation must include:
+- Quantitative scoring summary and analysis
+- Qualitative factors influencing decision
+- Stakeholder input summary and resolution
+- Risk assessment and mitigation strategies
+- Implementation readiness assessment
+
+## Review and Validation
+
+### Internal Review Process
+1. **Team Scoring Session**: Collaborative scoring with discussion
+2. **Cross-Check Analysis**: Verify scoring consistency and logic
+3. **Sensitivity Testing**: Test different weighting scenarios
+4. **Stakeholder Review**: Present analysis to key stakeholders
+
+### External Validation
+1. **Customer Validation**: Confirm selection with target customers
+2. **Expert Review**: Seek input from industry experts and advisors
+3. **Competitive Analysis**: Validate assumptions about competitive position
+4. **Financial Modeling**: Stress-test financial projections
+
+## Success Metrics for Selected Model
+
+### Short-term Validation (3-6 months)
+- **Customer Acquisition**: Meet early customer targets
+- **Product-Market Fit**: Achieve target customer satisfaction scores
+- **Financial Performance**: Meet revenue and cost projections
+- **Team Execution**: Deliver on implementation milestones
+
+### Medium-term Success (12-18 months)
+- **Market Traction**: Achieve market share and growth targets
+- **Competitive Position**: Maintain differentiation and market position
+- **Financial Sustainability**: Achieve positive unit economics
+- **Operational Scaling**: Successfully scale team and operations
+
+### Long-term Viability (24+ months)
+- **Market Leadership**: Establish strong market position
+- **Financial Returns**: Deliver target returns to investors
+- **Strategic Value**: Create acquisition or IPO opportunity
+- **Sustainable Growth**: Demonstrate long-term growth potential

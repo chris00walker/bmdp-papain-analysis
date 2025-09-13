@@ -1,0 +1,201 @@
+---
+phase: 00_initiation
+artifact: 38_progress_demo.md
+rule_targets:
+  - structure-validation
+  - auto-generation
+---
+# Phase 2 Progress Demo - {{ business_slug|title }} {{ business_title }}
+
+
+## Business Context
+**Business**: {{ business_slug|title }}
+
+## Demo Overview
+**Date**: {{ demo_date | default("End of Phase 2") }}
+**Audience**: {{ demo_audience | default("Project Sponsor, Executive Team, Core Team") }}
+**Duration**: {{ demo_duration | default("60 minutes") }}
+**Format**: {{ demo_format | default("Presentation with Q&A session") }}
+
+## Demo Agenda
+
+### Opening (5 minutes)
+**Phase 2 Objectives Recap**:
+- Validate market opportunity through research
+- Understand customer needs and competitive landscape
+- Develop insights to inform business model design
+
+**Key Questions Addressed**:
+- Is there a viable market for {{ business_title }}?
+- Who are our target customers and what do they need?
+- How do we differentiate from competitors?
+- What business model will succeed?
+
+### Market Validation Results (15 minutes)
+
+#### Market Size and Opportunity
+**Total Addressable Market**: {{ tam_size | default("$X billion globally") }}
+**Serviceable Addressable Market**: {{ sam_size | default("$Y million in target regions") }}
+**Market Growth Rate**: {{ growth_rate | default("Z% CAGR") }}
+
+**Key Market Drivers**:
+- {{ market_driver_1 | default("Digital transformation initiatives") }}
+- {{ market_driver_2 | default("Regulatory compliance requirements") }}
+- {{ market_driver_3 | default("Operational efficiency demands") }}
+
+#### Customer Validation Summary
+**Interviews Completed**: {{ interview_count | default("12 customer interviews") }}
+**Problem Validation**: {{ problem_validation | default("85% confirmed target problems") }}
+**Solution Interest**: {{ solution_interest | default("70% expressed strong interest") }}
+
+**Customer Segments Validated**:
+- {{ segment_1_name | default("Enterprise") }}: {{ seg_1_validation | default("Strong fit, security-focused") }}
+- {{ segment_2_name | default("Mid-Market") }}: {{ seg_2_validation | default("Highest opportunity, underserved") }}
+- {{ segment_3_name | default("Small Business") }}: {{ seg_3_validation | default("Price-sensitive, simplicity-focused") }}
+
+### Competitive Analysis (10 minutes)
+
+#### Competitive Landscape
+**Direct Competitors**: {{ direct_competitors | default("3 established players") }}
+**Indirect Competitors**: {{ indirect_competitors | default("Multiple point solutions and manual processes") }}
+
+**Competitive Positioning**:
+- **{{ competitor_1 | default("Market Leader") }}**: {{ comp_1_position | default("Enterprise-focused, feature-rich but complex") }}
+- **{{ competitor_2 | default("Innovator") }}**: {{ comp_2_position | default("Modern UX but limited enterprise features") }}
+- **Our Position**: {{ our_position | default("Mid-market focus with enterprise security") }}
+
+#### Competitive Advantages Identified
+1. **{{ advantage_1 | default("Integration-first architecture") }}**
+2. **{{ advantage_2 | default("Mid-market specialization") }}**
+3. **{{ advantage_3 | default("Rapid implementation methodology") }}**
+
+### Customer Insights (15 minutes)
+
+#### Key Customer Insights
+**Insight 1**: {{ customer_insight_1 | default("Integration complexity is #1 barrier to adoption") }}
+- Evidence: {{ insight_1_evidence | default("78% of customers cite integration as top concern") }}
+- Implication: {{ insight_1_implication | default("Must prioritize pre-built integrations and APIs") }}
+
+**Insight 2**: {{ customer_insight_2 | default("Mid-market segment feels underserved") }}
+- Evidence: {{ insight_2_evidence | default("60% use suboptimal solutions due to lack of alternatives") }}
+- Implication: {{ insight_2_implication | default("Clear market opportunity for targeted solution") }}
+
+**Insight 3**: {{ customer_insight_3 | default("ROI requirements are becoming stricter") }}
+- Evidence: {{ insight_3_evidence | default("Average payback requirement is 12-18 months") }}
+- Implication: {{ insight_3_implication | default("Must demonstrate clear value proposition and metrics") }}
+
+#### Jobs-to-be-Done Analysis
+**Primary Job**: {{ primary_job | default("Improve operational efficiency while maintaining compliance") }}
+**Success Metrics**: {{ job_success_metrics | default("Time savings, error reduction, audit readiness") }}
+**Current Satisfaction**: {{ current_satisfaction | default("Low - significant opportunity for improvement") }}
+
+### Business Model Insights (10 minutes)
+
+#### Pricing Research Results
+**Willingness to Pay**:
+- {{ segment_1_name | default("Enterprise") }}: {{ seg_1_wtp | default("$100K-500K annually") }}
+- {{ segment_2_name | default("Mid-Market") }}: {{ seg_2_wtp | default("$25K-100K annually") }}
+- {{ segment_3_name | default("Small Business") }}: {{ seg_3_wtp | default("$5K-25K annually") }}
+
+**Preferred Pricing Models**:
+1. {{ pricing_pref_1 | default("Annual subscription (55%)") }}
+2. {{ pricing_pref_2 | default("Monthly subscription (30%)") }}
+3. {{ pricing_pref_3 | default("Usage-based (15%)") }}
+
+#### Revenue Model Validation
+**Primary Revenue Streams**:
+- {{ revenue_stream_1 | default("SaaS subscriptions (80%)") }}
+- {{ revenue_stream_2 | default("Professional services (15%)") }}
+- {{ revenue_stream_3 | default("Premium features (5%)") }}
+
+### Risk Assessment (5 minutes)
+
+#### Key Risks Identified
+**High Risk**: {{ high_risk | default("Competitive response from established players") }}
+- Mitigation: {{ high_risk_mitigation | default("Speed to market and customer lock-in") }}
+
+**Medium Risk**: {{ medium_risk | default("Customer acquisition costs higher than projected") }}
+- Mitigation: {{ medium_risk_mitigation | default("Referral programs and product-led growth") }}
+
+**Low Risk**: {{ low_risk | default("Technology development challenges") }}
+- Mitigation: {{ low_risk_mitigation | default("Experienced team and proven technologies") }}
+
+## Phase 2 Deliverables Summary
+
+### Research Deliverables Completed
+- [x] Research plan and questions
+- [x] Customer interviews ({{ completed_interviews | default("12") }} completed)
+- [x] Competitive analysis and positioning
+- [x] Market sizing and opportunity assessment
+- [x] Customer insights and empathy maps
+- [x] Jobs-to-be-Done analysis
+- [x] Expert panel validation
+- [x] Bias check and quality assurance
+
+### Key Artifacts
+- **Customer Interview Log**: {{ interview_log_summary | default("Detailed insights from target segments") }}
+- **Competitive Landscape**: {{ competitive_summary | default("Comprehensive analysis of 5+ competitors") }}
+- **Market Research**: {{ market_summary | default("Secondary research validating opportunity") }}
+- **Customer Personas**: {{ persona_summary | default("3 detailed personas with empathy maps") }}
+
+## Phase 3 Readiness Assessment
+
+### Go/No-Go Criteria Review
+- [x] **Market Opportunity Validated**: {{ market_validation | default("Strong market demand confirmed") }}
+- [x] **Customer Problems Confirmed**: {{ problem_confirmation | default("85% validation rate achieved") }}
+- [x] **Competitive Position Clear**: {{ competitive_clarity | default("Differentiation strategy defined") }}
+- [x] **Business Model Viable**: {{ model_viability | default("Revenue model and pricing validated") }}
+
+### Phase 3 Preparation
+**Design Brief Ready**: {{ design_brief_status | default("Key insights compiled for business model design") }}
+**Team Alignment**: {{ team_alignment | default("All stakeholders aligned on findings and direction") }}
+**Resource Availability**: {{ resource_status | default("Team and budget confirmed for Phase 3") }}
+
+## Stakeholder Q&A Session (15 minutes)
+
+### Anticipated Questions and Responses
+
+**Q: How confident are we in the market size estimates?**
+A: {{ market_confidence | default("High confidence based on multiple sources and expert validation") }}
+
+**Q: What's our biggest competitive threat?**
+A: {{ biggest_threat | default("Established players potentially matching our capabilities") }}
+
+**Q: Are customers really willing to pay our target prices?**
+A: {{ pricing_confidence | default("Moderate confidence - needs further validation in Phase 3") }}
+
+**Q: What could cause this business model to fail?**
+A: {{ failure_risks | default("Customer acquisition costs, competitive response, execution challenges") }}
+
+## Next Steps and Phase 3 Preview
+
+### Immediate Actions
+1. **{{ action_1 | default("Compile design brief with all Phase 2 insights") }}**
+2. **{{ action_2 | default("Finalize Phase 3 team and timeline") }}**
+3. **{{ action_3 | default("Begin preliminary business model ideation") }}**
+
+### Phase 3 Objectives
+- Generate multiple business model alternatives
+- Test and validate preferred model with customers
+- Develop detailed financial projections
+- Create implementation roadmap and recommendations
+
+### Success Metrics for Phase 3
+- **{{ phase3_metric_1 | default("≥3 business model alternatives developed") }}**
+- **{{ phase3_metric_2 | default("Selected model validated with ≥5 customers") }}**
+- **{{ phase3_metric_3 | default("Financial projections show positive ROI") }}**
+- **{{ phase3_metric_4 | default("Implementation plan with clear next steps") }}**
+
+## Appendix: Supporting Data
+
+### Interview Summary Statistics
+- **Total Interviews**: {{ total_interviews | default("12") }}
+- **Average Duration**: {{ avg_duration | default("52 minutes") }}
+- **Response Rate**: {{ response_rate | default("75%") }}
+- **Segment Distribution**: {{ segment_distribution | default("Enterprise: 4, Mid-Market: 5, SMB: 3") }}
+
+### Research Quality Metrics
+- **Sample Representativeness**: {{ sample_quality | default("Good coverage of target segments") }}
+- **Data Reliability**: {{ data_reliability | default("High - multiple validation sources") }}
+- **Bias Controls**: {{ bias_controls | default("Comprehensive bias check completed") }}
+- **Expert Validation**: {{ expert_validation | default("4 experts reviewed findings") }}
