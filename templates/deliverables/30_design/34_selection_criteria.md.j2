@@ -1,14 +1,58 @@
 ---
-phase: 00_initiation
+phase: 30_design
 artifact: 34_selection_criteria.md
 methodology_tags:
-  - BMG
+- BMG
+- VPD
+- TBI
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+- bmg-validation
+- tbi-validation
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Business Model Selection Criteria - {{ business_slug|title }} {{ business_title }}
 
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
+
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
 
 ## Business Context
 **Business**: {{ business_slug|title }}
@@ -125,9 +169,9 @@ Test different weighting scenarios to understand robustness of rankings:
 
 | Business Model | Market Attractiveness (25%) | Financial Viability (25%) | Competitive Advantage (20%) | Execution Feasibility (20%) | Strategic Fit (10%) | **Total Score** |
 |----------------|----------------------------|--------------------------|----------------------------|----------------------------|-------------------|-----------------|
-| {{ model_1_name | default("Premium Integration Platform") }} | {{ model_1_market_score | default("TBD") }} | {{ model_1_financial_score | default("TBD") }} | {{ model_1_competitive_score | default("TBD") }} | {{ model_1_execution_score | default("TBD") }} | {{ model_1_strategic_score | default("TBD") }} | {{ model_1_total_score | default("TBD") }} |
-| {{ model_2_name | default("Workflow SaaS") }} | {{ model_2_market_score | default("TBD") }} | {{ model_2_financial_score | default("TBD") }} | {{ model_2_competitive_score | default("TBD") }} | {{ model_2_execution_score | default("TBD") }} | {{ model_2_strategic_score | default("TBD") }} | {{ model_2_total_score | default("TBD") }} |
-| {{ model_3_name | default("Compliance Platform") }} | {{ model_3_market_score | default("TBD") }} | {{ model_3_financial_score | default("TBD") }} | {{ model_3_competitive_score | default("TBD") }} | {{ model_3_execution_score | default("TBD") }} | {{ model_3_strategic_score | default("TBD") }} | {{ model_3_total_score | default("TBD") }} |
+| {{ model_1_name | default("Premium Integration Platform") }} | {{ model_1_market_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_1_financial_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_1_competitive_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_1_execution_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_1_strategic_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_1_total_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
+| {{ model_2_name | default("Workflow SaaS") }} | {{ model_2_market_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_2_financial_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_2_competitive_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_2_execution_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_2_strategic_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_2_total_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
+| {{ model_3_name | default("Compliance Platform") }} | {{ model_3_market_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_3_financial_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_3_competitive_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_3_execution_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_3_strategic_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ model_3_total_score | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
 
 ## Qualitative Assessment Factors
 
@@ -224,3 +268,59 @@ Final selection documentation must include:
 - **Financial Returns**: Deliver target returns to investors
 - **Strategic Value**: Create acquisition or IPO opportunity
 - **Sustainable Growth**: Demonstrate long-term growth potential
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

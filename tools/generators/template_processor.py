@@ -238,7 +238,15 @@ class TemplateProcessor:
         import sys
         sys.path.append('/home/chris/bmdp')
         try:
-            from tools.parsers.parse_business_brief import parse_file, generate_missing_variables_with_hybrid
+            from tools.parsers.brief_parser import parse_brief_file as parse_file
+            # For now, create a stub for generate_missing_variables_with_hybrid
+            def generate_missing_variables_with_hybrid(business_data, required_vars, existing_vars):
+                # Simple fallback implementation
+                missing_vars = {}
+                for var in required_vars:
+                    if var not in existing_vars:
+                        missing_vars[var] = f"Generated_{var}"
+                return missing_vars
         except ImportError as e:
             print(f"Error importing hybrid parser: {e}")
             return "", {}

@@ -21,7 +21,7 @@ Runs complete analysis across all businesses and generates automated portfolio c
 echo "Validating all businesses..."
 for business in grower processor distributor marketplace; do
   echo "Validating $business..."
-  python tools/validate.py --business $business
+  python tools/validators/validate.py --business $business
   if [ $? -ne 0 ]; then
     echo "❌ Validation failed for $business"
     exit 1
@@ -36,7 +36,7 @@ echo "✅ All businesses validated"
 echo "Computing financial metrics..."
 for business in grower processor distributor marketplace; do
   echo "Computing financials for $business..."
-  python tools/compute_financials.py --business $business --capital-min 300000 --capital-max 1000000 --discount-rate 0.15
+  python tools/calculators/compute_financials.py --business $business --capital-min 300000 --capital-max 1000000 --discount-rate 0.15
   if [ $? -ne 0 ]; then
     echo "❌ Financial computation failed for $business"
     exit 1
@@ -51,9 +51,9 @@ echo "✅ All financial metrics computed"
 echo "Assessing methodology compliance..."
 for business in grower processor distributor marketplace; do
   echo "Scoring methodology for $business..."
-  python tools/osterwalder_pigneur_scorer.py --business $business --format summary
+  python tools/validators/osterwalder_pigneur_scorer.py --business $business --format summary
   echo "Running content-level methodology checks for $business..."
-  python tools/content_validator.py --business $business --analysis semantic --mode all --format summary
+  python tools/validators/content_validator.py --business $business --analysis semantic --mode all --format summary
 done
 echo "✅ Methodology compliance assessment completed"
 ```
@@ -61,7 +61,7 @@ echo "✅ Methodology compliance assessment completed"
 ### 4. Generate portfolio rollup
 
 ```bash
-python tools/portfolio_rollup.py --businesses grower processor distributor marketplace
+python tools/calculators/portfolio_rollup.py --businesses grower processor distributor marketplace
 ```
 
 **Expected output**:

@@ -2,76 +2,99 @@
 phase: 00_initiation
 artifact: 03_readiness_assessment.md
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
-# Readiness Assessment - Grower Business
 
-## Business Model Readiness Score: 10/10
 
-### Assessment Criteria
+# Readiness Assessment - Grower  Business
 
-#### Value Proposition Clarity (3/3)
-- **Score**: 3 - Comprehensive and detailed
-- **Evidence**: Cultivate reliable, traceable crude papain (dried latex) from Barbados.. Meet food-grade or feed-grade specifications at competitive cost.. Differentiate on transparency, local quality, and consistent potency.
-- **Strengths**: Clear value delivery, premium positioning, reliable supply focus
+## Business Context
+## Industry Context
+**Industry**: Agriculture and Cultivation
+**Market Dynamics**: Based on Agriculture and Cultivation, key considerations include regulatory requirements, competitive landscape, and market maturity.
 
-#### Customer Segments Definition (2/2)  
-- **Score**: 2 - Well-defined segments
-- **Evidence**: International enzyme processors (India, US, EU).. Regional food processors seeking local papain.
-- **Strengths**: Multiple distinct segments identified with specific use cases
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
 
-#### Key Activities Specification (2/2)
-- **Score**: 2 - Comprehensive activity set
-- **Evidence**: Orchard establishment (baseline 15 ha, scalable).. Latex tapping, drying, packaging.. Quality control (potency, microbial).
-- **Strengths**: Complete value chain activities from cultivation to delivery
+## Industry Context
+**Industry**: Agriculture and Cultivation
+**Market Dynamics**: Based on Agriculture and Cultivation, key considerations include regulatory requirements, competitive landscape, and market maturity.
 
-#### Revenue Streams Clarity (2/2)
-- **Score**: 2 - Clear revenue model
-- **Evidence**: Crude papain sales: pricing to be validated through market research (see Phase 2 outputs).. By-products (papaya fruit, seeds).
-- **Strengths**: Direct sales model with premium pricing strategy
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
 
-#### Capital Structure Viability (1/1)
-- **Score**: 1 - Adequate capital range
-- **Evidence**: $750000 - $2500000 BBD capital bounds
-- **Strengths**: Sufficient range for agricultural and processing operations
+**Business**: Grower
 
-## Organizational Readiness
+## Organizational Readiness Score: __/10
 
-### Sponsor Commitment
-- **Status**: ✅ Confirmed
-- **Evidence**: Primary venture sponsor identified with decision authority
-- **Risk Level**: Low
+### Risk Assessment
+| Risk | Impact | Probability | Mitigation |
+|------|--------|-------------|------------|
+| [Risk 1] | [H/M/L] | [H/M/L] | [Strategy] |
+| [Risk 2] | [H/M/L] | [H/M/L] | [Strategy] |
 
-### Resource Availability  
-- **Status**: ✅ Adequate
-- **Budget**: $1589375 BBD BMDP budget allocated
-- **Team**: 4-person core team structure defined
-- **Risk Level**: Low
+### Stakeholder Analysis
+| Stakeholder | Interest Level | Influence | Engagement Strategy |
+|-------------|----------------|-----------|-------------------|
+| [Name/Role] | [H/M/L] | [H/M/L] | [Strategy] |
 
-### Market Timing
-- **Status**: ✅ Favorable
-- **Evidence**: Growing demand for natural enzymes in pharmaceutical and food industries
-- **Risk Level**: Medium (seasonal production considerations)
+### Go/No-Go Decision
+- [ ] Sponsor commitment confirmed
+- [ ] Resources secured
+- [ ] No critical blocking risks
+- [ ] Readiness score ≥ 7/10
 
-## Risk Assessment
+**Decision**: [ ] GO / [ ] NO-GO
 
-### Critical Risks Identified
-1. **Weather Dependency (Drought, Hurricanes).**: High impact, High probability
+**Rationale**: [Explain decision]
 
-### Mitigation Readiness
-Comprehensive risk management addressing: Weather dependency (drought, hurricanes)., Market price volatility., Regulatory changes affecting organic certification. ---
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
 
-## Recommendation
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector
 
-**PROCEED TO PHASE 1 (MOBILIZE)**
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
 
-### Rationale
-- Exceptional business model clarity (10/10 score)
-
-### Prerequisites for Phase 1
-- [ ] Sponsor formal commitment obtained
-
-### Success Probability: HIGH (85%)
-
-The grower business demonstrates strong readiness across all assessment criteria with a comprehensive business model foundation ready for detailed mobilization planning.
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector

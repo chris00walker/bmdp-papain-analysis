@@ -2,38 +2,136 @@
 phase: 00_initiation
 artifact: 00_sponsor_brief.md
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Sponsor Brief - {{ business_slug|title }} {{ business_title }}
 
 ## Sponsor Information
 - **Business**: {{ business_title }}
-- **Brief Source**: {{ brief_file | default("TBD") }}
+- **Brief Source**: {{ brief_file | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 - **Sponsor Commitment**: Business model design for {{ business_title }} venture
 - **Decision Authority**: Primary sponsor for venture development
 
 ## Business Context
-**Value Proposition**: {{ value_proposition | default("TBD") }}
+## Industry Context
+{% if INDUSTRY_CONTEXT %}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Market Dynamics**: Based on {{ INDUSTRY_CONTEXT }}, key considerations include regulatory requirements, competitive landscape, and market maturity.
+{% else %}
+**Industry**: To be determined based on business model analysis
+{% endif %}
 
-**Target Market**: {{ customer_segments | default("TBD") }}
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
+## Industry Context
+{% if INDUSTRY_CONTEXT %}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Market Dynamics**: Based on {{ INDUSTRY_CONTEXT }}, key considerations include regulatory requirements, competitive landscape, and market maturity.
+{% else %}
+**Industry**: To be determined based on business model analysis
+{% endif %}
+
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
+**Value Proposition**: {{ value_proposition | default("Derive from {{ VALUE_PROPOSITION }} for {{ CUSTOMER_SEGMENTS }}") }}
+
+**Target Market**: {{ customer_segments | default("Identify based on {{ INDUSTRY_CONTEXT }} market analysis") }}
 
 ## Initial Scope
-- **Core Activities**: {{ key_activities | default("TBD") }}
-- **Key Resources**: {{ key_resources | default("TBD") }}
-- **Revenue Model**: {{ revenue_streams | default("TBD") }}
-- **Capital Requirements**: ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD
+- **Core Activities**: {{ key_activities | default("Aligned with {{ KEY_ACTIVITIES }}") }}
+- **Key Resources**: {{ key_resources | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- **Revenue Model**: {{ revenue_streams | default("Based on {{ REVENUE_STREAMS }} model") }}
+- **Capital Requirements**: ${{ capital_min | default("Generate based on {{ BUSINESS_TYPE }} context") }} - ${{ capital_max | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
 - **Timeline**: {{ horizon_years | default("5") }}-year financial horizon
 
 ## Critical Constraints
-- **Market Risks**: {{ key_risks | default("TBD") }}
-- **Financial**: Discount rate {{ discount_rate | default("15") }}%, capital bounds ${{ capital_min | default("TBD") }}-${{ capital_max | default("TBD") }} BBD
+- **Market Risks**: {{ key_risks | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- **Financial**: Discount rate {{ discount_rate | default("15") }}%, capital bounds ${{ capital_min | default("Generate based on {{ BUSINESS_TYPE }} context") }}-${{ capital_max | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
 
 ## Success Criteria
 - [ ] Viable business model within capital bounds
 - [ ] Competitive market positioning established
 - [ ] Risk mitigation strategies defined
 - [ ] Sustainable revenue streams validated
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
 
 ## Next Steps
 - [ ] Confirm sponsor commitment to venture

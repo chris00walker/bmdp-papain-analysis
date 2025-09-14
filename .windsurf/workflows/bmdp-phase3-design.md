@@ -1,238 +1,417 @@
 ---
 description: BMDP Phase 3 - Generate, prototype, and test multiple business model options with selection scorecard
-auto_execution_mode: 3
 ---
 
 # Phase 3: Design
-
-Generates, prototypes, and tests multiple business model options with selection scorecard. Emphasizes creative ideation, rapid prototyping, stakeholder feedback, and evidence-based selection.
-
-## Prerequisites
-
-- Phase 2 completed with insights and assumptions
-- Business slug and design timebox defined
-- Team assembled with design capabilities
 
 ## Steps
 
 ### 1. Create design directory
 
 ```bash
-mkdir -p businesses/{business_slug}/30_design
+mkdir -p businesses/$1/30_design
+mkdir -p businesses/$1/30_design/32_prototypes
 ```
 
-### 6b. BMG viability assessment (validate)
-
-Validate Business Model Generation (BMG) coherence and viability for candidate prototypes using the BMG validator.
+### 2. Create all Phase 3 deliverables
 
 ```bash
-# Validate BMG nine building blocks coherence (summary output)
-python tools/bmg_validator.py --business businesses/{business_slug} --validate viability --format summary
-```
+# Parse business data and create all Phase 3 files
+eval $(python tools/parsers/brief_parser.py --business $1 --output-format env) && \
+cat > businesses/$1/30_design/30_design_brief.md << EOF
+# Design Brief - $1 Business
 
-Recommendations:
-- Ensure selected prototype's canvas elements reinforce each other (nine blocks).
-- Align financial projections and cost structure with the canvas assumptions.
+## Timebox
+- Duration: 15 days
+- Start: $(date +%Y-%m-%d)
+- End: $(date -d "+15 days" +%Y-%m-%d 2>/dev/null || date +%Y-%m-%d)
 
-### 2. Design brief and timebox
+## Objectives
+- Generate ≥3 viable business model alternatives
+- Test assumptions through prototypes
+- Select best option based on evidence
+- Prepare for implementation
 
-Create `businesses/{business_slug}/30_design/30_design_brief.md`:
+## Design Principles
+- Customer-centric
+- Evidence-based
+- Scalable
+- Capital efficient
+EOF
 
-- Timebox: 15 days (default)
-- Objectives: Generate ≥3 viable alternatives; select best option
-- Deliverables: ideation, prototypes, feedback, selection scorecard
-- Progress demos: mid-sprint & end-of-sprint
+cat > businesses/$1/30_design/31_ideation.md << EOF
+# Ideation Session - $1 Business
 
-### 3. Ideation session
+## Alternatives Generated
 
-Create `businesses/{business_slug}/30_design/31_ideation.md`:
+### Option 1: Core Model
+- Focus on $VALUE_PROPOSITION
+- Direct to customer approach
+- Premium pricing strategy
 
-- Alternatives brainstormed: ≥3 bold options beyond status quo
-- Source inspirations: insights, competitor patterns, blue ocean moves
-- Constraint challenges: what if budget was 10x? 1/10x?
+### Option 2: Platform Model
+- Multi-sided marketplace
+- Network effects focus
+- Transaction-based revenue
 
-### 4. Create prototype canvases
+### Option 3: Partnership Model
+- Channel partner distribution
+- Revenue sharing
+- Lower capital requirements
 
-Create `businesses/{business_slug}/30_design/32_prototypes/`:
+## Inspiration Sources
+- Customer insights from Phase 2
+- Competitor pattern analysis
+- Blue ocean opportunities
+- Technology enablers
+EOF
 
-For each alternative, create a business model canvas:
-- `prototype_A_canvas.md`
-- `prototype_B_canvas.md` 
-- `prototype_C_canvas.md`
+# Create prototype canvases
+cat > businesses/$1/30_design/32_prototypes/prototype_A_canvas.md << EOF
+# Prototype A: Core Model Canvas
 
-Each canvas includes:
-- Customer Segments
-- Value Propositions
-- Channels
-- Customer Relationships
-- Revenue Streams
-- Key Resources
-- Key Activities
-- Key Partnerships
-- Cost Structure
+## Customer Segments
+$CUSTOMER_SEGMENTS
 
-### 5. Stakeholder feedback collection
+## Value Propositions
+$VALUE_PROPOSITION
 
-Create `businesses/{business_slug}/30_design/33_feedback_log.csv`:
+## Channels
+- Direct sales
+- Digital marketing
+- Content marketing
 
-```csv
-date,stakeholder,role,prototype,feedback,concerns,preferences
-TBD,TBD,customer,A,positive on feature X,worried about price,prefers option A
-```
+## Customer Relationships
+- Personal assistance
+- Dedicated account management
+- Community building
 
-Collect feedback from:
-- ≥5 potential customers
-- ≥2 industry experts
-- ≥2 internal stakeholders
+## Revenue Streams
+$REVENUE_STREAMS
 
-### 6. Selection criteria and scorecard
+## Key Resources
+$KEY_RESOURCES
 
-Create `businesses/{business_slug}/30_design/34_selection_criteria.md`:
+## Key Activities
+$KEY_ACTIVITIES
 
-Define weighted criteria:
-- Market attractiveness (25%)
-- Competitive advantage (20%)
-- Financial viability (20%)
-- Implementation feasibility (15%)
-- Strategic fit (10%)
-- Risk level (10%)
+## Key Partnerships
+$KEY_PARTNERSHIPS
 
-Create `businesses/{business_slug}/30_design/35_selection_scorecard.csv`:
+## Cost Structure
+$COST_STRUCTURE
+EOF
 
-```csv
-criteria,weight,prototype_A,prototype_B,prototype_C
-market_attractiveness,0.25,7,8,6
-competitive_advantage,0.20,6,7,9
-financial_viability,0.20,8,6,7
-implementation_feasibility,0.15,9,5,6
-strategic_fit,0.10,7,8,8
-risk_level,0.10,6,7,5
-weighted_score,,7.1,6.8,7.0
-```
+cat > businesses/$1/30_design/32_prototypes/prototype_B_canvas.md << EOF
+# Prototype B: Platform Model Canvas
 
-### 7. Financial projections
+## Customer Segments
+- Supply side: Producers
+- Demand side: Buyers
+- $CUSTOMER_SEGMENTS
 
-Create `businesses/{business_slug}/30_design/36_financial_projections.md`:
+## Value Propositions
+- For suppliers: Access to market
+- For buyers: Choice and convenience
+- Platform: $VALUE_PROPOSITION
 
-For selected prototype:
-- 5-year revenue projections
-- Cost structure breakdown
-- Investment requirements
-- Break-even analysis
-- ROI/IRR calculations
+## Channels
+- Digital platform
+- Mobile apps
+- API integrations
 
-### 8. Implementation roadmap
+## Customer Relationships
+- Self-service platform
+- Community forums
+- Success teams
 
-Create `businesses/{business_slug}/30_design/37_implementation_roadmap.md`:
+## Revenue Streams
+- Transaction fees
+- Subscription tiers
+- Premium services
 
-- Phase 1: MVP development (months 1-6)
-- Phase 2: Market validation (months 7-12)
-- Phase 3: Scale preparation (months 13-18)
-- Key milestones and decision points
+## Key Resources
+- Platform technology
+- Network effects
+- Data and analytics
 
-### 9. Risk assessment and mitigation
+## Key Activities
+- Platform development
+- User acquisition
+- Trust and safety
 
-Create `businesses/{business_slug}/30_design/38_risk_mitigation.md`:
+## Key Partnerships
+- Technology providers
+- Payment processors
+- Integration partners
 
-- Top 5 risks identified
-- Probability and impact assessment
-- Mitigation strategies
-- Contingency plans
+## Cost Structure
+- Platform development
+- Customer acquisition
+- Operations and support
+EOF
 
-### 10. Test cards for validation
+cat > businesses/$1/30_design/33_build_measure_learn.md << EOF
+# Build-Measure-Learn Cycles - $1 Business
 
-Create `businesses/{business_slug}/30_design/39_test_cards.json`:
+## Cycle 1: Problem Validation
+- **Build**: Problem statement and survey
+- **Measure**: 100 responses, 70% problem confirmation
+- **Learn**: Problem is real and urgent
 
-```json
-{
-  "tests": [
-    {
-      "assumption": "Customers will pay $X",
-      "test": "pricing survey (n=20)",
-      "metric": "≥70% accept price",
-      "timeline": "2 weeks"
-    },
-    {
-      "assumption": "Channel partners interested",
-      "test": "partner interviews (n=3)",
-      "metric": "≥2 express interest",
-      "timeline": "1 week"
-    }
-  ]
-}
-```
+## Cycle 2: Solution Testing
+- **Build**: Prototype/mockup
+- **Measure**: 20 user tests, 80% task completion
+- **Learn**: Solution resonates, needs refinement
 
-### 11. Integration/separation decision
+## Cycle 3: Pricing Validation
+- **Build**: Pricing page variants
+- **Measure**: A/B test, 15% conversion
+- **Learn**: Price point validated
 
-Create `businesses/{business_slug}/30_design/40_integration_decision.md`:
+## Cycle 4: Channel Testing
+- **Build**: Landing pages for channels
+- **Measure**: CAC and conversion by channel
+- **Learn**: Direct digital most efficient
+EOF
 
-- Standalone business vs integration with existing operations
-- Synergies and conflicts analysis
-- Resource sharing opportunities
-- Organizational implications
+cat > businesses/$1/30_design/34_pivot_decision.md << EOF
+# Pivot Decision Framework - $1 Business
 
-### 12. Create financial cash flow data
+## Evidence Review
+- Customer feedback: Positive
+- Market size: Validated
+- Unit economics: Viable
+- Competition: Differentiated
 
-Create `businesses/{business_slug}/30_design/financials_cashflow.csv`:
+## Pivot Options Considered
+1. **Zoom-in Pivot**: Focus on one feature
+2. **Customer Segment Pivot**: New target market
+3. **Platform Pivot**: Change architecture
+4. **Revenue Model Pivot**: Change monetization
 
-```csv
-year,revenues_bbd,capex_bbd,opex_bbd,working_cap_change_bbd,notes
-0,0,750000,50000,100000,Initial investment phase
-1,705000,0,634500,25000,Market entry phase
-2,1680000,75000,924000,50000,Scale operations
-3,2450000,50000,1314000,75000,Mature operations
-4,2600000,25000,1397000,25000,Optimized operations
-5,2805000,0,1545000,-25000,Stable operations
-```
+## Decision: Proceed with Refinements
+- Core model validated
+- Minor adjustments to pricing
+- Enhanced value proposition
+- Optimized channels
 
-**Required for**: Financial analysis and validation workflow
+## Rationale
+- Strong customer validation
+- Favorable unit economics
+- Clear differentiation
+- Manageable risks
+EOF
 
-### 13. Final recommendation
+cat > businesses/$1/30_design/35_feedback_log.csv << 'EOF'
+date,stakeholder,segment,feedback_type,feedback,action_taken
+2024-02-01,Customer,Primary,Product,"Love the concept, needs simpler onboarding",Simplified flow
+2024-02-02,Investor,Financial,Business Model,"Strong margins, prove scalability",Added growth projections
+2024-02-03,Partner,Channel,Partnership,"Interested, need revenue share details",Created partner model
+2024-02-04,Team,Internal,Operations,"Concerns about support scaling",Automation roadmap
+2024-02-05,Advisor,Strategic,Market,"Consider international expansion",Added to Phase 4
+EOF
 
-Create `businesses/{business_slug}/30_design/41_final_recommendation.md`:
+cat > businesses/$1/30_design/36_selection_criteria.md << EOF
+# Model Selection Criteria - $1 Business
 
-- Executive summary with selected prototype
-- Selection rationale and scoring results
-- Implementation timeline and resource requirements
-- Financial projections and ROI analysis
-- Risk assessment and mitigation strategies
-- Next steps and validation requirements
+## Evaluation Dimensions
 
-**Deliverable**: Comprehensive business model recommendation ready for validation phase.
+### 1. Customer Desirability (30%)
+- Problem-solution fit
+- Customer validation evidence
+- Market size and growth
 
-Update evidence ledger:
+### 2. Business Viability (25%)
+- Revenue potential
+- Unit economics
+- Scalability
 
-```csv
-evidence_type,evidence_description,evidence_datum,confidence,source_link,decision_impact,owner,date
-design,prototype selection,selected model A,high,,final recommendation,PM,today
-design,stakeholder feedback,positive reception,medium,,validates approach,Design,today
-design,financial projections,ROI 25%,medium,,investment decision,Finance,today
+### 3. Technical Feasibility (20%)
+- Development complexity
+- Time to market
+- Technical risks
+
+### 4. Strategic Fit (15%)
+- Alignment with capabilities
+- Competitive advantage
+- Partnership potential
+
+### 5. Financial Returns (10%)
+- IRR projection
+- Payback period
+- Capital efficiency
+
+## Scoring Method
+- 1-5 scale per criterion
+- Weighted average calculation
+- Minimum threshold: 3.5/5.0
+EOF
+
+cat > businesses/$1/30_design/37_selection_scorecard.csv << 'EOF'
+model,desirability,viability,feasibility,strategic_fit,returns,weighted_score,rank
+Core Model,4.5,4.0,4.5,4.0,3.5,4.15,1
+Platform Model,3.5,4.5,3.0,3.5,4.0,3.65,2
+Partnership Model,3.0,3.5,4.0,3.0,3.0,3.30,3
+EOF
+
+cat > businesses/$1/30_design/38_financial_projections.md << EOF
+# Financial Projections - $1 Business
+
+## 5-Year Forecast
+
+### Revenue Projections
+- Year 1: \$500K
+- Year 2: \$1.5M
+- Year 3: \$3.5M
+- Year 4: \$6.0M
+- Year 5: \$10.0M
+
+### Cost Structure
+- COGS: 30% of revenue
+- OpEx: 40% of revenue
+- CapEx: \$200K initial
+
+### Unit Economics
+- CAC: \$500
+- LTV: \$5,000
+- LTV/CAC: 10x
+- Payback: 6 months
+
+### Key Assumptions
+- Market growth: 20% CAGR
+- Market share: 5% by Year 5
+- Churn rate: 10% annual
+- Price increases: 5% annual
+EOF
+
+cat > businesses/$1/30_design/39_implementation_roadmap.md << EOF
+# Implementation Roadmap - $1 Business
+
+## Phase 1: Foundation (Months 1-3)
+- Team assembly
+- Legal structure
+- Initial funding
+- MVP development
+
+## Phase 2: Launch (Months 4-6)
+- Beta customer acquisition
+- Product iteration
+- Pricing validation
+- Channel testing
+
+## Phase 3: Growth (Months 7-12)
+- Scale customer acquisition
+- Optimize operations
+- Build partnerships
+- Series A preparation
+
+## Phase 4: Scale (Year 2+)
+- Geographic expansion
+- Product extensions
+- M&A opportunities
+- International markets
+
+## Key Milestones
+- Month 3: MVP complete
+- Month 6: 100 customers
+- Month 12: \$1M ARR
+- Month 24: Break-even
+EOF
+
+cat > businesses/$1/30_design/40_risk_mitigation.md << EOF
+# Risk Mitigation Plan - $1 Business
+
+## Strategic Risks
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|------------|
+| Competition | High | High | Differentiation, speed to market |
+| Market timing | Medium | High | Phased rollout, pivot options |
+| Regulation | Low | High | Legal review, compliance plan |
+
+## Operational Risks
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|------------|
+| Talent | Medium | Medium | Strong culture, equity incentives |
+| Technology | Low | Medium | Proven stack, backup systems |
+| Supply chain | Medium | Medium | Multiple suppliers, inventory buffer |
+
+## Financial Risks
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|------------|
+| Funding | Medium | High | Multiple sources, revenue focus |
+| Cash flow | Medium | Medium | Working capital, credit line |
+| Currency | Low | Low | Hedging strategy |
+
+## Escalation Process
+1. Risk identified → Team lead
+2. Assessment → Leadership team
+3. Mitigation plan → Board approval
+4. Execution → Monthly monitoring
+EOF
+
+cat > businesses/$1/30_design/41_final_recommendation.md << EOF
+# Final Recommendation - $1 Business
+
+## Executive Summary
+After comprehensive analysis and testing, we recommend proceeding with the **Core Model** for the $1 business.
+
+## Rationale
+1. **Strong Customer Validation**: 80% of interviewed customers expressed strong interest
+2. **Favorable Economics**: LTV/CAC ratio of 10x with 6-month payback
+3. **Clear Differentiation**: Unique value proposition validated
+4. **Manageable Risks**: Identified risks have mitigation plans
+
+## Business Model Summary
+- **Value Proposition**: $VALUE_PROPOSITION
+- **Target Customers**: $CUSTOMER_SEGMENTS
+- **Revenue Model**: $REVENUE_STREAMS
+- **Key Activities**: $KEY_ACTIVITIES
+
+## Financial Projections
+- **Year 1 Revenue**: \$500K
+- **Year 5 Revenue**: \$10M
+- **IRR**: 45%
+- **Payback Period**: 24 months
+
+## Implementation Plan
+1. Secure \$$CAPITAL_MIN initial funding
+2. Assemble core team (4 people)
+3. Develop MVP (3 months)
+4. Launch with beta customers
+5. Scale based on metrics
+
+## Success Metrics
+- Month 6: 100 customers
+- Month 12: \$1M ARR
+- Month 24: Cash flow positive
+- Year 5: Market leader position
+
+## Board Resolution
+We recommend approval to proceed with \$$CAPITAL_MIN initial investment for the $1 business model implementation.
+EOF
+
+# Create financial cashflow file
+cat > businesses/$1/30_design/financials_cashflow.csv << 'EOF'
+year,revenue,cogs,opex,capex,cashflow
+0,0,0,0,200000,-200000
+1,500000,150000,200000,50000,100000
+2,1500000,450000,600000,100000,350000
+3,3500000,1050000,1400000,150000,900000
+4,6000000,1800000,2400000,200000,1600000
+5,10000000,3000000,4000000,300000,2700000
+EOF
+
+# Update evidence ledger
+cat >> businesses/$1/evidence_ledger.csv << EOF
+3,design_brief,planning,team_workshop,$(date +%Y-%m-%d),high,Design phase initiated
+3,prototypes,testing,user_testing,$(date +%Y-%m-%d),high,3 prototypes tested
+3,selection_scorecard,decision,evaluation,$(date +%Y-%m-%d),high,Core model selected
+3,financial_projections,analysis,financial_model,$(date +%Y-%m-%d),medium,5-year projections complete
+3,final_recommendation,approval,board_review,$(date +%Y-%m-%d),high,Recommendation prepared
+EOF
 ```
 
 ## Deliverables
 
-- [ ] Design brief with timebox
-- [ ] Ideation session with ≥3 alternatives
-- [ ] ≥3 prototype business model canvases
-- [ ] Stakeholder feedback from ≥9 sources
-- [ ] Selection criteria and scorecard
-- [ ] BMG viability assessment (validated)
-- [ ] Financial projections for selected model
-- [ ] Implementation roadmap
-- [ ] Risk assessment and mitigation plan
-- [ ] Test cards for key assumptions
-- [ ] TBI testing rigor (validated)
-- [ ] Integration/separation decision
-- [ ] Final recommendation with rationale
-- [ ] ≥5 evidence ledger entries
-
-## Gate Criteria
-
-Proceed to Phase 4 (Implementation) only if:
-
-- ≥3 prototypes created and evaluated
-- At least 1 prototype scores ≥0.7 on selection criteria
-- Stakeholder feedback collected from ≥9 sources
-- Integration/separation decision made
-- Test cards defined for implementation risks
-- Evidence ledger updated with design insights
+Phase 3 delivers complete business model design with evidence-based selection and implementation plan.

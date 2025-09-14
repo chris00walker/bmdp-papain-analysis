@@ -1,12 +1,30 @@
 ---
-phase: 00_initiation
+phase: 20_understand
 artifact: 38_progress_demo.md
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+- vpd-compliance
+methodology_tags:
+- VPD
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
-# Phase 2 Progress Demo - {{ business_slug|title }} {{ business_title }}
 
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
+# Phase 2 Progress Demo - {{ business_slug|title }} {{ business_title }}
 
 ## Business Context
 **Business**: {{ business_slug|title }}
@@ -122,7 +140,48 @@ rule_targets:
 
 ## Phase 2 Deliverables Summary
 
-### Research Deliverables Completed
+#
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Deliverables Completed
 - [x] Research plan and questions
 - [x] Customer interviews ({{ completed_interviews | default("12") }} completed)
 - [x] Competitive analysis and positioning
@@ -167,6 +226,62 @@ A: {{ pricing_confidence | default("Moderate confidence - needs further validati
 **Q: What could cause this business model to fail?**
 A: {{ failure_risks | default("Customer acquisition costs, competitive response, execution challenges") }}
 
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
 ## Next Steps and Phase 3 Preview
 
 ### Immediate Actions
@@ -194,7 +309,48 @@ A: {{ failure_risks | default("Customer acquisition costs, competitive response,
 - **Response Rate**: {{ response_rate | default("75%") }}
 - **Segment Distribution**: {{ segment_distribution | default("Enterprise: 4, Mid-Market: 5, SMB: 3") }}
 
-### Research Quality Metrics
+#
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Context
+{% if INDUSTRY_CONTEXT and CUSTOMER_SEGMENTS %}
+### Industry-Specific Research Focus
+**Sector**: {{ INDUSTRY_CONTEXT }}
+**Target Participants**: {{ CUSTOMER_SEGMENTS }}
+**Research Questions**: Tailored to {{ BUSINESS_TYPE }} business model
+
+### Evidence Collection Framework
+- Quantitative metrics relevant to {{ INDUSTRY_CONTEXT }}
+- Qualitative insights from {{ CUSTOMER_SEGMENTS }}
+- Competitive benchmarks for {{ BUSINESS_TYPE }} models
+{% endif %}
+
+## Research Quality Metrics
 - **Sample Representativeness**: {{ sample_quality | default("Good coverage of target segments") }}
 - **Data Reliability**: {{ data_reliability | default("High - multiple validation sources") }}
 - **Bias Controls**: {{ bias_controls | default("Comprehensive bias check completed") }}

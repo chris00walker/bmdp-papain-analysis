@@ -2,11 +2,85 @@
 phase: 00_initiation
 artifact: 04_team_roster.csv
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 name,role,function,allocation_pct,email
 {{ SPONSOR_NAME }},Project Sponsor,Strategic Oversight & Decision Authority,25,{{ SPONSOR_EMAIL }}
 {{ PM_NAME }},Project Manager,BMDP Execution & Coordination,30,{{ PM_EMAIL }}
 {{ BUSINESS_LEAD }},Business Lead,Domain Expertise & Operations,25,{{ BUSINESS_LEAD_EMAIL }}
 {{ MARKET_ANALYST }},Market Analyst,Customer & Competitive Analysis,20,{{ MARKET_ANALYST_EMAIL }}
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

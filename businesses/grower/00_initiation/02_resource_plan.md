@@ -1,77 +1,111 @@
-# Resource Plan - grower Business
+---
+phase: 00_initiation
+artifact: 02_resource_plan.md
+rule_targets:
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
+---
 
-## Human Resources
 
-### Core Team Structure
+# Resource Plan - Grower 
+
+## Business Context
+## Industry Context
+**Industry**: Agriculture and Cultivation
+**Market Dynamics**: Based on Agriculture and Cultivation, key considerations include regulatory requirements, competitive landscape, and market maturity.
+
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
+## Industry Context
+**Industry**: Agriculture and Cultivation
+**Market Dynamics**: Based on Agriculture and Cultivation, key considerations include regulatory requirements, competitive landscape, and market maturity.
+
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
+**Business**: Grower
+
+## Team Requirements
+- **Team Lead**: [Name/TBD]
+- **Business Expert**: [Name/TBD]
+- **Market Analyst**: [Name/TBD]
+- **Financial Analyst**: [Name/TBD]
 - **Team Size**: 4 members
-- **Sponsor**: Agricultural venture sponsor
-- **Project Manager**: Agricultural project manager  
-- **Lead**: Agricultural operations lead
-- **Domain Expert**: Agricultural specialist
 
-### Team Composition
-- **Leadership**: 1 sponsor, 1 project manager
-- **Technical**: 1 agricultural operations lead
-- **Advisory**: 1 domain expert
-- **Total FTE**: 4.0 equivalent positions
+## BMDP Process Costs
+*Operational expenses for executing the business model design process*
 
-## Financial Resources
+- **Discovery Budget**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Validation Budget**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Scaling Budget**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Total BMDP Budget**: $Generate based on {{ BUSINESS_TYPE }} context BBD
 
-### Capital Structure
-- **Minimum Capital**: 750000 BBD
-- **Maximum Capital**: 2500000 BBD
-- **Initial Unlock**: 750000 BBD
-- **Progressive Unlock**: Based on milestone achievement
+## Business Capital Available
+*Total funding available to the business at each milestone*
 
-### BMDP Budget Allocation
-- **Discovery Budget**: 126000 BBD
-- **Validation Budget**: 126000 BBD
-- **Scaling Budget**: 126000 BBD
-- **Total BMDP Budget**: 126000 BBD
+- **Initial Capital**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Post-Discovery**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Post-Validation**: $Generate based on {{ BUSINESS_TYPE }} context BBD
+- **Maximum Capital**: $Generate based on {{ BUSINESS_TYPE }} context BBD
 
-### Phase Budget Distribution
-- **Phase 1 (Mobilize)**: 44100 BBD (16 weeks)
-- **Phase 2 (Understand)**: 71500 BBD (26 weeks)
-- **Phase 3 (Design)**: 27500 BBD (10 weeks)
+## Timeline
+- **Discovery Duration**: 50% of timeline (4 weeks)
+- **Validation Duration**: 33% of timeline (3 weeks)
+- **Scaling Duration**: 17% of timeline (2 weeks)
+- **Total Timeline**: 9 weeks
 
-## Timeline Resources
+## Resource Availability
+- [ ] Team members confirmed
+- [ ] Budget approved
+- [ ] Timeline validated
 
-### Phase Duration
-- **Phase 1**: 16 weeks (Mobilize)
-- **Phase 2**: 26 weeks (Understand)
-- **Phase 3**: 10 weeks (Design)
-- **Total**: 52 weeks
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
 
-### Critical Path
-- Agricultural season alignment
-- Processing equipment procurement
-- Quality certification timeline
-- Market validation cycles
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector
 
-## Technology Resources
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
 
-### Required Infrastructure
-- Agricultural land and facilities
-- Processing and extraction equipment
-- Quality control systems
-- Supply chain management tools
-
-### Technology Requirements
-- Drying equipment, quality control systems, basic ERP
-- Laboratory testing capabilities
-- Traceability systems
-- Digital marketing platforms
-
-## Risk Mitigation Resources
-
-### Contingency Planning
-- **Weather Risk**: 15% budget contingency
-- **Market Risk**: Alternative customer development
-- **Quality Risk**: Enhanced testing protocols
-- **Supply Risk**: Diversified supplier base
-
-## Success Metrics
-- [ ] Team assembled and committed
-- [ ] Budget approved and allocated
-- [ ] Timeline confirmed with stakeholders
-- [ ] Technology requirements validated
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector

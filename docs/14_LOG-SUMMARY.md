@@ -1,6 +1,6 @@
-## ✅ **Phase 0 Initiation Summary – Grower Business**
+# ✅ **Phase 0 Initiation Summary – Grower Business**
 
-### 📌 Objective
+## 📌 Objective
 
 Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using the **modular tool architecture**, while avoiding legacy code dependencies.
 
@@ -11,9 +11,9 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### 1\. **Directory & Setup**
 
 * Created initiation directory: `businesses/grower/00_initiation`  
-    
+
 * Ran `methodology_setup.py` (correct path: `tools/core/methodology_setup.py`)  
-    
+
   * **Warnings**: Missing standard dirs (`10_mobilize`, `20_understand`, `30_design`)  
   * **Missing Files**: `30_design/financials_cashflow.csv`, `20_understand/evidence_ledger.csv`
 
@@ -22,11 +22,11 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### 2\. **Brief Parsing & Tool Failures**
 
 * Attempted to use `brief_parser.py`, followed by:  
-    
+
   * Legacy parser `parse_business_brief.py` not found → broken references in workflows  
-      
+
   * Multiple eval attempts failed due to:  
-      
+
     * Missing `manifest.json`  
     * Brief parser CLI inconsistencies  
     * Template not found errors (e.g. `00_sponsor_brief.md.j2`)
@@ -36,9 +36,8 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### 3\. **🔍 Root Cause Diagnosis**
 
 * Legacy parser `parse_business_brief.py` was still referenced in:  
-    
-  * `workflow_enforcer.py`, `regenerate_phase1.sh`, `README.md`
 
+  * `workflow_enforcer.py`, `regenerate_phase1.sh`, `README.md`
 
 * **Debugging Strategy**: Deleted the legacy parser to reveal all broken references
 
@@ -49,7 +48,7 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### ✅ **Modular Parser Refactor**
 
 * Enhanced `brief_parser.py` with:  
-    
+
   * CLI support (`--business`, `--output-format`)  
   * Environment variable export (e.g., `BUSINESS_SLUG`, `CAPITAL_MIN`)  
   * Jinja-compatible context for templates
@@ -57,7 +56,7 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### ✅ **Workflow Reference Fixes**
 
 * Updated all references to use `tools/parsers/brief_parser.py`:  
-    
+
   * `workflow_enforcer.py`  
   * `regenerate_phase1.sh`  
   * `README.md`
@@ -82,7 +81,7 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 ### ❌ Issue
 
 * Templates were falling back to **hardcoded values** (e.g., `$125,999`) from `workflow_enforcer.py` due to:  
-    
+
   * Budget calculator not called (missing `manifest.json`)  
   * No budget variables exported by parser
 
@@ -104,14 +103,14 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 
 ## 🔄 Refactor: Budget Calculator
 
-### Changes:
+### Changes
 
 * Removed archetype multipliers  
 * Simplified logic to **10% of capital**  
 * Adopted **25-50-25** split for Discovery/Validation/Scaling  
 * Used `capital_bounds_bbd` from `manifest.json`
 
-### Outcome:
+### Outcome
 
 * **Validation** receives majority allocation (as per Osterwalder methodology)  
 * Aligns with **realistic Customer Development** timelines & budget expectations
@@ -120,12 +119,12 @@ Execute the **Phase 0 BMDP initiation workflow** for the *grower* business using
 
 ## ⚠️ Structural Misalignment: Business Capital vs BMDP Budget
 
-### Problem:
+### Problem
 
 * Artificial split between BMDP ($75K) and business capital ($750K–$2.5M) creates confusion  
 * Osterwalder would expect **real business validation** to use actual business funds
 
-### Resolution Suggested:
+### Resolution Suggested
 
 * **Eliminate BMDP budget** as a separate track  
 * Reframe deliverables as outputs from actual capital deployment  
@@ -181,18 +180,17 @@ Post initial Phase 0 execution, it became evident that there was a **fundamental
 **File**: `tools/calculators/budget_calculator.py` **Logic Changes**:
 
 * Dropped artificial “process cost” logic  
-    
+
 * New allocation logic:  
-    
+
   * **Discovery**: 15% \= $112,500  
   * **Validation**: 60% \= $450,000  
   * **Scaling**: 25% \= $187,500
 
-
 * Budget now based on **CAPITAL\_MIN** from manifest.json  
-    
+
 * Added progressive capital progression:  
-    
+
   * `$750K → $1.25M → $1.88M → $2.5M`
 
 **Osterwalder Alignment**:
@@ -207,30 +205,28 @@ Post initial Phase 0 execution, it became evident that there was a **fundamental
 #### 🔁 `02_resource_plan.md.j2` & Output
 
 * Replaced "BMDP Process Costs" section with:  
-    
+
   * **Business Model Validation Capital Allocation**  
-      
+
   * **Two-column table** showing:  
-      
+
     * Phase-specific investment  
     * Capital available after milestone validation
 
-
 * Integrated **progressive unlocking** logic clearly in layout  
-    
+
 * Includes **risk note**: all $750K may be spent in discovery
 
 #### 🔁 `01_project_charter.md.j2` & Output
 
 * Replaced legacy budget references (e.g. `$125,999`) with:  
-    
+
   * **CAPITAL\_MIN** from brief parser
 
-
 * Fixed undefined `TOTAL_BMDP_COST` fallback  
-    
+
 * Updated all constraints, investment tables, and terminology  
-    
+
 * Embedded 15-60-25 logic directly
 
 ---
@@ -266,7 +262,7 @@ Post initial Phase 0 execution, it became evident that there was a **fundamental
 | **Validation** | 60% | $450,000 | MVP testing, Revenue validation, Customer dev |
 | **Scaling** | 25% | $187,500 | Ops optimization, Growth, Partnerships |
 
-### Timeline (from manifest):
+### Timeline (from manifest)
 
 * Discovery: 20 weeks  
 * Validation: 36 weeks  
@@ -276,7 +272,7 @@ Post initial Phase 0 execution, it became evident that there was a **fundamental
 
 ## 🧠 Methodological Insight
 
-### What Osterwalder Would Approve:
+### What Osterwalder Would Approve
 
 ✅ **Capital integration**: Business capital is used directly for BMC validation ✅ **Progressive Unlocking**: Additional funds only unlocked upon success ✅ **Lean Risk Acknowledgment**: Entire $750K can be consumed at discovery if hypotheses fail ✅ **Customer Development Priority**: 60% of funds and longest time allocated to validation
 
@@ -343,18 +339,16 @@ Upon executing `02_resource_plan.md`, a **critical feedback alert** was raised:
 ### 🔧 Template Refactor (`02_resource_plan.md.j2`)
 
 * Replaced old hardcoded variables:  
-    
+
   * ❌ `DISCOVERY_INVESTMENT` → ✅ `DISCOVERY_BUDGET`  
   * ❌ `TOTAL_BMDP_COST` → ✅ `CAPITAL_MIN`
 
-
 * Capital allocation table updated to dynamically use:  
-    
+
   * `CAPITAL_MIN`, `DISCOVERY_BUDGET`, `VALIDATION_BUDGET`, `SCALING_BUDGET`
 
-
 * Capital progression logic made adaptive using `POST_DISCOVERY_CAPITAL`, `POST_VALIDATION_CAPITAL`, `CAPITAL_MAX`  
-    
+
 * Shifted terminology from **"capital unlocking"** → **"capital deployment strategy"** (to reflect risk-driven consumption)
 
 ---
@@ -362,17 +356,17 @@ Upon executing `02_resource_plan.md`, a **critical feedback alert** was raised:
 ### 🔧 Budget Calculator Fix
 
 * Issue: Missing `total_budget` var caused failure (`Exit Code 1`)  
-    
+
 * Fix: Exported standardized env vars:  
-    
+
   export TOTAL\_BUDGET=750000  
-    
+
   export DISCOVERY\_BUDGET=112500  
-    
+
   export VALIDATION\_BUDGET=450000  
-    
+
   export SCALING\_BUDGET=187500  
-    
+
 * Now aligned with template expectations → smooth template generation
 
 ---
@@ -431,19 +425,17 @@ Templates like `17_validation_scorecard`, `18_comms_plan`, and `19_announcement_
 ### ✅ Solution: LLM-Prompt-Aware Templates
 
 * Replaced strict `for` loops with:  
-    
+
   * Intelligent **placeholders and HTML comment prompts** for LLM interpolation
 
-
 * Prompts now guide:  
-    
+
   * Table completion  
   * Bullet generation  
   * Value-oriented narrative writing
 
-
 * Examples:  
-    
+
   \<\!-- Suggest 3 key communication objectives for engaging enzyme processor customers \--\>
 
 ---
@@ -530,37 +522,35 @@ All 16 Phase 2 templates now follow the **LLM-enhanced adaptive format**, matchi
 ### 2\. 🧱 **Pain-Gain Mapping Reclassified to Phase 1**
 
 * Reintroduced `pain_gain_mapping.md` into **Phase 1 (`10_mobilize`)**  
-    
+
 * Reasoning: According to VPD methodology, a **complete value proposition hypothesis** requires:  
-    
+
   * ✅ Customer Jobs Analysis  
   * ✅ Pain-Gain Mapping  
   * ✅ Value Map Construction
 
-
 * Workflow and generator logic updated to reflect proper sequencing  
-    
+
 * 🧩 Fix ensured seamless Phase 2 testing of complete hypotheses
 
 ---
 
 ## ⚙️ Technical Enhancements in Templates
 
-### 🧠 Adaptive Prompt Pattern Example:
+### 🧠 Adaptive Prompt Pattern Example
 
 \<\!-- LLM: Based on {{ CUSTOMER\_SEGMENTS }} in {{ BUSINESS\_TITLE }}, generate functional jobs related to {{ KEY\_ACTIVITIES }}. Focus on implications for {{ VALUE\_PROPOSITION }} delivery. \--\>
 
-### ✅ Every Template Now Includes:
+### ✅ Every Template Now Includes
 
 * **LLM Comment Blocks** (removed from output)  
-    
+
 * **Full context awareness** via variables:  
-    
+
   * `{{ BUSINESS_TITLE }}`, `{{ VALUE_PROPOSITION }}`, `{{ CUSTOMER_SEGMENTS }}`, `{{ KEY_ACTIVITIES }}`, `{{ CRITICAL_RISKS }}`, `{{ REVENUE_STREAMS }}`
 
-
 * **Evidence-based framework guidance**:  
-    
+
   * ICE scoring, JTBD mapping, empathy-based insights, test cards, bias checklists
 
 ---
@@ -606,9 +596,9 @@ All 16 Phase 2 templates now follow the **LLM-enhanced adaptive format**, matchi
 ## 💡 Key Insights for Future Phases
 
 1. **Template-Driven Systems Must Be Context-Aware** Static placeholders \= false sense of validation. Adaptive prompts ensure intelligent content generation aligned with business specifics.  
-     
+
 2. **Phase 1 Completeness Is Essential for Valid Testing in Phase 2** Incomplete value propositions → flawed validation → wasted budget.  
-     
+
 3. **Reproducibility \+ Adaptiveness \= Startup Scalability** This duality is at the heart of a robust business model discovery engine.
 
 ---
@@ -663,13 +653,13 @@ python tools/generators/render\_template.py \--template {template} \--output {ou
 **Templates Rendered:**
 
 * Research Setup: `20_research_plan.md`, `21_research_questions.md`, `22_environment_scan.md`, `23_secondary_summary.md`  
-    
+
 * Market & Competitive Intelligence: `24_competitor_list.csv`, `25_competitor_canvases.md`  
-    
+
 * Customer Discovery: `26_customer_segments.md`, `27_interview_guide.md`, `28_screener.md`, `29_interviews_log.csv`  
-    
+
 * Synthesis & Insights: `30_empathy_maps.md`, `31_jobs_to_be_done.md`, `32_insights.md`  
-    
+
 * Validation Infrastructure: `33_assumption_backlog.csv`, `34_concept_cards.md`, `35_test_cards.json`, `36_failure_analysis.md`, `37_expert_panel_summary.md`, `38_bias_check.md`, `39_progress_demo.md`
 
 **Special Output Evidence Updates:**
@@ -701,17 +691,17 @@ evidence\_ledger.csv additions:
 
 ## 🔁 Final Workflow Fix: Environment Variable Propagation
 
-### 🔧 Root Cause:
+### 🔧 Root Cause
 
 * Environment variables (`BUSINESS_TITLE`, etc.) were not retained across shell sessions  
 * Resulted in literal variable names appearing in output (e.g., `{{ BUSINESS_TITLE }}`)
 
-### 💡 Fix Implemented:
+### 💡 Fix Implemented
 
 * Inserted `eval $(python tools/parsers/brief_parser.py --business $1 --output-format env)` at the start of every template render step  
 * Verified by re-rendering and checking substitution success
 
-### ✅ Verified:
+### ✅ Verified
 
 * No changes needed in `brief_parser.py` or `render_template.py`  
 * Fix is localized to `bmdp-phase2-understand.md` workflow
@@ -808,19 +798,19 @@ Ensure that all templates across **Phase 2 (38-39)** and **Phase 3 (30–41)** a
 
 ## 🔧 Workflow Update: `bmdp-phase3-design.md` Fix
 
-### 🧨 Issue:
+### 🧨 Issue
 
 * `eval $(python tools/parsers/brief_parser.py ...)` was missing before template render steps  
 * Resulted in failed variable substitution for `{{ VALUE_PROPOSITION }}` and others
 
-### ✅ Fix Applied:
+### ✅ Fix Applied
 
 * Every render command now begins with:  
-    
+
   eval $(python tools/parsers/brief\_parser.py \--business $1 \--output-format env) &&  
-    
+
 * Verified successful rendering of **all 14 Phase 3 templates**  
-    
+
 * Updated template paths to match `templates/deliverables/30_design/` convention
 
 ---
@@ -897,19 +887,19 @@ Complete a full **LLM-adaptive compliance audit** for Phase 3 templates (`30_des
 
 ## 🔧 Workflow Repair: `bmdp-phase3-design.md`
 
-### ❗ Issue:
+### ❗ Issue
 
 * **Environment variables not propagated** during each template rendering  
 * Caused literal placeholders like `{{ VALUE_PROPOSITION }}` to appear in outputs
 
-### ✅ Fix Applied:
+### ✅ Fix Applied
 
 * Injected this command before **each rendering step**:  
-    
+
   eval $(python tools/parsers/brief\_parser.py \--business $1 \--output-format env) &&  
-    
+
 * Fixed path resolution in `template` and `output` references  
-    
+
 * 14 rendering steps now all inherit business context vars
 
 ### ⚙️ Confirmed Variables
@@ -924,7 +914,7 @@ $CUSTOMER\_SEGMENTS
 
 $VALUE\_PROPOSITION
 
-### 🛡️ Result:
+### 🛡️ Result
 
 * Template outputs are fully populated  
 * No rendering errors or missing variable issues  
@@ -984,16 +974,15 @@ Here's the **continued summary** based on the content you provided between the b
 **2\. Validator Debugging & Accuracy**
 
 * Fixed key issues in `phase3_validator.py`, including:  
-    
+
   * Argument parsing (`--businesses` vs `--business-slugs`)  
   * Correct brief filename handling (`brief-1-grower.md`)  
   * Method name corrections (`validate_business_template`)  
   * Parser output correction (ensured dictionary, not string)  
   * Fixed `generate_missing_variables` parameter mismatch
 
-
 * Result: Phase 3 Validator now shows:  
-    
+
   * ✅ **100% validation success rate**  
   * 📊 **Quality Score: 21.9%**  
   * ⚡️ Execution time: 0.69s
@@ -1007,15 +996,15 @@ Here's the **continued summary** based on the content you provided between the b
 **4\. Template Path Correction**
 
 * Refactored `template_config.json` to match actual template file structure:  
-    
+
   * 📁 `00_initiation/`, `10_mobilize/`, `20_understand/`, `30_design/`, `shared/`, and `32_prototypes/`
 
 **5\. End-to-End Execution**
 
 * Began testing workflows using `.windsurf/` execution.  
-    
+
 * Identified issues:  
-    
+
   * Bash script attempted to run Markdown as shell code (e.g., `.md` files treated as shell scripts)  
   * Errors due to missing Python files (e.g., `methodology_setup.py`)  
   * Permissions denied on `.windsurf/rules/*.md` references  
@@ -1024,7 +1013,7 @@ Here's the **continued summary** based on the content you provided between the b
 **6\. Resolution in Progress**
 
 * Began fixing:  
-    
+
   * Jinja template resolution (confirmed presence of required files)  
   * Rules path permissions and invocation method (Markdown rules should not be shell-executed)  
   * Correct method for invoking workflows: likely needs `.windsurf` to be interpreted by a Python runner, not bash.
@@ -1048,14 +1037,13 @@ Here's the **continued summary** based on the content you provided between the b
 ### 🧠 Strategic Insights
 
 * You're now operating a **fully hybrid BMDP system** with:  
-    
+
   * Scalable architecture  
   * Continuous performance tracking  
   * Validated coverage across templates and workflows
 
-
 * Next phase should focus on:  
-    
+
   * Fixing `.windsurf` execution model (likely needs a Python-based dispatcher)  
   * Improving the **quality score** (currently 21.9%) by refining hybrid variable generation  
   * Verifying rule compliance using `.windsurf/rules/*.md` (should be interpreted, not executed)
@@ -1084,11 +1072,11 @@ bash .windsurf/workflows/bmdp-phase0-initiation.md grower
 **Actions Taken:**
 
 * Manually created initiation directory:  
-    
+
   mkdir \-p businesses/grower/00\_initiation  
-    
+
 * Used `brief_parser.py` and `template_processor.py --test-hybrid` to generate:  
-    
+
   * 00\_sponsor\_brief.md  
   * 01\_project\_charter.md  
   * 02\_resource\_plan.md  
@@ -1107,7 +1095,7 @@ bash .windsurf/workflows/bmdp-phase0-initiation.md grower
 **User Disagreed — Triggered Audit:**
 
 * Files looked correct on surface but had major issues:  
-    
+
   * `--test-hybrid` mode printed test metadata, not real content.  
   * Placeholders like `TBD` remained throughout.  
   * Environment variable substitution was incomplete.
@@ -1136,29 +1124,23 @@ python tools/generators/render\_template.py \--template ... \--output ...
 **Major Issues Identified:**
 
 1. **🚫 Missing Deliverables:**  
-     
+
    * 03\_team\_roster.csv  
    * 04\_access\_matrix.csv  
    * 05\_sprint\_plan.md
 
-   
-
 2. **📛 YAML Metadata Errors:**  
-     
+
    * Incorrect artifact names (e.g., `06_readiness_assessment.md` had artifact `03_readiness_assessment.md`)  
    * Phase mislabeling (e.g., `03_team_roster.csv` labeled `10_mobilize` instead of `00_initiation`)
 
-   
-
 3. **💰 Broken Financial Data:**  
-     
+
    * `$TBD BBD` for budget totals  
    * Capital allocation percentages not summing to 100%
 
-   
-
 4. **🧩 Variable Substitution Failures:**  
-     
+
    * Key sections (project objectives, market opportunity, scoring) left as `TBD`  
    * Hybrid parser did not correctly inject values from `brief_parser.py`  
    * Some business fields like total budget were not rendered
@@ -1200,27 +1182,21 @@ python tools/parsers/brief\_parser.py \--business grower \--output-format env | 
 ## 📌 Actionable Next Steps
 
 1. **Fix Variable Substitution System:**  
-     
+
    * Ensure all variables from `brief_parser.py` are usable in Jinja templates.  
    * Validate hybrid variable fallback logic is triggered when needed.
 
-   
-
 2. **Correct YAML Frontmatter in Templates:**  
-     
+
    * Audit artifact names and phases in all template files.  
    * Standardize naming conventions for consistency across workflows.
 
-   
-
 3. **Repair Financial Calculations:**  
-     
+
    * Fix budget computation logic in `resource_plan` and related templates.
 
-   
-
 4. **Implement a QA Step Post-Generation:**  
-     
+
    * Add validation script to scan for unresolved `TBD`, missing variables, or invalid YAML.
 
 ---
@@ -1236,10 +1212,9 @@ Despite the successful restoration and reorganization of the sophisticated BMDP 
 ### ⚠️ What's Going On
 
 * Git is interpreting the cleanup and reorganization as a **mass deletion and addition**:  
-    
+
   * **70+ critical files** (templates and tools) are marked as `D` (deleted)  
   * The newly organized modular structure is **untracked** (`??`), not staged
-
 
 * If you commit now without handling this properly, **Git will think you're deleting the old structure and replacing it**, potentially creating **another destructive commit** like `a4e0c8a`
 
@@ -1248,7 +1223,7 @@ Despite the successful restoration and reorganization of the sophisticated BMDP 
 ## ✅ What Was Successfully Recovered and Rebuilt
 
 1. **Modular Tool Architecture Restored**  
-     
+
    * `/tools/validators/`: `bmg_validator.py`, `tbi_validator.py`, `workflow_enforcer.py`, etc.  
    * `/tools/calculators/`: `compute_financials.py`, `portfolio_rollup.py`  
    * `/tools/parsers/`: `parse_business_brief.py`  
@@ -1256,17 +1231,13 @@ Despite the successful restoration and reorganization of the sophisticated BMDP 
    * `/tools/core/`: `methodology_setup.py`, `workflow_checkpoint.py`  
    * `/tools/runners/`: All `run_*.py` scripts
 
-   
-
 2. **Templates Reorganized by Phase**  
-     
+
    * `00_initiation/`, `10_mobilize/`, `20_understand/`, `30_design/`, `shared/`  
    * Updated `template_config.json` to reflect correct paths
 
-   
-
 3. **Imports and Module Paths Fixed**  
-     
+
    * `template_processor.py` now imports from correct locations  
    * Hybrid parsing and variable generation working again
 
@@ -1363,11 +1334,11 @@ You're not starting over. You've preserved and rebuilt a highly sophisticated ar
 ## 💡 Recommendations Going Forward
 
 1. **Create a Pre-Commit Safety Hook** Add a Git pre-commit hook that prevents staging deletes from `templates/` or `tools/` unless explicitly confirmed.  
-     
+
 2. **Automate Git Snapshot Backups** Build a daily or per-phase snapshot system:  
-     
+
    git tag backup-before-phase1-$(date \+"%Y%m%d")  
-     
+
 3. **Track Directory Moves with `git mv`** If reorganizing in the future, use `git mv` instead of `mv` so Git tracks changes cleanly.
 
 ---
@@ -1397,28 +1368,22 @@ Upon closer inspection:
 After an audit, the following critical issues were identified:
 
 1. **Regression in Template Processor**  
-     
+
    * `--test-hybrid` mode was misused, leading to test previews instead of production-ready files.  
    * Financials, resource plans, and objective variables were unresolved.
 
-   
-
 2. **Git Regression: Catastrophic Commit**  
-     
+
    * The commit `a4e0c8a` deleted **hundreds of files**, including:  
-       
+
      * All template files (`.j2`)  
      * Business briefs and deliverables  
      * All tooling: hybrid parser, financial calculators, validators, scorers, VPD/BMG compliance scripts, etc.
 
-     
-
    * This reset the system to a primitive, non-functional state.
 
-   
-
 3. **Manifest Corruption**  
-     
+
    * Tool directories were flattened and misorganized.  
    * Templates lost phase separation and were dumped into a single folder.
 
@@ -1434,16 +1399,14 @@ After an audit, the following critical issues were identified:
 #### ✅ Step 2: **Reorganize into Modular Architecture (per SOLUTION\_IMPLEMENTATION\_PLAN.md)**
 
 * All tools placed in modular directories:  
-    
+
   * `/tools/validators/` → validation scripts  
   * `/tools/generators/` → template processor, canvas creator  
   * `/tools/parsers/`, `/calculators/`, `/core/`, `/runners/`, etc.
 
-
 * Templates were reclassified by phase:  
-    
-  * `00_initiation/`, `10_mobilize/`, `20_understand/`, `30_design/`, `shared/`
 
+  * `00_initiation/`, `10_mobilize/`, `20_understand/`, `30_design/`, `shared/`
 
 * `template_config.json` paths were rewritten to match new directory structure using a Python script.
 
@@ -1457,9 +1420,9 @@ After an audit, the following critical issues were identified:
 #### ✅ Step 4: **Restore and Verify Hybrid Parser Functionality**
 
 * `brief_parser.py` correctly exports all key variables (e.g., capital bounds, roles, timeframes).  
-    
+
 * Templates are now populating with real values, e.g.:  
-    
+
   * Capital: `$750K–2.5M BBD`  
   * Timeline: `78 weeks`  
   * Objectives: “Establish scalable papain latex production”
@@ -1469,11 +1432,11 @@ After an audit, the following critical issues were identified:
 To avoid repeating history:
 
 * All new files (`A`) were staged explicitly.  
-    
+
 * All deleted legacy files (`D`) were committed separately.  
-    
+
 * Two atomic commits:  
-    
+
   1. `"refactor: Reorganize BMDP tools and templates into modular architecture"`  
   2. `"refactor: Complete modular reorganization - remove old file locations"`
 
@@ -1497,19 +1460,15 @@ Result: **Zero data loss. All files safely versioned and correctly tracked.**
 ### ⚠️ **Lessons Learned**
 
 2. **Do not commit reorganization until `git status` is fully reconciled**  
-     
+
    * Mismatched deletions \+ additions \= high risk of regression.
 
-   
-
 2. **Always dry-run template processors in staging paths first**  
-     
+
    * Avoid `--test-hybrid` for anything going into `/businesses/*`.
 
-   
-
 3. **Back up key state before major architecture changes**  
-     
+
    * You now have `workflow_backups/` in place – use this before refactoring again.
 
 ---
@@ -1531,23 +1490,22 @@ You're not back at square one. You're standing on a **more resilient foundation*
 ### ✅ Next Recommended Steps
 
 1. **Tag this commit**  
-     
+
    git tag stable-modular-20250913  
-     
+
    git push origin stable-modular-20250913  
-     
+
 2. **Back up repo to cloud immediately**  
-     
+
    zip \-r bmdp\_backup\_20250913.zip .  
-     
+
    mv bmdp\_backup\_20250913.zip \~/Dropbox/backups/  
-     
+
 3. **Create a checkpoint file**  
-     
+
    docs/WORKING\_STATE\_20250913.md  
-     
+
 4. **Focus on Phase 1 next: `bmdp-phase1-mobilize.md`**  
-     
+
    * All tools are restored to support it.  
    * You can now generate Mobilize artifacts with full confidence.
-

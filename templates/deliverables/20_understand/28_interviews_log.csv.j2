@@ -1,15 +1,87 @@
 ---
-phase: 00_initiation
+phase: 20_understand
 artifact: 28_interviews_log.csv
 methodology_tags:
-  - VPD
+- VPD
+- TBI
 rule_targets:
-  - structure-validation
-  - auto-generation
-  - vpd-compliance
+- structure-validation
+- auto-generation
+- vpd-compliance
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Business: { business_slug }
 date,participant_name,title,company,industry,segment,duration_minutes,interviewer,key_insights,problem_validation,solution_feedback,pricing_insights,follow_up_needed
 {{ interview_1_date | default("2024-01-15") }},"{{ interview_1_name | default("Sarah Johnson") }}","{{ interview_1_title | default("CTO") }}","{{ interview_1_company | default("TechScale Inc") }}","{{ interview_1_industry | default("SaaS") }}","{{ segment_2_name | default("Mid-Market") }}",{{ interview_1_duration | default("52") }},"{{ primary_interviewer | default("Business Expert") }}","{{ interview_1_insights | default("Strong need for scalable solution, current tools don't integrate well") }}","{{ interview_1_problem | default("High - confirmed integration and scaling challenges") }}","{{ interview_1_solution | default("Very positive - sees clear value in our approach") }}","{{ interview_1_pricing | default("Budget $50K-100K annually, prefers monthly billing") }}","{{ interview_1_followup | default("Yes - wants to see prototype demo") }}"
 {{ interview_2_date | default("2024-01-17") }},"{{ interview_2_name | default("Mike Chen") }}","{{ interview_2_title | default("IT Director") }}","{{ interview_2_company | default("Global Corp") }}","{{ interview_2_industry | default("Financial Services") }}","{{ segment_1_name | default("Enterprise") }}",{{ interview_2_duration | default("48") }},"{{ primary_interviewer | default("Business Expert") }}","{{ interview_2_insights | default("Security and compliance are top priorities, willing to pay premium") }}","{{ interview_2_problem | default("Medium - has workarounds but inefficient") }}","{{ interview_2_solution | default("Cautious interest - needs security validation") }}","{{ interview_2_pricing | default("Enterprise budget available, prefers annual contracts") }}","{{ interview_2_followup | default("Yes - security and compliance deep dive") }}"
 {{ interview_3_date | default("2024-01-19") }},"{{ interview_3_name | default("Lisa Rodriguez") }}","{{ interview_3_title | default("Operations Manager") }}","{{ interview_3_company | default("Local Services LLC") }}","{{ interview_3_industry | default("Professional Services") }}","{{ segment_3_name | default("Small Business") }}",{{ interview_3_duration | default("35") }},"{{ market_analyst | default("Market Analyst") }}","{{ interview_3_insights | default("Price-sensitive but values simplicity and support") }}","{{ interview_3_problem | default("High - manual processes causing errors") }}","{{ interview_3_solution | default("Interested but concerned about complexity") }}","{{ interview_3_pricing | default("Budget under $500/month, needs clear ROI") }}","{{ interview_3_followup | default("No - satisfied with insights gathered") }}"
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

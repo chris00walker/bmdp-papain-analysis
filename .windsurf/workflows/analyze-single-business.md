@@ -6,7 +6,7 @@ description: Analyze single business with financial automation and validation
 
 Runs complete validation, financial computation, and manifest update for a specific business. Use this workflow after completing Phase 0-3 for a business.
 
-**IMPORTANT**: Replace `{business_slug}` with actual business name (grower, processor, distributor, or marketplace) before running commands.
+**IMPORTANT**: Replace `$1` with actual business name (grower, processor, distributor, or marketplace) before running commands.
 
 ## Prerequisites
 
@@ -19,8 +19,8 @@ Runs complete validation, financial computation, and manifest update for a speci
 ### 1. Validate business structure and data
 
 ```bash
-# Replace {business_slug} with: grower, processor, distributor, or marketplace
-python tools/validate.py --business {business_slug}
+# Replace $1 with: grower, processor, distributor, or marketplace
+python tools/validators/validate.py --business $1
 ```
 
 **Expected output**: VALIDATION PASSED
@@ -28,23 +28,23 @@ python tools/validate.py --business {business_slug}
 ### 2. Compute financial metrics
 
 ```bash
-# Replace {business_slug} with: grower, processor, distributor, or marketplace
-python tools/compute_financials.py --business {business_slug} --capital-min 300000 --capital-max 1000000 --discount-rate 0.15
+# Replace $1 with: grower, processor, distributor, or marketplace
+python tools/calculators/compute_financials.py --business $1 --capital-min 300000 --capital-max 1000000 --discount-rate 0.15
 ```
 
 **Expected output**:
 
 - IRR, NPV, ROI calculations
-- Results saved to `businesses/{business_slug}/30_design/financials_summary.csv`
+- Results saved to `businesses/$1/30_design/financials_summary.csv`
 
 ### 3. Methodology compliance assessment (VPD/BMG/TBI)
 
 ```bash
 # VPD/BMG/TBI methodology compliance scoring (summary)
-python tools/osterwalder_pigneur_scorer.py --business {business_slug} --format summary
+python tools/validators/osterwalder_pigneur_scorer.py --business $1 --format summary
 
 # Content-level methodology checks (VPD/BMG/TBI heuristics)
-python tools/content_validator.py --business {business_slug} --analysis semantic --mode all --format summary
+python tools/validators/content_validator.py --business $1 --analysis semantic --mode all --format summary
 ```
 
 **Expected output**:
@@ -55,15 +55,15 @@ python tools/content_validator.py --business {business_slug} --analysis semantic
 ### 4. Update business manifest
 
 ```bash
-# Replace {business_slug} with: grower, processor, distributor, or marketplace
-python tools/update_manifest.py --business {business_slug} --validation-status passed
+# Replace $1 with: grower, processor, distributor, or marketplace
+python tools/core/update_manifest.py --business $1 --validation-status passed
 ```
 
 ### 5. Generate business summary report
 
 ```bash
-# Replace {business_slug} with: grower, processor, distributor, or marketplace
-python tools/generate_summary_report.py --business {business_slug}
+# Replace $1 with: grower, processor, distributor, or marketplace
+python tools/generators/generate_summary_report.py --business $1
 ```
 
 **Expected output**: Formatted analysis summary with financial metrics, validation status, and key insights

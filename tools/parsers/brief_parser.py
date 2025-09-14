@@ -100,36 +100,43 @@ def get_business_number(business_slug):
     }
     return mapping.get(business_slug, '1')
 
-def main():
-    parser = argparse.ArgumentParser(description='Parse business brief file')
-    parser.add_argument('--business', required=True, help='Business slug')
-    parser.add_argument('--output-format', choices=['json', 'env'], default='env',
-                       help='Output format (default: env)')
+def find_brief_file(business_name):
+    """Find brief file for given business name"""
+    business_number = get_business_number(business_name)
+    brief_path = Path(f'brief-{business_number}-{business_name}.md')
+    return brief_path if brief_path.exists() else None
+
+def export_environment_variables(business_data, business_name):
+    """Export business data as environment variables"""
+    sections = business_data['sections']
+    frontmatter = business_data['frontmatter']
+    output = []
+    output.append(f"BUSINESS_TITLE='{sections['title']}'")
+    output.append(f"BUSINESS_NUMBER='{get_business_number(business_name)}'")
+    output.append(f"BRIEF_FILE='{find_brief_file(business_name).name}'")
+    output.append(f"CAPITAL_MIN='{frontmatter.get('capital_bounds_bbd', {}).get('min', 0)}'")
+    output.append(f"CAPITAL_MAX='{frontmatter.get('capital_bounds_bbd', {}).get('max', 0)}'")
+    output.append(f"HORIZON_YEARS='{frontmatter.get('financial_method', {}).get('horizon_years', 5)}'")
+    output.append(f"DISCOUNT_RATE='{frontmatter.get('financial_method', {}).get('discount_rate_pct', 15)}'")
+    output.append(f"ROI_TARGET='{frontmatter.get('financial_method', {}).get('roi_target_pct', 20)}'")
     
-    args = parser.parse_args()
+    # Extract financial metrics
+    metrics = frontmatter.get('financial_method', {}).get('metrics', ['IRR', 'NPV', 'ROI'])
+    output.append(f"FINANCIAL_METRICS='{', '.join(metrics)}'")
     
-    # Find brief file
-    business_number = get_business_number(args.business)
-    brief_path = Path(f'brief-{business_number}-{args.business}.md')
+    # Extract project execution parameters
+    project_exec = frontmatter.get('project_execution', {})
+    team_size = project_exec.get('team_size', 4)
     
-    if not brief_path.exists():
-        print(f"ERROR: Brief file not found: {brief_path}")
-        return 1
+    # Calculate dynamic phase durations from percentages
+    timeline_weeks = project_exec.get('timeline_weeks', 52)
+    phase_ratios = project_exec.get('phase_ratios', {})
     
-    # Parse brief
-    data = parse_brief_file(brief_path)
-    
-    if args.output_format == 'env':
-        # Output as environment variables for shell scripts
-        sections = data['sections']
-        frontmatter = data['frontmatter']
-        print(f"BUSINESS_TITLE='{sections['title']}'")
-        print(f"BUSINESS_NUMBER='{get_business_number(args.business)}'")
-        print(f"BRIEF_FILE='{brief_path.name}'")
-        print(f"CAPITAL_MIN='{frontmatter.get('capital_bounds_bbd', {}).get('min', 0)}'")
-        print(f"CAPITAL_MAX='{frontmatter.get('capital_bounds_bbd', {}).get('max', 0)}'")
-        print(f"HORIZON_YEARS='{frontmatter.get('financial_method', {}).get('horizon_years', 5)}'")
-        print(f"DISCOUNT_RATE='{frontmatter.get('financial_method', {}).get('discount_rate_pct', 15)}'")
+    # Use percentage-based calculations or fall back to fixed values
+    if phase_ratios:
+        discovery_pct = phase_ratios.get('discovery_pct', 50)
+        validation_pct = phase_ratios.get('validation_pct', 33)
+        scaling_pct = phase_ratios.get('scaling_pct', 17)
         print(f"ROI_TARGET='{frontmatter.get('financial_method', {}).get('roi_target_pct', 20)}'")
         
         # Extract financial metrics
@@ -294,6 +301,35 @@ def main():
         if 'critical_risks' in sections:
             risks = '. '.join(sections['critical_risks'])
             print(f"CRITICAL_RISKS='{risks}'")
+    
+    return 0
+
+def main():
+    """Main entry point for CLI"""
+    parser = argparse.ArgumentParser(description='Parse business brief and export variables')
+    parser.add_argument('--business', required=True, help='Business name (grower, processor, etc.)')
+    parser.add_argument('--output-format', choices=['json', 'env'], default='json',
+                       help='Output format for variables')
+    
+    args = parser.parse_args()
+    
+    # Find and parse the brief file
+    brief_path = find_brief_file(args.business)
+    if not brief_path:
+        print(f"Error: Could not find brief file for business: {args.business}", file=sys.stderr)
+        sys.exit(1)
+    
+    business_data = parse_brief_file(brief_path)
+    
+    if args.output_format == 'env':
+        # Export as environment variables
+        env_output = export_environment_variables(business_data, args.business)
+        for line in env_output:
+            print(f"export {line}")
+    else:
+        # Export as JSON
+        import json
+        print(json.dumps(business_data, indent=2))
     
     return 0
 

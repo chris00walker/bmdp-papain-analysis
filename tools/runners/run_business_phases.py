@@ -31,6 +31,8 @@ def substitute_parameters(content, business_slug, business_number):
     content = content.replace('{business_number}', business_number)
     content = content.replace('${business_slug}', business_slug)
     content = content.replace('${business_number}', business_number)
+    # Also replace $1 with business_slug for Phase 0 workflow
+    content = content.replace('$1', business_slug)
     return content
 
 def extract_bash_commands(workflow_content):

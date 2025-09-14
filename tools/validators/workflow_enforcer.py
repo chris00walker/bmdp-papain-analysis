@@ -84,9 +84,9 @@ class WorkflowEnforcer:
                 return {}
         
         try:
-            # Use parse_business_brief.py tool with correct arguments
+            # Use modular brief_parser.py tool with correct arguments
             result = subprocess.run(
-                [sys.executable, "parse_business_brief.py", "--business", self.business],
+                [sys.executable, "parsers/brief_parser.py", "--business", self.business, "--output-format", "env"],
                 cwd=self.project_root / "tools",
                 capture_output=True,
                 text=True,

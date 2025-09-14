@@ -1,16 +1,58 @@
 ---
-phase: 00_initiation
+phase: 30_design
 artifact: 36_financial_projections.md
 methodology_tags:
-  - BMG
-  - FINANCIAL
+- BMG
+- VPD
+- TBI
 rule_targets:
-  - structure-validation
-  - auto-generation
-  - financial-validation
+- structure-validation
+- auto-generation
+- bmg-validation
+- tbi-validation
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Financial Projections - {{ business_slug|title }} {{ business_title }}
 
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
+
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
 
 ## Business Context
 **Business**: {{ business_slug|title }}
@@ -225,3 +267,59 @@ This document presents 5-year financial projections for the selected {{ business
 3. **{{ success_factor_3 | default("Control customer acquisition costs") }}**
 4. **{{ success_factor_4 | default("Scale operations efficiently") }}**
 5. **{{ success_factor_5 | default("Secure follow-on funding as planned") }}**
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

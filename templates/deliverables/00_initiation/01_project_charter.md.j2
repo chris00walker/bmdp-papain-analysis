@@ -2,18 +2,60 @@
 phase: 00_initiation
 artifact: 01_project_charter.md
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Project Charter - {{ business_slug|title }} {{ business_title }} BMDP
 
 ## Project Overview
 **Business**: {{ business_title }}
 **Project Type**: Business Model Design Process (BMDP)
-**Charter Date**: {{ charter_date | default("TBD") }}
-**Project Manager**: {{ project_manager | default("TBD") }}
+**Charter Date**: {{ charter_date | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+**Project Manager**: {{ project_manager | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 ## Business Context
+## Industry Context
+{% if INDUSTRY_CONTEXT %}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Market Dynamics**: Based on {{ INDUSTRY_CONTEXT }}, key considerations include regulatory requirements, competitive landscape, and market maturity.
+{% else %}
+**Industry**: To be determined based on business model analysis
+{% endif %}
+
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
+## Industry Context
+{% if INDUSTRY_CONTEXT %}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Market Dynamics**: Based on {{ INDUSTRY_CONTEXT }}, key considerations include regulatory requirements, competitive landscape, and market maturity.
+{% else %}
+**Industry**: To be determined based on business model analysis
+{% endif %}
+
+## Methodology Alignment
+**Business Model Generation (BMG)**: Initial canvas development focusing on the 9 building blocks
+**Testing Business Ideas (TBI)**: Hypothesis identification for validation in subsequent phases
+
 **Industry**: {{ industry | default(business_type) }}
 **Current Status**: {{ current_status | default("Early stage development") }}
 **Market Opportunity**: {{ market_opportunity | default("Market analysis pending") }}
@@ -29,27 +71,27 @@ rule_targets:
 - [ ] {{ success_criteria_3 | default("Financial projections demonstrate viability") }}
 
 ## Resource Allocation
-**Total BMDP Budget**: ${{ total_bmdp_cost | default("TBD") }} BBD
-- Discovery Phase: ${{ bmdp_discovery_cost | default("TBD") }} BBD
-- Validation Phase: ${{ bmdp_validation_cost | default("TBD") }} BBD  
-- Scaling Phase: ${{ bmdp_scaling_cost | default("TBD") }} BBD
+**Total BMDP Budget**: ${{ total_bmdp_cost | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
+- Discovery Phase: ${{ bmdp_discovery_cost | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
+- Validation Phase: ${{ bmdp_validation_cost | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD  
+- Scaling Phase: ${{ bmdp_scaling_cost | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
 
-**Business Capital Available**: ${{ capital_min | default("TBD") }} BBD (Initial)
+**Business Capital Available**: ${{ capital_min | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD (Initial)
 
 ## Timeline
 | Phase | Duration | Start Date | End Date |
 |-------|----------|------------|----------|
-| Phase 0: Initiation | {{ phase0_duration | default("2 weeks") }} | {{ phase0_start | default("TBD") }} | {{ phase0_end | default("TBD") }} |
-| Phase 1: Mobilize | {{ phase1_duration | default("3 weeks") }} | {{ phase1_start | default("TBD") }} | {{ phase1_end | default("TBD") }} |
-| Phase 2: Understand | {{ phase2_duration | default("4 weeks") }} | {{ phase2_start | default("TBD") }} | {{ phase2_end | default("TBD") }} |
-| Phase 3: Design | {{ phase3_duration | default("5 weeks") }} | {{ phase3_start | default("TBD") }} | {{ phase3_end | default("TBD") }} |
+| Phase 0: Initiation | {{ phase0_duration | default("2 weeks") }} | {{ phase0_start | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ phase0_end | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
+| Phase 1: Mobilize | {{ phase1_duration | default("3 weeks") }} | {{ phase1_start | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ phase1_end | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
+| Phase 2: Understand | {{ phase2_duration | default("4 weeks") }} | {{ phase2_start | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ phase2_end | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
+| Phase 3: Design | {{ phase3_duration | default("5 weeks") }} | {{ phase3_start | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ phase3_end | default("Generate based on {{ BUSINESS_TYPE }} context") }} |
 
 ## Key Stakeholders
 | Role | Name | Responsibilities |
 |------|------|-----------------|
-| Sponsor | {{ sponsor_name | default("TBD") }} | {{ sponsor_responsibilities | default("Project oversight and resource approval") }} |
-| Project Manager | {{ pm_name | default("TBD") }} | {{ pm_responsibilities | default("Day-to-day project execution") }} |
-| Business Lead | {{ business_lead | default("TBD") }} | {{ business_lead_responsibilities | default("Domain expertise and validation") }} |
+| Sponsor | {{ sponsor_name | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ sponsor_responsibilities | default("Project oversight and resource approval") }} |
+| Project Manager | {{ pm_name | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ pm_responsibilities | default("Day-to-day project execution") }} |
+| Business Lead | {{ business_lead | default("Generate based on {{ BUSINESS_TYPE }} context") }} | {{ business_lead_responsibilities | default("Domain expertise and validation") }} |
 
 ## Risk Management
 | Risk | Impact | Mitigation Strategy |
@@ -58,12 +100,12 @@ rule_targets:
 | {{ risk_2 | default("Market validation failure") }} | {{ risk_2_impact | default("High") }} | {{ risk_2_mitigation | default("Pivot strategy prepared") }} |
 
 ## Governance Structure
-**Project Sponsor**: {{ sponsor_name | default("TBD") }}
+**Project Sponsor**: {{ sponsor_name | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 - **Role**: Primary decision maker and resource provider
 - **Authority**: Budget approval, strategic direction, milestone gates
 - **Accountability**: Project success and business outcomes
 
-**Project Manager**: {{ pm_name | default("TBD") }}
+**Project Manager**: {{ pm_name | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 - **Role**: Day-to-day project execution and coordination
 - **Authority**: Resource allocation, task assignment, progress tracking
 - **Accountability**: Deliverable quality and timeline adherence
@@ -90,11 +132,67 @@ rule_targets:
 - [ ] Market entry execution activities
 
 ### Constraints
-**Financial**: Capital bounds ${{ capital_min | default("TBD") }} - ${{ capital_max | default("TBD") }} BBD
+**Financial**: Capital bounds ${{ capital_min | default("Generate based on {{ BUSINESS_TYPE }} context") }} - ${{ capital_max | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD
 **Timeline**: {{ timeline_weeks | default("52") }} weeks total project duration
-**Resources**: {{ team_size | default("4") }} person team with {{ total_bmdp_cost | default("TBD") }} BBD BMDP budget
+**Resources**: {{ team_size | default("4") }} person team with {{ total_bmdp_cost | default("Generate based on {{ BUSINESS_TYPE }} context") }} BBD BMDP budget
 **Regulatory**: {{ regulatory_constraints | default("Standard business registration and compliance requirements") }}
 
 ## Approval
 **Sponsor Signature**: _________________________ Date: _________
 **Project Manager Signature**: _________________ Date: _________
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

@@ -1,79 +1,193 @@
 ---
-phase: 00_initiation
+phase: 10_mobilize
 artifact: 15_canvas_v0_main.md
 methodology_tags:
-  - BMG
+- BMG
+- VPD
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+- vpd-compliance
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
-# Business Model Canvas v0 - {{ business_slug|title }} {{ business_title }}
 
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
+# Business Model Canvas v0 - {{ business_slug|title }} {{ business_title }}
 
 ## Business Context
 **Business**: {{ business_slug|title }}
 
 ## Customer Segments
-**Primary Segment**: {{ primary_segment | default("TBD - Define primary customer segment") }}
+**Primary Segment**: {{ primary_segment | default("Identify based on {{ INDUSTRY_CONTEXT }} market analysis") }}
 
 **Secondary Segments**: 
-- {{ secondary_segment_1 | default("TBD - Secondary segment 1") }}
-- {{ secondary_segment_2 | default("TBD - Secondary segment 2") }}
+- {{ secondary_segment_1 | default("Identify based on {{ INDUSTRY_CONTEXT }} market analysis") }}
+- {{ secondary_segment_2 | default("Identify based on {{ INDUSTRY_CONTEXT }} market analysis") }}
+
+## Value Proposition Design Framework
+{% if VALUE_PROPOSITION and CUSTOMER_SEGMENTS %}
+### Customer Profile
+**Customer Segments**: {{ CUSTOMER_SEGMENTS }}
+**Jobs**: Functional, emotional, and social jobs derived from {{ INDUSTRY_CONTEXT }}
+**Pains**: Industry-specific challenges in {{ INDUSTRY_CONTEXT }}
+**Gains**: Desired outcomes for {{ CUSTOMER_SEGMENTS }}
+
+### Value Map
+**Products & Services**: {{ KEY_ACTIVITIES }}
+**Pain Relievers**: How {{ VALUE_PROPOSITION }} addresses customer pains
+**Gain Creators**: How {{ VALUE_PROPOSITION }} creates customer gains
+{% endif %}
+
+## Value Proposition Design Framework
+{% if VALUE_PROPOSITION and CUSTOMER_SEGMENTS %}
+### Customer Profile
+**Customer Segments**: {{ CUSTOMER_SEGMENTS }}
+**Jobs**: Functional, emotional, and social jobs derived from {{ INDUSTRY_CONTEXT }}
+**Pains**: Industry-specific challenges in {{ INDUSTRY_CONTEXT }}
+**Gains**: Desired outcomes for {{ CUSTOMER_SEGMENTS }}
+
+### Value Map
+**Products & Services**: {{ KEY_ACTIVITIES }}
+**Pain Relievers**: How {{ VALUE_PROPOSITION }} addresses customer pains
+**Gain Creators**: How {{ VALUE_PROPOSITION }} creates customer gains
+{% endif %}
+
+## Value Proposition Design Framework
+{% if VALUE_PROPOSITION and CUSTOMER_SEGMENTS %}
+### Customer Profile
+**Customer Segments**: {{ CUSTOMER_SEGMENTS }}
+**Jobs**: Functional, emotional, and social jobs derived from {{ INDUSTRY_CONTEXT }}
+**Pains**: Industry-specific challenges in {{ INDUSTRY_CONTEXT }}
+**Gains**: Desired outcomes for {{ CUSTOMER_SEGMENTS }}
+
+### Value Map
+**Products & Services**: {{ KEY_ACTIVITIES }}
+**Pain Relievers**: How {{ VALUE_PROPOSITION }} addresses customer pains
+**Gain Creators**: How {{ VALUE_PROPOSITION }} creates customer gains
+{% endif %}
 
 ## Value Propositions
-**Core Value Proposition**: {{ value_proposition | default("TBD - Core value delivered to customers") }}
+**Core Value Proposition**: {{ value_proposition | default("Derive from {{ VALUE_PROPOSITION }} for {{ CUSTOMER_SEGMENTS }}") }}
 
 **Key Benefits**:
-- {{ benefit_1 | default("TBD - Primary benefit") }}
-- {{ benefit_2 | default("TBD - Secondary benefit") }}
-- {{ benefit_3 | default("TBD - Additional benefit") }}
+- {{ benefit_1 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ benefit_2 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ benefit_3 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 ## Channels
 **Distribution Channels**:
-- {{ channel_1 | default("TBD - Primary channel") }}
-- {{ channel_2 | default("TBD - Secondary channel") }}
+- {{ channel_1 | default("Select channels appropriate for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}") }}
+- {{ channel_2 | default("Select channels appropriate for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}") }}
 
-**Channel Strategy**: {{ channel_strategy | default("TBD - How to reach customers") }}
+**Channel Strategy**: {{ channel_strategy | default("Select channels appropriate for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}") }}
 
 ## Customer Relationships
-**Relationship Type**: {{ relationship_type | default("TBD - Type of customer relationship") }}
+**Relationship Type**: {{ relationship_type | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
-**Customer Acquisition**: {{ customer_acquisition | default("TBD - How to acquire customers") }}
+**Customer Acquisition**: {{ customer_acquisition | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
-**Customer Retention**: {{ customer_retention | default("TBD - How to retain customers") }}
+**Customer Retention**: {{ customer_retention | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 ## Revenue Streams
-**Primary Revenue Model**: {{ revenue_model | default("TBD - How money is made") }}
+**Primary Revenue Model**: {{ revenue_model | default("Based on {{ REVENUE_STREAMS }} model") }}
 
-**Pricing Strategy**: {{ pricing_strategy | default("TBD - Pricing approach") }}
+**Pricing Strategy**: {{ pricing_strategy | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 **Revenue Sources**:
-- {{ revenue_source_1 | default("TBD - Primary revenue source") }}
-- {{ revenue_source_2 | default("TBD - Secondary revenue source") }}
+- {{ revenue_source_1 | default("Based on {{ REVENUE_STREAMS }} model") }}
+- {{ revenue_source_2 | default("Based on {{ REVENUE_STREAMS }} model") }}
 
 ## Key Resources
 **Critical Resources**:
-- {{ key_resource_1 | default("TBD - Most important resource") }}
-- {{ key_resource_2 | default("TBD - Second key resource") }}
-- {{ key_resource_3 | default("TBD - Third key resource") }}
+- {{ key_resource_1 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ key_resource_2 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ key_resource_3 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 ## Key Activities
 **Core Activities**:
-- {{ key_activity_1 | default("TBD - Most important activity") }}
-- {{ key_activity_2 | default("TBD - Second key activity") }}
-- {{ key_activity_3 | default("TBD - Third key activity") }}
+- {{ key_activity_1 | default("Aligned with {{ KEY_ACTIVITIES }}") }}
+- {{ key_activity_2 | default("Aligned with {{ KEY_ACTIVITIES }}") }}
+- {{ key_activity_3 | default("Aligned with {{ KEY_ACTIVITIES }}") }}
 
 ## Key Partnerships
 **Strategic Partners**:
-- {{ partner_1 | default("TBD - Key partner 1") }}
-- {{ partner_2 | default("TBD - Key partner 2") }}
+- {{ partner_1 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ partner_2 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
-**Partnership Benefits**: {{ partnership_benefits | default("TBD - Why partnerships are needed") }}
+**Partnership Benefits**: {{ partnership_benefits | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
 ## Cost Structure
 **Major Cost Categories**:
-- {{ cost_category_1 | default("TBD - Largest cost category") }}
-- {{ cost_category_2 | default("TBD - Second largest cost") }}
-- {{ cost_category_3 | default("TBD - Third cost category") }}
+- {{ cost_category_1 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ cost_category_2 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+- {{ cost_category_3 | default("Generate based on {{ BUSINESS_TYPE }} context") }}
 
-**Cost Optimization**: {{ cost_optimization | default("TBD - How to optimize costs") }}
+**Cost Optimization**: {{ cost_optimization | default("Generate based on {{ BUSINESS_TYPE }} context") }}
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

@@ -1,11 +1,59 @@
 ---
-phase: 00_initiation
+phase: 30_design
 artifact: 35_selection_scorecard.csv
 rule_targets:
-  - structure-validation
-  - auto-generation
+- structure-validation
+- auto-generation
+- bmg-validation
+- tbi-validation
+methodology_tags:
+- BMG
+- VPD
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
 ---
+
+{# LLM GUIDANCE
+This template is designed to be adaptive and context-aware. When generating content:
+1. Use BUSINESS_TYPE and INDUSTRY_CONTEXT to tailor examples and language
+2. Reference CUSTOMER_SEGMENTS and VALUE_PROPOSITION for relevance
+3. Ensure all content aligns with the business's KEY_ACTIVITIES and REVENUE_STREAMS
+4. Generate specific, measurable, and evidence-based content
+5. Follow the methodology frameworks: {% if 'VPD' in methodology_tags %}Value Proposition Design{% endif %}{% if 'BMG' in methodology_tags %}, Business Model Generation{% endif %}{% if 'TBI' in methodology_tags %}, Testing Business Ideas{% endif %}
+#}
+
 # Business: { business_slug }
+
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
+
+## Design Context
+{% if BUSINESS_TYPE and INDUSTRY_CONTEXT %}
+### Business Model Pattern
+**Type**: {{ BUSINESS_TYPE }}
+**Industry**: {{ INDUSTRY_CONTEXT }}
+**Revenue Model**: {{ REVENUE_STREAMS }}
+
+### Testing Framework (TBI)
+- Desirability experiments for {{ CUSTOMER_SEGMENTS }}
+- Feasibility tests for {{ KEY_ACTIVITIES }}
+- Viability analysis for {{ REVENUE_STREAMS }}
+{% endif %}
+
 criteria,weight,{{ prototype_1_name | default("premium_integration") }},{{ prototype_2_name | default("workflow_saas") }},{{ prototype_3_name | default("compliance_platform") }},notes
 Market Size,8%,{{ proto_1_market_size | default("8") }},{{ proto_2_market_size | default("7") }},{{ proto_3_market_size | default("6") }},"{{ market_size_notes | default("Integration platform has largest TAM, compliance more niche") }}"
 Customer Demand,7%,{{ proto_1_customer_demand | default("8") }},{{ proto_2_customer_demand | default("7") }},{{ proto_3_customer_demand | default("9") }},"{{ customer_demand_notes | default("Strong validation across all models, compliance highest urgency") }}"
@@ -27,3 +75,59 @@ Vision Alignment,4%,{{ proto_1_vision | default("8") }},{{ proto_2_vision | defa
 Growth Potential,3%,{{ proto_1_growth | default("8") }},{{ proto_2_growth | default("7") }},{{ proto_3_growth | default("7") }},"{{ growth_notes | default("All models show good long-term growth potential") }}"
 Exit Strategy,3%,{{ proto_1_exit | default("7") }},{{ proto_2_exit | default("6") }},{{ proto_3_exit | default("8") }},"{{ exit_notes | default("Compliance platforms command premium valuations") }}"
 TOTAL WEIGHTED SCORE,100%,{{ proto_1_total | default("7.1") }},{{ proto_2_total | default("6.8") }},{{ proto_3_total | default("7.4") }},"{{ total_notes | default("Compliance platform leads, integration close second") }}"
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector
+
+## Evidence & Metrics
+{% if methodology_tags %}
+### Measurement Framework
+{% if 'VPD' in methodology_tags %}
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+{% endif %}
+{% if 'BMG' in methodology_tags %}
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+{% endif %}
+{% if 'TBI' in methodology_tags %}
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+{% endif %}
+{% endif %}
+
+### Success Indicators
+- Quantitative: Specific metrics for {{ BUSINESS_TYPE }} in {{ INDUSTRY_CONTEXT }}
+- Qualitative: Customer feedback from {{ CUSTOMER_SEGMENTS }}
+- Comparative: Benchmarks for {{ INDUSTRY_CONTEXT }} sector

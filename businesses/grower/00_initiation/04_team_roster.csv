@@ -1,0 +1,62 @@
+---
+phase: 00_initiation
+artifact: 04_team_roster.csv
+rule_targets:
+- structure-validation
+- auto-generation
+methodology_tags:
+- BMG
+- TBI
+llm_guidance:
+  adaptive: true
+  industry_agnostic: true
+  context_aware: true
+  evidence_driven: true
+---
+
+
+name,role,function,allocation_pct,email
+,Project Sponsor,Strategic Oversight & Decision Authority,25,
+,Project Manager,BMDP Execution & Coordination,30,
+,Business Lead,Domain Expertise & Operations,25,
+,Market Analyst,Customer & Competitive Analysis,20,
+
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector
+
+## Evidence & Metrics
+### Measurement Framework
+**Value Proposition Metrics**:
+- Customer job completion rate
+- Pain reduction indicators
+- Gain achievement measures
+**Business Model Metrics**:
+- Revenue stream validation
+- Cost structure efficiency
+- Channel effectiveness
+**Testing Metrics**:
+- Hypothesis validation rate
+- Experiment success criteria
+- Learning velocity
+
+### Success Indicators
+- Quantitative: Specific metrics for Grower in Agriculture and Cultivation
+- Qualitative: Customer feedback from International enzyme processors and regional food processors
+- Comparative: Benchmarks for Agriculture and Cultivation sector
